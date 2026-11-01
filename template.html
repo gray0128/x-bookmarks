@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X 收藏导航</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1a1d23;--mut:#6b7280;--bd:#e5e7eb;--ac:#2563eb;--code:#f3f4f6}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--fg:#e6e8eb;--mut:#9aa1ab;--bd:#2a2f38;--ac:#60a5fa;--code:#11141a}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--fg)}
+header{position:sticky;top:0;background:var(--bg);padding:16px 20px;border-bottom:1px solid var(--bd);z-index:5}
+h1{margin:0 0 8px;font-size:22px}.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg)}
+.chip{padding:6px 12px;border:1px solid var(--bd);border-radius:999px;background:var(--card);color:var(--fg);cursor:pointer}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+nav{max-width:900px;margin:12px auto 0;padding:0 20px;display:flex;flex-wrap:wrap;gap:6px;font-size:13px}nav a{text-decoration:none;padding:3px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--card)}h2{margin:12px 0 0;font-size:18px;scroll-margin-top:170px}#sum{color:var(--mut);font-size:13px;margin-top:6px}main{max-width:900px;margin:auto;padding:20px;display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}.meta{display:flex;justify-content:space-between;color:var(--mut);font-size:13px;flex-wrap:wrap;gap:6px}
+.meta b{color:var(--fg)}.tag{font-size:12px;color:var(--ac)}pre{white-space:pre-wrap;word-break:break-word;background:var(--code);border:1px solid var(--bd);border-radius:10px;padding:12px;margin:10px 0 0;font:13.5px/1.6 ui-monospace,Menlo,monospace;max-height:420px;overflow:auto}
+.wrap{position:relative}.cp{position:absolute;top:8px;right:8px;padding:3px 10px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--fg);cursor:pointer;font-size:12px}
+.q{border-left:3px solid var(--ac);padding-left:10px;margin-top:10px;color:var(--mut);font-size:13px}.q pre{max-height:220px}
+.foot{display:flex;justify-content:space-between;margin-top:10px;font-size:13px;color:var(--mut)}a{color:var(--ac)}
+</style></head><body>
+<header><h1>X 收藏导航</h1><div class="bar"><div id="tabs" class="bar" style="margin-bottom:8px"></div><input id="s" placeholder="搜索正文、作者…"><div id="f" class="bar"></div></div><div id="sum"></div></header>
+<nav id="nav"></nav><main id="m"></main>
+<script>
+const D=__DATA__;const UPD='__UPDATED__';
+const order=a=>{const c={};a.forEach(x=>c[x]=(c[x]||0)+1);return Object.keys(c).sort((x,y)=>(x=='其他'||x=='纯链接（X 长文等）'||x=='待分类')-(y=='其他'||y=='纯链接（X 长文等）'||y=='待分类')||c[y]-c[x])};
+const types=order(D.map(d=>d.ty));let cur=location.hash.slice(1)?decodeURIComponent(location.hash.slice(1)):'全部';if(cur!='全部'&&!types.includes(cur))cur='全部';let tp='全部';
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function tabsR(){tabs.innerHTML=['全部',...types].map(c=>`<button class="chip${c==cur?' on':''}" data-c="${c}">${c} ${c=='全部'?D.length:D.filter(d=>d.ty==c).length}</button>`).join('')}
+tabs.onclick=e=>{if(e.target.dataset.c){cur=e.target.dataset.c;tp='全部';history.replaceState(null,'','#'+encodeURIComponent(cur));tabsR();r()}};
+f.onclick=e=>{if(e.target.dataset.c){tp=e.target.dataset.c;r()}};
+s.oninput=r;
+const card=d=>`<div class="card"><div class="meta"><span><b>${esc(d.name)}</b> <a href="https://x.com/${esc(d.handle)}" target="_blank">@${esc(d.handle)}</a></span><span>${d.date} (JST) · <span class="tag">${d.ty} / ${d.tp}</span></span></div>
+<div class="wrap"><button class="cp">复制</button><pre>${esc(d.text)}</pre></div>
+${d.quotes.map(x=>`<div class="q">${x.type=='quoted'?'引用':x.type=='replied_to'?'回复':'转发'} ${esc(x.who)} · <a href="${x.url}" target="_blank">原帖</a><div class="wrap"><button class="cp">复制</button><pre>${esc(x.text)}</pre></div></div>`).join('')}
+<div class="foot"><span>❤ ${d.likes} · 🔖 ${d.bm}</span><a href="${d.url}" target="_blank" rel="noopener">查看原帖 ↗</a></div></div>`;
+function r(){const q=s.value.toLowerCase();
+const inT=D.filter(d=>cur=='全部'||d.ty==cur);
+const L=inT.filter(d=>!q||(d.text+d.name+d.handle+d.ty+d.tp+d.quotes.map(x=>x.text).join('')).toLowerCase().includes(q));
+const key=d=>cur=='全部'?d.ty:d.tp;const groups=order(inT.map(key));
+f.innerHTML=cur=='全部'?'':['全部',...groups].map(c=>`<button class="chip${c==tp?' on':''}" data-c="${c}">${c} ${c=='全部'?inT.length:inT.filter(d=>key(d)==c).length}</button>`).join('');
+const L2=L.filter(d=>tp=='全部'||key(d)==tp);
+sum.textContent=`共 ${D.length} 条收藏 · ${types.length} 个类型 · 当前显示 ${L2.length} 条 · 最后更新 ${UPD} (Asia/Tokyo)`;
+nav.innerHTML=groups.map((c,i)=>{const n=L2.filter(d=>key(d)==c).length;return n?`<a href="#" data-g="g${i}">${c} (${n})</a>`:''}).join('');
+m.innerHTML=groups.map((c,i)=>{const g=L2.filter(d=>key(d)==c).sort((a,b)=>b.ts<a.ts?-1:1);return g.length?`<h2 id="g${i}">${c} <small style="color:var(--mut)">${g.length}</small></h2>`+g.map(card).join(''):''}).join('')}
+nav.onclick=e=>{if(e.target.dataset.g){e.preventDefault();document.getElementById(e.target.dataset.g).scrollIntoView()}};
+m.onclick=e=>{if(e.target.classList.contains('cp')){const t=e.target.nextElementSibling.textContent;const ok=()=>{e.target.textContent='已复制';setTimeout(()=>e.target.textContent='复制',1200)};
+navigator.clipboard?navigator.clipboard.writeText(t).then(ok,()=>fb(t,ok)):fb(t,ok)}};
+function fb(t,ok){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();ok()}
+tabsR();r();
+</script></body></html>
