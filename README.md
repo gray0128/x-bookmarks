@@ -13,4 +13,4 @@
 2. `python3 scripts/merge.py page1.json [page2.json ...]`
 3. 为每个 `NEW` id 在 `data/classify.json` 加 `{"type": ..., "topic": ...}`（优先复用已有类型/主题；需要时新增）。未分类的会显示在「待分类」
 4. `python3 build.py`（输出各类型/主题计数和未分类数）
-5. `git add -A && git commit -m "update $(date +%F)" && git push`
+5. 提交并推送到 **main 和 gh-pages 两个分支**（Pages 从 gh-pages 根目录发布）：`git add -A && git commit -m "update $(date +%F)" && git push origin main && git push origin main:gh-pages`；无 gh 登录时可用 GitHub 连接器 push_files 分别推到 main 与 gh-pages（data/bookmarks.json、data/classify.json、index.html）
