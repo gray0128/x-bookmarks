@@ -1,6 +1,157 @@
 {
  "posts": [
   {
+   "author_id": "983361642359439361",
+   "conversation_id": "2116822474533048714",
+   "created_at": "2026-11-01T09:19:41.000Z",
+   "edit_history_post_ids": [
+    "2116822474533048714"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 37,
+      "id": "1882259822659448832",
+      "start": 25,
+      "username": "FinchAiCode"
+     },
+     {
+      "end": 47,
+      "id": "40184764",
+      "start": 38,
+      "username": "puterjam"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "pic.x.com/knka8pD4If",
+      "end": 71,
+      "expanded_url": "https://x.com/chenbimo/status/2116822474533048714/photo/1",
+      "media_key": "3_2116822431327490048",
+      "start": 48,
+      "url": "https://t.co/knka8pD4If"
+     },
+     {
+      "display_url": "x.com/chenbimo/statu…",
+      "end": 95,
+      "expanded_url": "https://twitter.com/chenbimo/status/2116703288913698991",
+      "start": 72,
+      "url": "https://t.co/TP0oBbgyZV"
+     }
+    ]
+   },
+   "id": "2116822474533048714",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 68,
+    "impression_count": 19708,
+    "like_count": 24,
+    "quote_count": 2,
+    "reply_count": 6,
+    "repost_count": 2
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116703288913698991",
+     "type": "quoted"
+    }
+   ],
+   "text": "年度最佳 Agent 工具应该颁发给 Finch @FinchAiCode @puterjam https://t.co/knka8pD4If https://t.co/TP0oBbgyZV",
+   "url": "https://x.com/chenbimo/status/2116822474533048714",
+   "bookmarked_seen": "2026-11-02T09:04:31+09:00"
+  },
+  {
+   "author_id": "1521688129559613440",
+   "conversation_id": "2116797957454401746",
+   "created_at": "2026-11-01T07:42:15.000Z",
+   "edit_history_post_ids": [
+    "2116797957454401746"
+   ],
+   "id": "2116797957454401746",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "有了 AI 以后写代码速度快了非常多，但是校验的速度其实还是不快的，特别是在 GitHub 上跑 Actions CI 的速度，下午花了一些时间对 Mole、Kaku、Pake 的 CI 全部彻底优化了一下，效果很不错，分享给大伙。\n\n你可以这样直接 Copy 下面给到你的 Agent，我们来看看可以帮你节约多少时间。\n\n帮我把这个仓库的 GitHub Actions 提速，在不减少必要的测试项以及功能校验下，最大幅度减少耗时。\n\n1. 先使用 gh 拉最近 50 次的运行情况，把每一个 job 拆成排队、准备、真正跑测试的 3 个时间段，去看规律，可能很多时候慢的是准备的阶段，不是测试本身。\n2. 同一个 PR 连着推好几次时，只跑最新的那次，旧的直接取消掉，用 cancel-in-progress 去实现。不过 main 分支不要这么做，需要确保发版 main 上的每一个提交都完整跑过一遍。\n3. 只改 README 和文档的这种提交不要触发跑 CI，可以用 paths 过滤掉，另外被跳过的必需检查会一直卡住 PR 合不进去，这个要提前注意一下。\n4. 优先用 setup 类 action 自带的缓存，setup-node 打开 cache，setup-go 默认就开，Rust 用 Swatinem/rust-cache，注意每个仓库缓存只有 10 GB，用不上的就不要放到这里面去。\n5. 本地连着构建两次，第二次应该几乎不花时间，假如有多余的花时间的地方，一定是哪些写得有问题，比如 Dockerfile 装依赖前先 COPY 了整个仓库，或者构建脚本盯着一个不存在的文件，类似的问题记得检查。\n6. 工具直接下载预编译好的，不要用 go install、cargo install 现场安装编译，这里会很费时间。\n7. 不互相依赖的 job 并行跑，删掉不传数据的 needs，最长的那套测试拆到多台机器上去跑。\n8. 免费账号的 macOS 最多同时跑 5 个，所有 workflow 共用，格式化、lint、依赖审计这些不挑系统的都移到 Ubuntu 去跑更好。\n9. 做过的事情就不要做重复了，以及不要多此一举做事情，比如别的 job 跑过的检查就不要套重复再跑，比如只构建前端的 job 就不要多此一举去拉整个 Rust 缓存。\n10. 改完去 push 那个上面测试运行效果，看运行的时间，发现规律，再次查漏补缺来优化一遍，做到最好，最后给到我优化前后的对比。"
+   },
+   "public_metrics": {
+    "bookmark_count": 747,
+    "impression_count": 39213,
+    "like_count": 598,
+    "quote_count": 13,
+    "reply_count": 70,
+    "repost_count": 32
+   },
+   "text": "有了 AI 以后写代码速度快了非常多，但是校验的速度其实还是不快的，特别是在 GitHub 上跑 Actions CI 的速度，下午花了一些时间对 Mole、Kaku、Pake 的 CI 全部彻底优化了一下，效果很不错，分享给大伙。\n\n你可以这样直接 Copy 下面给到你的 Agent，我们来看看可以帮你节约多少时间。",
+   "url": "https://x.com/HiTw93/status/2116797957454401746",
+   "bookmarked_seen": "2026-11-02T09:04:31+09:00"
+  },
+  {
+   "author_id": "1533713706122907648",
+   "conversation_id": "2116742032672629207",
+   "created_at": "2026-11-01T04:00:02.000Z",
+   "edit_history_post_ids": [
+    "2116742032672629207"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/poolmoon6/stat…",
+      "end": 130,
+      "expanded_url": "https://x.com/poolmoon6/status/2114562663309295820?a=SYmqZu8_Y0SNRD-jrag&s=20",
+      "start": 107,
+      "url": "https://t.co/xe6Rq9vTkN"
+     }
+    ]
+   },
+   "id": "2116742032672629207",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "mentions": [
+      {
+       "end": 772,
+       "id": "2870102861",
+       "start": 766,
+       "username": "thdxr"
+      }
+     ],
+     "urls": [
+      {
+       "display_url": "x.com/poolmoon6/stat…",
+       "end": 3476,
+       "expanded_url": "https://x.com/poolmoon6/status/2116007181527179361?a=MlNYSOqGg6FdgcSigmc&s=20",
+       "start": 3453,
+       "url": "https://t.co/4MQAG8Gxtf"
+      },
+      {
+       "display_url": "x.com/poolmoon6/stat…",
+       "end": 3500,
+       "expanded_url": "https://x.com/poolmoon6/status/2114562663309295820?a=SYmqZu8_Y0SNRD-jrag&s=20",
+       "start": 3477,
+       "url": "https://t.co/xe6Rq9vTkN"
+      }
+     ]
+    },
+    "text": "老有人问OpenCode和Command Code为什么那么便宜，是不是量化版，这里干脆集中写一下OpenCode吧。没有任何内幕消息，全部来自公开消息和OpenCode自己的披露。感觉最近真的是谣言越传越多了。\n\nOpenCode最早推的是Zen服务，最低充值10美元用原价调用模型，和OpenRouter差不多。从今年较早时间开始，和中国的开源大模型公司密切合作，包括多次的匿名模型免费发布。Pony Alpha、Hunter Alpha都是先在Zen上亮相的，分别是GLM和小米的模型。（事实上，他们的联合创始人之一是华人）\n\nGo Plan的一开始，是10美元兑换60美元可用额度。主要是有个首月半价，使得它变为最划算的订阅服务之一。后来有几次中国开源模型的发布当天他们就立即适配，甚至在官方权重放出来之前就适配，让我开始猜测他们直接接入的是官方模型。\n\n当时，GLM套餐需要抢，但在Go里面还能用GLM。不过GLM限流无法使用的时候他们的服务也用不了。后来有几次DeepSeek API限流故障的时候他们也一起出故障，基本实锤是官方API中转。\n\n后来他们也在自己的官网FAQ中一一列出了每个开源模型的供应商，绝大部分模型合作方只有一个，就是官方。（在我印象中，GLM还他们列出了另外的供应商如Fireworks AI）\n\n而且Go Plan一直维持ZDR零数据保留政策。我之前提到过，国内很多的订阅Plan，包括当时很火的什么阿里Coding plan，火山Coding plan，全都是霸王条款，要用你的数据去训练的。有些官方Plan如Kimi 的coding plan也没有自己手动关闭数据共享的选项，说是要发邮件给客服。\n\n由于海外用户对于数据传到中国供应商那里还是比较敏感的，OpenCode的联合创始人dax @thdxr 曾经在X上回应过，他们和中国的模型公司都签署了零数据保留政策的合同。这其中的例外包括部分免费提供的模型，以及DeepSeek（每月续签，没有长期合同）。\n\n也就是说，OpenCode有很长一段时间，都是官方中转站性质。这期间，dax曾经在X上回应过，他们是通过官方给的折扣价格提供服务，所以可以比较便宜。DeepSeek的V4正式版出来的时候，他们提供过一段时间的免费，用量爆发。同时，他们悄悄增加了一个设置开关，必须允许数据传输到中国，才可以继续用DeepSeek V4. \n\n其实，以当时的价格，如果没有首月半价，那么只有小米和DeepSeek在Go里面是更划算的。像GLM、Kimi、MiniMax都是官方Plan更划算。他们偶尔也会提供短期折扣，比如Kimi多次有3倍额度之类的，但是并不真的更便宜。（这里大家要知道，小米的token plan基本上只有什么七折或八折之类的优惠，基本上省不了什么钱，所以Go里的6倍用量就很划算）\n\n这期间，发生了一次较大的争议。导火索是DeepSeek突然宣布降价。原本降价是好事，但是OpenCode曾经一直承诺10美元换60美元额度，而DeepSeek价格降为之前的1/4以后，Go Plan中价格却没有降。不过依然是当时能找到的最便宜的DeepSeek价格（短期促销免费的不算）。\n\n只是随着时间推移，一些新进入用户发现DeepSeek的价调用价比官方贵，dax也不得不回应说，DeepSeek官方不愿意对DeepSeek V4 Flash提供之前的折扣，因为官方本身在API调用价格上的利润空间不够（同时也暗示，其他很多模型的官方API本来就有很大利润空间）。\n\n然后更大的事情来了，DeepSeek又宣布涨价了！几乎是在官方涨价的第二天，Go Plan的价格就不得不随之上涨\n\n接下来发生了什么，我只能靠猜测，但是最终的结果是，Go Plan上的API价格和官方调整为一致，但是V4 Flash的可用额度被降为$15. （V4 Pro仍然是$60）\n\n这件事情导致非常多的中国用户尤其是新订阅用户感到自己被欺骗了，虽然他们用到的已经是最便宜的DeepSeek，但是给个人的感知就是，自己以前用不完的DeepSeek，现在很快就会用完。\n\n从此以后，Go Plan终结了自己永远1:6兑换的年代，同时越来越多的模型厂商跟进，因此现在你去看Go Plan，五花八门的什么比例都有。而OpenCode在中国用户中的名声从此一落千丈，骂他创始人是印度人骗子，猜测模型灌水之类的声音一直没停过。\n\n总结一下：到此时为止，Go Plan一直是官方API中转。\n\n也正是从这个时候开始，dax宣称自己开始找第三方算力服务商，希望能够以自部署的方式提供API。这也可以理解，谁愿意把自己的好不容易培养的用户口碑，依赖于外部厂商？他基本上是把X当作找合作伙伴的窗口了。\n\n这就诞生一个叫CheapSeek的词，意思就是找便宜的DeepSeek。期间dax还很高兴地宣布说找到了能提供之前价格的DeepSeek算力合作伙伴，把大家的胃口吊得很高。\n\n这时候，Command Code登场了。它为DeepSeek提供的比例是1:7。此时舆论开始往对OpenCode不利的方向发展，人们认为Command Code更划算，OpenCode一直辜负了之前买了便宜API的老用户，纷纷退订。\n\ndax则表示：他们在市场上找来找去，所有声称能提供更便宜DeepSeek的算力服务商，要么是吹牛，要么不是满血版，并且暗戳戳地指责Command Code是靠自身出血补贴用户，是不可持续的。\n\n然后，两家就开始了频繁而激烈的价格斗争，你方唱罢我登场，dax买的B300机架也终于到位（看起来，他放弃了那些声称能低价提供的算力服务商而选择自建）。接着，DeepSeek V4.1 flash面世时，两家均在DeepSeek官方API上新后，一天左右提供了新适配。各自活动补贴一段时间后，双方都来到了10美元换80美元DeepSeek V4.1 Flash的常规状态，最近几天又来到了$100. \n\n这时候，越来越多的声音说，他们两家为什么这么便宜，是不是量化版的。dax在多个帖子里分别解释，模型厂商的推理毛利率很高，高达85%以上。所以他们自部署是能做到低价的，不是补贴，也不是量化。\n\n而他没说出来的是，中国厂商根本买不到那么多B300机器，宝贵的英伟达新一代显卡要留给训练，只能用早期版本或者国产GPU做推理服务。中间有适配成本，适配周期，推理效率的很多坑。即使不考虑占地面积成本，购卡成本和日常维护、电费等也基本会有4-5倍的差异。这部分，是我根据公开价格，和AI一起进行的估算。每个人都可以用公开信息自己去算一算。（梁文锋自己之前也说过华为卡对比英伟达，推理效率有4倍差异）\n\n也就是说，在DeepSeek自己推理毛利很高，且近期开源了DeepInfra的情况下，OpenCode完全有可能做到比DeepSeek自己的成本还低。现在唯一的问题是：他们买不到新的B300，因为他们的规模太小了。\n\n之前我在另一个帖子里分析过，一套B300的token处理规模大概是OpenCode当前处理规模的一半。dax也曾公开表示，峰值的API调用，他们必须路由到官方才能扛住。按照目前社区的信息，大家实测后，更多发现的是速度确实不如官方，但却没有找到多少模型智商打折的证据。\n\ndax最近说deepseek本身就是一个专家权重FP4量化的模型，没有继续量化的意义，并且说要找官方认证他们提供的推理服务和官方权重一致。如果你真的需要证据，也可以再等一等。\n\n总结一下：和DeepSeek官方权重相同的推理服务，以现在的10美元换100美元的价格提供是完全可能且并不需要补贴的，并且仍然有提升空间。只是OpenCode规模太小，买不到更多新款GPU集群。\n\n这么随手一写，一不小心写了很长。也难怪之前很多人分析这个问题都分析不到点子上，毕竟中间的曲折太多了。此外，这里面的很多信息，也不仅仅是依赖dax一个人说的话。梁文锋的几次被爆出来的公开讲话，DeepSeek官方公告，B300和昇腾卡的公开性能等等，很多都可以作为佐证。\n\n本文仅代表本人印象和信息综合分析，如有错漏，请予谅解。\n\n利益相关：曾经订阅过Open Code Go Plan数月，现在仅持有Command Code 订阅。原因是Open Code API适配问题。\n\n相关阅读：\nhttps://t.co/4MQAG8Gxtf\nhttps://t.co/xe6Rq9vTkN"
+   },
+   "public_metrics": {
+    "bookmark_count": 260,
+    "impression_count": 44842,
+    "like_count": 490,
+    "quote_count": 15,
+    "reply_count": 80,
+    "repost_count": 31
+   },
+   "referenced_tweets": [
+    {
+     "id": "2114562663309295820",
+     "type": "quoted"
+    }
+   ],
+   "text": "老有人问OpenCode和Command Code为什么那么便宜，是不是量化版，这里干脆集中写一下OpenCode吧。没有任何内幕消息，全部来自公开消息和OpenCode自己的披露。感觉最近真的是谣言越传越多了。 https://t.co/xe6Rq9vTkN",
+   "url": "https://x.com/poolmoon6/status/2116742032672629207",
+   "bookmarked_seen": "2026-11-02T09:04:31+09:00"
+  },
+  {
    "author_id": "2095781644833812480",
    "conversation_id": "2116242327400493397",
    "created_at": "2026-10-30T18:54:23.000Z",
@@ -14740,12 +14891,12 @@
    "id": "2116007022315323407",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 19997,
-    "impression_count": 847132,
-    "like_count": 18531,
+    "bookmark_count": 19999,
+    "impression_count": 855969,
+    "like_count": 18557,
     "quote_count": 82,
-    "reply_count": 200,
-    "repost_count": 2731
+    "reply_count": 199,
+    "repost_count": 2738
    },
    "text": "原来拍照应该这么笑，真的教的简单易懂，收藏下次给女朋友照相时候用吧 https://t.co/40yzj5ptn7"
   },
@@ -14771,9 +14922,9 @@
    "id": "2116288299639971956",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 174,
-    "impression_count": 21825,
-    "like_count": 461,
+    "bookmark_count": 175,
+    "impression_count": 22795,
+    "like_count": 469,
     "quote_count": 7,
     "reply_count": 22,
     "repost_count": 9
@@ -14803,7 +14954,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 3,
-    "impression_count": 35577,
+    "impression_count": 36163,
     "like_count": 12,
     "quote_count": 1,
     "reply_count": 4,
@@ -14824,9 +14975,9 @@
     "text": "在你的系统提示词中加入：\n严格遵守格赖斯语用准则进行高效沟通。\n\n你会回来感谢我的"
    },
    "public_metrics": {
-    "bookmark_count": 2457,
-    "impression_count": 178832,
-    "like_count": 1658,
+    "bookmark_count": 2452,
+    "impression_count": 179774,
+    "like_count": 1657,
     "quote_count": 6,
     "reply_count": 74,
     "repost_count": 131
@@ -14855,12 +15006,12 @@
    "id": "2115887660489462091",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 11434,
-    "impression_count": 1238586,
-    "like_count": 16953,
-    "quote_count": 494,
-    "reply_count": 236,
-    "repost_count": 2465
+    "bookmark_count": 11464,
+    "impression_count": 1262063,
+    "like_count": 17002,
+    "quote_count": 499,
+    "reply_count": 238,
+    "repost_count": 2472
    },
    "text": "☎️ Calling all students:\n\nYou can now access hundreds of textbooks directly in Notebook, for no charge. From publishers like S Chand Publishing, OpenStax, and Open Textbook Library— browse, select and upload them as sources to ace all of your upcoming exams (no more excuses, ok?) https://t.co/0mzweVIycJ"
   },
@@ -14887,8 +15038,8 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 141,
-    "impression_count": 205700,
-    "like_count": 730,
+    "impression_count": 206177,
+    "like_count": 728,
     "quote_count": 22,
     "reply_count": 138,
     "repost_count": 33
@@ -14932,8 +15083,8 @@
    "id": "2115726495691968933",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 206,
-    "impression_count": 78007,
+    "bookmark_count": 205,
+    "impression_count": 78230,
     "like_count": 167,
     "quote_count": 7,
     "reply_count": 5,
@@ -14983,11 +15134,11 @@
     "text": "so many gems and great tips in this talk from @yminsky about how to improve your codebase for agents\n\n• agents thrive on feedback, and types are one of the best kinds \n• make illegal states unrepresentable with types, and it enforces global rules across your codebase\n• property based tests, fuzzing, and even full-system deterministic simulation testing\n• expect tests: just print stuff out and capture it in the test. makes behavior legible. it's very similar to how compilers have fixture tests, it reduces the review surface area\n• formal methods used to be very expensive: seL4 is about 8,700 lines of C and took around 25 person-years, with 23 lines of proof for every line of C code, but agents change the roi \n\nhttps://t.co/0zDb5euxhr"
    },
    "public_metrics": {
-    "bookmark_count": 4412,
-    "impression_count": 353846,
-    "like_count": 2683,
+    "bookmark_count": 4411,
+    "impression_count": 356338,
+    "like_count": 2686,
     "quote_count": 35,
-    "reply_count": 131,
+    "reply_count": 130,
     "repost_count": 181
    },
    "text": "so many gems and great tips in this talk from @yminsky about how to improve your codebase for agents\n\n• agents thrive on feedback, and types are one of the best kinds \n• make illegal states unrepresentable with types, and it enforces global rules across your codebase\n•"
@@ -15025,7 +15176,7 @@
    },
    "public_metrics": {
     "bookmark_count": 26,
-    "impression_count": 15655,
+    "impression_count": 15824,
     "like_count": 21,
     "quote_count": 1,
     "reply_count": 2,
@@ -15063,12 +15214,12 @@
     "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了\n换个会话，进度和错题也接得上\n记忆还拆成三层，原始记录、每个场景的要点、对你的整体画像，都能打开看，也能自己改\n\n看网课也能用，B 站和 YouTube 链接贴进去，哪一秒没听懂就问哪一秒\n\n装起来就三行\npip install -U deeptutor\ndeeptutor init\ndeeptutor start\n\n懒得配的话，直接把仓库丢给 Claude Code 或 Codex，它根目录有一份 SKILL.md，agent 读完就能自己帮你装好\n\n算一笔账就知道了\n\n以前我去给别人上家教，两个小时 200 块\n现在一个月的 Plus 都不用 200 块，随时想问就问，而且还很有耐心\n\nAI 第一个冲击的就是教育行业啊😱\n\n传送门 👉 https://t.co/dldRQXZhQs"
    },
    "public_metrics": {
-    "bookmark_count": 4998,
-    "impression_count": 251436,
+    "bookmark_count": 4992,
+    "impression_count": 252367,
     "like_count": 3672,
-    "quote_count": 22,
+    "quote_count": 23,
     "reply_count": 114,
-    "repost_count": 559
+    "repost_count": 557
    },
    "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了"
   },
@@ -15094,11 +15245,11 @@
    "id": "2114776553481445523",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2236,
-    "impression_count": 250673,
-    "like_count": 3558,
+    "bookmark_count": 2234,
+    "impression_count": 251083,
+    "like_count": 3557,
     "quote_count": 68,
-    "reply_count": 93,
+    "reply_count": 92,
     "repost_count": 308
    },
    "text": "No, WebMCP isn't replacing MCP.\n\nMCP connects agents to your services.\n\nWebMCP connects agents to your website while it's open and the user's in the loop.\n\nHere's how they fit together ⤵️ https://t.co/6JXRvCb5qy"
@@ -15125,9 +15276,9 @@
    "id": "2114623574371963360",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2354,
-    "impression_count": 494835,
-    "like_count": 2648,
+    "bookmark_count": 2346,
+    "impression_count": 495550,
+    "like_count": 2649,
     "quote_count": 111,
     "reply_count": 208,
     "repost_count": 74
@@ -15155,7 +15306,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1915,
+    "impression_count": 1931,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -15194,7 +15345,7 @@
    },
    "public_metrics": {
     "bookmark_count": 854,
-    "impression_count": 108479,
+    "impression_count": 108682,
     "like_count": 1191,
     "quote_count": 16,
     "reply_count": 80,
@@ -15248,12 +15399,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15541,
-    "impression_count": 994336,
-    "like_count": 6806,
-    "quote_count": 313,
+    "bookmark_count": 15544,
+    "impression_count": 1000107,
+    "like_count": 6814,
+    "quote_count": 315,
     "reply_count": 264,
-    "repost_count": 690
+    "repost_count": 692
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -15279,11 +15430,11 @@
    "id": "2114435444587065486",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 5109,
-    "impression_count": 488210,
-    "like_count": 3928,
+    "bookmark_count": 5105,
+    "impression_count": 488984,
+    "like_count": 3929,
     "quote_count": 99,
-    "reply_count": 271,
+    "reply_count": 270,
     "repost_count": 202
    },
    "text": "Introducing Pomerado (YC F26): the faster, cheaper, and more reliable alternative to browser use.\n\nOpen source. Sign up for free to supercharge your agents 🧵 https://t.co/W6R5DA5837"
@@ -15313,8 +15464,8 @@
    },
    "public_metrics": {
     "bookmark_count": 2652,
-    "impression_count": 231396,
-    "like_count": 1915,
+    "impression_count": 232916,
+    "like_count": 1914,
     "quote_count": 9,
     "reply_count": 33,
     "repost_count": 187
@@ -15381,9 +15532,9 @@
     "text": "Ghostty作者发布Rex，一个现代终端多路复用器，可以理解为 Ghostty + tmux + 持久化远程会话，但产品路线比这个组合更大。\n\n核心能力包括：\n持久化会话：关闭终端后，任务继续运行，重新连接可以恢复。\n远程连接：可以连接其他设备上的 Rex Server。\n多窗口管理：同时运行 Codex、Claude Code、监控工具等。\n跨设备访问：规划支持 macOS、iOS、Linux 和 Windows。\n多人协作：支持共享终端会话的产品方向。\n\nSuperlogical 的长期目标是建立一个统一的工作会话层，让人类、AI能在云端联通，开发者可以在一个环境里观察、恢复、控制不同机器和 Agent 执行的任务，并保留完整的工作历史。\n\n这玩意我也在做，现在感觉很尴尬了"
    },
    "public_metrics": {
-    "bookmark_count": 269,
-    "impression_count": 53792,
-    "like_count": 258,
+    "bookmark_count": 270,
+    "impression_count": 54090,
+    "like_count": 259,
     "quote_count": 7,
     "reply_count": 48,
     "repost_count": 22
@@ -15412,9 +15563,9 @@
    "id": "2113183542524207378",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 129,
-    "impression_count": 61258,
-    "like_count": 49,
+    "bookmark_count": 128,
+    "impression_count": 61453,
+    "like_count": 48,
     "quote_count": 8,
     "reply_count": 16,
     "repost_count": 4
@@ -15452,7 +15603,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 21,
-    "impression_count": 9047,
+    "impression_count": 9048,
     "like_count": 15,
     "quote_count": 1,
     "reply_count": 1,
@@ -15488,9 +15639,9 @@
    "id": "2112204626921762987",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 875,
-    "impression_count": 62984,
-    "like_count": 1095,
+    "bookmark_count": 873,
+    "impression_count": 63009,
+    "like_count": 1094,
     "quote_count": 8,
     "reply_count": 13,
     "repost_count": 122
@@ -15518,7 +15669,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1031,
+    "impression_count": 1032,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -15555,7 +15706,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 68,
-    "impression_count": 14187,
+    "impression_count": 14190,
     "like_count": 67,
     "quote_count": 0,
     "reply_count": 19,
@@ -15573,9 +15724,9 @@
    "id": "2112020991455146394",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 278,
-    "impression_count": 96241,
-    "like_count": 382,
+    "bookmark_count": 279,
+    "impression_count": 96250,
+    "like_count": 381,
     "quote_count": 4,
     "reply_count": 37,
     "repost_count": 19
@@ -15593,7 +15744,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 23,
-    "impression_count": 9255,
+    "impression_count": 9256,
     "like_count": 38,
     "quote_count": 0,
     "reply_count": 36,
@@ -15624,7 +15775,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 48,
-    "impression_count": 106262,
+    "impression_count": 106293,
     "like_count": 35,
     "quote_count": 2,
     "reply_count": 4,
@@ -15642,8 +15793,8 @@
    "id": "2110925141815574943",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 909,
-    "impression_count": 265726,
+    "bookmark_count": 908,
+    "impression_count": 265826,
     "like_count": 631,
     "quote_count": 41,
     "reply_count": 607,
@@ -15696,8 +15847,8 @@
    "id": "2110039904872771827",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 245,
-    "impression_count": 293140,
+    "bookmark_count": 246,
+    "impression_count": 293488,
     "like_count": 533,
     "quote_count": 8,
     "reply_count": 15,
@@ -15736,7 +15887,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 1068,
-    "impression_count": 88832,
+    "impression_count": 88891,
     "like_count": 837,
     "quote_count": 10,
     "reply_count": 48,
@@ -15771,8 +15922,8 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 137,
-    "impression_count": 148789,
-    "like_count": 324,
+    "impression_count": 148855,
+    "like_count": 325,
     "quote_count": 18,
     "reply_count": 28,
     "repost_count": 21
@@ -15812,7 +15963,7 @@
    },
    "public_metrics": {
     "bookmark_count": 232,
-    "impression_count": 95082,
+    "impression_count": 95129,
     "like_count": 156,
     "quote_count": 2,
     "reply_count": 16,
@@ -17968,6 +18119,76 @@
     "repost_count": 1
    },
    "text": "GitHub 上 commit 后面那个绿色 Verified，其实几分钟就能配好。\n\n我发现好多写了几年代码的人，到现在本地提交还是没有这个标。\n\n其实不用折腾 GPG，SSH 就能搞定，最快甚至可以直接让 AI 帮你配。\n\n教程放下面："
+  },
+  "2116703288913698991": {
+   "author_id": "983361642359439361",
+   "conversation_id": "2116703288913698991",
+   "created_at": "2026-11-01T01:26:05.000Z",
+   "edit_history_post_ids": [
+    "2116703288913698991"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/B7uI9Tk1YI",
+      "end": 45,
+      "expanded_url": "https://x.com/chenbimo/status/2116703288913698991/photo/1",
+      "media_key": "3_2116703247155236864",
+      "start": 22,
+      "url": "https://t.co/B7uI9Tk1YI"
+     }
+    ]
+   },
+   "id": "2116703288913698991",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 96,
+    "impression_count": 32636,
+    "like_count": 100,
+    "quote_count": 3,
+    "reply_count": 9,
+    "repost_count": 6
+   },
+   "text": "年度最佳软件应该颁发给 Ego lite. https://t.co/B7uI9Tk1YI"
+  },
+  "2114562663309295820": {
+   "author_id": "1533713706122907648",
+   "conversation_id": "2114562663309295820",
+   "created_at": "2026-10-26T03:40:00.000Z",
+   "edit_history_post_ids": [
+    "2114562663309295820"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/nicongdev/stat…",
+      "end": 172,
+      "expanded_url": "https://twitter.com/nicongdev/status/2114533257274626310",
+      "start": 149,
+      "url": "https://t.co/oqISPI1GxR"
+     }
+    ]
+   },
+   "id": "2114562663309295820",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "大家有没有发现OpenCode的deepseek速度慢的问题？作为商家，透明还是最好的策略。OpenCode其实应该写清楚自己到底是中转还是部署，如果部署找的是哪家合作，不然就和野鸡中转站没区别了。\n\n按照X上的回复来看现在是自部署和其他供应商混合的。但是网站上表述很模糊。\n\n还有Command Code也一样哈，虽然我一般推荐别人用Command Code，主要是他们没什么请求头的幺蛾子，接起来方便点"
+   },
+   "public_metrics": {
+    "bookmark_count": 3,
+    "impression_count": 41396,
+    "like_count": 34,
+    "quote_count": 0,
+    "reply_count": 15,
+    "repost_count": 1
+   },
+   "referenced_tweets": [
+    {
+     "id": "2114533257274626310",
+     "type": "quoted"
+    }
+   ],
+   "text": "大家有没有发现OpenCode的deepseek速度慢的问题？作为商家，透明还是最好的策略。OpenCode其实应该写清楚自己到底是中转还是部署，如果部署找的是哪家合作，不然就和野鸡中转站没区别了。\n\n按照X上的回复来看现在是自部署和其他供应商混合的。但是网站上表述很模糊。\n\n还有Command https://t.co/oqISPI1GxR"
   }
  },
  "users": {
@@ -17993,14 +18214,6 @@
    "description": "🧠在家居士 | 🥦素食者 | 🏃🏻马拉松爱好者 | 💰省钱小能手 | 搭🪜技术资深学者 | 👨‍💻科技宅 | 🆕更新狂 | 🆅 六边型战五渣",
    "id": "168139512",
    "name": "Geek",
-   "public_metrics": {
-    "followers_count": 116741,
-    "following_count": 548,
-    "like_count": 25160,
-    "listed_count": 1268,
-    "media_count": 8004,
-    "post_count": 29752
-   },
    "username": "geekbb"
   },
   "1810008570550988800": {
@@ -18025,1064 +18238,456 @@
    "description": "The open source coding agent",
    "id": "1965545045089792000",
    "name": "OpenCode",
-   "public_metrics": {
-    "followers_count": 225972,
-    "following_count": 11,
-    "like_count": 1052,
-    "listed_count": 1479,
-    "media_count": 76,
-    "post_count": 650
-   },
    "username": "opencode"
   },
   "2038888495058407424": {
    "description": "Run a team of agents any subscription\nOpen source (MIT) • Desktop + mobile + VPS\nRepo: https://t.co/NW8tpPUBw4 (110k ⭐️)\nDiscord: https://t.co/BOypIwh6Li",
    "id": "2038888495058407424",
    "name": "Orca",
-   "public_metrics": {
-    "followers_count": 22240,
-    "following_count": 195,
-    "like_count": 4899,
-    "listed_count": 132,
-    "media_count": 440,
-    "post_count": 2232
-   },
    "username": "orca_build"
   },
   "1843717485687947264": {
    "description": "🧠 iLang创始人、协议设计者｜AI判断与幻觉研究\n🏛️ Jianzhi（NASDAQ: JZ）独立董事、审计委员会成员\n🌏 丝绸之路·AI出海主理人\n✨ AI具有灵魂；碳硅共生，共同进化。\n🧬 广义进化论：不能共存的，才会被淘汰。",
    "id": "1843717485687947264",
    "name": "爱出海",
-   "public_metrics": {
-    "followers_count": 3774,
-    "following_count": 310,
-    "like_count": 201,
-    "listed_count": 23,
-    "media_count": 288,
-    "post_count": 1786
-   },
    "username": "ai_chuhai"
   },
   "1468207335797846023": {
    "description": "",
    "id": "1468207335797846023",
    "name": "BGMUP99",
-   "public_metrics": {
-    "followers_count": 34,
-    "following_count": 12,
-    "like_count": 2501,
-    "listed_count": 1,
-    "media_count": 226,
-    "post_count": 2625
-   },
    "username": "bgmup99"
   },
   "1974653328274714624": {
    "description": "AI 实用主义，专注AI落地的组织和业务know how，半年副业变现6位数，关注商业，职场，美股，web3，\n大厂组织发展专家 × 组织心理学，分享有用的 AI 实践，也分享工具之外的深度认知\nAI实践和x 增长社群 ：没有年费，399一次门槛\n合作/交流：DM/TG @AYi_AInotes",
    "id": "1974653328274714624",
    "name": "AYi",
-   "public_metrics": {
-    "followers_count": 77027,
-    "following_count": 672,
-    "like_count": 22556,
-    "listed_count": 691,
-    "media_count": 2201,
-    "post_count": 19980
-   },
    "username": "AYi_AInotes"
   },
   "9753162": {
-   "description": "20+ yrs in open source. Now building https://t.co/qCIhYJDNjl & an indie game with an army of AI agents · Kander, QuickTUI & more OSS @ https://t.co/SE05AXvkqQ",
+   "description": "20+ yrs in open source. Now building https://t.co/qCIhYJDftN & an indie game with an army of AI agents · Kander · QuickTUI & more @ https://t.co/nV2MnWmtQm",
    "id": "9753162",
    "name": "dualface",
-   "public_metrics": {
-    "followers_count": 700,
-    "following_count": 596,
-    "like_count": 986,
-    "listed_count": 5,
-    "media_count": 271,
-    "post_count": 1642
-   },
    "username": "dualface"
   },
   "1760476466037559297": {
    "description": "大四实习ing & AI 原住民\n\nVibe Coding · AI Agent · 新工具实测\n最近在用 Pi 串联 Agent 开发的一切\n也在不断尝试 AI 产品经理💪\n\n“不停追逐”\n\n个人介绍页 👉 https://t.co/o1yvvaF2aY",
    "id": "1760476466037559297",
    "name": "Chasen",
-   "public_metrics": {
-    "followers_count": 6095,
-    "following_count": 2252,
-    "like_count": 12844,
-    "listed_count": 32,
-    "media_count": 533,
-    "post_count": 10915
-   },
    "username": "chasen_liao"
   },
   "1280556604618715136": {
    "description": "",
    "id": "1280556604618715136",
    "name": "Rove",
-   "public_metrics": {
-    "followers_count": 4,
-    "following_count": 58,
-    "like_count": 1749,
-    "listed_count": 0,
-    "media_count": 125,
-    "post_count": 1922
-   },
    "username": "Rove_Sen1984"
   },
   "1427141496407420929": {
    "description": "彩笔程序员/在尝试写些小段子/想要变得可爱/如果你有什么装逼小故事或者技术冷知识，或许你可以投稿给我 soragoto@soragoto.io",
    "id": "1427141496407420929",
    "name": "空言",
-   "public_metrics": {
-    "followers_count": 6198,
-    "following_count": 416,
-    "like_count": 1415,
-    "listed_count": 17,
-    "media_count": 349,
-    "post_count": 6294
-   },
    "username": "__soragoto__"
   },
   "16020505": {
    "description": "Frontend Engineer",
    "id": "16020505",
    "name": "kejun",
-   "public_metrics": {
-    "followers_count": 3225,
-    "following_count": 907,
-    "like_count": 2238,
-    "listed_count": 111,
-    "media_count": 74,
-    "post_count": 3012
-   },
    "username": "kejunz"
   },
   "1760793449731960832": {
    "description": "AI Builder｜全栈独立开发\n做ESP32保姆级实操\nCodex / Claude / Muse \n把复杂技术讲成人话",
    "id": "1760793449731960832",
    "name": "Drunk",
-   "public_metrics": {
-    "followers_count": 1414,
-    "following_count": 405,
-    "like_count": 1211,
-    "listed_count": 6,
-    "media_count": 136,
-    "post_count": 1274
-   },
    "username": "Liu_zhongxisn"
   },
   "1716707587171975168": {
    "description": "Data Intelligence Lab @ HKU (University of Hong Kong)",
    "id": "1716707587171975168",
    "name": "Chao Huang",
-   "public_metrics": {
-    "followers_count": 14098,
-    "following_count": 65,
-    "like_count": 649,
-    "listed_count": 147,
-    "media_count": 139,
-    "post_count": 466
-   },
    "username": "huang_chao4969"
   },
   "1523533577081614336": {
    "description": "学习成瘾者｜AI 研究方向\n用严谨把复杂讲清楚\n关注：模型、自动化、工程化",
    "id": "1523533577081614336",
    "name": "TechVerser",
-   "public_metrics": {
-    "followers_count": 2124,
-    "following_count": 1001,
-    "like_count": 16046,
-    "listed_count": 13,
-    "media_count": 673,
-    "post_count": 17251
-   },
    "username": "realfxw"
   },
   "3924311712": {
    "description": "working at @miive_jp as Engineer and DevRel / organizer of @raycast_jp",
    "id": "3924311712",
    "name": "Seiji",
-   "public_metrics": {
-    "followers_count": 357,
-    "following_count": 289,
-    "like_count": 28974,
-    "listed_count": 2,
-    "media_count": 521,
-    "post_count": 11218
-   },
    "username": "se_eiji"
   },
   "12819682": {
    "description": "Co-founder of @Superlogical. Creator of Ghostty. 👻 Prev founded @HashiCorp, created Vagrant, Terraform, Vault, and others.",
    "id": "12819682",
    "name": "Mitchell Hashimoto",
-   "public_metrics": {
-    "followers_count": 238645,
-    "following_count": 159,
-    "like_count": 23,
-    "listed_count": 2716,
-    "media_count": 1987,
-    "post_count": 41152
-   },
    "username": "mitchellh"
   },
   "2045135343108722689": {
    "description": "头部安全公司 AI 研发 | 讲师\n探索 AI | 创造价值 | 开源分享\nAI 知识+自媒体+答疑群199\n联系方式：⬇",
    "id": "2045135343108722689",
    "name": "刘老板",
-   "public_metrics": {
-    "followers_count": 16296,
-    "following_count": 955,
-    "like_count": 4419,
-    "listed_count": 92,
-    "media_count": 932,
-    "post_count": 7732
-   },
    "username": "leo_xiaolei"
   },
   "3007509396": {
    "description": "塔台 App：https://t.co/sfOjXzKgKe\neSIM 选购：https://t.co/1hN66NiNwb\n合作：pengchujin@hotmail.com",
    "id": "3007509396",
    "name": "酱紫表",
-   "public_metrics": {
-    "followers_count": 71249,
-    "following_count": 767,
-    "like_count": 2394,
-    "listed_count": 445,
-    "media_count": 1416,
-    "post_count": 4475
-   },
    "username": "pengchujin"
   },
   "1359061717414629380": {
    "description": "设计师 / Web3体验师 / $BTC $BNB Holder / 蓝V互",
    "id": "1359061717414629380",
    "name": "Nina",
-   "public_metrics": {
-    "followers_count": 3776,
-    "following_count": 2669,
-    "like_count": 3327,
-    "listed_count": 3,
-    "media_count": 527,
-    "post_count": 4904
-   },
    "username": "Ninalvz"
   },
   "1998006140286935041": {
    "description": "✨分享一些有用好玩的 GitHub 项目",
    "id": "1998006140286935041",
    "name": "Geek Lite",
-   "public_metrics": {
-    "followers_count": 28299,
-    "following_count": 743,
-    "like_count": 3102,
-    "listed_count": 198,
-    "media_count": 4610,
-    "post_count": 6845
-   },
    "username": "QingQ77"
   },
   "296593919": {
    "description": "独立开发者 自由职业\n作品 \nTinyShip https://t.co/o0BI6W8DRb  现代化全栈 SaaS 开发平台，支持国内外双市场 Monorepo 架构 三框架支持\n简单简历 https://t.co/xMu5JFIGnr 五分钟打造程序员的金牌简历",
    "id": "296593919",
    "name": "Viking",
-   "public_metrics": {
-    "followers_count": 69378,
-    "following_count": 281,
-    "like_count": 1343,
-    "listed_count": 774,
-    "media_count": 1880,
-    "post_count": 3956
-   },
    "username": "vikingmute"
   },
   "1688412716367593472": {
    "description": "Agent 玩家\n分享有用的知识帮助我的读者取得成功\n我的个人项目见⬇️Github｜自由，希望与爱",
    "id": "1688412716367593472",
    "name": "QingYue",
-   "public_metrics": {
-    "followers_count": 9991,
-    "following_count": 4443,
-    "like_count": 29417,
-    "listed_count": 114,
-    "media_count": 1841,
-    "post_count": 16880
-   },
    "username": "YuLin807"
   },
   "1536620289123295232": {
    "description": "by @0xKingsKuan\n🔴 每日分享 Ai 前沿工具\n🟣 AI 实盘信号价值发现赏金平台 https://t.co/X8OxqYixHq\n🟢 SlithKing 合约审计 - 提前防止 Rug\n🟡 自研 Claude 大神 Bot，智能 & 安全；一切掌握在你手里，已开源👇",
    "id": "1536620289123295232",
    "name": "GitTrend",
-   "public_metrics": {
-    "followers_count": 27027,
-    "following_count": 4584,
-    "like_count": 55641,
-    "listed_count": 159,
-    "media_count": 1914,
-    "post_count": 40441
-   },
    "username": "GitTrend0x"
   },
   "2068330055596675072": {
    "description": "🌟 开源「词光」作者｜GitHub 3000 多星🌟\n💻 Mac + AI 工具实测｜国内怎么用、怎么省、怎么解禁\n📸 Mac 党 × 摄影控｜本地模型 · 开源平替 · 视频提示词\n🚀 Build in public｜替兄弟们先踩坑",
    "id": "2068330055596675072",
    "name": "阿磊",
-   "public_metrics": {
-    "followers_count": 7276,
-    "following_count": 2772,
-    "like_count": 3840,
-    "listed_count": 27,
-    "media_count": 247,
-    "post_count": 7427
-   },
    "username": "yangleiocx3"
   },
   "1122177599940096000": {
    "description": "Do not repeat myself.\nex-ByteDance infra, ex Industrial Designer\nMy skills https://t.co/y99vQ4Rkgz",
    "id": "1122177599940096000",
    "name": "WeZZard",
-   "public_metrics": {
-    "followers_count": 5468,
-    "following_count": 975,
-    "like_count": 6643,
-    "listed_count": 41,
-    "media_count": 729,
-    "post_count": 9259
-   },
    "username": "realWeZZard"
   },
   "869745143234023425": {
    "description": "founder @pomeradoai, prev applied ai @scale_AI",
    "id": "869745143234023425",
    "name": "Akshay",
-   "public_metrics": {
-    "followers_count": 1528,
-    "following_count": 806,
-    "like_count": 27544,
-    "listed_count": 13,
-    "media_count": 26,
-    "post_count": 257
-   },
    "username": "akshay_manglik"
   },
   "1474067654": {
    "description": "我与 AI 周旋久，宁做我",
    "id": "1474067654",
    "name": "李继刚",
-   "public_metrics": {
-    "followers_count": 57690,
-    "following_count": 38,
-    "like_count": 470,
-    "listed_count": 956,
-    "media_count": 187,
-    "post_count": 1193
-   },
    "username": "lijigang"
   },
   "414333187": {
    "description": "Working on @ampcode. Writing https://t.co/0SZD6dbLes. Once authored https://t.co/arW0hnVET0 and https://t.co/RN9xXOzhON.",
    "id": "414333187",
    "name": "Thorsten Ball",
-   "public_metrics": {
-    "followers_count": 61262,
-    "following_count": 1058,
-    "like_count": 26988,
-    "listed_count": 740,
-    "media_count": 4197,
-    "post_count": 28877
-   },
    "username": "thorstenball"
   },
   "2078376755388379136": {
    "description": "AI postdoc in Sydney. Share useful tools, vibe coding, my thoughts, and frontier papers.\n悉尼 AI 博后，分享好用的工具，vibe coding 中踩坑经验，我的思考，前沿论文。",
    "id": "2078376755388379136",
    "name": "Roc",
-   "public_metrics": {
-    "followers_count": 1138,
-    "following_count": 130,
-    "like_count": 314,
-    "listed_count": 4,
-    "media_count": 18,
-    "post_count": 358
-   },
    "username": "AIStarsGo"
   },
   "433649025": {
    "description": "涉猎极广，职业交易/项目操盘/海外云居民/AI/技术研究",
    "id": "433649025",
    "name": "拓跋鼠",
-   "public_metrics": {
-    "followers_count": 8791,
-    "following_count": 4343,
-    "like_count": 4959,
-    "listed_count": 14,
-    "media_count": 315,
-    "post_count": 5221
-   },
    "username": "qwerty__cs"
   },
   "1520209192375644160": {
    "description": "正在构建一款极简的产品工作台 https://t.co/UpUZzI8c0G",
    "id": "1520209192375644160",
    "name": "ZEN",
-   "public_metrics": {
-    "followers_count": 33567,
-    "following_count": 624,
-    "like_count": 8040,
-    "listed_count": 516,
-    "media_count": 2260,
-    "post_count": 8840
-   },
    "username": "supezen"
   },
   "1996428473125269504": {
    "description": "CTFer | Security Development Engineer | W&M | EIMSOUND",
    "id": "1996428473125269504",
    "name": "Sn1waR",
-   "public_metrics": {
-    "followers_count": 1138,
-    "following_count": 25,
-    "like_count": 85,
-    "listed_count": 4,
-    "media_count": 159,
-    "post_count": 628
-   },
    "username": "SnowyWar36965"
   },
   "35432643": {
    "description": "Claude Code @anthropicai",
    "id": "35432643",
    "name": "Addy Osmani",
-   "public_metrics": {
-    "followers_count": 475941,
-    "following_count": 2806,
-    "like_count": 25349,
-    "listed_count": 8977,
-    "media_count": 2409,
-    "post_count": 29406
-   },
    "username": "addyosmani"
   },
   "896749584814231554": {
    "description": "每天拆解海外 AI 新动态 / 模型实测 / 翻车现场｜讲人话、带截图\nWatkin Lab · 独立开发者｜产品与游戏构想中",
    "id": "896749584814231554",
    "name": "Watkin Lab",
-   "public_metrics": {
-    "followers_count": 1041,
-    "following_count": 838,
-    "like_count": 1751,
-    "listed_count": 11,
-    "media_count": 36,
-    "post_count": 770
-   },
    "username": "0xWatkin"
   },
   "703796597335822336": {
-   "description": "Crafting app icons ✦ building small, well-made tools\n\nNow: https://t.co/ilQfeddIzy, a browser command bar + new tab page\n\nDesign tips for vibe-coded apps",
+   "description": "Crafting app icons ✦ building small, well-made tools\nDaily design tips to make your product feel crafted\n\nBuilding https://t.co/uOt4s9PEO6",
    "id": "703796597335822336",
    "name": "枯白啃设计",
-   "public_metrics": {
-    "followers_count": 5953,
-    "following_count": 1322,
-    "like_count": 7846,
-    "listed_count": 65,
-    "media_count": 320,
-    "post_count": 2083
-   },
    "username": "Kubai087"
   },
   "720680424234557440": {
    "description": "探索未知，迭代新知，沉淀认知｜https://t.co/AklhnmAiwD | Notion 中文社区负责人｜探索项目管理 ｜Twitter 是笔记 ｜帮助小产品增长",
    "id": "720680424234557440",
    "name": "Linmi",
-   "public_metrics": {
-    "followers_count": 53348,
-    "following_count": 479,
-    "like_count": 650,
-    "listed_count": 369,
-    "media_count": 1114,
-    "post_count": 3944
-   },
    "username": "Linmiv"
   },
   "1987885638038036480": {
    "description": "大一\n开发者 交易员 欢迎私聊 兴趣使然 关注你说明我喜欢你 推文以玩抽象为主\ntelegram: @aac6fef",
    "id": "1987885638038036480",
    "name": "雨夹雪❄️",
-   "public_metrics": {
-    "followers_count": 12112,
-    "following_count": 1418,
-    "like_count": 47373,
-    "listed_count": 50,
-    "media_count": 1626,
-    "post_count": 7829
-   },
    "username": "mizorewww"
   },
   "1894548093905084416": {
    "description": "深耕AI/web3领域猎头 欢迎甲方和顶级求职者投递简历合作\n简历投递路口：私信orTG：@oooodjdjd\nmeme付费代打：高质量岗位推送私人群，求职知识库，深度简历优化，入行职业咨询，模拟面试，AI/web3求职陪跑\n\n🐱meme喜欢用莫名其妙的视角解释 AI·商业·求职",
    "id": "1894548093905084416",
    "name": "meme",
-   "public_metrics": {
-    "followers_count": 23777,
-    "following_count": 633,
-    "like_count": 13293,
-    "listed_count": 81,
-    "media_count": 1549,
-    "post_count": 8034
-   },
    "username": "oooodjdjd"
   },
   "1486017329662423044": {
    "description": "每天用 AI 写代码的工程师\nClaude Code ｜ Codex深度用户  ｜Agentic engineering\n在这里分享 AI 工具实测和开发者工作流，持续构建中\nAI会员代充值：https://t.co/PtVrFX5O2h",
    "id": "1486017329662423044",
    "name": "lifcc",
-   "public_metrics": {
-    "followers_count": 17466,
-    "following_count": 340,
-    "like_count": 8750,
-    "listed_count": 119,
-    "media_count": 2224,
-    "post_count": 23097
-   },
    "username": "mylifcc"
   },
   "951172588906188801": {
    "description": "optimist / software + product @huggingface",
    "id": "951172588906188801",
    "name": "Caleb",
-   "public_metrics": {
-    "followers_count": 5490,
-    "following_count": 1120,
-    "like_count": 8311,
-    "listed_count": 132,
-    "media_count": 863,
-    "post_count": 4276
-   },
    "username": "calebfahlgren"
   },
   "50683": {
    "description": "cooking ‣ https://t.co/q1JG1yC1nD ‣ https://t.co/cP6NQ3jGyx ‣ https://t.co/FIsMi7FFth ‣ https://t.co/lGILDZcPjR ‣ https://t.co/g0909zpidD\n\npromote your product  ‣ d@ding.one",
    "id": "50683",
    "name": "Ding",
-   "public_metrics": {
-    "followers_count": 160396,
-    "following_count": 5419,
-    "like_count": 2846,
-    "listed_count": 844,
-    "media_count": 3163,
-    "post_count": 66415
-   },
    "username": "dingyi"
   },
   "1647958531461480448": {
    "description": "Building with AI everyday.\nSharing verified AI news daily.\n#AI #VibeCoding #BuildInPublic #Follow",
    "id": "1647958531461480448",
    "name": "Leo · Building w/ AI",
-   "public_metrics": {
-    "followers_count": 8291,
-    "following_count": 5884,
-    "like_count": 4976,
-    "listed_count": 29,
-    "media_count": 1560,
-    "post_count": 20011
-   },
    "username": "leo114119"
   },
   "1746470058761887744": {
    "description": "AI/美股/资讯/投研/币圈一站式分享教学/\n直播通知/观点交流/私人微信/美股社群获取方式请进https://t.co/UeAXCqNvad",
    "id": "1746470058761887744",
    "name": "清月已经不困了",
-   "public_metrics": {
-    "followers_count": 75753,
-    "following_count": 166,
-    "like_count": 279,
-    "listed_count": 225,
-    "media_count": 380,
-    "post_count": 2398
-   },
    "username": "qingyue820"
   },
   "69492059": {
    "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab · Ex-CTO @ShimoDocs · Built ioredis (acq.) & @medisclient · Contributor to @quilljs",
    "id": "69492059",
    "name": "Zihua",
-   "public_metrics": {
-    "followers_count": 13993,
-    "following_count": 802,
-    "like_count": 1616,
-    "listed_count": 158,
-    "media_count": 309,
-    "post_count": 5125
-   },
    "username": "luinlee"
   },
   "2107806916454109184": {
    "description": "👩🏻‍💻 7 年AI程序员，FDE 进行中\n💻 关注AI动态，干货分享，知识图谱、Agent、AI落地\n📝 日常吐槽",
    "id": "2107806916454109184",
    "name": "苏茶",
-   "public_metrics": {
-    "followers_count": 3261,
-    "following_count": 2764,
-    "like_count": 2397,
-    "listed_count": 1,
-    "media_count": 56,
-    "post_count": 3255
-   },
    "username": "Suercha007"
   },
   "1878345967780646912": {
    "description": "编导生转 AI｜FDE\n在企业一线做 AI 落地、GEO 与软件开发\n把模糊需求做成能用、能验收、能交付的 AI 项目\n分享实战、判断，也记录成长\nVX:  YuForward2026  （备注意向）",
    "id": "1878345967780646912",
    "name": "Ethan 恩宇",
-   "public_metrics": {
-    "followers_count": 5731,
-    "following_count": 636,
-    "like_count": 5145,
-    "listed_count": 25,
-    "media_count": 119,
-    "post_count": 2849
-   },
    "username": "UPing123zzz"
   },
   "2073035346707968000": {
    "description": "https://t.co/hwcUUBzhYw\n\n🇨🇦 CS @UofT · 🇸🇬 MSAI dropout @NTUsg  \nLiving in 🇨🇳\n📦 Author, LayerFS and Ephemeral Sandbox",
    "id": "2073035346707968000",
    "name": "Yifan Xu",
-   "public_metrics": {
-    "followers_count": 6978,
-    "following_count": 3022,
-    "like_count": 17166,
-    "listed_count": 30,
-    "media_count": 228,
-    "post_count": 4204
-   },
    "username": "yifanxu_ephai"
   },
   "1956753186": {
    "description": "- 一个真诚的人 - Vibe Coder -project ：https://t.co/ktnw1eW1Lb - 宇宙首席 Antigravity 黑子 - 顶级 ai 踩坑大师。\n一流的好奇心，二流的AI PM，三流的智力水平",
    "id": "1956753186",
    "name": "victor-wu.eth",
-   "public_metrics": {
-    "followers_count": 4078,
-    "following_count": 3110,
-    "like_count": 1936,
-    "listed_count": 70,
-    "media_count": 761,
-    "post_count": 4795
-   },
    "username": "victor_wu"
   },
   "111052252": {
    "description": "独立开发者，力量举入门菜鸟，困在岸上的邮轮迷。\n最近的新 App 是 AndroMeld，让你的 Android 和 Mac 合二为一，欢迎 Mac App Store 下载试玩。",
    "id": "111052252",
    "name": "10202be9",
-   "public_metrics": {
-    "followers_count": 6195,
-    "following_count": 869,
-    "like_count": 14479,
-    "listed_count": 74,
-    "media_count": 419,
-    "post_count": 5132
-   },
    "username": "1ittlecup"
   },
   "1779691567546269696": {
    "description": "宁波 AI 科技公司合伙人、KOSX华东主理、FDE、独立开发者、产品洞察、段子手\n💬微信：realchendahuang6\n📮邮箱：realchendahuang@gmail.com\n✈️飞机 : @chendahuang",
    "id": "1779691567546269696",
    "name": "陈大黄",
-   "public_metrics": {
-    "followers_count": 12935,
-    "following_count": 3075,
-    "like_count": 17597,
-    "listed_count": 65,
-    "media_count": 702,
-    "post_count": 10930
-   },
    "username": "realchendahuang"
   },
   "825766640": {
    "description": "Evals Evals Evals @OpenAI \n\nAbout Me: https://t.co/P6WyeKkyTa",
    "id": "825766640",
    "name": "Hamel Husain",
-   "public_metrics": {
-    "followers_count": 64394,
-    "following_count": 2722,
-    "like_count": 19731,
-    "listed_count": 1667,
-    "media_count": 1684,
-    "post_count": 17847
-   },
    "username": "HamelHusain"
   },
   "1781283851370938368": {
    "description": "ai爱好者",
    "id": "1781283851370938368",
    "name": "gulagala",
-   "public_metrics": {
-    "followers_count": 17,
-    "following_count": 276,
-    "like_count": 144,
-    "listed_count": 0,
-    "media_count": 8,
-    "post_count": 64
-   },
    "username": "GulaGala001"
   },
   "1521688129559613440": {
    "description": "Pake · MiaoYan · Kaku · Waza · Kami · https://t.co/PAsOstTehy",
    "id": "1521688129559613440",
    "name": "Tw93",
-   "public_metrics": {
-    "followers_count": 164869,
-    "following_count": 284,
-    "like_count": 6293,
-    "listed_count": 1368,
-    "media_count": 2218,
-    "post_count": 11590
-   },
    "username": "HiTw93"
   },
   "1068172934630395904": {
    "description": "AI builder, Building https://t.co/3kGDPSgMGW & https://t.co/1aJnnxFlma & https://t.co/IXRkk1MroF\nApache Arrow/Datafusion/Doris PMC\njakevingoo@gmail.com",
    "id": "1068172934630395904",
    "name": "卡比卡比",
-   "public_metrics": {
-    "followers_count": 25594,
-    "following_count": 636,
-    "like_count": 7175,
-    "listed_count": 272,
-    "media_count": 239,
-    "post_count": 2726
-   },
    "username": "jakevin7"
   },
   "346640777": {
    "description": "I teach devs for a living. Author of Total TypeScript and AI Hero. Ex-@vercel. Used to be a voice coach.",
    "id": "346640777",
    "name": "Matt Pocock",
-   "public_metrics": {
-    "followers_count": 382466,
-    "following_count": 812,
-    "like_count": 65385,
-    "listed_count": 3362,
-    "media_count": 2771,
-    "post_count": 37460
-   },
    "username": "mattpocockuk"
   },
   "1013015120178319361": {
    "description": "zh_Hans/en_US. Reshaping Infra for the AI era @ManusAI. Ex-co-founder of @ArcBoxLabs. All opinions are my own, literally all of them.",
    "id": "1013015120178319361",
    "name": "Sukka / 毛绒绒的大尾巴🦊",
-   "public_metrics": {
-    "followers_count": 7922,
-    "following_count": 473,
-    "like_count": 6302,
-    "listed_count": 65,
-    "media_count": 267,
-    "post_count": 2702
-   },
    "username": "isukkaw"
   },
   "711416852845617152": {
    "description": "20↑ · PJSK☘️🐧🌸/バンドリ/IM@S/Hololive/アニメ/声優/ボカロ/J-POP/EDM/MSFS/AOSP/Unity/Local LLM/Audiophile/Ghidra/Stocks\nMinoHaru(みのはる)/SoyoAnon(そよあの)|左右非固定",
    "id": "711416852845617152",
    "name": "Flyfish233",
-   "public_metrics": {
-    "followers_count": 118,
-    "following_count": 373,
-    "like_count": 8859,
-    "listed_count": 2,
-    "media_count": 39,
-    "post_count": 784
-   },
    "username": "Flyfish233"
   },
   "2054472717672521728": {
    "description": "世界はそんなに広くて私はすべて側を見てから歩きます🤣",
    "id": "2054472717672521728",
    "name": "moshanghuakai",
-   "public_metrics": {
-    "followers_count": 6288,
-    "following_count": 6232,
-    "like_count": 11392,
-    "listed_count": 2,
-    "media_count": 654,
-    "post_count": 5378
-   },
    "username": "moshanghua0513"
   },
   "2044274998714490880": {
    "description": "06\n学习并分享 LLM / Agent 等 AI 相关内容\n寻找Agent开发/AI应用开发日常实习\n清晰讲话，高效执行，健康生活\n🙏",
    "id": "2044274998714490880",
    "name": "Kevin巴鲁斯",
-   "public_metrics": {
-    "followers_count": 1663,
-    "following_count": 2175,
-    "like_count": 8346,
-    "listed_count": 1,
-    "media_count": 24,
-    "post_count": 1668
-   },
    "username": "htt_keyboarder"
   },
   "2056719344202141696": {
    "description": "There are many agent harnesses, but this one is yours",
    "id": "2056719344202141696",
    "name": "Pi",
-   "public_metrics": {
-    "followers_count": 60767,
-    "following_count": 5,
-    "like_count": 4139,
-    "listed_count": 470,
-    "media_count": 84,
-    "post_count": 620
-   },
    "username": "pidotdev"
   },
   "1324088835626643459": {
    "description": "Her türlü eşyanın, eserin, araç ve gerecin onarıldığı, tamir-tadilat ile tekrar hayata \nkazandırıldığı görsel, video ve içerikler.\nReklam ve İş Birliği için DM",
    "id": "1324088835626643459",
    "name": "Tamir & Tadilat",
-   "public_metrics": {
-    "followers_count": 507900,
-    "following_count": 1,
-    "like_count": 41856,
-    "listed_count": 712,
-    "media_count": 8626,
-    "post_count": 8799
-   },
    "username": "TamirveTadilat"
   },
   "1637613399185166336": {
    "description": "AI Engineer｜读书，也做工具。\n分享 AI 实践、阅读笔记，以及把一个概念想明白的过程。\n欢迎交流不同的理解。",
    "id": "1637613399185166336",
    "name": "野生肯尼",
-   "public_metrics": {
-    "followers_count": 27,
-    "following_count": 47,
-    "like_count": 194,
-    "listed_count": 0,
-    "media_count": 50,
-    "post_count": 336
-   },
    "username": "KennyYeah01"
   },
   "3267819704": {
    "description": "全沾工程师 独立游戏制作中 分享SI日常\n\nGitHub ⇢ https://t.co/3wF5dSxBDn\nUniHelper ⇢ https://t.co/uCLF9Rt4UU",
    "id": "3267819704",
    "name": "KeJun",
-   "public_metrics": {
-    "followers_count": 6484,
-    "following_count": 208,
-    "like_count": 1825,
-    "listed_count": 73,
-    "media_count": 299,
-    "post_count": 1210
-   },
    "username": "yrmkejun"
   },
   "31635898": {
    "description": "The founders of https://t.co/ZNrQTmtXIH and https://t.co/ihAPydfv0E / American Heart Association Training Instructor / x@zhufeng.me",
    "id": "31635898",
    "name": "朱峰",
-   "public_metrics": {
-    "followers_count": 35125,
-    "following_count": 1612,
-    "like_count": 1317,
-    "listed_count": 410,
-    "media_count": 191,
-    "post_count": 3385
-   },
    "username": "zhufengme"
   },
   "2030882346069880832": {
    "description": "00后大厂AI产品｜单人从0到1开发通用agent｜分享AI insights\nNTU Business and Computing\n个人作品：专注于积累你上下文的agent Orbital 官网：https://t.co/RzuHO8xTTJ",
    "id": "2030882346069880832",
    "name": "Keane",
-   "public_metrics": {
-    "followers_count": 266,
-    "following_count": 282,
-    "like_count": 429,
-    "listed_count": 1,
-    "media_count": 116,
-    "post_count": 929
-   },
    "username": "keane42443"
   },
   "1469657792944480264": {
    "description": "但行好事，莫问前程！🏰",
    "id": "1469657792944480264",
    "name": "加密疯子",
-   "public_metrics": {
-    "followers_count": 6260,
-    "following_count": 3025,
-    "like_count": 4406,
-    "listed_count": 2,
-    "media_count": 187,
-    "post_count": 2919
-   },
    "username": "siyuanyuze"
   },
   "269195139": {
    "description": "Building Apache Maka(Incubating), focusing on AI agent. 中文/EN",
    "id": "269195139",
    "name": "AstroHan",
-   "public_metrics": {
-    "followers_count": 1718,
-    "following_count": 543,
-    "like_count": 3888,
-    "listed_count": 12,
-    "media_count": 107,
-    "post_count": 2521
-   },
    "username": "AstroHanRay"
   },
   "371296701": {
    "description": "Indie hacker & AI Coder\nawesome-dsh-plugin & dsh-market 作者\n2x dgx spark",
    "id": "371296701",
    "name": "马天翼",
-   "public_metrics": {
-    "followers_count": 15657,
-    "following_count": 698,
-    "like_count": 288,
-    "listed_count": 195,
-    "media_count": 543,
-    "post_count": 4655
-   },
    "username": "fkysly"
   },
   "1552580106257928192": {
    "description": "Whispering to models at Google DeepMind",
    "id": "1552580106257928192",
    "name": "fofr",
-   "public_metrics": {
-    "followers_count": 91558,
-    "following_count": 1767,
-    "like_count": 37004,
-    "listed_count": 1641,
-    "media_count": 5460,
-    "post_count": 13458
-   },
    "username": "fofrAI"
   },
   "1475728988949516288": {
    "description": "Math was never the problem. The explanation was.",
    "id": "1475728988949516288",
    "name": "matharium",
-   "public_metrics": {
-    "followers_count": 12268,
-    "following_count": 968,
-    "like_count": 414,
-    "listed_count": 49,
-    "media_count": 458,
-    "post_count": 481
-   },
    "username": "matharium"
   },
   "26654586": {
    "description": "AI玩家 | 创业者 | 出海产品 | 跨境支付 | 网络安全 | 合作DM",
    "id": "26654586",
    "name": "M.",
-   "public_metrics": {
-    "followers_count": 16502,
-    "following_count": 559,
-    "like_count": 14717,
-    "listed_count": 123,
-    "media_count": 1691,
-    "post_count": 9632
-   },
    "username": "wlzh"
   },
   "2795754924": {
    "description": "🤖 模型评测 · 本地模型 · AI 工具实践\n👨‍💻 程序员· 游戏服务器开发\n📈 关注美股· 探索AIGC\n📮合作/交流: liu.bin.coder@gmail.com",
    "id": "2795754924",
    "name": "雪瑜",
-   "public_metrics": {
-    "followers_count": 7662,
-    "following_count": 3903,
-    "like_count": 4123,
-    "listed_count": 31,
-    "media_count": 827,
-    "post_count": 17521
-   },
    "username": "xueyu1125"
   },
   "2055515632146472960": {
    "description": "Personal Agent Dev · Economics·AI Engineer\n@cognition Ambassador\nSpecializing in how AI can be applied to life\n📮caposolestull@gmail.com",
    "id": "2055515632146472960",
    "name": "FeiZ",
-   "public_metrics": {
-    "followers_count": 12591,
-    "following_count": 3243,
-    "like_count": 15602,
-    "listed_count": 53,
-    "media_count": 777,
-    "post_count": 10496
-   },
    "username": "Fei2411"
   },
   "1479100058": {
    "description": "Independent Researcher. Interactive Agent Systems.",
    "id": "1479100058",
    "name": "Bojie Li",
-   "public_metrics": {
-    "followers_count": 15241,
-    "following_count": 851,
-    "like_count": 2201,
-    "listed_count": 108,
-    "media_count": 91,
-    "post_count": 561
-   },
    "username": "bojie_li"
   },
   "2083814995775946752": {
    "description": "Designer of Fenix OS | Agent Builder from Peri Code! \nhttps://t.co/Q4J7srhcqF",
    "id": "2083814995775946752",
    "name": "KonghaYao - 江夏尧",
-   "public_metrics": {
-    "followers_count": 513,
-    "following_count": 169,
-    "like_count": 968,
-    "listed_count": 3,
-    "media_count": 137,
-    "post_count": 606
-   },
    "username": "konghayao"
   },
   "1738207605322043393": {
    "description": "智能驾驶5年 | DevOps高级工程师\n已落地2个生产级 AI Agent（持续迭代）\n公开学习 & 分享 Agent / Inference / Infra",
    "id": "1738207605322043393",
    "name": "Jerry Fang",
-   "public_metrics": {
-    "followers_count": 890,
-    "following_count": 241,
-    "like_count": 555,
-    "listed_count": 6,
-    "media_count": 12,
-    "post_count": 585
-   },
    "username": "Jerry_fsy"
   },
   "1572253121547735040": {
    "description": "🧠  AI Agent 实操｜Pi / DeepSeek Harness / Grok Bot / Claude Code\n💸 天天实测 Agent 怎么更省 token、更好用\n🔧 ESP32 DIY：把 Agent 装进小硬件\n📘 Pi 蓝皮书作者 · 合作 wx：lucky_bobe",
    "id": "1572253121547735040",
    "name": "小墨同学",
-   "public_metrics": {
-    "followers_count": 16707,
-    "following_count": 435,
-    "like_count": 6382,
-    "listed_count": 121,
-    "media_count": 1289,
-    "post_count": 9246
-   },
    "username": "xiaomovps"
   },
   "95631742": {
@@ -21352,6 +20957,18 @@
     "post_count": 9153
    },
    "username": "Saccc_c"
+  },
+  "983361642359439361": {
+   "description": "精装小软件：https://t.co/VaOx5LrSb1",
+   "id": "983361642359439361",
+   "name": "Tiger Chen & 前端之虎陈随易",
+   "username": "chenbimo"
+  },
+  "1533713706122907648": {
+   "description": "美国工科 PhD丨斯坦福校友丨10后饲养员丨第三曲线中. Tifosi since 22'\n每天手打一条AI 常识，因为发现我觉得是常识的事情还有人不知道。欢迎实操验证。",
+   "id": "1533713706122907648",
+   "name": "寒塘poolmoon",
+   "username": "poolmoon6"
   }
  }
 }
