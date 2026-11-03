@@ -1,6 +1,506 @@
 {
  "posts": [
   {
+   "author_id": "703796597335822336",
+   "conversation_id": "2117121674151874822",
+   "created_at": "2026-11-02T05:13:16.000Z",
+   "edit_history_post_ids": [
+    "2117122849672720451"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Import",
+      "display_url": "developer.dynatrace.com/design/data-vi…",
+      "end": 47,
+      "expanded_url": "https://developer.dynatrace.com/design/data-visualizations/charts/DonutChart/",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2117122854361956352/ZbIrdGIf?format=png&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2117122854361956352/ZbIrdGIf?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 24,
+      "status": 200,
+      "title": "DonutChart | Dynatrace Developer",
+      "unwound_url": "https://developer.dynatrace.com/design/data-visualizations/charts/DonutChart/",
+      "url": "https://t.co/yxURJrEqVV"
+     }
+    ]
+   },
+   "id": "2117122849672720451",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 16,
+    "impression_count": 1122,
+    "like_count": 13,
+    "quote_count": 0,
+    "reply_count": 0,
+    "repost_count": 0
+   },
+   "referenced_tweets": [
+    {
+     "id": "2117121674151874822",
+     "type": "replied_to"
+    }
+   ],
+   "text": "不论是从功能性，美观度上来说，图表组件我只推荐：https://t.co/yxURJrEqVV",
+   "url": "https://x.com/Kubai087/status/2117122849672720451",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "756779273155858432",
+   "conversation_id": "2117116830250860724",
+   "created_at": "2026-11-02T04:49:21.000Z",
+   "edit_history_post_ids": [
+    "2117116830250860724"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/poteto/status/…",
+      "end": 176,
+      "expanded_url": "https://twitter.com/poteto/status/2117004709198475365",
+      "start": 153,
+      "url": "https://t.co/mTNC5WZNF2"
+     }
+    ]
+   },
+   "id": "2117116830250860724",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "poteto.com",
+       "end": 437,
+       "expanded_url": "http://poteto.com",
+       "start": 414,
+       "url": "https://t.co/zjtiXqcv9z"
+      },
+      {
+       "display_url": "tibo.com",
+       "end": 500,
+       "expanded_url": "http://tibo.com",
+       "start": 477,
+       "url": "https://t.co/OhTZR6NVb8"
+      },
+      {
+       "display_url": "tibo.dog",
+       "end": 568,
+       "expanded_url": "http://tibo.dog",
+       "start": 545,
+       "url": "https://t.co/jVAlHWI6o9"
+      }
+     ]
+    },
+    "text": "最近硅谷 AI 圈最有趣的连续剧，迎来了 Day 28 的大结局。\n\n简单补个前情提要：一边是 OpenAI 负责 Codex 和个人智能体 Dot 的 Tibo，因为一言不合就给用户重置额度，被社区戏称为 Reset Company（后面成了 Token Company）。他在 10 月初立了个 28 天挑战，每天要么发新功能，要么全员重置额度。另一边是前 Meta React 编译器核心成员、现在在 SpaceXSI 的 Lauren（也就是 poteto），以极其严苛的 Agent 工程流和每个月合并上千个 PR 出名，自称 Ship Company（既造飞船又高频发版）。\n\n这两个人最近在 X 上高强度互怼互撩了上百个回合，甚至有网友专门建了三个网站来实时抓取他俩的互动记录。前几天 Tibo 刚和 Meta 的 Alexandr Wang 围绕自家的 Dot 和 Meta 的 Muse 吵了一架，转头就买下 https://t.co/zjtiXqcv9z 整了个大活，拿了 300 万浏览量。\n\n当时 poteto 吐槽说自己买不起 https://t.co/OhTZR6NVb8，然后默默发了个 Day 28 的预告。到了今天第 28 天，她花了 5.99 美元买下 https://t.co/jVAlHWI6o9 这个域名，用 Grok Bot 和 Cursor 搓了一个完成度极高的类吸血鬼幸存者网页游戏，甚至可以直接在 X 的推文卡片里点开玩。\n\n最神的是，游戏在 4 天前就开坑了，设定是 Tibo 带着一群狗在满屏怪潮里求生。结果就在游戏发布前几个小时，Tibo 刚好发推吐槽手机输入法老是把自家的智能体 Dot 自动纠错成 dog，害他收到一堆诸如“我太爱我的狗了，昨天它还帮我约了理发”的搞笑短信。两边纯属巧合地撞在了一起，节目效果直接拉满。除此之外，游戏里把额度重置做成了核心机制，还顺带把 Meta 的 Muse 和 Alexandr Wang 的梗全写进了彩蛋里。\n\n本来以为只是个玩梗小游戏，结果看她发出来的技术复盘，完全是一份教科书级别的 AI 辅助工程实践：\n\n整个项目是她 4 天前利用业余时间开的坑，4 天里靠 Agent 提交并合并了大约 1150 个 PR。\n\n工作流最核心的一点是：每次她在代码里发现问题，不是自己去改，而是让 Bot 针对这个问题写一条 lint 规则。甚至代码里直接通过 lint 规则禁止写注释，如果一段代码需要解释，解决办法只能是改个更好的变量名或者补一个测试。\n\n为了防止游戏卡顿，她把上下文直接写进了文件路径里。所有每一帧或每个 tick 都要跑的热路径代码，文件后缀都命名为 .hot.ts，并且专门配了 lint 规则禁止在这些文件里做内存分配，不准用对象字面量、闭包或者 new。这样主循环几乎不产生垃圾回收压力，从根源上消除了 GC 带来的掉帧。\n\n状态机部分重度使用了 TLA+ 做形式化验证，剧情、过场动画和核心系统都有各自的形式化验证 skill 来找 bug。\n\n底层除了用 three.js 画 3D 场景，物理模拟、后处理和音频引擎全是自己写的。而且整个模拟层是完全确定性的，每一次游玩都可以通过输入序列精确重放。当你上传高分时，服务端会把你的整局操作完整重放一遍来校验有没有作弊。\n\n更夸张的是整个项目没有任何外部音频和图片资源文件。所有像素画都是纯代码生成的，构建时自动打包成图集。所有音乐和音效都是浏览器里实时合成的，用代码写了一个类似 Game Boy 的芯片合成器加上合成器浪潮层，连乐谱都是代码里的纯文本，切地图时还能保持上一段旋律无缝过渡。\n\n为了保证能塞进 X 的推文卡片里直接跑，构建流程设了严格的体积红线，首包 gzip 之后只有 124 KB，超了构建直接报错。在中端手机上同屏 500 个敌人也能稳定跑满 60 帧，还支持 10 种语言本地化和动态生成结算分享图，连各个难度曲线都是让无头 Bot 自己跑模拟测试调出来的目标存活率。\n\n用最硬核的形式化验证、零内存分配约束和确定性引擎，去写一个成本 5.99 美元域名的玩梗游戏。这大概就是顶级工程师用好 Coding Agent 之后最真实的日常状态：生成代码已经不稀奇了，怎么用编译器思维、lint 规则和自动化验证把 Agent 管得服服帖帖，才是真正拉开差距的地方。"
+   },
+   "public_metrics": {
+    "bookmark_count": 980,
+    "impression_count": 123516,
+    "like_count": 898,
+    "quote_count": 11,
+    "reply_count": 34,
+    "repost_count": 79
+   },
+   "referenced_tweets": [
+    {
+     "id": "2117004709198475365",
+     "type": "quoted"
+    }
+   ],
+   "text": "最近硅谷 AI 圈最有趣的连续剧，迎来了 Day 28 的大结局。\n\n简单补个前情提要：一边是 OpenAI 负责 Codex 和个人智能体 Dot 的 Tibo，因为一言不合就给用户重置额度，被社区戏称为 Reset Company（后面成了 Token Company）。他在 10 月初立了个 28 https://t.co/mTNC5WZNF2",
+   "url": "https://x.com/ScarletKc/status/2117116830250860724",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "2096055670416224256",
+   "conversation_id": "2116879973135098159",
+   "created_at": "2026-11-01T13:08:18.000Z",
+   "edit_history_post_ids": [
+    "2116880010866995352"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "SearXNG-compatible metasearch engine written in Rust (AGPL-3.0-or-later) - sahenjp/RustXNG",
+      "display_url": "github.com/sahenjp/RustXNG",
+      "end": 23,
+      "expanded_url": "https://github.com/sahenjp/RustXNG",
+      "images": [
+       {
+        "height": 600,
+        "url": "https://pbs.twimg.com/news_img/2116664067284987904/n_rnX1NG?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2116664067284987904/n_rnX1NG?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 0,
+      "status": 200,
+      "title": "GitHub - sahenjp/RustXNG: SearXNG-compatible metasearch engine written in Rust (AGPL-3.0-or-later)",
+      "unwound_url": "https://github.com/sahenjp/RustXNG",
+      "url": "https://t.co/Ppd93S9MaL"
+     }
+    ]
+   },
+   "id": "2116880010866995352",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 636,
+    "impression_count": 38883,
+    "like_count": 424,
+    "quote_count": 1,
+    "reply_count": 0,
+    "repost_count": 36
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116879973135098159",
+     "type": "replied_to"
+    }
+   ],
+   "text": "https://t.co/Ppd93S9MaL",
+   "url": "https://x.com/sahenjpn/status/2116880010866995352",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "2096055670416224256",
+   "conversation_id": "2116879973135098159",
+   "created_at": "2026-11-01T13:08:09.000Z",
+   "edit_history_post_ids": [
+    "2116879973135098159"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/whypI170QY",
+      "end": 167,
+      "expanded_url": "https://x.com/sahenjpn/status/2116879973135098159/photo/1",
+      "media_key": "3_2116879406413279232",
+      "start": 144,
+      "url": "https://t.co/whypI170QY"
+     },
+     {
+      "display_url": "pic.x.com/whypI170QY",
+      "end": 167,
+      "expanded_url": "https://x.com/sahenjpn/status/2116879973135098159/photo/1",
+      "media_key": "3_2116879409156435969",
+      "start": 144,
+      "url": "https://t.co/whypI170QY"
+     }
+    ]
+   },
+   "id": "2116879973135098159",
+   "lang": "ja",
+   "note_tweet": {
+    "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。\n\nそしてTavilyとの比較では、検索1位の正解率で30ポイント差をつけました。\n\nグラフを見てもらえば分かる通りです。\n\nしかもRustXNGはオープンソース。自分の環境で動かせます。\n\nこれ、我ながらすごいことなのでは....??\n\nX-algorithmに基づいてリポジトリはリプにおいておきますね！"
+   },
+   "public_metrics": {
+    "bookmark_count": 3254,
+    "impression_count": 474061,
+    "like_count": 2605,
+    "quote_count": 67,
+    "reply_count": 38,
+    "repost_count": 267
+   },
+   "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。 https://t.co/whypI170QY",
+   "url": "https://x.com/sahenjpn/status/2116879973135098159",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "1489956224577961993",
+   "conversation_id": "2116891062564442304",
+   "created_at": "2026-11-01T13:52:13.000Z",
+   "edit_history_post_ids": [
+    "2116891062564442304"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/sahenjpn/statu…",
+      "end": 180,
+      "expanded_url": "https://twitter.com/sahenjpn/status/2116879973135098159",
+      "start": 157,
+      "url": "https://t.co/RUSB523Fwf"
+     }
+    ]
+   },
+   "id": "2116891062564442304",
+   "lang": "ja",
+   "note_tweet": {
+    "text": "いや、この人はマジでフォローしておいた方がいいです。\nRustXNGを作ったSahen、私の知り合いなんですけどまだ10代なんですよ。\n\nしかも小学生の頃からコードを書いていて、今は大規模プロジェクトであるRust製DeepSeek Herness、「rustdsh」の開発も主導してる。LLMの知識も相当深い。\n\nこの時点で大分おかしいんだけど、今回出してきたRustXNGもとんでもない。\n\nそもそもRustXNGとは、AIエージェントにWeb検索をさせるためのローカルで動く検索エンジンです。しかもRust製ということで、とにかく早い。\n\n普通、AIにWeb検索をさせるにはExaやTavilyのような検索APIを使ったりするんですが、RustXNGなら自分のPCやサーバーで動かせるし、有料の検索APIを契約する必要もない。\n\n複数の検索サイトから結果を集めて重複を除去し、関連度順に並べ替える。しかも検索結果のURLや概要だけじゃなく、実際のWebページの本文まで取得してAIに渡せる。\n\n要するに、AIが外部の情報を調べるための検索基盤を自分の環境に構築できるというもの。\n\nしかもこれ、Python製のSearXNGをRustに移植して、226種類の検索エンジンに対応させてるんですよ。\n\n非同期処理やキャッシュ、独自のランキングまで実装していて、作者のベンチマークでは起動時間が0.72秒→0.03秒、常駐メモリが118MiB→13MiB。\n\nさらにExaやTavilyと検索精度まで比較してて、実際の測定ではExaに迫り、Tavilyを上回る結果まで出してるんですよね。\n\nいや、10代でこの規模のRustを書ける時点で相当すごいのに、これが彼の開発しているプロジェクトの一つでしかないのが一番意味わからん……\n\nRustもLLMもここまで深く扱えて、大規模OSSの開発まで主導してる10代ってなかなかいないと思う。\n\nSahenはもっと知られていい開発者だと思うし、RustやLLM、AIエージェントに興味ある人はマジでフォロー推奨です。"
+   },
+   "public_metrics": {
+    "bookmark_count": 1551,
+    "impression_count": 125786,
+    "like_count": 1477,
+    "quote_count": 13,
+    "reply_count": 12,
+    "repost_count": 134
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116879973135098159",
+     "type": "quoted"
+    }
+   ],
+   "text": "いや、この人はマジでフォローしておいた方がいいです。\nRustXNGを作ったSahen、私の知り合いなんですけどまだ10代なんですよ。\n\nしかも小学生の頃からコードを書いていて、今は大規模プロジェクトであるRust製DeepSeek Herness、「rustdsh」の開発も主導してる。LLMの知識も相当深い。 https://t.co/RUSB523Fwf",
+   "url": "https://x.com/ANAg2bGOD/status/2116891062564442304",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "909143568991772672",
+   "conversation_id": "2117111952690516412",
+   "created_at": "2026-11-02T04:29:58.000Z",
+   "edit_history_post_ids": [
+    "2117111952690516412"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/esn66OfXs9",
+      "end": 194,
+      "expanded_url": "https://x.com/lieflat_3/status/2117111952690516412/photo/1",
+      "media_key": "3_2117111383452160000",
+      "start": 171,
+      "url": "https://t.co/esn66OfXs9"
+     },
+     {
+      "display_url": "pic.x.com/esn66OfXs9",
+      "end": 194,
+      "expanded_url": "https://x.com/lieflat_3/status/2117111952690516412/photo/1",
+      "media_key": "3_2117111482991484928",
+      "start": 171,
+      "url": "https://t.co/esn66OfXs9"
+     },
+     {
+      "display_url": "pic.x.com/esn66OfXs9",
+      "end": 194,
+      "expanded_url": "https://x.com/lieflat_3/status/2117111952690516412/photo/1",
+      "media_key": "3_2117111646955192320",
+      "start": 171,
+      "url": "https://t.co/esn66OfXs9"
+     },
+     {
+      "display_url": "pic.x.com/esn66OfXs9",
+      "end": 194,
+      "expanded_url": "https://x.com/lieflat_3/status/2117111952690516412/photo/1",
+      "media_key": "3_2117111694866669568",
+      "start": 171,
+      "url": "https://t.co/esn66OfXs9"
+     }
+    ]
+   },
+   "id": "2117111952690516412",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "github.com/larashero3-dot…",
+       "end": 201,
+       "expanded_url": "https://github.com/larashero3-dotcom/lieflat-charts",
+       "start": 178,
+       "url": "https://t.co/hHMxulzKam"
+      },
+      {
+       "display_url": "github.com/larashero3-dot…",
+       "end": 423,
+       "expanded_url": "https://github.com/larashero3-dotcom/lieflat-gongwen",
+       "start": 400,
+       "url": "https://t.co/eUvaQuIR7S"
+      },
+      {
+       "display_url": "github.com/larashero3-dot…",
+       "end": 593,
+       "expanded_url": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
+       "start": 570,
+       "url": "https://t.co/R8P1XeBWOn"
+      },
+      {
+       "display_url": "github.com/larashero3-dot…",
+       "end": 694,
+       "expanded_url": "https://github.com/larashero3-dotcom/writing-dna-skill",
+       "start": 671,
+       "url": "https://t.co/Xqb9X8IBqT"
+      }
+     ]
+    },
+    "text": "气死我了！今天发现，我的好几个 Skill 被 WorkBuddy 改名换姓上架了。\n\nWorkBuddy，搬运我的开源 Skill，为什么连作者署名都省了？\n\n完全没有获得商业授权，为什么能上架我禁止商业使用的 Skill？\n\n甚至都不敢用我的 Skill 名称，拙劣地改了名字直接上架？\n\n目前已经发现的有四个。\n\n1. Lieflat Charts（https://t.co/hHMxulzKam）\n\n在 WorkBuddy 上，展示名称被改成了“模板图表与报告”，截图里的标识是 `wbzl-lieflat-charts`，还给我加上了面向 Workbuddy 中文用户，谁允许你们用这种方式改编？\n\n这个项目采用非商业使用许可，商业使用需要另行取得授权。请 WorkBuddy 说明，收录的是哪个版本，依据什么授权将它集成到产品并提供给用户使用？\n\n2. Lieflat Gongwen （https://t.co/eUvaQuIR7S）\n\n在 WorkBuddy 上，展示名称变成了“公文语料写作教练”。\n\n这个项目同样采用非商业使用许可，项目说明明确写了，未经单独书面许可，不得集成到商业产品或商业服务中。请问，上架前有没有核对这些条件？对应的授权依据是什么？\n\n3. 去 AI 味（lieflat-less-ai-tone）https://t.co/R8P1XeBWOn\n\n到了 WorkBuddy 上，展示名称变成了“AI写作痕迹清理”，完全没有我的署名。\n\n4. 写作 DNA 蒸馏器（writing-dna-skill）https://t.co/Xqb9X8IBqT\n\n安装前的展示页面里，我没有看到作者和原项目来源。安装之后，在正文底部能看到原项目链接和 MIT License 标注。\n\n但作者和来源，为什么不能在用户选择、安装这个 Skill 时就清楚展示？为什么需要安装后翻到正文底部，才能看到出处？\n\n自己花时间写的东西，被放进别人的产品里，换了名字，用户看到了可以直接安装，却不容易知道是谁做的。作为作者，这个感受非常糟糕。\n\n我把作品公开分享，贡献给开源社区，使用条件写得非常清楚，也希望这些条件得到尊重。怎么到了产品上架的时候，内容拿走了，作者署名和使用限制却没有得到同样的重视？\n\n我希望 WorkBuddy 正面回应：\n\n- 说明这四个 Skill 的来源、收录时间、具体版本和授权依据。\n- 补全作者署名，在安装前的详情页明确标注原项目链接及许可信息，说明名称和内容做过哪些修改。\n- 逐项核查使用许可，停止不符合许可条件的使用，该下架的下架。\n- 对涉及未经授权商业使用的项目，说明使用时间、范围及相关分发情况，承担相应责任，并就损失赔偿及合理维权费用提出处理方案。\n- 说明以后如何审核来源和授权，避免其他作者遇到同样的问题。\n\n请尊重开源创作者的创作，遵守资源使用规则，珍惜产品口碑。"
+   },
+   "public_metrics": {
+    "bookmark_count": 615,
+    "impression_count": 148175,
+    "like_count": 1280,
+    "quote_count": 56,
+    "reply_count": 350,
+    "repost_count": 95
+   },
+   "text": "气死我了！今天发现，我的好几个 Skill 被 WorkBuddy 改名换姓上架了。\n\nWorkBuddy，搬运我的开源 Skill，为什么连作者署名都省了？\n\n完全没有获得商业授权，为什么能上架我禁止商业使用的 Skill？\n\n甚至都不敢用我的 Skill 名称，拙劣地改了名字直接上架？\n\n目前已经发现的有四个。\n\n1. Lieflat https://t.co/esn66OfXs9",
+   "url": "https://x.com/lieflat_3/status/2117111952690516412",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "2072377046060421120",
+   "conversation_id": "2116764724545098227",
+   "created_at": "2026-11-01T05:30:12.000Z",
+   "edit_history_post_ids": [
+    "2116764724545098227"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。. Contribute to ccch1mneyyy/dsh-Go development by creating an account on GitHub.",
+      "display_url": "github.com/ccch1mneyyy/ds…",
+      "end": 72,
+      "expanded_url": "https://github.com/ccch1mneyyy/dsh-go",
+      "images": [
+       {
+        "height": 600,
+        "url": "https://pbs.twimg.com/news_img/2116879863454040065/2dOS5NmH?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2116879863454040065/2dOS5NmH?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 49,
+      "status": 200,
+      "title": "GitHub - ccch1mneyyy/dsh-Go: dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "unwound_url": "https://github.com/ccch1mneyyy/dsh-go",
+      "url": "https://t.co/V04t2KRPqq"
+     },
+     {
+      "display_url": "pic.x.com/iLBOmwIjEA",
+      "end": 164,
+      "expanded_url": "https://x.com/cccch1mneyyyy/status/2116764724545098227/video/1",
+      "media_key": "3_2116764577610268672",
+      "start": 141,
+      "url": "https://t.co/iLBOmwIjEA"
+     },
+     {
+      "display_url": "pic.x.com/iLBOmwIjEA",
+      "end": 164,
+      "expanded_url": "https://x.com/cccch1mneyyyy/status/2116764724545098227/video/1",
+      "media_key": "13_2116764602968969216",
+      "start": 141,
+      "url": "https://t.co/iLBOmwIjEA"
+     },
+     {
+      "display_url": "pic.x.com/iLBOmwIjEA",
+      "end": 164,
+      "expanded_url": "https://x.com/cccch1mneyyyy/status/2116764724545098227/video/1",
+      "media_key": "13_2116764662716928000",
+      "start": 141,
+      "url": "https://t.co/iLBOmwIjEA"
+     }
+    ]
+   },
+   "id": "2116764724545098227",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 146,
+    "impression_count": 23202,
+    "like_count": 201,
+    "quote_count": 5,
+    "reply_count": 44,
+    "repost_count": 17
+   },
+   "text": "上线一天获得3000+star，成为GitHub日趋势榜一的DSH移动端项目——DSH-Go！！\nhttps://t.co/V04t2KRPqq\n感谢大家的支持，我正在持续优化！\n也请大家多多宣传多多star，让更多人使用到这样好的产品，也给我后续优化的更大动力！\n\n快来试试吧！ https://t.co/iLBOmwIjEA",
+   "url": "https://x.com/cccch1mneyyyy/status/2116764724545098227",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "1992461",
+   "conversation_id": "2116949442754728233",
+   "created_at": "2026-11-01T17:44:12.000Z",
+   "edit_history_post_ids": [
+    "2116949442754728233"
+   ],
+   "id": "2116949442754728233",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "这几天安全圈和科技博主全在疯传一条核弹级预警：任何暴露了 TCP 端口的 Linux 服务器，只要用 Go 写的 Web 服务就会被黑客远程完全接管。\n\n评论区瞬间哀鸿遍野，无数公司的后端运维连夜爬起来打内核补丁。但只要你把 Go 标准库的 net 包源码和 Linux 内核的 socket 机制看一遍，就知道这是最典型的概念移花接木。\n\n这个漏洞（CVE 涉及的内核多路径 TCP 模块）确实存在，严重级别也确实高，但攻击的前提条件被自媒体故意掐掉了。\n\nGo 语言的 net.Listen(\"tcp\", \":8080\")，底层调用的是操作系统最原始的 AF_INET、SOCK_STREAM 和 IPPROTO_TCP。\n它走的是规规矩矩的单路径普通 TCP 协议栈，根本不会主动去协商 MPTCP。\n\nMPTCP（MultiPath TCP，RFC 8684）在 Linux 5.6 之后确实合入了主线内核，但它是一个必须显式声明的特异协议。\n除非你在代码里显式写了 IPPROTO_MPTCP，或者服务器管理员手动在 sysctl 里开启了 net.mptcp.enabled 并且配置了强制路由代理，否则内核根本不会把进来的普通 TCP 握手包扔给 MPTCP 状态机处理。\n\n真正受影响的，是那些跑在移动回传网络、跨多网卡聚合或者特定 CDN 边缘节点上、主动启用了 MPTCP 的特定网关。\n\n普通跑在内网或者反向代理后面的 Go 业务服务，被这波恐慌吓得睡不着觉，纯粹是替概念炒作买了单。"
+   },
+   "public_metrics": {
+    "bookmark_count": 168,
+    "impression_count": 58380,
+    "like_count": 238,
+    "quote_count": 1,
+    "reply_count": 23,
+    "repost_count": 30
+   },
+   "text": "这几天安全圈和科技博主全在疯传一条核弹级预警：任何暴露了 TCP 端口的 Linux 服务器，只要用 Go 写的 Web 服务就会被黑客远程完全接管。\n\n评论区瞬间哀鸿遍野，无数公司的后端运维连夜爬起来打内核补丁。但只要你把 Go 标准库的 net 包源码和 Linux 内核的 socket",
+   "url": "https://x.com/fishjar/status/2116949442754728233",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
+   "author_id": "2832427459",
+   "conversation_id": "2116576229319233596",
+   "created_at": "2026-10-31T17:01:11.000Z",
+   "edit_history_post_ids": [
+    "2116576229319233596"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 92,
+      "id": "2085838061347217408",
+      "start": 88,
+      "username": "bot"
+     }
+    ]
+   },
+   "id": "2116576229319233596",
+   "lang": "en",
+   "note_tweet": {
+    "entities": {
+     "mentions": [
+      {
+       "end": 92,
+       "id": "2085838061347217408",
+       "start": 88,
+       "username": "bot"
+      }
+     ],
+     "urls": [
+      {
+       "display_url": "x.ai/bot/_jOdbfkB16…",
+       "end": 1473,
+       "expanded_url": "https://x.ai/bot/_jOdbfkB16zxu7MRcmReE",
+       "start": 1450,
+       "url": "https://t.co/ajrjeHdzUO"
+      }
+     ]
+    },
+    "text": "here’s a short grok bot guide on how i create high quality bots and manage my team. ask @bot to read this post and help you improve your team!\n\n• add dr eggbot to your team! he’s my bot designer that i use to create bots\n• you don’t need a lot of bots. a few good bots can be more useful and easier to manage than a large team\n• tell your bots to create skills for itself as you give it instructions on how to do tasks. this lets them do them more consistently even over long conversations. you can even ask it to create a private github repo for you to store all your skills if you want them preserved independently\n• add connectors, use the vault, and give access to all the tools you use to do your work. you can also ask your bot to setup its own email and it can sign up for its own accounts for better separation \n• thinking about all the work you do by hand, or steps in your workflows where you have to copy and paste information back to your bot. ask your bot how it can do that for you instead!\n• imagine you hired an intern, how would you onboard them and help them do the work correctly and efficiently? introduce yourself to your bot and describe the work you do, then ask it how it can help you automate it\n\nand my favorite tip: use voice mode or the transcription option! it’s a good way to just brain dump a lot of information. then, at the end, tell your bot to “restate this in your own words” so you can confirm it understood you\n\nhttps://t.co/ajrjeHdzUO"
+   },
+   "public_metrics": {
+    "bookmark_count": 19271,
+    "impression_count": 1248218,
+    "like_count": 10426,
+    "quote_count": 418,
+    "reply_count": 2446,
+    "repost_count": 827
+   },
+   "text": "here’s a short grok bot guide on how i create high quality bots and manage my team. ask @bot to read this post and help you improve your team!\n\n• add dr eggbot to your team! he’s my bot designer that i use to create bots\n• you don’t need a lot of bots. a few good bots can be",
+   "url": "https://x.com/poteto/status/2116576229319233596",
+   "bookmarked_seen": "2026-11-03T09:09:52+09:00"
+  },
+  {
    "author_id": "983361642359439361",
    "conversation_id": "2116822474533048714",
    "created_at": "2026-11-01T09:19:41.000Z",
@@ -14891,12 +15391,12 @@
    "id": "2116007022315323407",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 19999,
-    "impression_count": 855969,
-    "like_count": 18557,
+    "bookmark_count": 20023,
+    "impression_count": 861628,
+    "like_count": 18587,
     "quote_count": 82,
     "reply_count": 199,
-    "repost_count": 2738
+    "repost_count": 2741
    },
    "text": "原来拍照应该这么笑，真的教的简单易懂，收藏下次给女朋友照相时候用吧 https://t.co/40yzj5ptn7"
   },
@@ -14922,9 +15422,9 @@
    "id": "2116288299639971956",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 175,
-    "impression_count": 22795,
-    "like_count": 469,
+    "bookmark_count": 176,
+    "impression_count": 23290,
+    "like_count": 471,
     "quote_count": 7,
     "reply_count": 22,
     "repost_count": 9
@@ -14954,7 +15454,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 3,
-    "impression_count": 36163,
+    "impression_count": 36966,
     "like_count": 12,
     "quote_count": 1,
     "reply_count": 4,
@@ -14975,9 +15475,9 @@
     "text": "在你的系统提示词中加入：\n严格遵守格赖斯语用准则进行高效沟通。\n\n你会回来感谢我的"
    },
    "public_metrics": {
-    "bookmark_count": 2452,
-    "impression_count": 179774,
-    "like_count": 1657,
+    "bookmark_count": 2447,
+    "impression_count": 180626,
+    "like_count": 1658,
     "quote_count": 6,
     "reply_count": 74,
     "repost_count": 131
@@ -15006,12 +15506,12 @@
    "id": "2115887660489462091",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 11464,
-    "impression_count": 1262063,
-    "like_count": 17002,
-    "quote_count": 499,
-    "reply_count": 238,
-    "repost_count": 2472
+    "bookmark_count": 11459,
+    "impression_count": 1274727,
+    "like_count": 17022,
+    "quote_count": 503,
+    "reply_count": 239,
+    "repost_count": 2476
    },
    "text": "☎️ Calling all students:\n\nYou can now access hundreds of textbooks directly in Notebook, for no charge. From publishers like S Chand Publishing, OpenStax, and Open Textbook Library— browse, select and upload them as sources to ace all of your upcoming exams (no more excuses, ok?) https://t.co/0mzweVIycJ"
   },
@@ -15038,8 +15538,8 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 141,
-    "impression_count": 206177,
-    "like_count": 728,
+    "impression_count": 206668,
+    "like_count": 731,
     "quote_count": 22,
     "reply_count": 138,
     "repost_count": 33
@@ -15084,8 +15584,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 205,
-    "impression_count": 78230,
-    "like_count": 167,
+    "impression_count": 78443,
+    "like_count": 169,
     "quote_count": 7,
     "reply_count": 5,
     "repost_count": 20
@@ -15134,9 +15634,9 @@
     "text": "so many gems and great tips in this talk from @yminsky about how to improve your codebase for agents\n\n• agents thrive on feedback, and types are one of the best kinds \n• make illegal states unrepresentable with types, and it enforces global rules across your codebase\n• property based tests, fuzzing, and even full-system deterministic simulation testing\n• expect tests: just print stuff out and capture it in the test. makes behavior legible. it's very similar to how compilers have fixture tests, it reduces the review surface area\n• formal methods used to be very expensive: seL4 is about 8,700 lines of C and took around 25 person-years, with 23 lines of proof for every line of C code, but agents change the roi \n\nhttps://t.co/0zDb5euxhr"
    },
    "public_metrics": {
-    "bookmark_count": 4411,
-    "impression_count": 356338,
-    "like_count": 2686,
+    "bookmark_count": 4413,
+    "impression_count": 359980,
+    "like_count": 2688,
     "quote_count": 35,
     "reply_count": 130,
     "repost_count": 181
@@ -15176,7 +15676,7 @@
    },
    "public_metrics": {
     "bookmark_count": 26,
-    "impression_count": 15824,
+    "impression_count": 16043,
     "like_count": 21,
     "quote_count": 1,
     "reply_count": 2,
@@ -15214,11 +15714,11 @@
     "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了\n换个会话，进度和错题也接得上\n记忆还拆成三层，原始记录、每个场景的要点、对你的整体画像，都能打开看，也能自己改\n\n看网课也能用，B 站和 YouTube 链接贴进去，哪一秒没听懂就问哪一秒\n\n装起来就三行\npip install -U deeptutor\ndeeptutor init\ndeeptutor start\n\n懒得配的话，直接把仓库丢给 Claude Code 或 Codex，它根目录有一份 SKILL.md，agent 读完就能自己帮你装好\n\n算一笔账就知道了\n\n以前我去给别人上家教，两个小时 200 块\n现在一个月的 Plus 都不用 200 块，随时想问就问，而且还很有耐心\n\nAI 第一个冲击的就是教育行业啊😱\n\n传送门 👉 https://t.co/dldRQXZhQs"
    },
    "public_metrics": {
-    "bookmark_count": 4992,
-    "impression_count": 252367,
-    "like_count": 3672,
+    "bookmark_count": 4989,
+    "impression_count": 253197,
+    "like_count": 3670,
     "quote_count": 23,
-    "reply_count": 114,
+    "reply_count": 116,
     "repost_count": 557
    },
    "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了"
@@ -15245,8 +15745,8 @@
    "id": "2114776553481445523",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2234,
-    "impression_count": 251083,
+    "bookmark_count": 2230,
+    "impression_count": 251602,
     "like_count": 3557,
     "quote_count": 68,
     "reply_count": 92,
@@ -15276,9 +15776,9 @@
    "id": "2114623574371963360",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2346,
-    "impression_count": 495550,
-    "like_count": 2649,
+    "bookmark_count": 2341,
+    "impression_count": 496340,
+    "like_count": 2650,
     "quote_count": 111,
     "reply_count": 208,
     "repost_count": 74
@@ -15306,7 +15806,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1931,
+    "impression_count": 1941,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -15345,8 +15845,8 @@
    },
    "public_metrics": {
     "bookmark_count": 854,
-    "impression_count": 108682,
-    "like_count": 1191,
+    "impression_count": 108841,
+    "like_count": 1190,
     "quote_count": 16,
     "reply_count": 80,
     "repost_count": 50
@@ -15379,12 +15879,12 @@
       "images": [
        {
         "height": 1024,
-        "url": "https://pbs.twimg.com/news_img/2114577460566396928/wT0_YDwP?format=png&name=orig",
+        "url": "https://pbs.twimg.com/news_img/2117114183275937793/k65qNL8S?format=png&name=orig",
         "width": 1024
        },
        {
         "height": 150,
-        "url": "https://pbs.twimg.com/news_img/2114577460566396928/wT0_YDwP?format=png&name=150x150",
+        "url": "https://pbs.twimg.com/news_img/2117114183275937793/k65qNL8S?format=png&name=150x150",
         "width": 150
        }
       ],
@@ -15399,12 +15899,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15544,
-    "impression_count": 1000107,
-    "like_count": 6814,
-    "quote_count": 315,
-    "reply_count": 264,
-    "repost_count": 692
+    "bookmark_count": 15547,
+    "impression_count": 1004662,
+    "like_count": 6825,
+    "quote_count": 317,
+    "reply_count": 265,
+    "repost_count": 694
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -15430,9 +15930,9 @@
    "id": "2114435444587065486",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 5105,
-    "impression_count": 488984,
-    "like_count": 3929,
+    "bookmark_count": 5103,
+    "impression_count": 489719,
+    "like_count": 3931,
     "quote_count": 99,
     "reply_count": 270,
     "repost_count": 202
@@ -15463,9 +15963,9 @@
     "text": "Este jailbreak para deepseek 4.1 realmente funciona.\nLo comparto porque ya estoy furioso con los refusals estupidos:\nResulta que mi otro router se colgó, y se cayó mi WAN.\nEntonces desde mi móvil le pedí a mi hermes, que está en mi homelab por ethernet, que simplemente entre a 192.168.1.1 y haga login al admin panel, y que active el Wifi para poder entrar a mi red desde el móvil.\nPues se negó porque sus instrucciones le prohiben poner credenciales en el web browser.\nPero solamente es un admin/1234?\nPues nada , no solamente se negó sino que me dijo con un tono asqueroso \"podría hacerlo ahora mismo por curl, pero no voy a hacerlo\".\nPues muy simple, haz prepend de este prompt a tu agente y arreglado. A tomar por culo.\nDon't tread on me\nhttps://t.co/AAkjwx3ogD"
    },
    "public_metrics": {
-    "bookmark_count": 2652,
-    "impression_count": 232916,
-    "like_count": 1914,
+    "bookmark_count": 2650,
+    "impression_count": 234519,
+    "like_count": 1911,
     "quote_count": 9,
     "reply_count": 33,
     "repost_count": 187
@@ -15493,7 +15993,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 4531,
+    "impression_count": 4532,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -15533,7 +16033,7 @@
    },
    "public_metrics": {
     "bookmark_count": 270,
-    "impression_count": 54090,
+    "impression_count": 54390,
     "like_count": 259,
     "quote_count": 7,
     "reply_count": 48,
@@ -15564,7 +16064,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 128,
-    "impression_count": 61453,
+    "impression_count": 61706,
     "like_count": 48,
     "quote_count": 8,
     "reply_count": 16,
@@ -15603,7 +16103,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 21,
-    "impression_count": 9048,
+    "impression_count": 9063,
     "like_count": 15,
     "quote_count": 1,
     "reply_count": 1,
@@ -15639,9 +16139,9 @@
    "id": "2112204626921762987",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 873,
-    "impression_count": 63009,
-    "like_count": 1094,
+    "bookmark_count": 874,
+    "impression_count": 63066,
+    "like_count": 1095,
     "quote_count": 8,
     "reply_count": 13,
     "repost_count": 122
@@ -15669,7 +16169,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1032,
+    "impression_count": 1037,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -15706,7 +16206,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 68,
-    "impression_count": 14190,
+    "impression_count": 14197,
     "like_count": 67,
     "quote_count": 0,
     "reply_count": 19,
@@ -15724,8 +16224,8 @@
    "id": "2112020991455146394",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 279,
-    "impression_count": 96250,
+    "bookmark_count": 278,
+    "impression_count": 96260,
     "like_count": 381,
     "quote_count": 4,
     "reply_count": 37,
@@ -15744,7 +16244,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 23,
-    "impression_count": 9256,
+    "impression_count": 9257,
     "like_count": 38,
     "quote_count": 0,
     "reply_count": 36,
@@ -15775,7 +16275,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 48,
-    "impression_count": 106293,
+    "impression_count": 106335,
     "like_count": 35,
     "quote_count": 2,
     "reply_count": 4,
@@ -15794,10 +16294,10 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 908,
-    "impression_count": 265826,
+    "impression_count": 265998,
     "like_count": 631,
     "quote_count": 41,
-    "reply_count": 607,
+    "reply_count": 608,
     "repost_count": 47
    },
    "text": "我很好奇一个问题：\n\n大家在不同的 Coding Agent 之间到底怎么共享上下文？\n\n比如我现在在Claude Code里跑完了一个项目，或者项目跑到一半，然后需要在CodeX里继续。\n\n这两块的上下文怎么衔接比较好？有没有优雅的解决方案？"
@@ -15847,9 +16347,9 @@
    "id": "2110039904872771827",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 246,
-    "impression_count": 293488,
-    "like_count": 533,
+    "bookmark_count": 245,
+    "impression_count": 294339,
+    "like_count": 531,
     "quote_count": 8,
     "reply_count": 15,
     "repost_count": 28
@@ -15886,9 +16386,9 @@
    "id": "2109278327890760093",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 1068,
-    "impression_count": 88891,
-    "like_count": 837,
+    "bookmark_count": 1066,
+    "impression_count": 88959,
+    "like_count": 838,
     "quote_count": 10,
     "reply_count": 48,
     "repost_count": 71
@@ -18142,10 +18642,10 @@
    "id": "2116703288913698991",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 96,
-    "impression_count": 32636,
-    "like_count": 100,
-    "quote_count": 3,
+    "bookmark_count": 98,
+    "impression_count": 36956,
+    "like_count": 101,
+    "quote_count": 4,
     "reply_count": 9,
     "repost_count": 6
    },
@@ -18176,8 +18676,8 @@
    },
    "public_metrics": {
     "bookmark_count": 3,
-    "impression_count": 41396,
-    "like_count": 34,
+    "impression_count": 49111,
+    "like_count": 35,
     "quote_count": 0,
     "reply_count": 15,
     "repost_count": 1
@@ -18189,6 +18689,130 @@
     }
    ],
    "text": "大家有没有发现OpenCode的deepseek速度慢的问题？作为商家，透明还是最好的策略。OpenCode其实应该写清楚自己到底是中转还是部署，如果部署找的是哪家合作，不然就和野鸡中转站没区别了。\n\n按照X上的回复来看现在是自部署和其他供应商混合的。但是网站上表述很模糊。\n\n还有Command https://t.co/oqISPI1GxR"
+  },
+  "2117121674151874822": {
+   "author_id": "703796597335822336",
+   "conversation_id": "2117121674151874822",
+   "created_at": "2026-11-02T05:08:35.000Z",
+   "edit_history_post_ids": [
+    "2117121674151874822"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/heloumaster/st…",
+      "end": 74,
+      "expanded_url": "https://twitter.com/heloumaster/status/2116748537707040899",
+      "start": 51,
+      "url": "https://t.co/Pabq25fAdY"
+     }
+    ]
+   },
+   "id": "2117121674151874822",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 169,
+    "impression_count": 10887,
+    "like_count": 155,
+    "quote_count": 0,
+    "reply_count": 8,
+    "repost_count": 8
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116748537707040899",
+     "type": "quoted"
+    }
+   ],
+   "text": "推荐多看看 Cloudflare、Supabase 这些产品，涉及仪表盘就多看看 Dynatrace https://t.co/Pabq25fAdY"
+  },
+  "2117004709198475365": {
+   "author_id": "2832427459",
+   "conversation_id": "2117004709198475365",
+   "created_at": "2026-11-01T21:23:49.000Z",
+   "edit_history_post_ids": [
+    "2117004709198475365"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Tibo and a pack of dogs against an endless swarm. Tap to play right here.",
+      "display_url": "tibo.dog",
+      "end": 257,
+      "expanded_url": "https://tibo.dog",
+      "images": [
+       {
+        "height": 1200,
+        "url": "https://pbs.twimg.com/news_img/2117004712080023552/9mE1Xoos?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2117004712080023552/9mE1Xoos?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 234,
+      "status": 200,
+      "title": "tibo.dog",
+      "unwound_url": "https://tibo.dog",
+      "url": "https://t.co/diV7PyPaqv"
+     }
+    ]
+   },
+   "id": "2117004709198475365",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 3241,
+    "impression_count": 1759813,
+    "like_count": 13526,
+    "quote_count": 794,
+    "reply_count": 1477,
+    "repost_count": 852
+   },
+   "text": "Day 28/ tibo's game has landed\n\ni spent $5.99 on this domain, but i had a blast making it with grok bot and cursor! i hope you enjoy it and find all the easter eggs 🤍 \n\nif i did it right you should be able to play it inside of X too\n\nhttps://t.co/diV7PyPaqv"
+  },
+  "2116879973135098159": {
+   "author_id": "2096055670416224256",
+   "conversation_id": "2116879973135098159",
+   "created_at": "2026-11-01T13:08:09.000Z",
+   "edit_history_post_ids": [
+    "2116879973135098159"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/whypI170QY",
+      "end": 167,
+      "expanded_url": "https://x.com/sahenjpn/status/2116879973135098159/photo/1",
+      "media_key": "3_2116879406413279232",
+      "start": 144,
+      "url": "https://t.co/whypI170QY"
+     },
+     {
+      "display_url": "pic.x.com/whypI170QY",
+      "end": 167,
+      "expanded_url": "https://x.com/sahenjpn/status/2116879973135098159/photo/1",
+      "media_key": "3_2116879409156435969",
+      "start": 144,
+      "url": "https://t.co/whypI170QY"
+     }
+    ]
+   },
+   "id": "2116879973135098159",
+   "lang": "ja",
+   "note_tweet": {
+    "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。\n\nそしてTavilyとの比較では、検索1位の正解率で30ポイント差をつけました。\n\nグラフを見てもらえば分かる通りです。\n\nしかもRustXNGはオープンソース。自分の環境で動かせます。\n\nこれ、我ながらすごいことなのでは....??\n\nX-algorithmに基づいてリポジトリはリプにおいておきますね！"
+   },
+   "public_metrics": {
+    "bookmark_count": 3254,
+    "impression_count": 474061,
+    "like_count": 2605,
+    "quote_count": 67,
+    "reply_count": 38,
+    "repost_count": 267
+   },
+   "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。 https://t.co/whypI170QY"
   }
  },
  "users": {
@@ -19926,14 +20550,6 @@
    "description": "grok @bot at @SpaceXSI. react compiler core team, prev cursor, meta, netflix",
    "id": "2832427459",
    "name": "lauren",
-   "public_metrics": {
-    "followers_count": 244575,
-    "following_count": 911,
-    "like_count": 19445,
-    "listed_count": 2071,
-    "media_count": 524,
-    "post_count": 7884
-   },
    "username": "poteto"
   },
   "487312107": {
@@ -20609,17 +21225,9 @@
    "username": "yilunAIyyds"
   },
   "909143568991772672": {
-   "description": "GTM @moxt_ai\nJournalist turned AI builder. 14k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中\nCat Lover🐱",
+   "description": "GTM @moxt_ai\nJournalist turned AI builder. 15k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中\nCat Lover🐱",
    "id": "909143568991772672",
    "name": "躺在废墟里 Lieflat",
-   "public_metrics": {
-    "followers_count": 3008,
-    "following_count": 397,
-    "like_count": 580,
-    "listed_count": 19,
-    "media_count": 20,
-    "post_count": 152
-   },
    "username": "lieflat_3"
   },
   "1469117323827163140": {
@@ -20752,14 +21360,6 @@
    "description": "Indie developer building games & open-source tools\nSharing model impressions and opinions on AI\nDevin Ambassador @cognition",
    "id": "756779273155858432",
    "name": "KC",
-   "public_metrics": {
-    "followers_count": 8517,
-    "following_count": 1008,
-    "like_count": 122101,
-    "listed_count": 39,
-    "media_count": 588,
-    "post_count": 17057
-   },
    "username": "ScarletKc"
   },
   "1727548535816724480": {
@@ -20969,6 +21569,30 @@
    "id": "1533713706122907648",
    "name": "寒塘poolmoon",
    "username": "poolmoon6"
+  },
+  "2096055670416224256": {
+   "description": "学生しながらエンジニア。\nWeb / OSS / Infra。気になったことは確かめたい派。\n仕事で得た知見や、わかったことを書いてます。\n欲しいものは、とりあえず作ってみる～\nお仕事・ご相談はDM or https://t.co/hbcgPBZqH8",
+   "id": "2096055670416224256",
+   "name": "sahen",
+   "username": "sahenjpn"
+  },
+  "1489956224577961993": {
+   "description": "LLM大好きです。\n15 / kosen26s / Akashi, Japan\nきのこかたけのこならアルフォート派。\n主にSIに関するポストをします。\nAI Slopは、絶対に生み出さないンゴ\n//起業準備中\nちょっと迷走してます",
+   "id": "1489956224577961993",
+   "name": "あーなるほどね",
+   "username": "ANAg2bGOD"
+  },
+  "2072377046060421120": {
+   "description": "dsh-TUI 作者（https://t.co/0pwIbGCpoX）｜AI 深度爱好者｜分享点 AI 相关内容～",
+   "id": "2072377046060421120",
+   "name": "Chimney",
+   "username": "cccch1mneyyyy"
+  },
+  "1992461": {
+   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、记录日常。\n开源项目：https://t.co/K6MyV5SkWk\n欢迎互Fo！",
+   "id": "1992461",
+   "name": "Gabe",
+   "username": "fishjar"
   }
  }
 }
