@@ -1,6 +1,144 @@
 {
  "posts": [
   {
+   "article_title": {
+    "title": "antigravity 系列 - 1: 停用 antigravity 2.0"
+   },
+   "author_id": "1594959396764672000",
+   "conversation_id": "2118237445959614493",
+   "created_at": "2026-11-05T07:02:16.000Z",
+   "edit_history_post_ids": [
+    "2118237445959614493"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2118…",
+      "end": 52,
+      "expanded_url": "https://x.com/i/article/2118233194806063104",
+      "start": 29,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2118233194806063104",
+      "url": "https://t.co/tyd9ZrEpLh"
+     }
+    ]
+   },
+   "id": "2118237445959614493",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 135,
+    "impression_count": 19254,
+    "like_count": 94,
+    "quote_count": 2,
+    "reply_count": 23,
+    "repost_count": 5
+   },
+   "text": "antigravity 系列文章 - 1\n第二篇很快就来 https://t.co/tyd9ZrEpLh",
+   "url": "https://x.com/fanxing321/status/2118237445959614493",
+   "bookmarked_seen": "2026-11-06T07:51:22+09:00"
+  },
+  {
+   "author_id": "1948266849520832512",
+   "conversation_id": "2118285896504275268",
+   "created_at": "2026-11-05T10:14:48.000Z",
+   "edit_history_post_ids": [
+    "2118285896504275268"
+   ],
+   "id": "2118285896504275268",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "github.com/michael-denyer…",
+       "end": 373,
+       "expanded_url": "https://github.com/michael-denyer/pstack-claude",
+       "start": 350,
+       "url": "https://t.co/7GRPQwwbUq"
+      }
+     ]
+    },
+    "text": "喜欢 Cursor 官方 pstack 插件那套 AI 编程工作流的有福了，现在 Codex、Claude Code、Gemini CLI、OpenCode 等工具也能用了。\n\npstack 是 Cursor 官方插件仓库里开源的一套 Skills，核心是把成熟的软件工程实践整理成标准化的 AI 编程工作流，让 Agent 不只是会写代码，还能按照规范完成开发任务。\n\n它包含 23 套工程工作流，覆盖 Bug 修复、功能开发、重构、性能优化、代码审查等场景。你只需要把任务交给它，它就会自动选择对应流程，调用其他 Skills 和子 Agent，尽量做到先分析、再实现、最后验证。\n\n现在有人把它移植到了更多 Coding Agent 上，还适配了各家的工具调用和自动路由机制。\n\nGitHub：https://t.co/7GRPQwwbUq"
+   },
+   "public_metrics": {
+    "bookmark_count": 86,
+    "impression_count": 6216,
+    "like_count": 91,
+    "quote_count": 1,
+    "reply_count": 11,
+    "repost_count": 11
+   },
+   "text": "喜欢 Cursor 官方 pstack 插件那套 AI 编程工作流的有福了，现在 Codex、Claude Code、Gemini CLI、OpenCode 等工具也能用了。\n\npstack 是 Cursor 官方插件仓库里开源的一套 Skills，核心是把成熟的软件工程实践整理成标准化的 AI 编程工作流，让 Agent 不只是会写代码，还能按照规范完成开发任务。",
+   "url": "https://x.com/xulijian1994/status/2118285896504275268",
+   "bookmarked_seen": "2026-11-06T07:51:22+09:00"
+  },
+  {
+   "author_id": "1411224894935814144",
+   "conversation_id": "2115742501894258965",
+   "created_at": "2026-10-29T09:48:15.000Z",
+   "edit_history_post_ids": [
+    "2115742501894258965"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/QS0EgX36MO",
+      "end": 66,
+      "expanded_url": "https://x.com/proven018/status/2115742501894258965/video/1",
+      "media_key": "13_2115734828901679104",
+      "start": 43,
+      "url": "https://t.co/QS0EgX36MO"
+     }
+    ]
+   },
+   "id": "2115742501894258965",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 1856,
+    "impression_count": 1999803,
+    "like_count": 4143,
+    "quote_count": 0,
+    "reply_count": 42,
+    "repost_count": 153
+   },
+   "text": "一开始两人互相戒备 谁也不服谁 各自有着自己的行事风格 \n到两个独行的“狼”并肩作战 https://t.co/QS0EgX36MO",
+   "url": "https://x.com/proven018/status/2115742501894258965",
+   "bookmarked_seen": "2026-11-06T07:51:22+09:00"
+  },
+  {
+   "author_id": "1998006140286935041",
+   "conversation_id": "2118261284152156181",
+   "created_at": "2026-11-05T08:37:00.000Z",
+   "edit_history_post_ids": [
+    "2118261284152156181"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/0EslWyTIXL",
+      "end": 41,
+      "expanded_url": "https://x.com/QingQ77/status/2118261284152156181/video/1",
+      "media_key": "13_2118246189435076608",
+      "start": 18,
+      "url": "https://t.co/0EslWyTIXL"
+     }
+    ]
+   },
+   "id": "2118261284152156181",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 290,
+    "impression_count": 61242,
+    "like_count": 668,
+    "quote_count": 4,
+    "reply_count": 31,
+    "repost_count": 52
+   },
+   "text": "人才呀，这 5 年我是怎么看完的～ https://t.co/0EslWyTIXL",
+   "url": "https://x.com/QingQ77/status/2118261284152156181",
+   "bookmarked_seen": "2026-11-06T07:51:22+09:00"
+  },
+  {
    "author_id": "1932647771817074688",
    "conversation_id": "2118317430665613741",
    "created_at": "2026-11-05T12:20:06.000Z",
@@ -16319,12 +16457,12 @@
    "id": "2116007022315323407",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 20031,
-    "impression_count": 878055,
-    "like_count": 18605,
+    "bookmark_count": 20022,
+    "impression_count": 880973,
+    "like_count": 18601,
     "quote_count": 82,
     "reply_count": 198,
-    "repost_count": 2745
+    "repost_count": 2746
    },
    "text": "原来拍照应该这么笑，真的教的简单易懂，收藏下次给女朋友照相时候用吧 https://t.co/40yzj5ptn7"
   },
@@ -16350,9 +16488,9 @@
    "id": "2116288299639971956",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 178,
-    "impression_count": 24378,
-    "like_count": 472,
+    "bookmark_count": 186,
+    "impression_count": 28260,
+    "like_count": 481,
     "quote_count": 7,
     "reply_count": 22,
     "repost_count": 9
@@ -16381,8 +16519,8 @@
    "id": "2111852046844346650",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 3,
-    "impression_count": 38251,
+    "bookmark_count": 4,
+    "impression_count": 38658,
     "like_count": 12,
     "quote_count": 1,
     "reply_count": 4,
@@ -16403,8 +16541,8 @@
     "text": "在你的系统提示词中加入：\n严格遵守格赖斯语用准则进行高效沟通。\n\n你会回来感谢我的"
    },
    "public_metrics": {
-    "bookmark_count": 2441,
-    "impression_count": 181744,
+    "bookmark_count": 2438,
+    "impression_count": 182236,
     "like_count": 1658,
     "quote_count": 6,
     "reply_count": 74,
@@ -16434,11 +16572,11 @@
    "id": "2115887660489462091",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 11443,
-    "impression_count": 1287605,
-    "like_count": 17041,
+    "bookmark_count": 11436,
+    "impression_count": 1292003,
+    "like_count": 17042,
     "quote_count": 505,
-    "reply_count": 239,
+    "reply_count": 240,
     "repost_count": 2476
    },
    "text": "☎️ Calling all students:\n\nYou can now access hundreds of textbooks directly in Notebook, for no charge. From publishers like S Chand Publishing, OpenStax, and Open Textbook Library— browse, select and upload them as sources to ace all of your upcoming exams (no more excuses, ok?) https://t.co/0mzweVIycJ"
@@ -16466,8 +16604,8 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 141,
-    "impression_count": 207277,
-    "like_count": 731,
+    "impression_count": 207496,
+    "like_count": 729,
     "quote_count": 22,
     "reply_count": 138,
     "repost_count": 33
@@ -16512,8 +16650,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 78928,
-    "like_count": 169,
+    "impression_count": 79069,
+    "like_count": 170,
     "quote_count": 7,
     "reply_count": 5,
     "repost_count": 20
@@ -16562,8 +16700,8 @@
     "text": "so many gems and great tips in this talk from @yminsky about how to improve your codebase for agents\n\n• agents thrive on feedback, and types are one of the best kinds \n• make illegal states unrepresentable with types, and it enforces global rules across your codebase\n• property based tests, fuzzing, and even full-system deterministic simulation testing\n• expect tests: just print stuff out and capture it in the test. makes behavior legible. it's very similar to how compilers have fixture tests, it reduces the review surface area\n• formal methods used to be very expensive: seL4 is about 8,700 lines of C and took around 25 person-years, with 23 lines of proof for every line of C code, but agents change the roi \n\nhttps://t.co/0zDb5euxhr"
    },
    "public_metrics": {
-    "bookmark_count": 4412,
-    "impression_count": 363945,
+    "bookmark_count": 4416,
+    "impression_count": 365087,
     "like_count": 2688,
     "quote_count": 35,
     "reply_count": 130,
@@ -16604,7 +16742,7 @@
    },
    "public_metrics": {
     "bookmark_count": 26,
-    "impression_count": 16287,
+    "impression_count": 16318,
     "like_count": 21,
     "quote_count": 1,
     "reply_count": 2,
@@ -16642,9 +16780,9 @@
     "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了\n换个会话，进度和错题也接得上\n记忆还拆成三层，原始记录、每个场景的要点、对你的整体画像，都能打开看，也能自己改\n\n看网课也能用，B 站和 YouTube 链接贴进去，哪一秒没听懂就问哪一秒\n\n装起来就三行\npip install -U deeptutor\ndeeptutor init\ndeeptutor start\n\n懒得配的话，直接把仓库丢给 Claude Code 或 Codex，它根目录有一份 SKILL.md，agent 读完就能自己帮你装好\n\n算一笔账就知道了\n\n以前我去给别人上家教，两个小时 200 块\n现在一个月的 Plus 都不用 200 块，随时想问就问，而且还很有耐心\n\nAI 第一个冲击的就是教育行业啊😱\n\n传送门 👉 https://t.co/dldRQXZhQs"
    },
    "public_metrics": {
-    "bookmark_count": 4977,
-    "impression_count": 254179,
-    "like_count": 3665,
+    "bookmark_count": 4974,
+    "impression_count": 254550,
+    "like_count": 3664,
     "quote_count": 23,
     "reply_count": 115,
     "repost_count": 558
@@ -16673,10 +16811,10 @@
    "id": "2114776553481445523",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2228,
-    "impression_count": 252276,
-    "like_count": 3554,
-    "quote_count": 68,
+    "bookmark_count": 2231,
+    "impression_count": 255926,
+    "like_count": 3561,
+    "quote_count": 69,
     "reply_count": 93,
     "repost_count": 308
    },
@@ -16705,8 +16843,8 @@
    "lang": "en",
    "public_metrics": {
     "bookmark_count": 2337,
-    "impression_count": 497585,
-    "like_count": 2651,
+    "impression_count": 497972,
+    "like_count": 2652,
     "quote_count": 112,
     "reply_count": 207,
     "repost_count": 74
@@ -16734,7 +16872,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1956,
+    "impression_count": 1958,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -16773,10 +16911,10 @@
    },
    "public_metrics": {
     "bookmark_count": 853,
-    "impression_count": 109100,
-    "like_count": 1189,
+    "impression_count": 109241,
+    "like_count": 1186,
     "quote_count": 16,
-    "reply_count": 80,
+    "reply_count": 81,
     "repost_count": 50
    },
    "referenced_tweets": [
@@ -16827,10 +16965,10 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15539,
-    "impression_count": 1010536,
-    "like_count": 6843,
-    "quote_count": 319,
+    "bookmark_count": 15542,
+    "impression_count": 1012882,
+    "like_count": 6844,
+    "quote_count": 320,
     "reply_count": 266,
     "repost_count": 694
    },
@@ -16858,11 +16996,11 @@
    "id": "2114435444587065486",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 5097,
-    "impression_count": 540591,
-    "like_count": 3930,
+    "bookmark_count": 5092,
+    "impression_count": 563116,
+    "like_count": 3932,
     "quote_count": 99,
-    "reply_count": 270,
+    "reply_count": 271,
     "repost_count": 202
    },
    "text": "Introducing Pomerado (YC F26): the faster, cheaper, and more reliable alternative to browser use.\n\nOpen source. Sign up for free to supercharge your agents 🧵 https://t.co/W6R5DA5837"
@@ -16891,11 +17029,11 @@
     "text": "Este jailbreak para deepseek 4.1 realmente funciona.\nLo comparto porque ya estoy furioso con los refusals estupidos:\nResulta que mi otro router se colgó, y se cayó mi WAN.\nEntonces desde mi móvil le pedí a mi hermes, que está en mi homelab por ethernet, que simplemente entre a 192.168.1.1 y haga login al admin panel, y que active el Wifi para poder entrar a mi red desde el móvil.\nPues se negó porque sus instrucciones le prohiben poner credenciales en el web browser.\nPero solamente es un admin/1234?\nPues nada , no solamente se negó sino que me dijo con un tono asqueroso \"podría hacerlo ahora mismo por curl, pero no voy a hacerlo\".\nPues muy simple, haz prepend de este prompt a tu agente y arreglado. A tomar por culo.\nDon't tread on me\nhttps://t.co/AAkjwx3ogD"
    },
    "public_metrics": {
-    "bookmark_count": 2646,
-    "impression_count": 235966,
-    "like_count": 1914,
+    "bookmark_count": 2643,
+    "impression_count": 236509,
+    "like_count": 1912,
     "quote_count": 10,
-    "reply_count": 33,
+    "reply_count": 32,
     "repost_count": 186
    },
    "text": "Este jailbreak para deepseek 4.1 realmente funciona.\nLo comparto porque ya estoy furioso con los refusals estupidos:\nResulta que mi otro router se colgó, y se cayó mi WAN.\nEntonces desde mi móvil le pedí a mi hermes, que está en mi homelab por ethernet, que simplemente entre a"
@@ -16961,7 +17099,7 @@
    },
    "public_metrics": {
     "bookmark_count": 270,
-    "impression_count": 54849,
+    "impression_count": 54929,
     "like_count": 259,
     "quote_count": 7,
     "reply_count": 48,
@@ -16992,7 +17130,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 128,
-    "impression_count": 62234,
+    "impression_count": 62426,
     "like_count": 48,
     "quote_count": 8,
     "reply_count": 16,
@@ -17031,7 +17169,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 21,
-    "impression_count": 9072,
+    "impression_count": 9076,
     "like_count": 15,
     "quote_count": 1,
     "reply_count": 1,
@@ -17067,9 +17205,9 @@
    "id": "2112204626921762987",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 874,
-    "impression_count": 63151,
-    "like_count": 1097,
+    "bookmark_count": 875,
+    "impression_count": 63193,
+    "like_count": 1096,
     "quote_count": 8,
     "reply_count": 13,
     "repost_count": 122
@@ -17097,7 +17235,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1040,
+    "impression_count": 1041,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -19571,7 +19709,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 98,
-    "impression_count": 38236,
+    "impression_count": 38422,
     "like_count": 103,
     "quote_count": 4,
     "reply_count": 9,
@@ -19604,7 +19742,7 @@
    },
    "public_metrics": {
     "bookmark_count": 4,
-    "impression_count": 51929,
+    "impression_count": 53356,
     "like_count": 35,
     "quote_count": 0,
     "reply_count": 15,
@@ -19640,8 +19778,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 14148,
-    "like_count": 193,
+    "impression_count": 14504,
+    "like_count": 194,
     "quote_count": 1,
     "reply_count": 9,
     "repost_count": 11
@@ -19691,12 +19829,12 @@
    "id": "2117004709198475365",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 3370,
-    "impression_count": 2152060,
-    "like_count": 14023,
-    "quote_count": 829,
+    "bookmark_count": 3385,
+    "impression_count": 2176297,
+    "like_count": 14052,
+    "quote_count": 834,
     "reply_count": 1515,
-    "repost_count": 884
+    "repost_count": 890
    },
    "text": "Day 28/ tibo's game has landed\n\ni spent $5.99 on this domain, but i had a blast making it with grok bot and cursor! i hope you enjoy it and find all the easter eggs 🤍 \n\nif i did it right you should be able to play it inside of X too\n\nhttps://t.co/diV7PyPaqv"
   },
@@ -19733,9 +19871,9 @@
     "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。\n\nそしてTavilyとの比較では、検索1位の正解率で30ポイント差をつけました。\n\nグラフを見てもらえば分かる通りです。\n\nしかもRustXNGはオープンソース。自分の環境で動かせます。\n\nこれ、我ながらすごいことなのでは....??\n\nX-algorithmに基づいてリポジトリはリプにおいておきますね！"
    },
    "public_metrics": {
-    "bookmark_count": 3365,
-    "impression_count": 551681,
-    "like_count": 2691,
+    "bookmark_count": 3358,
+    "impression_count": 554467,
+    "like_count": 2689,
     "quote_count": 75,
     "reply_count": 40,
     "repost_count": 274
@@ -19774,7 +19912,7 @@
    },
    "public_metrics": {
     "bookmark_count": 946,
-    "impression_count": 78400,
+    "impression_count": 79130,
     "like_count": 730,
     "quote_count": 16,
     "reply_count": 72,
@@ -19814,12 +19952,12 @@
     "text": "32× growth in one quarter: From 10K to 320K customers across 100+ countries, with over 100 million messages processed.\n\nWe are not building just another personal AI product. Our long-term vision for Teamily AI is to build the central platform of the next-generation Agentic Internet, where AI agents deliver services and perform real work directly, no longer confined to traditional web, desktop, or mobile apps distributed through app stores and search engines. Our recent growth has only strengthened my conviction in this vision.\n\nAgent-as-a-Service (AaaS) will be as accessible as connecting with friends on a social network. Just as Google democratized access to information and services in the web era, Teamily AI aims to democratize access to intelligence and services in the Agentic Internet era, making the right intelligence, people, and services equally accessible to everyone.\n\nIn this letter to Teamily AI customers, ecosystem partners, and investors, we share our growth, reflect on our early foresight and what we've built, discuss how we see the evolving AI agent landscape, and outline where we're heading next."
    },
    "public_metrics": {
-    "bookmark_count": 302,
-    "impression_count": 863571,
-    "like_count": 1238,
-    "quote_count": 104,
-    "reply_count": 152,
-    "repost_count": 141
+    "bookmark_count": 304,
+    "impression_count": 911738,
+    "like_count": 1110,
+    "quote_count": 62,
+    "reply_count": 142,
+    "repost_count": 134
    },
    "referenced_tweets": [
     {
@@ -19851,9 +19989,9 @@
    "id": "2117641078342062175",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 198,
-    "impression_count": 50501,
-    "like_count": 152,
+    "bookmark_count": 204,
+    "impression_count": 52922,
+    "like_count": 156,
     "quote_count": 2,
     "reply_count": 12,
     "repost_count": 13
@@ -19882,12 +20020,12 @@
    "id": "2106941828054614149",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 380,
-    "impression_count": 174102,
-    "like_count": 249,
-    "quote_count": 13,
-    "reply_count": 63,
-    "repost_count": 9
+    "bookmark_count": 518,
+    "impression_count": 226338,
+    "like_count": 294,
+    "quote_count": 15,
+    "reply_count": 67,
+    "repost_count": 14
    },
    "text": "T3 这么牛逼吗？至今还没体验过 https://t.co/oemjTDG8qs"
   },
@@ -19913,12 +20051,12 @@
    "id": "2117963744651415992",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 72,
-    "impression_count": 10467,
-    "like_count": 48,
+    "bookmark_count": 138,
+    "impression_count": 20739,
+    "like_count": 96,
     "quote_count": 2,
-    "reply_count": 2,
-    "repost_count": 1
+    "reply_count": 4,
+    "repost_count": 2
    },
    "text": "Today we're opening OpenCodeReview to everyone: AI code review for every pull request, on the AI plan you already pay for\n\n&gt; Self-hosted\n&gt; Runs on your machine, with your own AI\n&gt; No new subscription\n&gt; No per-seat bill\n\nReview every PR https://t.co/rxs0KsgxzM"
   },
@@ -19949,10 +20087,10 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 107,
-    "impression_count": 12690,
-    "like_count": 153,
+    "impression_count": 13035,
+    "like_count": 156,
     "quote_count": 5,
-    "reply_count": 46,
+    "reply_count": 47,
     "repost_count": 6
    },
    "text": "云端 Grok Bot 四通八达，调用本地 Coding Agent 两眼抓瞎？ https://t.co/ySKT4ODkZT"
@@ -20031,8 +20169,8 @@
    },
    "public_metrics": {
     "bookmark_count": 143,
-    "impression_count": 41982,
-    "like_count": 205,
+    "impression_count": 42715,
+    "like_count": 206,
     "quote_count": 7,
     "reply_count": 25,
     "repost_count": 20
@@ -20090,7 +20228,7 @@
    "username": "opencode"
   },
   "2038888495058407424": {
-   "description": "Run a team of agents any subscription\nOpen source (MIT) • Desktop + mobile + VPS\nRepo: https://t.co/NW8tpPUBw4 (110k ⭐️)\nDiscord: https://t.co/BOypIwh6Li",
+   "description": "Run a team of agents on any subscription\nOpen source (MIT) • Desktop + mobile + VPS\nRepo: https://t.co/NW8tpPUBw4 (100k+ ⭐️)\nDiscord: https://t.co/BOypIwh6Li",
    "id": "2038888495058407424",
    "name": "Orca",
    "username": "orca_build"
@@ -20174,7 +20312,7 @@
    "username": "mitchellh"
   },
   "2045135343108722689": {
-   "description": "头部安全公司 AI 研发 | 讲师\n探索 AI | 创造价值 | 开源分享\nAI 知识+自媒体+答疑群199\n联系方式：⬇",
+   "description": "头部安全公司 AI 研发 | 讲师\n北京xx大学计算机硕士 ｜ 多篇专利& SI 论文\n探索 AI | 创造价值 | 开源分享",
    "id": "2045135343108722689",
    "name": "刘老板",
    "username": "leo_xiaolei"
@@ -20282,7 +20420,7 @@
    "username": "0xWatkin"
   },
   "703796597335822336": {
-   "description": "Crafting app icons ✦ Daily design tips\nBuilding : https://t.co/ilQfeddIzy\nIcon skills : https://t.co/sboM28sWs0",
+   "description": "Crafting app icons ✦ Daily design tips\nBuilding : https://t.co/uOt4s9PEO6\nIcon skills : https://t.co/sboM28tuhy",
    "id": "703796597335822336",
    "name": "枯白啃设计",
    "username": "Kubai087"
@@ -20378,7 +20516,7 @@
    "username": "realchendahuang"
   },
   "825766640": {
-   "description": "Evals Evals Evals @OpenAI , opinions my own\n\nAbout Me: https://t.co/P6WyeKkyTa",
+   "description": "Evals Evals Evals @OpenAI \n\nAbout Me: https://t.co/P6WyeKk13C",
    "id": "825766640",
    "name": "Hamel Husain",
    "username": "HamelHusain"
@@ -22814,7 +22952,7 @@
    "username": "cccch1mneyyyy"
   },
   "1992461": {
-   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、记录日常。\n开源项目：https://t.co/K6MyV5SkWk",
+   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、记录日常。",
    "id": "1992461",
    "name": "Gabe",
    "username": "fishjar"
@@ -22898,10 +23036,28 @@
    "username": "JinJieBeWater"
   },
   "1932647771817074688": {
+   "description": "Don't Just Prompt. Design. 🛠️\n🎓 UPM｜用 AI 优雅偷懒，把奇思妙想变成生产力 \n自研 AI Skill｜UCI 全能下载系统｜GitHub 1000+⭐\n持续输出：创意视频｜自动化工作流｜可落地的 AI 提效指南",
    "id": "1932647771817074688",
    "name": "Eian",
-   "username": "EianLu",
-   "description": "Don't Just Prompt. Design. 🛠️\n🎓 UPM｜用 AI 优雅偷懒，把奇思妙想变成生产力 \n自研 AI Skill｜UCI 全能下载系统｜GitHub 1000+⭐\n持续输出：创意视频｜自动化工作流｜可落地的 AI 提效指南"
+   "username": "EianLu"
+  },
+  "1594959396764672000": {
+   "description": "Founder & CEO, STARSRC Limited\n\nhttps://t.co/Qpr98zYiIq: Forkable POSIX. Infinite Agent Compute.\n#buildinpublic",
+   "id": "1594959396764672000",
+   "name": "FanXing",
+   "username": "fanxing321"
+  },
+  "1948266849520832512": {
+   "description": "软件工程师 | AI & Tech Observer\n保持好奇，独立思考，偶尔说点实话",
+   "id": "1948266849520832512",
+   "name": "Kxians",
+   "username": "xulijian1994"
+  },
+  "1411224894935814144": {
+   "description": "熊市學習，牛市爆發！\n💎合作DM✉️",
+   "id": "1411224894935814144",
+   "name": "ProvenDaily🔶BNB",
+   "username": "proven018"
   }
  }
 }
