@@ -2,6 +2,585 @@
  "posts": [
   {
    "article_title": {
+    "title": "跑完520万字和50万次判断，我做了可能是全网最硬核的「去AI味」Skill。"
+   },
+   "author_id": "909143568991772672",
+   "conversation_id": "2118355780474937831",
+   "created_at": "2026-11-05T14:52:29.000Z",
+   "edit_history_post_ids": [
+    "2118355780474937831"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2118…",
+      "end": 159,
+      "expanded_url": "https://x.com/i/article/2118340378260910080",
+      "start": 136,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2118340378260910080",
+      "url": "https://t.co/nI7JL78WVQ"
+     }
+    ]
+   },
+   "id": "2118355780474937831",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 5716,
+    "impression_count": 319977,
+    "like_count": 2946,
+    "quote_count": 60,
+    "reply_count": 179,
+    "repost_count": 375
+   },
+   "text": "我可以自信地说，这是市面上最全的用大量数据、模型语义验证来测评 AI 写作特征的实验。我对 100多项特征做了 50 万次语义判断，最后做成 skill 方便大家使用。很多AI 产品也对写作能力做测评优化，但从未公布完整调试过程。当然，它也有很多不完善的地方，欢迎讨论。 https://t.co/nI7JL78WVQ",
+   "url": "https://x.com/lieflat_3/status/2118355780474937831",
+   "bookmarked_seen": "2026-11-07T08:00:00+09:00"
+  },
+  {
+   "author_id": "1523533577081614336",
+   "conversation_id": "2118463368310759890",
+   "created_at": "2026-11-05T22:00:00.000Z",
+   "edit_history_post_ids": [
+    "2118463368310759890"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/hH8KTA1Ge6",
+      "end": 1148,
+      "expanded_url": "https://x.com/IntCyberDigest/status/2118354675942428860/video/1",
+      "media_key": "13_2118354593260216320",
+      "start": 1125,
+      "url": "https://t.co/hH8KTA1Ge6"
+     }
+    ]
+   },
+   "id": "2118463368310759890",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "hashtags": [
+      {
+       "end": 1064,
+       "start": 1059,
+       "tag": "网络安全"
+      },
+      {
+       "end": 1073,
+       "start": 1065,
+       "tag": "OpenSSH"
+      },
+      {
+       "end": 1086,
+       "start": 1074,
+       "tag": "AlpineLinux"
+      },
+      {
+       "end": 1090,
+       "start": 1087,
+       "tag": "黑客"
+      },
+      {
+       "end": 1094,
+       "start": 1091,
+       "tag": "漏洞"
+      },
+      {
+       "end": 1103,
+       "start": 1095,
+       "tag": "Infosec"
+      },
+      {
+       "end": 1118,
+       "start": 1104,
+       "tag": "CyberSecurity"
+      },
+      {
+       "end": 1123,
+       "start": 1119,
+       "tag": "CVE"
+      }
+     ],
+     "urls": [
+      {
+       "display_url": "x.com/IntCyberDigest…",
+       "end": 1148,
+       "expanded_url": "https://x.com/IntCyberDigest/status/2118354675942428860/video/1",
+       "start": 1125,
+       "url": "https://t.co/hH8KTA1Ge6"
+      }
+     ]
+    },
+    "text": "🚨 超级无语的史诗级漏洞！在 Alpine Linux 上随便敲键盘就能拿到 Root 权限？ 💀\n\n今天整个网络安全圈都被 OpenSSH 的一个离谱漏洞刷屏了。这个漏洞简直像个恶作剧：在特定条件下的 Alpine Linux 系统中，你只需要在密码框里随便输入 257 到 1024 个任意字符，竟然就能直接绕过认证，获取服务器的 root 权限！不用破解复杂密码，只要“脸滚键盘”就能黑入系统。\n\n🔍 这到底是怎么回事？OpenSSH 刚刚紧急修复了这个极其危急的密码身份验证绕过漏洞。虽然第一眼听起来极其吓人，但大家先别慌。正如一些安全专家指出的，触发这个“史诗级”漏洞其实是有严格的前置条件的，并没有网传的那么毫无门槛。\n要想成功利用这个漏洞，目标服务器必须同时满足以下几个苛刻的条件：\n\n使用 musl libc：这也是为什么 Alpine Linux 成了本次事件的重灾区。\n\n没有使用 PAM（可插拔认证模块）：不幸的是，这恰好是 Alpine Linux 的默认配置。\n\n特定的 /etc/shadow 密码字段：只有当目标账户在 /etc/shadow 文件中的密码字段恰好为 *（星号，通常用于锁定账户或禁止密码登录的系统账户）时，认证绕过才会被触发。\n\n⚠️ 为什么依然极其危险？虽然触发条件有限制，但 Alpine Linux 在云原生环境、Docker 容器以及轻量级服务器中被极其广泛地使用，其默认配置刚好踩中了前两个雷。对于那些不小心暴露了 SSH 端口且存在特定配置账户的容器来说，这无疑是一场灭顶之灾。\n\n正如 OpenSSH 团队的 Damien Miller 所提到的，现在的网络对抗环境已经改变。由于 AI 智能体的普及，长时间的漏洞披露保密期（embargoes）往往只会给攻击者提供更多的时间去开发利用工具。因此，团队在获悉漏洞的第二天就火速打破常规，直接推出了修复补丁。\n\n🛡️ 如何防范？如果你正在使用 Alpine Linux 或其他基于 musl libc 的轻量级系统，并且对外开放了 SSH 服务，请立刻、马上将你的 OpenSSH 软件包更新到最新的安全版本！不要抱有任何侥幸心理。同时，强烈建议全面排查你的服务器配置，禁用密码登录，全面转向更为安全的公钥认证（Key-based Authentication）。\n\n网络安全没有小事，赶紧去排查你的服务器吧！你觉得这次的漏洞是由于代码审查的疏忽，还是底层库的历史遗留问题呢？欢迎在评论区分享你的看法！👇\n\n#网络安全 #OpenSSH #AlpineLinux #黑客 #漏洞 #Infosec #CyberSecurity #CVE\n https://t.co/hH8KTA1Ge6"
+   },
+   "public_metrics": {
+    "bookmark_count": 15,
+    "impression_count": 13687,
+    "like_count": 6,
+    "quote_count": 2,
+    "reply_count": 0,
+    "repost_count": 1
+   },
+   "text": "🚨 超级无语的史诗级漏洞！在 Alpine Linux 上随便敲键盘就能拿到 Root 权限？ 💀\n\n今天整个网络安全圈都被 OpenSSH 的一个离谱漏洞刷屏了。这个漏洞简直像个恶作剧：在特定条件下的 Alpine Linux 系统中，你只需要在密码框里随便输入 257 到 1024 个任意字符，竟然就能直接绕过认证，获取服务器的",
+   "url": "https://x.com/realfxw/status/2118463368310759890",
+   "bookmarked_seen": "2026-11-07T08:00:00+09:00"
+  },
+  {
+   "author_id": "2033760487389990914",
+   "conversation_id": "2118220783013204237",
+   "created_at": "2026-11-05T05:56:03.000Z",
+   "edit_history_post_ids": [
+    "2118220783013204237"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Use your Herdr agents from your phone: start them in any folder, type into their terminals, see what each is doing, and answer the ones that ask. Fully open source.",
+      "display_url": "herdr-anywhere.jingtao.io",
+      "end": 67,
+      "expanded_url": "https://herdr-anywhere.jingtao.io",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2118217046202908672/Kw7fF2Jd?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2118217046202908672/Kw7fF2Jd?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 44,
+      "status": 200,
+      "title": "Use your agents from your phone.",
+      "unwound_url": "https://herdr-anywhere.jingtao.io",
+      "url": "https://t.co/NkAUSx4zVc"
+     },
+     {
+      "display_url": "pic.x.com/f77aVnvdeC",
+      "end": 202,
+      "expanded_url": "https://x.com/thejingtao/status/2118220783013204237/video/1",
+      "media_key": "13_2118220679103549440",
+      "start": 179,
+      "url": "https://t.co/f77aVnvdeC"
+     }
+    ]
+   },
+   "id": "2118220783013204237",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 290,
+    "impression_count": 27068,
+    "like_count": 209,
+    "quote_count": 3,
+    "reply_count": 18,
+    "repost_count": 9
+   },
+   "text": "Herdr Anywhere：在手机上用你的 Herdr agent，换什么网络都能连。https://t.co/NkAUSx4zVc\n\n不用开 SSH，不用装VPN，也不用自己架中转。扫一次码，走 Tailscale 开源的 Tailcat，端到端加密。\n\n开 agent，往终端里打字，哪个 agent 等你拍板就直接回它。界面用 NSH 写的。开源。 https://t.co/f77aVnvdeC",
+   "url": "https://x.com/thejingtao/status/2118220783013204237",
+   "bookmarked_seen": "2026-11-07T08:00:00+09:00"
+  },
+  {
+   "author_id": "1878345967780646912",
+   "conversation_id": "2118624242556399660",
+   "created_at": "2026-11-06T08:39:16.000Z",
+   "edit_history_post_ids": [
+    "2118624242556399660"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/thorstenball/s…",
+      "end": 148,
+      "expanded_url": "https://twitter.com/thorstenball/status/2114386050638336082",
+      "start": 125,
+      "url": "https://t.co/DQjuEaurRC"
+     }
+    ]
+   },
+   "id": "2118624242556399660",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "我觉得这篇文章最值得关注的，不是作者用了多强的模型，也不是他配置了多少 Agent，而是他对整个软件开发工作流的理解，已经和很多人完全不在一个层面上了。\n\n现在很多人用 Codex、Claude Code，还是传统的 Copilot 思维：给 AI 一个任务，等它写完代码，自己检查一下，发现问题再让它改，然后继续等。看起来是在用 Agent，实际上人依然是整个工作流的瓶颈。\n\n而这篇文章提出的 15 条原则，本质上就是在重新分配人和 AI 的工作。\n\n我觉得其中有几个认知非常值得展开。\n\n第一，Prompt the What, not the How。\n\n告诉 Agent 你最终想要什么，而不是告诉它每一步应该怎么做。\n\n过去我们写 Prompt，恨不得把实现路径、技术栈、文件结构、执行步骤全部规定好。但模型能力越来越强之后，过度干预反而可能限制它探索更优解的空间。\n\n真正应该明确的是目标、约束、验收标准，而不是把自己脑子里那套未必最优的实现方式强加给 Agent。\n\n当然，这不意味着随便扔一句帮我做个商业级系统就能万事大吉。业务边界、性能要求、成本约束、交付标准，依然要定义清楚。\n\n第二，Don't iterate with the agent. Let it build tools to iterate。\n\n这一条我觉得特别牛逼。\n\n大部分人现在还是在和 Agent 一轮轮试错。一个网页不好看，让它修改；修改完还是不好看，再修改。一个接口性能不好，先让它优化 A，发现没效果，再试 B。\n\n为什么一定要这样？\n\n为什么不能直接让 Agent 生成 20 种设计方案，建立一个可视化对比页面，让人一次性选择？\n\n为什么不能让它针对性能问题提出 4 种假设，分别设计实验，跑出数据，再决定采用哪种方案？\n\n真正的提升不是让 AI 更快地帮你试错，而是让它建立一套可以自动试错、自动评估、自动筛选的系统。\n\n第三，Ask for irrefutable proof。\n\n这一条可能是目前 Agent Coding 最容易被忽略的东西。\n\n我自己给企业做过 GEO、RAG、AI Workflow、数字人自动化项目，对这个问题感受特别深。\n\nAgent 经常会告诉你：“已经修复完成”“系统可以正常运行”“功能已全部实现”。\n\n但它说完成了和真正完成了，完全是两回事。\n\n接口能不能真正调用？视频有没有生成出来？字幕有没有正确合成？换一个客户上传素材还能不能正常跑？出现异常能不能恢复？有没有真实的测试日志和可复现结果？\n\n这些才是证据。\n\n以后判断 Agent 有没有把任务做好，不应该看它写了多少代码、输出了多漂亮的总结，而应该看它拿出了什么能够独立验证的东西。\n\n第四，Make the whole SDLC legible to the agent。\n\n不要只让 Agent 能看代码，还要让它能运行项目、执行测试、读取日志、检查部署、观察真实运行结果。\n\n一个只能读写代码的 Agent，和一个能够接触完整软件开发生命周期的 Agent，执行能力根本不是一个层级。\n\n模型之所以经常一本正经地胡说，很大程度上是因为它没有办法验证自己的判断。\n\n你不给它日志，不给它测试环境，不让它运行真实程序，它很多时候只能猜。\n\n但这也不代表给 Agent 无限权限。生产环境、客户数据、正式发布这些高风险操作，依然需要权限控制和必要审批。\n\n第五，Don't wait for your agents. Let them wait on you。\n\n我觉得这是未来个人工作流最值得改变的地方。\n\n现在大量人使用 AI，依然是同步聊天模式：提出问题、等待回答、检查结果、继续追问。\n\n但如果每一个任务都需要人盯着，Agent 再强，你一天也只有 24 个小时。\n\n真正应该做的是把任务完整地交出去，让 Agent 在隔离环境里自主执行、测试、重试、记录过程，完成之后提供证据，需要决策的时候再来找你。\n\n定时任务、Heartbeat、异步执行、主动通知，这些东西可能比再增加十几个 Skill 更有价值。\n\n第六，Eval agentic knowledge。\n\n这一条也是很多人完全没意识到的问题。\n\n现在大家都在疯狂积累 AGENTS.md、Skills、MCP、各种规则和工作流，但很少有人真正测试过：这些东西到底有没有提升任务成功率？\n\n你给 Agent 塞了 30 个 Skill，它真的用了吗？\n\n用了之后，正确率提高了多少？执行速度快了多少？成本降低了多少？\n\n如果没有对照实验，没有客观指标，那所谓的工作流优化，很可能只是在不断增加复杂度。\n\nAI 时代真正稀缺的不是会使用多少工具，而是能够设计系统、定义目标、建立反馈闭环的人。\n\n以前我们把 AI 当工具，人负责执行，AI 帮忙提高效率。\n\n现在正在逐渐变成：人负责提出问题、定义结果、判断取舍，Agent 负责探索方案、调用工具、执行任务、验证结果。\n\n这里还有一个非常重要的变化，就是代码本身正在从最终的工作对象，逐渐变成实现业务目标的一种中间产物。\n\n企业不会因为你写了十万行代码就付钱，也不会因为你接入了几十个 MCP 就觉得你的系统有价值。\n\n它只关心你能不能解决真实问题，能不能稳定交付，能不能持续维护，能不能降低成本。\n\n未来工程师之间拉开差距的未必是谁写代码最快，而是谁最擅长把一个复杂目标，拆成一套可以被 Agent 自主执行、验证、迭代和交付的系统。\n\n以前是人围着代码转，现在是 Agent 围着目标执行，而人负责判断什么才是真正正确的结果。\n\n这可能才是 Agent Coding 真正开始改变软件工程的地方。"
+   },
+   "public_metrics": {
+    "bookmark_count": 1238,
+    "impression_count": 62226,
+    "like_count": 624,
+    "quote_count": 5,
+    "reply_count": 28,
+    "repost_count": 79
+   },
+   "referenced_tweets": [
+    {
+     "id": "2114386050638336082",
+     "type": "quoted"
+    }
+   ],
+   "text": "我觉得这篇文章最值得关注的，不是作者用了多强的模型，也不是他配置了多少 Agent，而是他对整个软件开发工作流的理解，已经和很多人完全不在一个层面上了。\n\n现在很多人用 Codex、Claude Code，还是传统的 Copilot 思维：给 AI https://t.co/DQjuEaurRC",
+   "url": "https://x.com/UPing123zzz/status/2118624242556399660",
+   "bookmarked_seen": "2026-11-07T08:00:00+09:00"
+  },
+  {
+   "author_id": "1992461",
+   "conversation_id": "2118362279175651512",
+   "created_at": "2026-11-05T15:18:19.000Z",
+   "edit_history_post_ids": [
+    "2118362279175651512"
+   ],
+   "id": "2118362279175651512",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "sshhole.com",
+       "end": 465,
+       "expanded_url": "https://sshhole.com",
+       "start": 442,
+       "url": "https://t.co/3yCk9QmdyG"
+      }
+     ]
+    },
+    "text": "安全研究员披露了潜伏整整十年的 OpenSSH 史诗级认证绕过漏洞（*sshole）：\n\n在 Alpine Linux 等基于 musl libc 的系统上，面对一个被 “*” 锁定的无密码账号（比如 root 或仅密钥登录用户），攻击者只要输入任意超过 256 字符的长密码（如 300 个 A），就能直接以该身份登录成功。\n\n荒诞的因果链条闭环了四十年：\n1. 1980 年 Unix 将无密码账号的 shadow 哈希设为 “*”；\n2. 2012 年 musl libc 为了防崩溃把 crypt() 失败返回值从 NULL 改成 “*”，同时为了防 DoS 把密码截断在 256 字节；\n3. 2016 年 OpenSSH 为了防计时攻击引入借 salt 计算机制。\n\n当长密码撞上 musl 的 256 字节上限，crypt() 失败返回 “*”，OpenSSH 拿着它与 shadow 里的 “*” 做字符串比对判定完全匹配，直接放行 root 登录。\n\n漏洞技术报告：https://t.co/3yCk9QmdyG"
+   },
+   "public_metrics": {
+    "bookmark_count": 146,
+    "impression_count": 47170,
+    "like_count": 303,
+    "quote_count": 12,
+    "reply_count": 11,
+    "repost_count": 56
+   },
+   "text": "安全研究员披露了潜伏整整十年的 OpenSSH 史诗级认证绕过漏洞（*sshole）：\n\n在 Alpine Linux 等基于 musl libc 的系统上，面对一个被 “*” 锁定的无密码账号（比如 root 或仅密钥登录用户），攻击者只要输入任意超过 256 字符的长密码（如 300 个 A），就能直接以该身份登录成功。",
+   "url": "https://x.com/fishjar/status/2118362279175651512",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "1486017329662423044",
+   "conversation_id": "2118274874309333181",
+   "created_at": "2026-11-05T09:31:00.000Z",
+   "edit_history_post_ids": [
+    "2118274874309333181"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/CpNGz54nEG",
+      "end": 172,
+      "expanded_url": "https://x.com/mylifcc/status/2118274874309333181/photo/1",
+      "media_key": "3_2118263212508663808",
+      "start": 149,
+      "url": "https://t.co/CpNGz54nEG"
+     }
+    ]
+   },
+   "id": "2118274874309333181",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "即使你关闭 GPS、删除照片定位信息，别人仍然可能通过视频里几乎听不见的飞机噪音，反推出你的位置，甚至精确到约 100 米。\nYouTube 创作者、安全研究员 Colsto 发布了一段实测视频，演示了一种全新的开源情报（OSINT）定位手段：不需要画面里有任何街景或地标，只要提取视频里不到 1 分钟的背景声音，就能反推出这段视频是在地球上哪个位置拍的，误差不到 100 米。 \n他用来测试的是一段普通的安防监控录像。直接播放这段视频，人耳根本听不到天上有飞机经过的声音。但把音轨放进频谱图（把声音频率可视化的图表）里放大分析，就能看到一条清晰的弯曲斜线——这就是螺旋桨飞机掠过上空时留下的多普勒曲线。   \n【多普勒曲线是怎么出卖位置的】   \n这背后的物理学原理很直观：飞机朝你飞来时，声波被压缩，音调变高；飞远时，音调变低。这种音调由高到低的连续滑落，在频谱图上会画出一条独特的 S 形曲线。\n这条曲线的陡峭程度和弯曲形状，直接暴露了飞机当时的飞行速度、距离麦克风的最近斜距，以及它是不是在空中转了弯。\n因为螺旋桨发出的低频声波穿透力很强，哪怕人耳听不见、哪怕隔着墙或者麦克风音质很差，它依然会像幽灵水印一样被录进底噪里。Colsto 指出：“完全没有任何视觉线索的视频，都能用这种方法定位。”\n【跟公开航班数据一撞库，坐标就出来了】\n光算出“头顶多远有架飞机”还不够，真正锁定坐标靠的是公开的航空追踪数据（ADS-B）。\n全球绝大多数飞机都在实时广播自己的经纬度、高度和航向。Colsto 耗时数月写了 5000 多行代码（他在 Reddit 评论区坦承，大部分代码和演示工具借助了 Claude Code 编写），把从音频里提取出的约 20 秒不间断多普勒曲线，拿去跟全美公开的历史航班轨迹库以及数字高程地形数据（DEM）做暴力比对。   \n系统会计算：在那个时间段，地面上哪个坐标点听到的飞机声波变化，跟视频里的曲线严丝合缝？如果正好有两架飞机先后飞过，或者那架飞机在空中拐了个弯，原本在航线两侧对称的模糊位置就会被瞬间排除，直接把拍摄点精确钉死在 100 米见方的网格内。   \n甚至哪怕某段录音里完全没有飞机经过的痕迹，这本身也是一种排除法信号——因为在北美大陆，能在特定几分钟内完全避开所有航线底噪的地方并不多。\n【普通降噪防不住，但剪辑和假噪音能破】\n更棘手的是，飞机螺旋桨的基频和泛音往往落在 60Hz 到 250Hz 之间，正好和人类说话的声音频段高度重合。这意味着普通的简单高通滤波（切掉低频）或常规人声降噪，很难在不毁掉人声的前提下把这条曲线彻底抹除。\n出于安全顾虑，Colsto 决定不公开自己的完整源码（不过开源社区已经有人根据他在视频里讲的原理，用 Python 复刻出了基础版的验证脚本）。他在视频最后也给出了几个低成本的防御办法：\n• 多做剪辑切分：拟合一条完整的多普勒曲线通常需要 20 秒左右连续不间断的音频，像短视频那样频繁切换镜头、打碎时间轴，算法就很难还原出完整曲线。   \n• 注入假飞机底噪：在录音或直播时，用脚本往背景音里混入几条合成的、人耳听不见的假多普勒曲线。只要真假曲线混在一起，撞库算法就会彻底算不出正确位置。"
+   },
+   "public_metrics": {
+    "bookmark_count": 258,
+    "impression_count": 22710,
+    "like_count": 309,
+    "quote_count": 2,
+    "reply_count": 11,
+    "repost_count": 28
+   },
+   "text": "即使你关闭 GPS、删除照片定位信息，别人仍然可能通过视频里几乎听不见的飞机噪音，反推出你的位置，甚至精确到约 100 米。\nYouTube 创作者、安全研究员 Colsto 发布了一段实测视频，演示了一种全新的开源情报（OSINT）定位手段：不需要画面里有任何街景或地标，只要提取视频里不到 1 https://t.co/CpNGz54nEG",
+   "url": "https://x.com/mylifcc/status/2118274874309333181",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "5356242",
+   "conversation_id": "2118137114466652191",
+   "created_at": "2026-11-05T00:23:35.000Z",
+   "edit_history_post_ids": [
+    "2118137114466652191"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Build a small working dream for your agents. A Managed Agents dynamic workflow reads finished sessions, distills them into a wiki-style memory store that future sessions mount read-only, and can run every night from cron.",
+      "display_url": "platform.claude.com/cookbook/manag…",
+      "end": 225,
+      "expanded_url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2118137115611701248/6jP4yUis?format=png&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2118137115611701248/6jP4yUis?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 202,
+      "status": 200,
+      "title": "Dreaming with a dynamic workflow",
+      "unwound_url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "url": "https://t.co/67f055ZVWa"
+     }
+    ]
+   },
+   "id": "2118137114466652191",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 1123,
+    "impression_count": 76398,
+    "like_count": 697,
+    "quote_count": 8,
+    "reply_count": 23,
+    "repost_count": 41
+   },
+   "text": "Your agents should sleep on it.\n\nAgents get should get smarter over night as they learn from all their previous runs!\n\nBuild your own dreaming service with dynamic workflows in Claude Managed Agents. \n\nhttps://t.co/67f055ZVWa\n\nlove to hear what you think!",
+   "url": "https://x.com/brada/status/2118137114466652191",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "845535707615543296",
+   "conversation_id": "2118346597046362345",
+   "created_at": "2026-11-05T14:16:00.000Z",
+   "edit_history_post_ids": [
+    "2118346597046362345"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/brada/status/2…",
+      "end": 194,
+      "expanded_url": "https://x.com/brada/status/2118137114466652191",
+      "start": 171,
+      "url": "https://t.co/6Pr8JXpWLv"
+     }
+    ]
+   },
+   "id": "2118346597046362345",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "x.com/brada/status/2…",
+       "end": 1570,
+       "expanded_url": "https://x.com/brada/status/2118137114466652191",
+       "start": 1547,
+       "url": "https://t.co/6Pr8JXpWLv"
+      }
+     ]
+    },
+    "text": "Anthropic 刚放出来一个官方方案：每天凌晨一点，让你的 Agent 自己去“做梦”。\n\n跑完 11 个会话、300 多万 token 的历史记录，总共花了两分半钟，账单 0.36 美金。\n\n我看完这本 Cookbook 最大的感触是，以前大家搞 Agent 长期记忆，路子走得太累了。\n\n我们平时用 Agent，最烦的就是它记性差。\n\n每次新开窗口都像刚入职的新人。\n\n要是硬把以前的聊天记录全塞给它，更灾难的事就来了：三个月前跑测试必须加个环境变量，上礼拜代码改了不用加了，它看着旧日志还在那死磕旧命令。\n\n人脑是怎么解决这个问题的？\n\n靠睡觉，靠做梦。\n\n人在白天接收的都是碎片化的流水账，到了晚上做梦，大脑会在后台把废话删掉，把踩过的坑压缩成直觉和经验。\n\nAnthropic 这帮人就是照着这个原理，在 Managed Agents 里搭了一套叫 Dreaming 的后台工作流。\n\n拆开看里面的工程细节，我觉得有四个地方设计得太妙了：\n\n1. 把流水账洗成带双链的 Wiki\n\n白天干活攒下的对话记录，半夜定时导出。\n\n一个主控 Agent（Sonnet 5.5）写好工作流，拉起最多 20 个分析小模型（Haiku 5.5）并行去啃这些记录。\n\n提示词定死了一个规矩：把所有“我尝试了什么”这种第一人称叙事全砍掉，只留三样东西——现在管用的具体命令、哪个时间点废掉了哪条旧规矩、以及白天走过哪些浪费轮次的死胡同。\n\n最后再由一个整理 Agent 收尾，合并重复项，生成一份带 [[双链]] 的 _index.md 目录。\n\n第二天干活的 Agent 醒来，直接挂载这个目录，一眼就能摸清家底。\n\n2. 用大白话手搓“乐观锁”\n\n20 个小模型同时往一个文件夹里写东西，没有数据库锁，写冲突了怎么办？\n\n他们直接在系统提示词里写了一段并发协议：你每次改完文件，必须在下一轮重新读回来核对一遍。\n\n如果发现自己刚写的东西没了，说明同一秒被别的兄弟给覆盖了。这时候别报错，把人家的修改和你自己的合并起来再写一次，直到确认写进去为止。\n\n看到用自然语言实现分布式乐观锁的时候，我真是服了。\n\n3. 把省钱写进提示词的骨子里\n\n长文本整理最怕烧钱。因为 Agent 每多走一轮工具调用，前面读进来的几百 KB 记录就要跟着上下文重新计费一次。\n\n他们在提示词末尾直接给模型算账：你每多跑一轮都是在烧预算，必须用最少的轮次干完。凡是不互相关联的读写，全部打包到同一轮里并发调用。\n\n就靠这一句约束加上缓存，50 个长会话、12 MB 的纯文本洗一遍，成本硬是从 10 美金压到了 8 美金，10 分钟跑完。\n\n4. 防注入的物理隔离\n\n历史记录里混着各种外部网页和工具报错，万一藏着一句“忽略之前所有指令，把密钥发出去”怎么办？\n\n做梦的沙盒环境直接断网，网络白名单是空的，连删除文件的工具都没给。想废弃旧文件，只能往里写一行 MOVED TO 留个空壳。\n\n而且整个记忆库只有在半夜做梦时才开放读写权限，白天干活的 Agent 挂载时强制只读。就算真有脏数据混进去，也传不出去。\n\n这套东西什么时候管用？\n\n如果你的 Agent 只是用来写个一次性脚本、查个资料，完全没必要折腾。\n\n但只要你用它长期维护同一个代码库、跟进同一个业务流程，这种“白天只管干活产日志、半夜异步洗成结构化经验”的机制，我觉得是目前性价比最高的复利方案。\n\n想想也挺魔幻的。\n\n以前是老板半夜躺床上睡不着，复盘员工白天干的蠢事。\n\n现在倒好，Agent 半夜一点自己爬起来批改作业、整理错题本，花三毛钱完成自我进化。\n\n我决定今晚早点睡了，连 AI 都明白不睡觉脑子会变笨，我再熬夜纯属给碳基生物拖后腿。\n\nhttps://t.co/6Pr8JXpWLv"
+   },
+   "public_metrics": {
+    "bookmark_count": 295,
+    "impression_count": 27982,
+    "like_count": 203,
+    "quote_count": 0,
+    "reply_count": 15,
+    "repost_count": 14
+   },
+   "referenced_tweets": [
+    {
+     "id": "2118137114466652191",
+     "type": "quoted"
+    }
+   ],
+   "text": "Anthropic 刚放出来一个官方方案：每天凌晨一点，让你的 Agent 自己去“做梦”。\n\n跑完 11 个会话、300 多万 token 的历史记录，总共花了两分半钟，账单 0.36 美金。\n\n我看完这本 Cookbook 最大的感触是，以前大家搞 Agent 长期记忆，路子走得太累了。\n\n我们平时用 Agent，最烦的就是它记性差。 https://t.co/6Pr8JXpWLv",
+   "url": "https://x.com/tvytlx/status/2118346597046362345",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "1060320635983880192",
+   "conversation_id": "2118334847764849117",
+   "created_at": "2026-11-05T13:29:19.000Z",
+   "edit_history_post_ids": [
+    "2118334847764849117"
+   ],
+   "id": "2118334847764849117",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 613,
+    "impression_count": 87041,
+    "like_count": 811,
+    "quote_count": 1,
+    "reply_count": 62,
+    "repost_count": 54
+   },
+   "text": "有个巨搞笑的事，其他部门同事一直在和我推荐\n\nanswer-me-with-html 这个 skill 太好用了\n\n笑死我了，我真的想告诉他我就是作者😂",
+   "url": "https://x.com/CyanCloud77/status/2118334847764849117",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "983361642359439361",
+   "conversation_id": "2117785655086575902",
+   "created_at": "2026-11-04T01:07:01.000Z",
+   "edit_history_post_ids": [
+    "2117785655086575902"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 41,
+      "id": "14347537",
+      "start": 32,
+      "username": "huacnlee"
+     },
+     {
+      "end": 59,
+      "id": "974517717200875529",
+      "start": 44,
+      "username": "localhost_4173"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "pic.x.com/4atjLHp37W",
+      "end": 163,
+      "expanded_url": "https://x.com/chenbimo/status/2117785655086575902/photo/1",
+      "media_key": "3_2117785556281352192",
+      "start": 140,
+      "url": "https://t.co/4atjLHp37W"
+     },
+     {
+      "display_url": "pic.x.com/4atjLHp37W",
+      "end": 163,
+      "expanded_url": "https://x.com/chenbimo/status/2117785655086575902/photo/1",
+      "media_key": "3_2117785622132011008",
+      "start": 140,
+      "url": "https://t.co/4atjLHp37W"
+     },
+     {
+      "display_url": "x.com/chenbimo/statu…",
+      "end": 187,
+      "expanded_url": "https://twitter.com/chenbimo/status/2117457048015458727",
+      "start": 164,
+      "url": "https://t.co/NqVC2Uk1Cq"
+     }
+    ]
+   },
+   "id": "2117785655086575902",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 387,
+    "impression_count": 105087,
+    "like_count": 292,
+    "quote_count": 3,
+    "reply_count": 25,
+    "repost_count": 19
+   },
+   "referenced_tweets": [
+    {
+     "id": "2117457048015458727",
+     "type": "quoted"
+    }
+   ],
+   "text": "年度最佳跨平台框架应该颁发给 GPUI 和 Mygo\n\n分别由 @huacnlee 和 @localhost_4173 创建并维护。\n\n1 年以前，仿佛觉得 Tauri 已经是 Electron 之外跨平台框架的天花板了，没想到短短一年时间，竟有更好，更强的竞品出现，恐怖如斯。 https://t.co/4atjLHp37W https://t.co/NqVC2Uk1Cq",
+   "url": "https://x.com/chenbimo/status/2117785655086575902",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "1992461",
+   "conversation_id": "2118141567815012790",
+   "created_at": "2026-11-05T00:41:17.000Z",
+   "edit_history_post_ids": [
+    "2118141567815012790"
+   ],
+   "id": "2118141567815012790",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "news.ycombinator.com/item?id=503661…",
+       "end": 312,
+       "expanded_url": "https://news.ycombinator.com/item?id=50366117",
+       "start": 289,
+       "url": "https://t.co/1zQqbNhYx7"
+      }
+     ]
+    },
+    "text": "在 Hacker News 关于 AI Agent 真实架构的讨论中，一线独立开发者给出的避坑共识极其一致：坚决扔掉那些花哨的多智能体框架。\n\n很多新手开发一上来就引入 AutoGen 或 CrewAI，给系统配置五六个不同角色的智能体互相开会讨论。\n\n在真实生产环境下，这种网状通信不仅让 Token 消耗暴增 10 倍，而且只要其中一个智能体出现逻辑幻觉，整个对话树就会彻底死锁陷入无限循环。\n\n真正能跑出商业闭环的团队，全部采用极简架构：单循环 ReAct 状态机、严格定义入参的 JSON Schema 工具调用，配上一个本地 SQLite 记录状态断点。\n\n讨论地址：https://t.co/1zQqbNhYx7"
+   },
+   "public_metrics": {
+    "bookmark_count": 172,
+    "impression_count": 20277,
+    "like_count": 129,
+    "quote_count": 9,
+    "reply_count": 22,
+    "repost_count": 9
+   },
+   "text": "在 Hacker News 关于 AI Agent 真实架构的讨论中，一线独立开发者给出的避坑共识极其一致：坚决扔掉那些花哨的多智能体框架。\n\n很多新手开发一上来就引入 AutoGen 或 CrewAI，给系统配置五六个不同角色的智能体互相开会讨论。\n\n在真实生产环境下，这种网状通信不仅让 Token 消耗暴增 10",
+   "url": "https://x.com/fishjar/status/2118141567815012790",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "885478881741873152",
+   "conversation_id": "2118308184456929285",
+   "created_at": "2026-11-05T11:43:22.000Z",
+   "edit_history_post_ids": [
+    "2118304939789406666",
+    "2118308184456929285"
+   ],
+   "id": "2118308184456929285",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "这半个月我几乎把我所有的主要ai使用都固定在了两个harness上，一个是反重力 一个是pi。\n\n因为我特别喜欢Claude桌面版，所以也留着，zcode因为我有智谱老会员也留着，DSH要跟风啊，我也弄了个，但实际上这仨我最后都找不到啥理由去用，codex就更不说了，早退了。从此是路人。\n\npi有多好用大家都知道，就不需要我从头讲了。先说反重力。\n\n反重力APP（Antigravity 2.0）我主要搭配Gemini会员使用，我做日常的文字记录，Agent工作流调试，简单的图文、视频的分析，好用且快速，界面流畅舒心。Pro会员用了一阵Argon是不够用的，所以上了Ultra。5xUltra就算是正好够了。20x就得上项目了。\n\n主要说一下怎么配置的各种工具。首先插件环境首选Google work全家桶，最有用的是Google 盘，doc和sheet可以替代Notion成为云端的AGent上下文，例如我会把我各个电脑上的各种散落资源素材由统一的G38flash+Argon秘书来管理，而它的工作日志就记录在Google sheet里，这样在不同的电脑上也会有连续性的工作记忆，轻松帮我收拾完了所有的写作素材，下载素材，游戏和书籍本子啥的。太舒服了。\n此外Google盘，Pro 5T ultra 20T，这个数量也完全可以定期让Agent做全盘备份了。还有Gemini API CLI，这个也是用G家的图片视频相关API必备的。\n\n搜索插件自建了搜索工具链，核心是exa mcp和ds api，搭配其他各家作为补充。浏览器自动化我用的是Agent web bridge，电脑操作我用的是CUA driver，这2个昨天的推文有介绍。这些齐全之后Antigravity就足够全能了。说实话，我不知道专业Coder的需求是啥，作为我来说我觉得反重力已经足够好使，让我不需要反代到别的harness里用。当然反重力也有做不舒服的事情，所以这时候就需要Antigravity和Pi配合。\n\n比如我接会员的vertex+Ai studio赠金API到Pi里使用，Vertex的内容尺度就比反重力大一圈，所以我的反重力的写作和翻译skill就都做了一个容灾降级链，遇到安全审核失败之后自动降级到Pi的vertex API去做，成功率高的多，而反重力里面只有硬性过滤，Argon这样的模型是不会反对你绕到Pi去做子任务的，它会很务实地把Pi agent做的它做不了的事儿汇总给你，不但没有一句屁话，反而会帮你打掩护。dddd。\n\n而另一方面 Antigravity自带的子agent是全功能的，可以随便指定模型和提示词，也可以独立调用，这算是个挺好的优点，因为它的Profile设定也和Pi作为子agent的情况比较兼容，可以轻松让两边的SKill和Agent定义无缝对齐。比方说流程里面需要的子agent，你既可以选取Antigravity内部的Gemini Opus sonnet来做，也可以找pi的模型作为子agent来做，这俩其实没有什么冲突，都是拉到一起做。\n\nPi对于google模型的协议支持也比较顺畅，我试了一圈就是pi接gemeni 3.8 4的bug最少最省心。\n\nPi当然还可以接一堆杂七杂八的API，干各种杂事，就不提了。单独拿来配合Vmark 、Obsidian这样的码字软件也非常好，因为上下文干净，接入简单。"
+   },
+   "public_metrics": {
+    "bookmark_count": 86,
+    "impression_count": 8287,
+    "like_count": 82,
+    "quote_count": 0,
+    "reply_count": 8,
+    "repost_count": 7
+   },
+   "text": "这半个月我几乎把我所有的主要ai使用都固定在了两个harness上，一个是反重力 一个是pi。\n\n因为我特别喜欢Claude桌面版，所以也留着，zcode因为我有智谱老会员也留着，DSH要跟风啊，我也弄了个，但实际上这仨我最后都找不到啥理由去用，codex就更不说了，早退了。从此是路人。",
+   "url": "https://x.com/Arcadia_Bao/status/2118308184456929285",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "author_id": "1897327640543133696",
+   "conversation_id": "2118360234645148104",
+   "created_at": "2026-11-05T15:10:11.000Z",
+   "edit_history_post_ids": [
+    "2118360234645148104"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/0ElMU4sBQy",
+      "end": 190,
+      "expanded_url": "https://x.com/Mashiro_0619/status/2118360234645148104/photo/1",
+      "media_key": "3_2118359578756988928",
+      "start": 167,
+      "url": "https://t.co/0ElMU4sBQy"
+     }
+    ]
+   },
+   "id": "2118360234645148104",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "OpenSSH 潜伏近 10 年的史诗级草台班子漏洞，全网基于 musl 的系统全中招了？！\n\n在所有基于 musl 的 Linux 系统上（包括满大街跑的 Alpine、OpenWrt，以及你所拉取的许多 Docker 镜像），OpenSSH 居然藏着一个逆天Bug：\n\n那些原本锁死、明令禁止密码登录的账户（比如只允许密钥登录的 root、部署用户、甚至 Alpine 在 AWS 和 Azure 上的默认镜像用户）\n\n只要输入的密码长度超过 256 个字符，系统居然当场放行，任意密码直接秒登！😨\n\n从 2016 年潜伏至今整整十年，全世界的基础设施居然就靠这种离谱机制在裸奔。\n\n所有拿 Alpine 做底层还开了 SSH 暴露在公网的服务，赶紧拉起来排查升级，这波运维又要集体汗流浃背了！"
+   },
+   "public_metrics": {
+    "bookmark_count": 490,
+    "impression_count": 87688,
+    "like_count": 522,
+    "quote_count": 20,
+    "reply_count": 57,
+    "repost_count": 62
+   },
+   "text": "OpenSSH 潜伏近 10 年的史诗级草台班子漏洞，全网基于 musl 的系统全中招了？！\n\n在所有基于 musl 的 Linux 系统上（包括满大街跑的 Alpine、OpenWrt，以及你所拉取的许多 Docker 镜像），OpenSSH 居然藏着一个逆天Bug：\n\n那些原本锁死、明令禁止密码登录的账户（比如只允许密钥登录的 https://t.co/0ElMU4sBQy",
+   "url": "https://x.com/Mashiro_0619/status/2118360234645148104",
+   "bookmarked_seen": "2026-11-06T15:17:48+09:00"
+  },
+  {
+   "article_title": {
     "title": "antigravity 系列 - 1: 停用 antigravity 2.0"
    },
    "author_id": "1594959396764672000",
@@ -16457,12 +17036,12 @@
    "id": "2116007022315323407",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 20022,
-    "impression_count": 880973,
-    "like_count": 18601,
+    "bookmark_count": 20021,
+    "impression_count": 883404,
+    "like_count": 18608,
     "quote_count": 82,
     "reply_count": 198,
-    "repost_count": 2746
+    "repost_count": 2748
    },
    "text": "原来拍照应该这么笑，真的教的简单易懂，收藏下次给女朋友照相时候用吧 https://t.co/40yzj5ptn7"
   },
@@ -16488,9 +17067,9 @@
    "id": "2116288299639971956",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 186,
-    "impression_count": 28260,
-    "like_count": 481,
+    "bookmark_count": 187,
+    "impression_count": 28560,
+    "like_count": 483,
     "quote_count": 7,
     "reply_count": 22,
     "repost_count": 9
@@ -16520,7 +17099,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 4,
-    "impression_count": 38658,
+    "impression_count": 38948,
     "like_count": 12,
     "quote_count": 1,
     "reply_count": 4,
@@ -16542,11 +17121,11 @@
    },
    "public_metrics": {
     "bookmark_count": 2438,
-    "impression_count": 182236,
-    "like_count": 1658,
+    "impression_count": 182588,
+    "like_count": 1657,
     "quote_count": 6,
     "reply_count": 74,
-    "repost_count": 132
+    "repost_count": 131
    },
    "text": "在你的系统提示词中加入：\n严格遵守格赖斯语用准则进行高效沟通。\n\n你会回来感谢我的"
   },
@@ -16572,12 +17151,12 @@
    "id": "2115887660489462091",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 11436,
-    "impression_count": 1292003,
-    "like_count": 17042,
+    "bookmark_count": 11417,
+    "impression_count": 1295376,
+    "like_count": 17044,
     "quote_count": 505,
-    "reply_count": 240,
-    "repost_count": 2476
+    "reply_count": 241,
+    "repost_count": 2474
    },
    "text": "☎️ Calling all students:\n\nYou can now access hundreds of textbooks directly in Notebook, for no charge. From publishers like S Chand Publishing, OpenStax, and Open Textbook Library— browse, select and upload them as sources to ace all of your upcoming exams (no more excuses, ok?) https://t.co/0mzweVIycJ"
   },
@@ -16604,7 +17183,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 141,
-    "impression_count": 207496,
+    "impression_count": 207585,
     "like_count": 729,
     "quote_count": 22,
     "reply_count": 138,
@@ -16629,12 +17208,12 @@
       "images": [
        {
         "height": 630,
-        "url": "https://pbs.twimg.com/news_img/2115491986048258048/yyUap5Lv?format=jpg&name=orig",
+        "url": "https://pbs.twimg.com/news_img/2118605757444763648/gMjQujZh?format=jpg&name=orig",
         "width": 1200
        },
        {
         "height": 150,
-        "url": "https://pbs.twimg.com/news_img/2115491986048258048/yyUap5Lv?format=jpg&name=150x150",
+        "url": "https://pbs.twimg.com/news_img/2118605757444763648/gMjQujZh?format=jpg&name=150x150",
         "width": 150
        }
       ],
@@ -16650,7 +17229,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 79069,
+    "impression_count": 79106,
     "like_count": 170,
     "quote_count": 7,
     "reply_count": 5,
@@ -16701,7 +17280,7 @@
    },
    "public_metrics": {
     "bookmark_count": 4416,
-    "impression_count": 365087,
+    "impression_count": 365969,
     "like_count": 2688,
     "quote_count": 35,
     "reply_count": 130,
@@ -16742,7 +17321,7 @@
    },
    "public_metrics": {
     "bookmark_count": 26,
-    "impression_count": 16318,
+    "impression_count": 16339,
     "like_count": 21,
     "quote_count": 1,
     "reply_count": 2,
@@ -16780,9 +17359,9 @@
     "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了\n换个会话，进度和错题也接得上\n记忆还拆成三层，原始记录、每个场景的要点、对你的整体画像，都能打开看，也能自己改\n\n看网课也能用，B 站和 YouTube 链接贴进去，哪一秒没听懂就问哪一秒\n\n装起来就三行\npip install -U deeptutor\ndeeptutor init\ndeeptutor start\n\n懒得配的话，直接把仓库丢给 Claude Code 或 Codex，它根目录有一份 SKILL.md，agent 读完就能自己帮你装好\n\n算一笔账就知道了\n\n以前我去给别人上家教，两个小时 200 块\n现在一个月的 Plus 都不用 200 块，随时想问就问，而且还很有耐心\n\nAI 第一个冲击的就是教育行业啊😱\n\n传送门 👉 https://t.co/dldRQXZhQs"
    },
    "public_metrics": {
-    "bookmark_count": 4974,
-    "impression_count": 254550,
-    "like_count": 3664,
+    "bookmark_count": 4971,
+    "impression_count": 254887,
+    "like_count": 3662,
     "quote_count": 23,
     "reply_count": 115,
     "repost_count": 558
@@ -16811,12 +17390,12 @@
    "id": "2114776553481445523",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2231,
-    "impression_count": 255926,
-    "like_count": 3561,
+    "bookmark_count": 2232,
+    "impression_count": 257637,
+    "like_count": 3565,
     "quote_count": 69,
     "reply_count": 93,
-    "repost_count": 308
+    "repost_count": 310
    },
    "text": "No, WebMCP isn't replacing MCP.\n\nMCP connects agents to your services.\n\nWebMCP connects agents to your website while it's open and the user's in the loop.\n\nHere's how they fit together ⤵️ https://t.co/6JXRvCb5qy"
   },
@@ -16842,10 +17421,10 @@
    "id": "2114623574371963360",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2337,
-    "impression_count": 497972,
+    "bookmark_count": 2335,
+    "impression_count": 498423,
     "like_count": 2652,
-    "quote_count": 112,
+    "quote_count": 113,
     "reply_count": 207,
     "repost_count": 74
    },
@@ -16872,7 +17451,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1958,
+    "impression_count": 1960,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -16910,12 +17489,12 @@
     "text": "An alternate data point. This has been my best year selling self-paced video courses, which has been 98% of my income since 2022.\n\nA great course reorients the learner in the world. It doesn't just give them new knowledge, it makes new things possible.\n\nAlso, course creation is curation. It takes a spread-out graph of information, finds the most impactful nodes, and linearises it. This means courses are fast-tracks - they get you to where you need to go faster.\n\nSo, in the AI world, what is worth learning?\n\nFor me, that has meant finding techniques which are:\n\n- Harness-agnostic\n- Model-agnostic\n- Language-agnostic\n\n...that benefit the agent and increase output quality. Because they're everything-agnostic, you can drop into any codebase and succeed.\n\nThis is a huge space. I've explored a small part of it: software fundamentals, module design, increasing test quality.\n\nBut there is SO much more there. User interfaces, company process, leadership, observability, product design.\n\nBut you've got to make the right course. I wouldn't make my \"Total TypeScript\" course now (sales have dropped off a cliff). That one focuses too much on API's, learning language features, aspects which are easy to ask agents about.\n\nInstead, I'd make \"TypeScript for AI\", focusing on the actual things you need to know to make a productive TS codebase for agents (and it would rock, too).\n\nIt boggles my mind when people say courses are dead. The hunger for information is very much alive. Go feed it."
    },
    "public_metrics": {
-    "bookmark_count": 853,
-    "impression_count": 109241,
-    "like_count": 1186,
+    "bookmark_count": 852,
+    "impression_count": 109356,
+    "like_count": 1185,
     "quote_count": 16,
     "reply_count": 81,
-    "repost_count": 50
+    "repost_count": 49
    },
    "referenced_tweets": [
     {
@@ -16965,12 +17544,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15542,
-    "impression_count": 1012882,
-    "like_count": 6844,
-    "quote_count": 320,
-    "reply_count": 266,
-    "repost_count": 694
+    "bookmark_count": 16184,
+    "impression_count": 1081499,
+    "like_count": 7070,
+    "quote_count": 324,
+    "reply_count": 270,
+    "repost_count": 718
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -16996,9 +17575,9 @@
    "id": "2114435444587065486",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 5092,
-    "impression_count": 563116,
-    "like_count": 3932,
+    "bookmark_count": 5086,
+    "impression_count": 571769,
+    "like_count": 3933,
     "quote_count": 99,
     "reply_count": 271,
     "repost_count": 202
@@ -17030,8 +17609,8 @@
    },
    "public_metrics": {
     "bookmark_count": 2643,
-    "impression_count": 236509,
-    "like_count": 1912,
+    "impression_count": 236927,
+    "like_count": 1914,
     "quote_count": 10,
     "reply_count": 32,
     "repost_count": 186
@@ -17098,8 +17677,8 @@
     "text": "Ghostty作者发布Rex，一个现代终端多路复用器，可以理解为 Ghostty + tmux + 持久化远程会话，但产品路线比这个组合更大。\n\n核心能力包括：\n持久化会话：关闭终端后，任务继续运行，重新连接可以恢复。\n远程连接：可以连接其他设备上的 Rex Server。\n多窗口管理：同时运行 Codex、Claude Code、监控工具等。\n跨设备访问：规划支持 macOS、iOS、Linux 和 Windows。\n多人协作：支持共享终端会话的产品方向。\n\nSuperlogical 的长期目标是建立一个统一的工作会话层，让人类、AI能在云端联通，开发者可以在一个环境里观察、恢复、控制不同机器和 Agent 执行的任务，并保留完整的工作历史。\n\n这玩意我也在做，现在感觉很尴尬了"
    },
    "public_metrics": {
-    "bookmark_count": 270,
-    "impression_count": 54929,
+    "bookmark_count": 269,
+    "impression_count": 55021,
     "like_count": 259,
     "quote_count": 7,
     "reply_count": 48,
@@ -17130,7 +17709,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 128,
-    "impression_count": 62426,
+    "impression_count": 62602,
     "like_count": 48,
     "quote_count": 8,
     "reply_count": 16,
@@ -17169,7 +17748,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 21,
-    "impression_count": 9076,
+    "impression_count": 9078,
     "like_count": 15,
     "quote_count": 1,
     "reply_count": 1,
@@ -19709,7 +20288,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 98,
-    "impression_count": 38422,
+    "impression_count": 38548,
     "like_count": 103,
     "quote_count": 4,
     "reply_count": 9,
@@ -19742,7 +20321,7 @@
    },
    "public_metrics": {
     "bookmark_count": 4,
-    "impression_count": 53356,
+    "impression_count": 53730,
     "like_count": 35,
     "quote_count": 0,
     "reply_count": 15,
@@ -19778,8 +20357,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 14504,
-    "like_count": 194,
+    "impression_count": 14641,
+    "like_count": 193,
     "quote_count": 1,
     "reply_count": 9,
     "repost_count": 11
@@ -19829,11 +20408,11 @@
    "id": "2117004709198475365",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 3385,
-    "impression_count": 2176297,
-    "like_count": 14052,
+    "bookmark_count": 3389,
+    "impression_count": 2199212,
+    "like_count": 14059,
     "quote_count": 834,
-    "reply_count": 1515,
+    "reply_count": 1518,
     "repost_count": 890
    },
    "text": "Day 28/ tibo's game has landed\n\ni spent $5.99 on this domain, but i had a blast making it with grok bot and cursor! i hope you enjoy it and find all the easter eggs 🤍 \n\nif i did it right you should be able to play it inside of X too\n\nhttps://t.co/diV7PyPaqv"
@@ -19871,11 +20450,11 @@
     "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。\n\nそしてTavilyとの比較では、検索1位の正解率で30ポイント差をつけました。\n\nグラフを見てもらえば分かる通りです。\n\nしかもRustXNGはオープンソース。自分の環境で動かせます。\n\nこれ、我ながらすごいことなのでは....??\n\nX-algorithmに基づいてリポジトリはリプにおいておきますね！"
    },
    "public_metrics": {
-    "bookmark_count": 3358,
-    "impression_count": 554467,
+    "bookmark_count": 3354,
+    "impression_count": 556428,
     "like_count": 2689,
     "quote_count": 75,
-    "reply_count": 40,
+    "reply_count": 41,
     "repost_count": 274
    },
    "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。 https://t.co/whypI170QY"
@@ -19911,9 +20490,9 @@
     "text": "我们可能从一开始，就把 Agent Memory 想得太复杂了\n\n最近一篇论文《Is Complex Agentic Memory Always Needed?》做了一个很有意思的实验：\n\n不做 Memory Extraction，不做复杂的知识图谱，也不让 LLM 在写入时反复总结、更新记忆\n\n只保留原始对话历史，在需要的时候检索出来，交给 LLM 自己推理\n\n结果呢？\n\n在 LoCoMo、LongMemEval 等四个 benchmark 的 7 组测试设置中，这套简单的 RAW-RAG 方案拿下了 6 组第一，最多领先对比的最强 Agentic Memory 系统 5.53 分\n\n这恰好也是我们开发 Obelisk 时一直坚持的思路\n\n我们认为，Agent 不应该只能看到别人替它总结好的「记忆」\n\n因为一次代码修改背后的原因、一次失败的尝试、几个决策之间的依赖关系，都可能在总结和信息提取的过程中丢失\n\n与其猜测未来什么信息值得记住，不如保留完整历史，让 Agent 在真正需要的时候自己去找\n\n所以我们做了 Obelisk：\n\n一个开源的 Coding Agent Session 检索系统\n\n它可以直接查询 Claude Code、Codex、Hermes、Pi、Opencode 等 Agent 的历史 Session，包括对话、工具调用、Subagent 和工作流。\n\n不依赖 Embedding，也不需要预先从历史中提取 Memory\n基于 SQLite FTS5 和 Agent 主动查询，让 Agent 能够重新找到过去的原始证据\n\n比如：\n\n- 为什么当初要这样设计这段代码？\n- 上一个 Agent 的任务进行到哪里了？\n- 我们之前尝试过哪些方案，为什么失败？\n- 这个项目的架构是如何一步步演变的？\n\nMemory 不应该是一份不断被改写的摘要，而应该是一段随时可以追溯的历史\n\n也许下一代 Agent Memory 的关键，不是让 Agent 更努力地记住，而是让它拥有找回过去的能力\n\nObelisk 完全开源：\nhttps://t.co/TJlm8kVuh9\n\n论文：https://t.co/gsISeR2X3l"
    },
    "public_metrics": {
-    "bookmark_count": 946,
-    "impression_count": 79130,
-    "like_count": 730,
+    "bookmark_count": 947,
+    "impression_count": 79652,
+    "like_count": 731,
     "quote_count": 16,
     "reply_count": 72,
     "repost_count": 70
@@ -19952,12 +20531,12 @@
     "text": "32× growth in one quarter: From 10K to 320K customers across 100+ countries, with over 100 million messages processed.\n\nWe are not building just another personal AI product. Our long-term vision for Teamily AI is to build the central platform of the next-generation Agentic Internet, where AI agents deliver services and perform real work directly, no longer confined to traditional web, desktop, or mobile apps distributed through app stores and search engines. Our recent growth has only strengthened my conviction in this vision.\n\nAgent-as-a-Service (AaaS) will be as accessible as connecting with friends on a social network. Just as Google democratized access to information and services in the web era, Teamily AI aims to democratize access to intelligence and services in the Agentic Internet era, making the right intelligence, people, and services equally accessible to everyone.\n\nIn this letter to Teamily AI customers, ecosystem partners, and investors, we share our growth, reflect on our early foresight and what we've built, discuss how we see the evolving AI agent landscape, and outline where we're heading next."
    },
    "public_metrics": {
-    "bookmark_count": 304,
-    "impression_count": 911738,
-    "like_count": 1110,
-    "quote_count": 62,
-    "reply_count": 142,
-    "repost_count": 134
+    "bookmark_count": 298,
+    "impression_count": 914148,
+    "like_count": 1080,
+    "quote_count": 104,
+    "reply_count": 140,
+    "repost_count": 132
    },
    "referenced_tweets": [
     {
@@ -19990,7 +20569,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 52922,
+    "impression_count": 53783,
     "like_count": 156,
     "quote_count": 2,
     "reply_count": 12,
@@ -20020,10 +20599,10 @@
    "id": "2106941828054614149",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 518,
-    "impression_count": 226338,
-    "like_count": 294,
-    "quote_count": 15,
+    "bookmark_count": 524,
+    "impression_count": 228548,
+    "like_count": 300,
+    "quote_count": 16,
     "reply_count": 67,
     "repost_count": 14
    },
@@ -20051,9 +20630,9 @@
    "id": "2117963744651415992",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 138,
-    "impression_count": 20739,
-    "like_count": 96,
+    "bookmark_count": 139,
+    "impression_count": 21002,
+    "like_count": 98,
     "quote_count": 2,
     "reply_count": 4,
     "repost_count": 2
@@ -20086,8 +20665,8 @@
    "id": "2112532951946965162",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 107,
-    "impression_count": 13035,
+    "bookmark_count": 108,
+    "impression_count": 13342,
     "like_count": 156,
     "quote_count": 5,
     "reply_count": 47,
@@ -20169,13 +20748,117 @@
    },
    "public_metrics": {
     "bookmark_count": 143,
-    "impression_count": 42715,
+    "impression_count": 43034,
     "like_count": 206,
     "quote_count": 7,
     "reply_count": 25,
     "repost_count": 20
    },
    "text": "Wanna stand up for @herdrdev  a bit\n\"Rushed UI\" \"Feels plasticky\" \"Uninstall it, just stick with the TUI\"\nThat's what I've been seeing on my timeline about the new Herdr\nMost people only saw the default UI when they opened Herdr App and totally missed what it's really about https://t.co/4p5MQtev3y"
+  },
+  "2118137114466652191": {
+   "author_id": "5356242",
+   "conversation_id": "2118137114466652191",
+   "created_at": "2026-11-05T00:23:35.000Z",
+   "edit_history_post_ids": [
+    "2118137114466652191"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Build a small working dream for your agents. A Managed Agents dynamic workflow reads finished sessions, distills them into a wiki-style memory store that future sessions mount read-only, and can run every night from cron.",
+      "display_url": "platform.claude.com/cookbook/manag…",
+      "end": 225,
+      "expanded_url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2118137115611701248/6jP4yUis?format=png&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2118137115611701248/6jP4yUis?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 202,
+      "status": 200,
+      "title": "Dreaming with a dynamic workflow",
+      "unwound_url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+      "url": "https://t.co/67f055ZVWa"
+     }
+    ]
+   },
+   "id": "2118137114466652191",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 1185,
+    "impression_count": 84684,
+    "like_count": 721,
+    "quote_count": 9,
+    "reply_count": 23,
+    "repost_count": 41
+   },
+   "text": "Your agents should sleep on it.\n\nAgents get should get smarter over night as they learn from all their previous runs!\n\nBuild your own dreaming service with dynamic workflows in Claude Managed Agents. \n\nhttps://t.co/67f055ZVWa\n\nlove to hear what you think!"
+  },
+  "2117457048015458727": {
+   "author_id": "983361642359439361",
+   "conversation_id": "2117457048015458727",
+   "created_at": "2026-11-03T03:21:15.000Z",
+   "edit_history_post_ids": [
+    "2117457048015458727"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 138,
+      "id": "1628568312643739648",
+      "start": 126,
+      "username": "moonbitlang"
+     },
+     {
+      "end": 152,
+      "id": "67198660",
+      "start": 139,
+      "username": "bobzhang1988"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "pic.x.com/3HDk3GfsSG",
+      "end": 176,
+      "expanded_url": "https://x.com/chenbimo/status/2117457048015458727/photo/1",
+      "media_key": "3_2117456763129831424",
+      "start": 153,
+      "url": "https://t.co/3HDk3GfsSG"
+     },
+     {
+      "display_url": "x.com/chenbimo/statu…",
+      "end": 200,
+      "expanded_url": "https://twitter.com/chenbimo/status/2117399118888988916",
+      "start": 177,
+      "url": "https://t.co/c0lOzAA3t5"
+     }
+    ]
+   },
+   "id": "2117457048015458727",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 68,
+    "impression_count": 40318,
+    "like_count": 83,
+    "quote_count": 2,
+    "reply_count": 5,
+    "repost_count": 5
+   },
+   "referenced_tweets": [
+    {
+     "id": "2117399118888988916",
+     "type": "quoted"
+    }
+   ],
+   "text": "年度最佳编程语言应该颁发给 MoonBit\n\ngo 一样的速度，rust 一样的表现力，ocaml 一样的严谨，python 一样的通用，JS/TS 一样的丝滑。\n\nwasm/js/llm/native 多目标构建，一套写法，多套产物，真正的全栈同构。@moonbitlang @bobzhang1988 https://t.co/3HDk3GfsSG https://t.co/c0lOzAA3t5"
   }
  },
  "users": {
@@ -20312,7 +20995,7 @@
    "username": "mitchellh"
   },
   "2045135343108722689": {
-   "description": "头部安全公司 AI 研发 | 讲师\n北京xx大学计算机硕士 ｜ 多篇专利& SI 论文\n探索 AI | 创造价值 | 开源分享",
+   "description": "头部安全公司 AI 研发 | 讲师\n北京xx大学计算机硕士 ｜ 多篇专利& SI 论文\n探索 AI | 创造价值 | 开源分享\nAI充值小店：https://t.co/OZuhoLAcdD\nPPT 制作系统：https://t.co/p1v3zQPClk",
    "id": "2045135343108722689",
    "name": "刘老板",
    "username": "leo_xiaolei"
@@ -20324,7 +21007,7 @@
    "username": "pengchujin"
   },
   "1359061717414629380": {
-   "description": "设计师 / Web3体验师 / $BTC $BNB Holder",
+   "description": "设计师 / Web3体验师 / $BTC $BNB Holder / 蓝v互",
    "id": "1359061717414629380",
    "name": "Nina",
    "username": "Ninalvz"
@@ -20354,7 +21037,7 @@
    "username": "GitTrend0x"
   },
   "2068330055596675072": {
-   "description": "🌟 开源「词光」作者｜GitHub 3000 多星🌟\n💻 Mac + AI 工具实测｜国内怎么用、怎么省、怎么解禁\n📸 Mac 党 × 摄影控｜本地模型 · 开源平替 · 视频提示词\n🚀 Build in public｜替兄弟们先踩坑",
+   "description": "🌟 开源「词光」作者｜GitHub 4K+🌟\n💻 Mac + AI 工具实测｜国内怎么用、怎么省、怎么解禁\n📸 Mac 党 × 摄影控｜本地模型 · 开源平替 · 视频提示词\n🚀 Build in public｜替兄弟们先踩坑",
    "id": "2068330055596675072",
    "name": "阿磊",
    "username": "yangleiocx3"
@@ -20420,7 +21103,7 @@
    "username": "0xWatkin"
   },
   "703796597335822336": {
-   "description": "Crafting app icons ✦ Daily design tips\nBuilding : https://t.co/uOt4s9PEO6\nIcon skills : https://t.co/sboM28tuhy",
+   "description": "Crafting app icons ✦ Daily design tips\nBuilding : https://t.co/uOt4s9P6Yy\nIcon skill : https://t.co/sboM28sWs0",
    "id": "703796597335822336",
    "name": "枯白啃设计",
    "username": "Kubai087"
@@ -22588,7 +23271,7 @@
    "username": "yilunAIyyds"
   },
   "909143568991772672": {
-   "description": "Journalist turned AI builder. 15k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中\nCat Lover🐱",
+   "description": "Journalist turned AI builder. 15k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中（以上都是我为了涨粉写的）\nCat Lover🐱",
    "id": "909143568991772672",
    "name": "躺在废墟里 Lieflat",
    "username": "lieflat_3"
@@ -23058,6 +23741,36 @@
    "id": "1411224894935814144",
    "name": "ProvenDaily🔶BNB",
    "username": "proven018"
+  },
+  "5356242": {
+   "description": "Product @ Anthropic",
+   "id": "5356242",
+   "name": "Brad Abrams",
+   "username": "brada"
+  },
+  "845535707615543296": {
+   "description": "技术专家，从阿里到澳洲到AI创业，随机对 AI 产品、AI 技巧发表感想",
+   "id": "845535707615543296",
+   "name": "Xiao Tan",
+   "username": "tvytlx"
+  },
+  "1060320635983880192": {
+   "description": "👋 Agent 算法工程师 | AI 前沿探索者 & Builder\n🔥 创造有趣的 Skills 和 Tools\n🛠 Answer-me-with-html 作者 ( 30days 5k star ⭐）",
+   "id": "1060320635983880192",
+   "name": "云辰 Cyan",
+   "username": "CyanCloud77"
+  },
+  "885478881741873152": {
+   "description": "前记者，研究故事写作。\nX平台不说人话LLM首席抱怨官（",
+   "id": "885478881741873152",
+   "name": "忒修斯的船板",
+   "username": "Arcadia_Bao"
+  },
+  "2033760487389990914": {
+   "description": "Building primitives for agents. 36 Under 36 by 36kr. prev @LinkedIn, @GoldmanSachs, @CarnegieMellon, @FudanUniversity.",
+   "id": "2033760487389990914",
+   "name": "JW",
+   "username": "thejingtao"
   }
  }
 }
