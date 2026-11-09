@@ -1,6 +1,841 @@
 {
  "posts": [
   {
+   "author_id": "1831256083115200512",
+   "conversation_id": "2116695466746552642",
+   "created_at": "2026-11-01T00:55:00.000Z",
+   "edit_history_post_ids": [
+    "2116695466746552642"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/HKKsUTuQ0C",
+      "end": 75,
+      "expanded_url": "https://x.com/DorisTulip/status/2116695466746552642/video/1",
+      "media_key": "13_2116596007589007360",
+      "start": 52,
+      "url": "https://t.co/HKKsUTuQ0C"
+     }
+    ]
+   },
+   "id": "2116695466746552642",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 10737,
+    "impression_count": 893301,
+    "like_count": 8754,
+    "quote_count": 760,
+    "reply_count": 78,
+    "repost_count": 4404
+   },
+   "text": "如果你有空气炸锅 ，一定要试试这杯苹果烤奶茶，奶香浓郁，入口丝滑，浓浓的茶香混合着苹果香，真的好好喝！ https://t.co/HKKsUTuQ0C",
+   "url": "https://x.com/DorisTulip/status/2116695466746552642",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Pydantic fixed my Agent's Memory"
+   },
+   "author_id": "703601972",
+   "conversation_id": "2058976178908885210",
+   "created_at": "2026-05-25T18:19:09.000Z",
+   "edit_history_post_ids": [
+    "2058976178908885210"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2058…",
+      "end": 23,
+      "expanded_url": "http://x.com/i/article/2058894488295378944",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2058894488295378944",
+      "url": "https://t.co/VW9EyOiy4Z"
+     }
+    ]
+   },
+   "id": "2058976178908885210",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1435,
+    "impression_count": 382662,
+    "like_count": 588,
+    "quote_count": 16,
+    "reply_count": 19,
+    "repost_count": 82
+   },
+   "text": "https://t.co/VW9EyOiy4Z",
+   "url": "https://x.com/akshay_pachaar/status/2058976178908885210",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "703601972",
+   "conversation_id": "2119415218514370583",
+   "created_at": "2026-11-08T13:02:19.000Z",
+   "edit_history_post_ids": [
+    "2119415218514370583"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/8VT3a0tP5S",
+      "end": 302,
+      "expanded_url": "https://x.com/akshay_pachaar/status/2119415218514370583/photo/1",
+      "media_key": "3_2119415213678366720",
+      "start": 279,
+      "url": "https://t.co/8VT3a0tP5S"
+     },
+     {
+      "display_url": "x.com/703601972/stat…",
+      "end": 326,
+      "expanded_url": "https://twitter.com/703601972/status/2058976178908885210",
+      "start": 303,
+      "url": "https://t.co/GYKJVQHi5S"
+     }
+    ]
+   },
+   "id": "2119415218514370583",
+   "lang": "en",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "github.com/NVIDIA/auto-on…",
+       "end": 2230,
+       "expanded_url": "https://github.com/NVIDIA/auto-ontology",
+       "start": 2207,
+       "url": "https://t.co/rHJRxI8LMp"
+      }
+     ]
+    },
+    "text": "NVIDIA just fixed text-to-SQL’s biggest problem!\n\nthe release is called Auto Ontology, and it targets the reason an agent can write valid SQL against a company database and still return the wrong number.\n\nthe database stores columns, and the agent has to guess what they mean. a column called extendedprice might hold revenue, and two systems in the same company can define revenue differently.\n\nAuto Ontology gives the agent an ontology, a schema that maps business concepts to the columns that hold them and defines how they relate, before any query is written. it drafts that schema from your database metadata instead of making you write it, and a human certifies it.\n\nthe ontology holds three things:\n\n→ terms: business concepts like customer, order, or revenue, with descriptions and synonyms, mapped to the exact columns that store them.\n\n→ SQL attributes: reviewed expressions like a margin or a rolling total, reused so every measure is computed the same way each time.\n\n→ relationships: how tables join, including bridge tables, inferred from keys and the data itself.\n\nto draft these, it profiles columns, samples values, extracts terms table by table, and mines past query history for SQL attributes. everything lands in Postgres, with embeddings in pgvector.\n\nat query time, the agent maps the question to certified terms, follows relationships to find the joins, and writes SQL. it checks filter values against the real data, repairs the query if a check fails, and returns the answer with its SQL and steps.\n\nwhen the data can't support a question, the agent says so. in NVIDIA's demo, a question about return on ad spend on a sales database with no ad data gets a clarifying reply offering revenue instead of an invented number.\n\nso the ontology tells the agent how to compute an answer and also which questions have one at all.\n\nas the architecture in the image shows, an ingestion service compiles the ontology from your source databases, and any agent harness reaches it through MCP, CLI, or REST API. it supports ten engines including Postgres, Snowflake, Databricks, and DuckDB, runs on Nemotron by default or any OpenAI-compatible endpoint, and is Apache 2.0.\n\ncheck it out on GitHub: https://t.co/rHJRxI8LMp\n\nthe same principle of defining a schema before the model extracts anything also decides whether agent memory works. I wrote about that in the article quoted below."
+   },
+   "public_metrics": {
+    "bookmark_count": 1306,
+    "impression_count": 73830,
+    "like_count": 721,
+    "quote_count": 7,
+    "reply_count": 68,
+    "repost_count": 95
+   },
+   "referenced_tweets": [
+    {
+     "id": "2058976178908885210",
+     "type": "quoted"
+    }
+   ],
+   "text": "NVIDIA just fixed text-to-SQL’s biggest problem!\n\nthe release is called Auto Ontology, and it targets the reason an agent can write valid SQL against a company database and still return the wrong number.\n\nthe database stores columns, and the agent has to guess what they mean. a https://t.co/8VT3a0tP5S https://t.co/GYKJVQHi5S",
+   "url": "https://x.com/akshay_pachaar/status/2119415218514370583",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "周末了，教你一个用 WorkBuddy 省钱妙招，顺便讲讲如何逆向平台级的 Skill"
+   },
+   "author_id": "1401756260534415365",
+   "conversation_id": "2118984789915324906",
+   "created_at": "2026-11-07T08:31:57.000Z",
+   "edit_history_post_ids": [
+    "2118984789915324906"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2118…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2118978544886059008",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2118978544886059008",
+      "url": "https://t.co/Y8zo5UeAva"
+     }
+    ]
+   },
+   "id": "2118984789915324906",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 992,
+    "impression_count": 152034,
+    "like_count": 547,
+    "quote_count": 7,
+    "reply_count": 20,
+    "repost_count": 83
+   },
+   "text": "https://t.co/Y8zo5UeAva",
+   "url": "https://x.com/WattterDjiang/status/2118984789915324906",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "1353836358901501952",
+   "conversation_id": "2118814753154064501",
+   "created_at": "2026-11-06T21:16:17.000Z",
+   "edit_history_post_ids": [
+    "2118814753154064501"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "How we think about agent memory, and how “dreaming” helps Claude correct mistakes, organize what it’s learned, and find it in future sessions.",
+      "display_url": "anthropic.com/research/compo…",
+      "end": 247,
+      "expanded_url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2118814755137990656/LeHabGBF?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2118814755137990656/LeHabGBF?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 224,
+      "status": 200,
+      "title": "The components of agent memory",
+      "unwound_url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "url": "https://t.co/uUEN4bNkr9"
+     }
+    ]
+   },
+   "id": "2118814753154064501",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 12615,
+    "impression_count": 1921936,
+    "like_count": 13891,
+    "quote_count": 862,
+    "reply_count": 991,
+    "repost_count": 1263
+   },
+   "text": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://t.co/uUEN4bNkr9",
+   "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "ACEBGP 62 款产品，家宽、三网优化、纯国际大带宽，每款都能先测再买 "
+   },
+   "author_id": "2880219973",
+   "conversation_id": "2116935796951572711",
+   "created_at": "2026-11-01T16:49:59.000Z",
+   "edit_history_post_ids": [
+    "2116935796951572711"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2116…",
+      "end": 133,
+      "expanded_url": "https://x.com/i/article/2116930715657162752",
+      "start": 110,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2116930715657162752",
+      "url": "https://t.co/5NDUDlnd6s"
+     }
+    ]
+   },
+   "id": "2116935796951572711",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 7,
+    "impression_count": 1433,
+    "like_count": 6,
+    "quote_count": 2,
+    "reply_count": 1,
+    "repost_count": 0
+   },
+   "text": "ACEBGP 全线 62 款拆解：家宽 IP、三网优化、纯国际带宽分开卖，价格从 28.80 元到 6940 元。含美国 NTT/GTT/Cogent 三套上游横评、五档线路对照，以及各地区测试 IP，下单前能自己验👇 https://t.co/5NDUDlnd6s",
+   "url": "https://x.com/fwqgo_com/status/2116935796951572711",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Pi Durable 从入门到精通：从一个开源小助手，到你自己的 Hermes"
+   },
+   "author_id": "1572253121547735040",
+   "conversation_id": "2109089837097853220",
+   "created_at": "2026-10-11T01:12:56.000Z",
+   "edit_history_post_ids": [
+    "2109089837097853220"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2108…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2108833822888669184",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2108833822888669184",
+      "url": "https://t.co/LrLMmFiijw"
+     }
+    ]
+   },
+   "id": "2109089837097853220",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 441,
+    "impression_count": 56756,
+    "like_count": 259,
+    "quote_count": 6,
+    "reply_count": 24,
+    "repost_count": 37
+   },
+   "text": "https://t.co/LrLMmFiijw",
+   "url": "https://x.com/xiaomovps/status/2109089837097853220",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Critical thinking when agents do the work"
+   },
+   "author_id": "35432643",
+   "conversation_id": "2117512471930167377",
+   "created_at": "2026-11-03T07:01:29.000Z",
+   "edit_history_post_ids": [
+    "2117512471930167377"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2116…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2116367635365695488",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2116367635365695488",
+      "url": "https://t.co/2gyp2Erpxx"
+     }
+    ]
+   },
+   "id": "2117512471930167377",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 49959,
+    "impression_count": 5368454,
+    "like_count": 20463,
+    "quote_count": 976,
+    "reply_count": 590,
+    "repost_count": 3174
+   },
+   "text": "https://t.co/2gyp2Erpxx",
+   "url": "https://x.com/addyosmani/status/2117512471930167377",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "How to build an agent team in Grok Bot with Opus 5.5 + GitHub (Lauren Tan's Method)"
+   },
+   "author_id": "2086044715267325952",
+   "conversation_id": "2115445646169694321",
+   "created_at": "2026-10-28T14:08:39.000Z",
+   "edit_history_post_ids": [
+    "2115445646169694321"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2114…",
+      "end": 275,
+      "expanded_url": "https://x.com/i/article/2114725694865395712",
+      "start": 252,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2114725694865395712",
+      "url": "https://t.co/fcbEyJYOQW"
+     }
+    ]
+   },
+   "id": "2115445646169694321",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 311,
+    "impression_count": 88219,
+    "like_count": 102,
+    "quote_count": 3,
+    "reply_count": 10,
+    "repost_count": 12
+   },
+   "text": "Grok Bot + Opus 5.5 can create an agent team for your GitHub repo\n\nOne lead bot splits the work, delegates scoped tasks and collects PRs with verification results attached\n\nIn this article, I show you how to build this setup using Lauren Tan’s method: https://t.co/fcbEyJYOQW",
+   "url": "https://x.com/0xChonsy/status/2115445646169694321",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "2086044715267325952",
+   "conversation_id": "2119199226907304203",
+   "created_at": "2026-11-07T22:44:03.000Z",
+   "edit_history_post_ids": [
+    "2119199226907304203"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/4ooqFEsqGe",
+      "end": 332,
+      "expanded_url": "https://x.com/0xChonsy/status/2119199226907304203/photo/1",
+      "media_key": "3_2119198214196809728",
+      "start": 309,
+      "url": "https://t.co/4ooqFEsqGe"
+     },
+     {
+      "display_url": "x.com/0xChonsy/statu…",
+      "end": 356,
+      "expanded_url": "https://twitter.com/0xChonsy/status/2115445646169694321",
+      "start": 333,
+      "url": "https://t.co/V24ndECSAK"
+     }
+    ]
+   },
+   "id": "2119199226907304203",
+   "lang": "en",
+   "note_tweet": {
+    "text": "this is f***ing gold...\n\nSpaceXAI engineer Lauren Tan shared her agent engineering workflow\n\npaste this into your coding session to check code quality\n\nPrompt:\n\n<agent_instructions type=\"workflow-adaptation\">\n\n  <task>\n    <repo>[REPO]</repo>\n    <request>[TASK]</request>\n    <success>[OBSERVABLE_SUCCESS]</success>\n  </task>\n\n  <boundaries>\n    Define scope, permissions and a stop condition.\n    Use only tools and skills available in the host.\n    Preserve a reproducible baseline and a rollback path.\n  </boundaries>\n\n  <proof_requirements>\n\n    <prove id=\"BASELINE\">\n      Read the relevant code and trace calls and data flow.\n      Use /how when available.\n      Confirm whether the report reproduces on the tested revision.\n      Record observations separately from hypotheses.\n    </prove>\n\n    <prove id=\"BEHAVIOR\">\n      Repeat the actual user journey, CLI command or API call.\n      Inspect the resulting output against observable success.\n      Include relevant empty states and failure paths.\n    </prove>\n\n    <prove id=\"QUALITY\">\n      Run applicable type, lint, test and dependency checks.\n      Check feature boundaries and permitted imports.\n      Record the result of each required check.\n    </prove>\n\n    <prove id=\"PERFORMANCE\" when=\"the task includes a performance claim\">\n      Compare equivalent before-and-after profiles.\n      Account for build settings, cache state and measured workload.\n      Retain both profiles and explain the comparison.\n    </prove>\n\n    <prove id=\"SKILL\" when=\"operating instructions change\">\n      Evaluate the instructions on defined tasks.\n      Assess code inspection, reproduction, cause analysis,\n      verification and reporting of gaps.\n      Compare models when available.\n      Limit conclusions to the tasks and criteria tested.\n    </prove>\n\n  </proof_requirements>\n\n  <verification_setup>\n    Map each feature's entry point, preconditions, actions,\n    stable targets, expected result and failure states.\n\n    Use /create-verification-skill if a working verifier is missing.\n    Record startup commands, readiness signals and required access.\n    Trial the instructions on one real scenario.\n    Retain outputs, logs, traces and artifacts.\n\n    Use /maintain-verification-skill when routes or controls change.\n    Preserve checks that expose product regressions.\n  </verification_setup>\n\n  <change_rules>\n    Make one logically cohesive change.\n    Follow established feature boundaries and standard patterns.\n    Correct observed failures and rerun affected checks.\n    Turn recurring failures into better structure or enforced checks.\n    Validate the safeguard against the original failure.\n  </change_rules>\n\n  <evidence_record>\n    <proof_id>[REQUIREMENT_ID]</proof_id>\n    <tested_revision>[COMMIT]</tested_revision>\n    <command_or_action>[WHAT_RAN]</command_or_action>\n    <expected>[EXPECTED_RESULT]</expected>\n    <observed>[ACTUAL_RESULT]</observed>\n    <status>PASS | FAIL | NOT_RUN</status>\n    <artifacts>[LOGS_TRACES_FILES]</artifacts>\n    <blocker>[MISSING_ACCESS_TOOL_OR_DEPENDENCY]</blocker>\n  </evidence_record>\n\n  <decision_rules>\n    PASS: retain the evidence and continue.\n    FAIL: inspect the defect, correct it and rerun affected checks.\n    NOT_RUN: explain the missing check and its blocker.\n    Stop when a required check cannot run or scope must expand.\n    Return the evidence collected so far.\n  </decision_rules>\n\n  <autonomy>\n    Establish repeatable local proof before parallel or cloud work.\n    Keep permissions explicit.\n    Follow repository review and merge rules.\n  </autonomy>\n\n  <handoff>\n    Return the tested revision, cohesive diff, commands,\n    results, evidence paths and check statuses.\n    Explain missing access, blockers and remaining uncertainty.\n    Prepare the change for review.\n  </handoff>\n\n</agent_instructions>"
+   },
+   "public_metrics": {
+    "bookmark_count": 336,
+    "impression_count": 16068,
+    "like_count": 207,
+    "quote_count": 0,
+    "reply_count": 2,
+    "repost_count": 21
+   },
+   "referenced_tweets": [
+    {
+     "id": "2115445646169694321",
+     "type": "quoted"
+    }
+   ],
+   "text": "this is f***ing gold...\n\nSpaceXAI engineer Lauren Tan shared her agent engineering workflow\n\npaste this into your coding session to check code quality\n\nPrompt:\n\n&lt;agent_instructions type=\"workflow-adaptation\"&gt;\n\n  &lt;task&gt;\n    &lt;repo&gt;[REPO]&lt;/repo&gt;\n    &lt;request&gt;[TASK]&lt;/request&gt; https://t.co/4ooqFEsqGe https://t.co/V24ndECSAK",
+   "url": "https://x.com/0xChonsy/status/2119199226907304203",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Growing Together with Our Plugin Community"
+   },
+   "author_id": "2067518374469640193",
+   "conversation_id": "2119431663642153128",
+   "created_at": "2026-11-08T14:07:40.000Z",
+   "edit_history_post_ids": [
+    "2119431663642153128"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2118…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2118260976965517312",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2118260976965517312",
+      "url": "https://t.co/vOVaJlt9DL"
+     }
+    ]
+   },
+   "id": "2119431663642153128",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1702,
+    "impression_count": 310622,
+    "like_count": 3874,
+    "quote_count": 169,
+    "reply_count": 185,
+    "repost_count": 319
+   },
+   "text": "https://t.co/vOVaJlt9DL",
+   "url": "https://x.com/DeepSeekHarness/status/2119431663642153128",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "别让你的 AGENTS.md 越来越臃肿：从编写、优化到持续维护"
+   },
+   "author_id": "1893087994174939138",
+   "conversation_id": "2119089686610329605",
+   "created_at": "2026-11-07T15:28:46.000Z",
+   "edit_history_post_ids": [
+    "2119089686610329605"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2119…",
+      "end": 125,
+      "expanded_url": "https://x.com/i/article/2119084616053317632",
+      "start": 102,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2119084616053317632",
+      "url": "https://t.co/QokWgTFD0w"
+     }
+    ]
+   },
+   "id": "2119089686610329605",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 244,
+    "impression_count": 13100,
+    "like_count": 161,
+    "quote_count": 1,
+    "reply_count": 15,
+    "repost_count": 15
+   },
+   "text": "编写 AGENTS.md 最重要的原则是：只写那些 Agent 无法可靠地从项目本身推断出来，并且会实质性影响工作结果的信息。例如，一个项目使用什么语言、依赖什么框架，部分信息可以直接从配置文件中读取。 https://t.co/QokWgTFD0w",
+   "url": "https://x.com/TaXue2025/status/2119089686610329605",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "用 Claude + H3 一个人拍 AI 短剧：一手实战教程，附全流程提示词和技能包"
+   },
+   "author_id": "2057932282732883968",
+   "conversation_id": "2119326884505043274",
+   "created_at": "2026-11-08T07:11:19.000Z",
+   "edit_history_post_ids": [
+    "2119326884505043274"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2119…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2119326877647319040",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2119326877647319040",
+      "url": "https://t.co/bEYQ9U7sGf"
+     }
+    ]
+   },
+   "id": "2119326884505043274",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 6268,
+    "impression_count": 462272,
+    "like_count": 3418,
+    "quote_count": 117,
+    "reply_count": 110,
+    "repost_count": 540
+   },
+   "text": "https://t.co/bEYQ9U7sGf",
+   "url": "https://x.com/TuyetloanP81840/status/2119326884505043274",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Evals: how to know whether an AI system actually works"
+   },
+   "author_id": "3134520267",
+   "conversation_id": "2106453816757354947",
+   "created_at": "2026-10-03T18:38:20.000Z",
+   "edit_history_post_ids": [
+    "2106453816757354947"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2106…",
+      "end": 239,
+      "expanded_url": "https://x.com/i/article/2106452411397165056",
+      "start": 216,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2106452411397165056",
+      "url": "https://t.co/YaP414vR0u"
+     }
+    ]
+   },
+   "id": "2106453816757354947",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 5836,
+    "impression_count": 340267,
+    "like_count": 2245,
+    "quote_count": 25,
+    "reply_count": 104,
+    "repost_count": 304
+   },
+   "text": "An article for everyone who ships, buys, or signs off on software built on large language models (LLMs): engineers, product managers, and the CEO. Written in plain language, from the big picture down to the details. https://t.co/YaP414vR0u",
+   "url": "https://x.com/sermakarevich/status/2106453816757354947",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "155252642",
+   "conversation_id": "2119003399807180910",
+   "created_at": "2026-11-07T09:45:54.000Z",
+   "edit_history_post_ids": [
+    "2119003399807180910"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/jgorWP4opC",
+      "end": 174,
+      "expanded_url": "https://x.com/huangyun_122/status/2119003399807180910/photo/1",
+      "media_key": "3_2119003102535921664",
+      "start": 151,
+      "url": "https://t.co/jgorWP4opC"
+     }
+    ]
+   },
+   "id": "2119003399807180910",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 621,
+    "impression_count": 44916,
+    "like_count": 355,
+    "quote_count": 3,
+    "reply_count": 62,
+    "repost_count": 29
+   },
+   "text": "糟了，当 GrokBot + Notion 走通后，我就一刻都没离开过屏幕\n\n我让 Bot 去Youtube抓不同国家的 AI 变现案例，企图探索日韩，西语，葡语，阿根廷甚至阿拉伯语的生意模式。Bot 不停地给我送进 Notion, 大脑完全处理不过来\n\n我的收敛函数在 3位数案例下，完全崩溃 !! https://t.co/jgorWP4opC",
+   "url": "https://x.com/huangyun_122/status/2119003399807180910",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "1626815537841070080",
+   "conversation_id": "2119282740340101569",
+   "created_at": "2026-11-08T04:15:54.000Z",
+   "edit_history_post_ids": [
+    "2119282740340101569"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "123 accessible React components that look drawn by hand, with the same parts and props as shadcn/ui: clean outlines and solid color. MIT.",
+      "display_url": "kevintngo.github.io/looseleaf/",
+      "end": 161,
+      "expanded_url": "https://kevintngo.github.io/looseleaf/",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2119349708334272512/A8jh5cAD?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119349708334272512/A8jh5cAD?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 138,
+      "status": 200,
+      "title": "Looseleaf: shadcn/ui, drawn by hand",
+      "unwound_url": "https://kevintngo.github.io/looseleaf/",
+      "url": "https://t.co/YXSKMW1QmJ"
+     },
+     {
+      "display_url": "pic.x.com/eXsOdW9hza",
+      "end": 188,
+      "expanded_url": "https://x.com/Justin1024go/status/2119282740340101569/photo/1",
+      "media_key": "3_2119282727509966849",
+      "start": 165,
+      "url": "https://t.co/eXsOdW9hza"
+     },
+     {
+      "display_url": "pic.x.com/eXsOdW9hza",
+      "end": 188,
+      "expanded_url": "https://x.com/Justin1024go/status/2119282740340101569/photo/1",
+      "media_key": "3_2119282727531020288",
+      "start": 165,
+      "url": "https://t.co/eXsOdW9hza"
+     },
+     {
+      "display_url": "pic.x.com/eXsOdW9hza",
+      "end": 188,
+      "expanded_url": "https://x.com/Justin1024go/status/2119282740340101569/photo/1",
+      "media_key": "3_2119282727501615104",
+      "start": 165,
+      "url": "https://t.co/eXsOdW9hza"
+     },
+     {
+      "display_url": "pic.x.com/eXsOdW9hza",
+      "end": 188,
+      "expanded_url": "https://x.com/Justin1024go/status/2119282740340101569/photo/1",
+      "media_key": "3_2119282727518400514",
+      "start": 165,
+      "url": "https://t.co/eXsOdW9hza"
+     }
+    ]
+   },
+   "id": "2119282740340101569",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "kevintngo.github.io/looseleaf/",
+       "end": 161,
+       "expanded_url": "https://kevintngo.github.io/looseleaf/",
+       "start": 138,
+       "url": "https://t.co/TFX9Yq8pYn"
+      },
+      {
+       "display_url": "plopui.com",
+       "end": 217,
+       "expanded_url": "https://plopui.com/",
+       "start": 194,
+       "url": "https://t.co/ni7zDJtY6o"
+      },
+      {
+       "display_url": "inkrajs.github.io",
+       "end": 272,
+       "expanded_url": "https://inkrajs.github.io/",
+       "start": 249,
+       "url": "https://t.co/bPZNvgclji"
+      },
+      {
+       "display_url": "goop.timmcmasters.work/docs/components",
+       "end": 336,
+       "expanded_url": "https://goop.timmcmasters.work/docs/components",
+       "start": 313,
+       "url": "https://t.co/4kEaP1lTjJ"
+      },
+      {
+       "display_url": "deeplethe.github.io/solid-glass/",
+       "end": 408,
+       "expanded_url": "https://deeplethe.github.io/solid-glass/",
+       "start": 385,
+       "url": "https://t.co/5WMvd5JY20"
+      },
+      {
+       "display_url": "affectui.com",
+       "end": 493,
+       "expanded_url": "https://www.affectui.com/",
+       "start": 470,
+       "url": "https://t.co/faiQek3Njx"
+      },
+      {
+       "display_url": "prestigeui.com",
+       "end": 579,
+       "expanded_url": "https://prestigeui.com/",
+       "start": 556,
+       "url": "https://t.co/laUvadXONX"
+      },
+      {
+       "display_url": "boardui.com",
+       "end": 664,
+       "expanded_url": "https://www.boardui.com",
+       "start": 641,
+       "url": "https://t.co/I79uB6HWvx"
+      }
+     ]
+    },
+    "text": "暴论：设计SKILL根本没用，用好组件库就够了\n\n一些知名组件库就不推荐了，最近看到的一些小众但很有特色的组件库，手绘纸张、贴纸、黏液、Agent 工作台等等，vibecoding想要做出特色就用这些：\n\n1. Looseleaf：纸张纹理、胶带、手绘图表，还有完整页面区块 https://t.co/TFX9Yq8pYn\n2. PlopUI：蓝色马克笔、贴纸头像，按钮按下去还会挤一下 https://t.co/ni7zDJtY6o\n3. Inkra：铅笔笔触和淡彩，连日历、地图都带着手绘感  https://t.co/bPZNvgclji\n4. goopUI：会滴落、拉伸的黏液组件，Vue / Nuxt 优先，目前是 https://t.co/4kEaP1lTjJ\n5. Solid Glass：克制的玻璃材质，带 Agent 状态、工具步骤和 diff 展示 https://t.co/5WMvd5JY20\n6. AffectUI：Agent 树、工具调用、审批和 trace；部分付费，图中的 Agent Tree 是 Pro https://t.co/faiQek3Njx\n7. Prestige UI：React / Tailwind / Motion 动画组件，落地页区块也很丰富，含付费内容 https://t.co/laUvadXONX\n8. BoardUI：主打仪表盘和 AI 工作台，表格、图表、日历到 Agent 聊天都有，整体风格干净克制（含付费组件）https://t.co/I79uB6HWvx"
+   },
+   "public_metrics": {
+    "bookmark_count": 998,
+    "impression_count": 32473,
+    "like_count": 559,
+    "quote_count": 8,
+    "reply_count": 37,
+    "repost_count": 61
+   },
+   "text": "暴论：设计SKILL根本没用，用好组件库就够了\n\n一些知名组件库就不推荐了，最近看到的一些小众但很有特色的组件库，手绘纸张、贴纸、黏液、Agent 工作台等等，vibecoding想要做出特色就用这些：\n\n1. Looseleaf：纸张纹理、胶带、手绘图表，还有完整页面区块 https://t.co/YXSKMW1QmJ\n2. https://t.co/eXsOdW9hza",
+   "url": "https://x.com/Justin1024go/status/2119282740340101569",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Your coding agents made you a manager"
+   },
+   "author_id": "35432643",
+   "conversation_id": "2119332146485891501",
+   "created_at": "2026-11-08T07:32:13.000Z",
+   "edit_history_post_ids": [
+    "2119332146485891501"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2118…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2118901185377964033",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2118901185377964033",
+      "url": "https://t.co/KD5BxbuZ5Q"
+     }
+    ]
+   },
+   "id": "2119332146485891501",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 5809,
+    "impression_count": 303504,
+    "like_count": 3110,
+    "quote_count": 133,
+    "reply_count": 224,
+    "repost_count": 325
+   },
+   "text": "https://t.co/KD5BxbuZ5Q",
+   "url": "https://x.com/addyosmani/status/2119332146485891501",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
+   "author_id": "1533875128274079744",
+   "conversation_id": "2119015563670532515",
+   "created_at": "2026-11-07T16:09:22.000Z",
+   "edit_history_post_ids": [
+    "2119099904350171374"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 7,
+      "id": "6690032",
+      "start": 0,
+      "username": "vista8"
+     }
+    ],
+    "urls": [
+     {
+      "description": "涛声 TaoSheng：用一部安卓手机全天收音 → 转写 → 认人 → AI 整理成待办与记忆。无需硬件、无需账号，数据只在你手机里。 - 0xCoach/TaoSheng",
+      "display_url": "github.com/0xCoach/TaoShe…",
+      "end": 65,
+      "expanded_url": "https://github.com/0xCoach/TaoSheng",
+      "images": [
+       {
+        "height": 600,
+        "url": "https://pbs.twimg.com/news_img/2119099910410932224/KXRvIZhi?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119099910410932224/KXRvIZhi?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 42,
+      "status": 200,
+      "title": "GitHub - 0xCoach/TaoSheng: 涛声 TaoSheng：用一部安卓手机全天收音 → 转写 → 认人 → AI 整理成待办与记忆。无需硬件、无需账号，数据只在你手机里。",
+      "unwound_url": "https://github.com/0xCoach/TaoSheng",
+      "url": "https://t.co/LOw5WwZTM5"
+     }
+    ]
+   },
+   "id": "2119099904350171374",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 378,
+    "impression_count": 27577,
+    "like_count": 135,
+    "quote_count": 5,
+    "reply_count": 16,
+    "repost_count": 26
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119015563670532515",
+     "type": "replied_to"
+    }
+   ],
+   "text": "@vista8 哥，试试我这个方案，不用买心力球，但是能达到一样的效果，更灵活好用。https://t.co/LOw5WwZTM5",
+   "url": "https://x.com/0xCoach/status/2119099904350171374",
+   "bookmarked_seen": "2026-11-09T09:01:09+09:00"
+  },
+  {
    "author_id": "1568243433135042562",
    "conversation_id": "2118949665442013538",
    "created_at": "2026-11-07T06:12:23.000Z",
@@ -17280,9 +18115,9 @@
    "id": "2116007022315323407",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 20021,
-    "impression_count": 885671,
-    "like_count": 18602,
+    "bookmark_count": 20015,
+    "impression_count": 887615,
+    "like_count": 18597,
     "quote_count": 82,
     "reply_count": 198,
     "repost_count": 2750
@@ -17312,7 +18147,7 @@
    "lang": "en",
    "public_metrics": {
     "bookmark_count": 187,
-    "impression_count": 28702,
+    "impression_count": 28818,
     "like_count": 483,
     "quote_count": 7,
     "reply_count": 22,
@@ -17343,7 +18178,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 4,
-    "impression_count": 39214,
+    "impression_count": 39572,
     "like_count": 12,
     "quote_count": 1,
     "reply_count": 4,
@@ -17364,8 +18199,8 @@
     "text": "在你的系统提示词中加入：\n严格遵守格赖斯语用准则进行高效沟通。\n\n你会回来感谢我的"
    },
    "public_metrics": {
-    "bookmark_count": 2432,
-    "impression_count": 182820,
+    "bookmark_count": 2429,
+    "impression_count": 182979,
     "like_count": 1654,
     "quote_count": 6,
     "reply_count": 74,
@@ -17395,12 +18230,12 @@
    "id": "2115887660489462091",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 11415,
-    "impression_count": 1297895,
-    "like_count": 17046,
+    "bookmark_count": 11409,
+    "impression_count": 1299947,
+    "like_count": 17050,
     "quote_count": 506,
     "reply_count": 241,
-    "repost_count": 2476
+    "repost_count": 2475
    },
    "text": "☎️ Calling all students:\n\nYou can now access hundreds of textbooks directly in Notebook, for no charge. From publishers like S Chand Publishing, OpenStax, and Open Textbook Library— browse, select and upload them as sources to ace all of your upcoming exams (no more excuses, ok?) https://t.co/0mzweVIycJ"
   },
@@ -17427,7 +18262,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 140,
-    "impression_count": 207642,
+    "impression_count": 207696,
     "like_count": 730,
     "quote_count": 22,
     "reply_count": 137,
@@ -17473,7 +18308,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 203,
-    "impression_count": 79158,
+    "impression_count": 79182,
     "like_count": 170,
     "quote_count": 7,
     "reply_count": 5,
@@ -17523,9 +18358,9 @@
     "text": "so many gems and great tips in this talk from @yminsky about how to improve your codebase for agents\n\n• agents thrive on feedback, and types are one of the best kinds \n• make illegal states unrepresentable with types, and it enforces global rules across your codebase\n• property based tests, fuzzing, and even full-system deterministic simulation testing\n• expect tests: just print stuff out and capture it in the test. makes behavior legible. it's very similar to how compilers have fixture tests, it reduces the review surface area\n• formal methods used to be very expensive: seL4 is about 8,700 lines of C and took around 25 person-years, with 23 lines of proof for every line of C code, but agents change the roi \n\nhttps://t.co/0zDb5euxhr"
    },
    "public_metrics": {
-    "bookmark_count": 4415,
-    "impression_count": 366882,
-    "like_count": 2687,
+    "bookmark_count": 4412,
+    "impression_count": 367527,
+    "like_count": 2688,
     "quote_count": 35,
     "reply_count": 130,
     "repost_count": 181
@@ -17565,7 +18400,7 @@
    },
    "public_metrics": {
     "bookmark_count": 26,
-    "impression_count": 16365,
+    "impression_count": 16400,
     "like_count": 21,
     "quote_count": 1,
     "reply_count": 2,
@@ -17603,12 +18438,12 @@
     "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了\n换个会话，进度和错题也接得上\n记忆还拆成三层，原始记录、每个场景的要点、对你的整体画像，都能打开看，也能自己改\n\n看网课也能用，B 站和 YouTube 链接贴进去，哪一秒没听懂就问哪一秒\n\n装起来就三行\npip install -U deeptutor\ndeeptutor init\ndeeptutor start\n\n懒得配的话，直接把仓库丢给 Claude Code 或 Codex，它根目录有一份 SKILL.md，agent 读完就能自己帮你装好\n\n算一笔账就知道了\n\n以前我去给别人上家教，两个小时 200 块\n现在一个月的 Plus 都不用 200 块，随时想问就问，而且还很有耐心\n\nAI 第一个冲击的就是教育行业啊😱\n\n传送门 👉 https://t.co/dldRQXZhQs"
    },
    "public_metrics": {
-    "bookmark_count": 4967,
-    "impression_count": 255234,
+    "bookmark_count": 4965,
+    "impression_count": 255553,
     "like_count": 3660,
     "quote_count": 23,
     "reply_count": 115,
-    "repost_count": 558
+    "repost_count": 557
    },
    "text": "以后再也不用请家教了！🤐\n\n港大 HKUDS 开源了一个 AI 私教，叫 DeepTutor，GitHub 已经 4.3 万 star\n\n它不是那种问一道答一道的聊天框\n把课本、讲义、笔记丢进去，它就围绕你自己的资料来讲\n讲题、出题、做深度研究、画可视化讲解，全在同一个工作区里\n\n最狠的是它会记住你学到哪了"
   },
@@ -17634,9 +18469,9 @@
    "id": "2114776553481445523",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2234,
-    "impression_count": 258043,
-    "like_count": 3563,
+    "bookmark_count": 2231,
+    "impression_count": 258193,
+    "like_count": 3565,
     "quote_count": 69,
     "reply_count": 94,
     "repost_count": 310
@@ -17665,11 +18500,11 @@
    "id": "2114623574371963360",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2334,
-    "impression_count": 498706,
-    "like_count": 2651,
+    "bookmark_count": 2335,
+    "impression_count": 498931,
+    "like_count": 2653,
     "quote_count": 113,
-    "reply_count": 207,
+    "reply_count": 208,
     "repost_count": 74
    },
    "text": "So uh...I guess it's time to announce tstack? I caved. I am publishing my skills now. https://t.co/VjEE3wJYMP"
@@ -17695,7 +18530,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 1961,
+    "impression_count": 1963,
     "like_count": 0,
     "quote_count": 0,
     "reply_count": 1,
@@ -17788,12 +18623,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 16650,
-    "impression_count": 1136909,
-    "like_count": 7259,
+    "bookmark_count": 16715,
+    "impression_count": 1158710,
+    "like_count": 7307,
     "quote_count": 328,
-    "reply_count": 272,
-    "repost_count": 744
+    "reply_count": 274,
+    "repost_count": 746
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -20531,9 +21366,9 @@
    "id": "2116703288913698991",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 98,
-    "impression_count": 38608,
-    "like_count": 103,
+    "bookmark_count": 96,
+    "impression_count": 38670,
+    "like_count": 102,
     "quote_count": 4,
     "reply_count": 9,
     "repost_count": 6
@@ -20565,7 +21400,7 @@
    },
    "public_metrics": {
     "bookmark_count": 4,
-    "impression_count": 54149,
+    "impression_count": 54457,
     "like_count": 35,
     "quote_count": 0,
     "reply_count": 15,
@@ -20601,8 +21436,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 204,
-    "impression_count": 14700,
-    "like_count": 193,
+    "impression_count": 14787,
+    "like_count": 195,
     "quote_count": 1,
     "reply_count": 9,
     "repost_count": 11
@@ -20653,10 +21488,10 @@
    "lang": "en",
    "public_metrics": {
     "bookmark_count": 3398,
-    "impression_count": 2212557,
-    "like_count": 14077,
+    "impression_count": 2219845,
+    "like_count": 14079,
     "quote_count": 837,
-    "reply_count": 1517,
+    "reply_count": 1519,
     "repost_count": 892
    },
    "text": "Day 28/ tibo's game has landed\n\ni spent $5.99 on this domain, but i had a blast making it with grok bot and cursor! i hope you enjoy it and find all the easter eggs 🤍 \n\nif i did it right you should be able to play it inside of X too\n\nhttps://t.co/diV7PyPaqv"
@@ -20695,11 +21530,11 @@
    },
    "public_metrics": {
     "bookmark_count": 3356,
-    "impression_count": 560199,
-    "like_count": 2694,
+    "impression_count": 561956,
+    "like_count": 2696,
     "quote_count": 75,
     "reply_count": 41,
-    "repost_count": 274
+    "repost_count": 275
    },
    "text": "やっべ、検索APIの存在意義を揺るがしてしまったかもしれない…。\n\n私が開発した「RustXNG」という、SearXNGベースのローカル検索エンジンが、なんとあのExaに迫る検索精度を出してしまいました〜〜〜〜〜〜〜！\n\n実行ごとにばらつきはあるものの、平均でもExaにかなり近い数値。 https://t.co/whypI170QY"
   },
@@ -20735,8 +21570,8 @@
    },
    "public_metrics": {
     "bookmark_count": 946,
-    "impression_count": 79962,
-    "like_count": 730,
+    "impression_count": 80197,
+    "like_count": 731,
     "quote_count": 16,
     "reply_count": 72,
     "repost_count": 70
@@ -20776,11 +21611,11 @@
    },
    "public_metrics": {
     "bookmark_count": 296,
-    "impression_count": 915509,
-    "like_count": 1077,
+    "impression_count": 916574,
+    "like_count": 1065,
     "quote_count": 104,
     "reply_count": 140,
-    "repost_count": 127
+    "repost_count": 123
    },
    "referenced_tweets": [
     {
@@ -20813,8 +21648,8 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 201,
-    "impression_count": 54296,
-    "like_count": 157,
+    "impression_count": 54708,
+    "like_count": 159,
     "quote_count": 2,
     "reply_count": 12,
     "repost_count": 13
@@ -20844,7 +21679,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 523,
-    "impression_count": 229327,
+    "impression_count": 229902,
     "like_count": 300,
     "quote_count": 16,
     "reply_count": 67,
@@ -20874,9 +21709,9 @@
    "id": "2117963744651415992",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 139,
-    "impression_count": 21076,
-    "like_count": 98,
+    "bookmark_count": 138,
+    "impression_count": 21150,
+    "like_count": 97,
     "quote_count": 2,
     "reply_count": 4,
     "repost_count": 2
@@ -20909,12 +21744,12 @@
    "id": "2112532951946965162",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 108,
-    "impression_count": 13761,
-    "like_count": 160,
+    "bookmark_count": 111,
+    "impression_count": 14119,
+    "like_count": 166,
     "quote_count": 5,
-    "reply_count": 48,
-    "repost_count": 6
+    "reply_count": 49,
+    "repost_count": 8
    },
    "text": "云端 Grok Bot 四通八达，调用本地 Coding Agent 两眼抓瞎？ https://t.co/ySKT4ODkZT"
   },
@@ -20992,7 +21827,7 @@
    },
    "public_metrics": {
     "bookmark_count": 143,
-    "impression_count": 43211,
+    "impression_count": 43369,
     "like_count": 206,
     "quote_count": 7,
     "reply_count": 25,
@@ -21037,9 +21872,9 @@
    "id": "2118137114466652191",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 1182,
-    "impression_count": 85679,
-    "like_count": 721,
+    "bookmark_count": 1180,
+    "impression_count": 86152,
+    "like_count": 720,
     "quote_count": 9,
     "reply_count": 23,
     "repost_count": 41
@@ -21090,7 +21925,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 68,
-    "impression_count": 40491,
+    "impression_count": 40707,
     "like_count": 83,
     "quote_count": 2,
     "reply_count": 5,
@@ -21124,7 +21959,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 2059,
+    "impression_count": 2082,
     "like_count": 28,
     "quote_count": 0,
     "reply_count": 5,
@@ -21187,14 +22022,106 @@
     "text": "这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。\n\n真正重要的是把标准写清楚，把可重复的操作做成工具，把确定的要求变成检查，让每次反馈都能留下来。\n\n内容导航\n00:00 想让Agent自己迭代\n00:40 为什么先做验证\n01:31 三组实践给我的启发\n02:14 验证技能怎么搭建\n02:49 产品地图与操作工具\n03:59 改造录音转写工作流\n04:58 纠错改进的五个层次\n06:46 把自己的标准说清楚\n08:19 循环之前先写验证\n08:46 改造自己的Skill"
    },
    "public_metrics": {
-    "bookmark_count": 131,
-    "impression_count": 42471,
-    "like_count": 148,
+    "bookmark_count": 133,
+    "impression_count": 43814,
+    "like_count": 149,
     "quote_count": 6,
     "reply_count": 42,
-    "repost_count": 16
+    "repost_count": 17
    },
    "text": "这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。 https://t.co/6TnLESG0bS"
+  },
+  "2058976178908885210": {
+   "article_title": {
+    "title": "Pydantic fixed my Agent's Memory"
+   },
+   "author_id": "703601972",
+   "conversation_id": "2058976178908885210",
+   "created_at": "2026-05-25T18:19:09.000Z",
+   "edit_history_post_ids": [
+    "2058976178908885210"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2058…",
+      "end": 23,
+      "expanded_url": "http://x.com/i/article/2058894488295378944",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2058894488295378944",
+      "url": "https://t.co/VW9EyOiy4Z"
+     }
+    ]
+   },
+   "id": "2058976178908885210",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1435,
+    "impression_count": 382662,
+    "like_count": 588,
+    "quote_count": 16,
+    "reply_count": 19,
+    "repost_count": 82
+   },
+   "text": "https://t.co/VW9EyOiy4Z"
+  },
+  "2115445646169694321": {
+   "article_title": {
+    "title": "How to build an agent team in Grok Bot with Opus 5.5 + GitHub (Lauren Tan's Method)"
+   },
+   "author_id": "2086044715267325952",
+   "conversation_id": "2115445646169694321",
+   "created_at": "2026-10-28T14:08:39.000Z",
+   "edit_history_post_ids": [
+    "2115445646169694321"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2114…",
+      "end": 275,
+      "expanded_url": "https://x.com/i/article/2114725694865395712",
+      "start": 252,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2114725694865395712",
+      "url": "https://t.co/fcbEyJYOQW"
+     }
+    ]
+   },
+   "id": "2115445646169694321",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 311,
+    "impression_count": 88219,
+    "like_count": 102,
+    "quote_count": 3,
+    "reply_count": 10,
+    "repost_count": 12
+   },
+   "text": "Grok Bot + Opus 5.5 can create an agent team for your GitHub repo\n\nOne lead bot splits the work, delegates scoped tasks and collects PRs with verification results attached\n\nIn this article, I show you how to build this setup using Lauren Tan’s method: https://t.co/fcbEyJYOQW"
+  },
+  "2119015563670532515": {
+   "author_id": "6690032",
+   "conversation_id": "2119015563670532515",
+   "created_at": "2026-11-07T10:34:14.000Z",
+   "edit_history_post_ids": [
+    "2119015563670532515"
+   ],
+   "id": "2119015563670532515",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "上周聚会，一个朋友用 OPPO N6 折叠手机，屏幕超级平，竟比 iPhone Duo 还好。\n\n大家纷纷赞叹，直到今天，另一朋友发现了秘密：\n\n这个手机展开是 181 度....绷平的 😂\n\n原以为黑科技，没想到朴实无华。\n\n但细想，还挺巧妙的。\n\n最近看 OPPO 产品口碑越来越好，如 AI 心力球，24小时录音记录，有点种草。"
+   },
+   "public_metrics": {
+    "bookmark_count": 75,
+    "impression_count": 118122,
+    "like_count": 205,
+    "quote_count": 13,
+    "reply_count": 79,
+    "repost_count": 1
+   },
+   "text": "上周聚会，一个朋友用 OPPO N6 折叠手机，屏幕超级平，竟比 iPhone Duo 还好。\n\n大家纷纷赞叹，直到今天，另一朋友发现了秘密：\n\n这个手机展开是 181 度....绷平的 😂\n\n原以为黑科技，没想到朴实无华。\n\n但细想，还挺巧妙的。\n\n最近看 OPPO 产品口碑越来越好，如 AI"
   }
  },
  "users": {
@@ -22428,14 +23355,6 @@
    "description": "argo 作者。玩转AI ，分享美图和思考\nhttps://t.co/PS7uQJY5Qb",
    "id": "1893087994174939138",
    "name": "踏雪寻仙",
-   "public_metrics": {
-    "followers_count": 1177,
-    "following_count": 466,
-    "like_count": 27557,
-    "listed_count": 21,
-    "media_count": 632,
-    "post_count": 4937
-   },
    "username": "TaXue2025"
   },
   "1781882258091393024": {
@@ -23050,14 +23969,6 @@
    "description": "✦ AI创造一切～\n✦ 保持活人感！Build in public\n✦ Founder of https://t.co/HDnzUGiLZO(DR 81) & https://t.co/HiBJsc5hAa(R2 客户端) & https://t.co/59PEEo3xfJ(building)",
    "id": "1626815537841070080",
    "name": "Justin3go",
-   "public_metrics": {
-    "followers_count": 5881,
-    "following_count": 609,
-    "like_count": 19807,
-    "listed_count": 80,
-    "media_count": 1296,
-    "post_count": 5290
-   },
    "username": "Justin1024go"
   },
   "1723331": {
@@ -23607,7 +24518,7 @@
    "username": "yilunAIyyds"
   },
   "909143568991772672": {
-   "description": "Journalist turned AI builder. 15k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中（以上都是我为了涨粉写的）\nCat Lover🐱",
+   "description": "Journalist turned AI builder. 20k 🌟 on GitHub.\n复旦新传🎓拿过新闻奖的前记者，写过百万+阅读公众号文章。REDSkill排行第二，GitHub万星开发者，探索AI中（以上都是我为了涨粉写的）\nCat Lover🐱",
    "id": "909143568991772672",
    "name": "躺在废墟里 Lieflat",
    "username": "lieflat_3"
@@ -23963,7 +24874,7 @@
    "username": "cccch1mneyyyy"
   },
   "1992461": {
-   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、记录日常。",
+   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、分享想法。",
    "id": "1992461",
    "name": "Gabe",
    "username": "fishjar"
@@ -24029,7 +24940,7 @@
    "username": "otterpal24"
   },
   "1897327640543133696": {
-   "description": "学习Al | 记录成长\n偶尔发点观点和暴论🤓",
+   "description": "Not OpenAI, Not Anthropic, Not DeepSeek",
    "id": "1897327640543133696",
    "name": "真白大小姐",
    "username": "Mashiro_0619"
@@ -24129,6 +25040,72 @@
    "id": "1466675689554202624",
    "name": "brucexu.eth",
    "username": "brucexu_eth"
+  },
+  "1831256083115200512": {
+   "description": "让我们共同发现世界的美！\nLove all the good things.Share life, share food and share beautiful scenery.Follow me if you like.部分素材来自网络，如有冒犯请联系删除～",
+   "id": "1831256083115200512",
+   "name": "Doris",
+   "username": "DorisTulip"
+  },
+  "703601972": {
+   "description": "Simplifying LLMs, AI Agents, RAG, and Machine Learning for you! • Co-founder @dailydoseofds_• BITS Pilani • 3 Patents • ex-AI Engineer @ LightningAI",
+   "id": "703601972",
+   "name": "Akshay 🚀",
+   "username": "akshay_pachaar"
+  },
+  "1401756260534415365": {
+   "description": "- 前金融机构负责人、玄学 AI 产品联创\n- 现专注 AI 培训、咨询、FDE \n- 2 个月小红书从零做到万粉，然后被封号的血泪史\n- Vibe coding 产品，周活 1000+用户\n- 千问办公大使、WorkBuddy 认证 OPC 从业者\n- Datawhale FDE 100 先锋人物",
+   "id": "1401756260534415365",
+   "name": "Wattter",
+   "username": "WattterDjiang"
+  },
+  "1353836358901501952": {
+   "description": "We're an AI safety and research company that builds reliable, interpretable, and steerable AI systems. Talk to our AI assistant @claudeai on https://t.co/FhDI3KQh0n.",
+   "id": "1353836358901501952",
+   "name": "Anthropic",
+   "username": "AnthropicAI"
+  },
+  "2880219973": {
+   "description": "VPS优惠信息及时发布和汇总\n助力出海，帮你找寻更合适的服务器\n\n站点：https://t.co/rmJD4U8blZ\nTG群：https://t.co/iqR8HD56an",
+   "id": "2880219973",
+   "name": "fwqgo｜服务器go",
+   "username": "fwqgo_com"
+  },
+  "2086044715267325952": {
+   "description": "Content creator | Builder | DM's open",
+   "id": "2086044715267325952",
+   "name": "Chonsy",
+   "username": "0xChonsy"
+  },
+  "2067518374469640193": {
+   "description": "Everything is a plugin.",
+   "id": "2067518374469640193",
+   "name": "DeepSeek Harness",
+   "username": "DeepSeekHarness"
+  },
+  "2057932282732883968": {
+   "description": "探索 AI 时代，一个人也能成为一家公司。\n五部剧在红果爆红 ，累计播放量破千万\n| AI产品经理 | AIGC影视导演 | OPC创业者 | AI出海实践者｜\nEmbrace AI. Endless progress.",
+   "id": "2057932282732883968",
+   "name": "Miller",
+   "username": "TuyetloanP81840"
+  },
+  "3134520267": {
+   "description": "building autonomous AI workers\n\ncontact me if you need help with your AI project",
+   "id": "3134520267",
+   "name": "Sergii Makarevych",
+   "username": "sermakarevich"
+  },
+  "155252642": {
+   "description": "Every great AI journey starts with a single Prompt\nvx: huangyun_122",
+   "id": "155252642",
+   "name": "黄赟",
+   "username": "huangyun_122"
+  },
+  "1533875128274079744": {
+   "description": "0xCoach | 阿涛\n分享 AI 工具、Vibe Coding、Agent 与开源项目，分享从想法到产品的实践过程。",
+   "id": "1533875128274079744",
+   "name": "0xCoach",
+   "username": "0xCoach"
   }
  }
 }
