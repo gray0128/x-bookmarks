@@ -1,6 +1,428 @@
 {
  "posts": [
   {
+   "author_id": "826248576",
+   "conversation_id": "2119765793894535400",
+   "created_at": "2026-11-09T12:15:23.000Z",
+   "edit_history_post_ids": [
+    "2119765793894535400"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/u2aPmPzPs6",
+      "end": 191,
+      "expanded_url": "https://x.com/qiyouqiu114/status/2119765793894535400/photo/1",
+      "media_key": "3_2119765784373448704",
+      "start": 168,
+      "url": "https://t.co/u2aPmPzPs6"
+     },
+     {
+      "display_url": "pic.x.com/u2aPmPzPs6",
+      "end": 191,
+      "expanded_url": "https://x.com/qiyouqiu114/status/2119765793894535400/photo/1",
+      "media_key": "3_2119765784432144384",
+      "start": 168,
+      "url": "https://t.co/u2aPmPzPs6"
+     },
+     {
+      "display_url": "pic.x.com/u2aPmPzPs6",
+      "end": 191,
+      "expanded_url": "https://x.com/qiyouqiu114/status/2119765793894535400/photo/1",
+      "media_key": "3_2119765784654442496",
+      "start": 168,
+      "url": "https://t.co/u2aPmPzPs6"
+     },
+     {
+      "display_url": "pic.x.com/u2aPmPzPs6",
+      "end": 191,
+      "expanded_url": "https://x.com/qiyouqiu114/status/2119765793894535400/photo/1",
+      "media_key": "3_2119765784377581568",
+      "start": 168,
+      "url": "https://t.co/u2aPmPzPs6"
+     }
+    ]
+   },
+   "id": "2119765793894535400",
+   "lang": "zh",
+   "note_tweet": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "id.toyota",
+       "end": 381,
+       "expanded_url": "http://id.toyota",
+       "start": 358,
+       "url": "https://t.co/rXfLbTRax2"
+      }
+     ]
+    },
+    "text": "TOYOTA Wallet 开卡教程：国内招行万事达借记卡实测可充值\n\n这是丰田金融的预付钱包，一次注册开出两张卡：QUICPay（JCB 预付）+ iD/Mastercard（万事达预付），都能加进 Apple Pay。\n\n先说最关键的实测结果：国内招商银行万事达借记卡可以直接给这张 iD/Mastercard 充值，实测 500 日元到账（折合人民币 21.24 元）。注意是预授权冻结，留意后续扣款通知。\n\n开卡步骤（图 1-4）：\n\n1. 下好 TOYOTA Wallet App，点「さあ、はじめよう」。\n2. 同意两份条款：TOYOTA Wallet 利用规约/隐私政策 + TOYOTA Wallet QUICPay 会员规约/个人信息同意规定。两张卡是同时申请的。\n3. 注册 TOYOTA 账号（https://t.co/rXfLbTRax2）：先填邮箱收验证码，完成邮箱确认。\n4. 设密码：8-20 位半角英数，必须同时含半角数字和半角英字；认证电话填能收短信的日本手机号，这个号以后做二步验证用。\n5. 选「个人」，填姓名。姓填汉字；名先填汉字，如果系统报错说名里有不能输入的文字，就改填片假名；片假名姓、名按自己名字的读音填；再选性别、填生日。\n6. SMS 验证：点「次へ」，验证码发到认证电话上。收不到短信可以改走语音电话收码。\n7. 开卡完成。Apple Pay 里能看到两张卡：蓝色那张是 QUICPay（JCB 预付），黄色那张是 iD/Mastercard（万事达预付）。\n8. 充值：把招行万事达借记卡绑上做充值卡，充 500 日元实测到账。卡号、有效期点卡面左上角「カード情報を確認する」。余额上限 50,000 日元。\n\n几点提醒：\n\n- App 里有条红字通知说银行口座的新设定与充值暂时停止，这是官方通用通知，不影响用卡充值。\n- App 底部有个 MY TS CUBIC 入口，点进去提示不能用是正常的，那是 TS CUBIC 信用卡/车贷合同客户的页面，没有那边合同就进不去，钱包在第二个标签「ウォレット」。\n- iD/Mastercard 那张支持万事达的日本网站和 App 消费，先充钱再刷。\n- 只实测了招行万事达借记卡充 500 日元，其他卡能不能充没测过，不保证。\n\n2026 年 11 月 9 日实测，流程如图所示。"
+   },
+   "public_metrics": {
+    "bookmark_count": 325,
+    "impression_count": 22767,
+    "like_count": 174,
+    "quote_count": 0,
+    "reply_count": 22,
+    "repost_count": 14
+   },
+   "text": "TOYOTA Wallet 开卡教程：国内招行万事达借记卡实测可充值\n\n这是丰田金融的预付钱包，一次注册开出两张卡：QUICPay（JCB 预付）+ iD/Mastercard（万事达预付），都能加进 Apple Pay。\n\n先说最关键的实测结果：国内招商银行万事达借记卡可以直接给这张 iD/Mastercard 充值，实测 500 https://t.co/u2aPmPzPs6",
+   "url": "https://x.com/qiyouqiu114/status/2119765793894535400",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "2015704097698238465",
+   "conversation_id": "2119449440532435013",
+   "created_at": "2026-11-08T15:18:18.000Z",
+   "edit_history_post_ids": [
+    "2119449440532435013"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/PACPg2aqJH",
+      "end": 303,
+      "expanded_url": "https://x.com/0xWhitemon/status/2119449440532435013/photo/1",
+      "media_key": "3_2119449374837047296",
+      "start": 280,
+      "url": "https://t.co/PACPg2aqJH"
+     },
+     {
+      "display_url": "x.com/0xWhitemon/sta…",
+      "end": 327,
+      "expanded_url": "https://twitter.com/0xWhitemon/status/2119430401701621865",
+      "start": 304,
+      "url": "https://t.co/TFNCJXSxYT"
+     }
+    ]
+   },
+   "id": "2119449440532435013",
+   "lang": "en",
+   "note_tweet": {
+    "text": "this harness engineering paper is f*cking insane\n\nit's the exact 3-agent setup anthropic used to turn a one-line idea into a working app instead of a broken demo.\n\n3 agents, 3 files, one loop that doesn't stop until the app actually works, all on one page.\n\nset it up tonight and your agent ships features that work on the first click, instead of \"done\" apps that break the moment you touch them.\n\nthe crazy part is everyone lets the same agent build its work and grade it, while the fix is a second agent whose only job is to say no.\n\nfull breakdown in the harness guide below."
+   },
+   "public_metrics": {
+    "bookmark_count": 1139,
+    "impression_count": 56823,
+    "like_count": 719,
+    "quote_count": 2,
+    "reply_count": 22,
+    "repost_count": 84
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119430401701621865",
+     "type": "quoted"
+    }
+   ],
+   "text": "this harness engineering paper is f*cking insane\n\nit's the exact 3-agent setup anthropic used to turn a one-line idea into a working app instead of a broken demo.\n\n3 agents, 3 files, one loop that doesn't stop until the app actually works, all on one page.\n\nset it up tonight and https://t.co/PACPg2aqJH https://t.co/TFNCJXSxYT",
+   "url": "https://x.com/0xWhitemon/status/2119449440532435013",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Harness, Loop, Graph: The 3 Layers That Decide If Your AI Agent Works"
+   },
+   "author_id": "2015704097698238465",
+   "conversation_id": "2119430401701621865",
+   "created_at": "2026-11-08T14:02:39.000Z",
+   "edit_history_post_ids": [
+    "2119430401701621865"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2119…",
+      "end": 240,
+      "expanded_url": "https://x.com/i/article/2119423551300145152",
+      "start": 217,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2119423551300145152",
+      "url": "https://t.co/W99aPfcSub"
+     }
+    ]
+   },
+   "id": "2119430401701621865",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 580,
+    "impression_count": 127595,
+    "like_count": 288,
+    "quote_count": 14,
+    "reply_count": 43,
+    "repost_count": 34
+   },
+   "text": "Harness, loop and graph could be the missing layers between AI models and agents that actually work.\n\nSame model, same prompt, completely different results.\n\nIn this article, I show you how to build all three layers. https://t.co/W99aPfcSub",
+   "url": "https://x.com/0xWhitemon/status/2119430401701621865",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "1901144333719683072",
+   "conversation_id": "2119609385249067262",
+   "created_at": "2026-11-09T01:53:52.000Z",
+   "edit_history_post_ids": [
+    "2119609385249067262"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/fsymoTSi47",
+      "end": 212,
+      "expanded_url": "https://x.com/shengtang135754/status/2119609385249067262/photo/1",
+      "media_key": "3_2119609371307266050",
+      "start": 189,
+      "url": "https://t.co/fsymoTSi47"
+     },
+     {
+      "display_url": "pic.x.com/fsymoTSi47",
+      "end": 212,
+      "expanded_url": "https://x.com/shengtang135754/status/2119609385249067262/photo/1",
+      "media_key": "3_2119609371349168128",
+      "start": 189,
+      "url": "https://t.co/fsymoTSi47"
+     }
+    ]
+   },
+   "id": "2119609385249067262",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "Antigravity ➕colab➕minimax h3一键部署方案，已亲测部署成功，colab g4 gpu赶紧用起来，把下面内容直接复制给你的antigravity 就能完成部署👇👇👇\n\nbash\nexport PATH=\"$HOME/.local/bin:$PATH\"\n# 首次授权（会自动弹一次浏览器，⚠️ 切记手动勾选「查看、编辑、创建和删除您的所有 Google 云端硬盘文件」复选框再点继续！）\ncolab dfs consent\n\n授权完成后，以后只需三条命令即可在后台全自动开 G4、挂云盘、跑 33B MiniMax-H3 并自动关机省 CCU：\n\nbash\n# 1. 拉起 96GB G4 实例并静默挂载 20TB Google Drive\ncolab new -s h3work --gpu G4\ncolab dfs mount -s h3work\n# 2. 90秒极速冷启动 MiniMax-H3 并跑完 4 段式影视短剧\ncolab exec -s h3work -c \"python3 -u /content/drive/MyDrive/AI_Workstation/scripts/launch_g4_comfyui_fast.py --profile scheme_a && cd /content/drive/MyDrive/AI_Workstation/workflows/01_dialogue_2p_photorealistic && python3 -u run_drama.py --config drama_config.json --workflow workflow_v9_final.json\"\n# 3. 跑完一键强杀实例并对账 CCU（防止后台幽灵计费）\npython3 \"/Users/stark/Google Drive/我的云端硬盘/AI_Workstation/scripts/colab_meter.py\" stop"
+   },
+   "public_metrics": {
+    "bookmark_count": 435,
+    "impression_count": 39317,
+    "like_count": 212,
+    "quote_count": 3,
+    "reply_count": 34,
+    "repost_count": 25
+   },
+   "text": "Antigravity ➕colab➕minimax h3一键部署方案，已亲测部署成功，colab g4 gpu赶紧用起来，把下面内容直接复制给你的antigravity 就能完成部署👇👇👇\n\nbash\nexport PATH=\"$HOME/.local/bin:$PATH\"\n# 首次授权（会自动弹一次浏览器，⚠️ 切记手动勾选「查看、编辑、创建和删除您的所有 Google https://t.co/fsymoTSi47",
+   "url": "https://x.com/shengtang135754/status/2119609385249067262",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "2832427459",
+   "conversation_id": "2119521036660314339",
+   "created_at": "2026-11-08T20:02:48.000Z",
+   "edit_history_post_ids": [
+    "2119521036660314339"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
+      "display_url": "github.com/cursor/plugins…",
+      "end": 223,
+      "expanded_url": "https://github.com/cursor/plugins/tree/main/pstack",
+      "images": [
+       {
+        "height": 400,
+        "url": "https://pbs.twimg.com/news_img/2119521081858117632/JHCl11Ob?format=png&name=orig",
+        "width": 400
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119521081858117632/JHCl11Ob?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 200,
+      "status": 200,
+      "title": "plugins/pstack at main · cursor/plugins",
+      "unwound_url": "https://github.com/cursor/plugins/tree/main/pstack",
+      "url": "https://t.co/SxilBe4Diu"
+     },
+     {
+      "display_url": "x.com/steveruizok/st…",
+      "end": 247,
+      "expanded_url": "https://twitter.com/steveruizok/status/2116552016218710389",
+      "start": 224,
+      "url": "https://t.co/4arc9DYbjl"
+     }
+    ]
+   },
+   "id": "2119521036660314339",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 6627,
+    "impression_count": 229621,
+    "like_count": 4649,
+    "quote_count": 27,
+    "reply_count": 159,
+    "repost_count": 200
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116552016218710389",
+     "type": "quoted"
+    }
+   ],
+   "text": "try this next “use /create-formal-verification-skill to model these state machines, one skill per subsystem. and use /statechart to visualize my most important user flows”\n\nboth skills are in pstack\n\nhttps://t.co/SxilBe4Diu https://t.co/4arc9DYbjl",
+   "url": "https://x.com/poteto/status/2119521036660314339",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "1421215273902755844",
+   "conversation_id": "2119576297643163828",
+   "created_at": "2026-11-08T23:42:23.000Z",
+   "edit_history_post_ids": [
+    "2119576297643163828"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/mvCxNAlFKH",
+      "end": 44,
+      "expanded_url": "https://x.com/jasonbugui/status/2119576297643163828/photo/1",
+      "media_key": "3_2119576231905808384",
+      "start": 21,
+      "url": "https://t.co/mvCxNAlFKH"
+     }
+    ]
+   },
+   "id": "2119576297643163828",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 66,
+    "impression_count": 13775,
+    "like_count": 170,
+    "quote_count": 0,
+    "reply_count": 11,
+    "repost_count": 12
+   },
+   "text": "知乎依然是我无聊时，第一选择打开的APP https://t.co/mvCxNAlFKH",
+   "url": "https://x.com/jasonbugui/status/2119576297643163828",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "1282438260883509250",
+   "conversation_id": "2119444845890617507",
+   "created_at": "2026-11-08T18:39:04.000Z",
+   "edit_history_post_ids": [
+    "2119499964854444280"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 9,
+      "id": "1994077573694046208",
+      "start": 0,
+      "username": "Voxyz_ai"
+     }
+    ]
+   },
+   "id": "2119499964854444280",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 114,
+    "impression_count": 20983,
+    "like_count": 66,
+    "quote_count": 0,
+    "reply_count": 3,
+    "repost_count": 1
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119444845890617507",
+     "type": "replied_to"
+    }
+   ],
+   "text": "@Voxyz_ai 实测过，整仓直接丢进去，它只会给一堆抽象总结。加一句“输出状态×事件×副作用的表格，不确定的标未知”才有用；另外按目录分批跑，我那个300多文件的项目一次性扫，后半部分它根本没读到。",
+   "url": "https://x.com/hppzyy/status/2119499964854444280",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "1486017329662423044",
+   "conversation_id": "2119121725636186563",
+   "created_at": "2026-11-07T17:36:05.000Z",
+   "edit_history_post_ids": [
+    "2119121725636186563"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/karpathy/statu…",
+      "end": 208,
+      "expanded_url": "https://twitter.com/karpathy/status/2119114537442189652",
+      "start": 185,
+      "url": "https://t.co/pl4KozM2LG"
+     }
+    ]
+   },
+   "id": "2119121725636186563",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "Karpathy 又展示了一次 AI 编程有多离谱。\n\n看到别人整理的一份 YouTube 优质频道排行榜，他直接打开 Claude Code，只用了 3 分钟，就生成了一个包含约 4.7 万个视频的网站。\n\n这个项目叫 TristanTube，支持 TV Mode，可以像看电视一样浏览技术视频。内容来自工程师 Tristan Hume 花多年积累的 YouTube 频道推荐榜单，涵盖科学、编程、机械、电子、工程等领域。\n\n当一个想法只需要几分钟就能变成软件，真正稀缺的可能越来越是发现好问题、找到高质量数据的能力。"
+   },
+   "public_metrics": {
+    "bookmark_count": 66,
+    "impression_count": 7042,
+    "like_count": 58,
+    "quote_count": 3,
+    "reply_count": 4,
+    "repost_count": 1
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119114537442189652",
+     "type": "quoted"
+    }
+   ],
+   "text": "Karpathy 又展示了一次 AI 编程有多离谱。\n\n看到别人整理的一份 YouTube 优质频道排行榜，他直接打开 Claude Code，只用了 3 分钟，就生成了一个包含约 4.7 万个视频的网站。\n\n这个项目叫 TristanTube，支持 TV Mode，可以像看电视一样浏览技术视频。内容来自工程师 Tristan Hume 花多年积累的 YouTube https://t.co/pl4KozM2LG",
+   "url": "https://x.com/mylifcc/status/2119121725636186563",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
+   "author_id": "49569032",
+   "conversation_id": "2119336368610353421",
+   "created_at": "2026-11-08T07:49:00.000Z",
+   "edit_history_post_ids": [
+    "2119336368610353421"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/mEOj1nvFp9",
+      "end": 301,
+      "expanded_url": "https://x.com/AnnatarXBT/status/2119336368610353421/video/1",
+      "media_key": "13_2117121168985497600",
+      "start": 278,
+      "url": "https://t.co/mEOj1nvFp9"
+     },
+     {
+      "display_url": "x.com/thorstenball/s…",
+      "end": 325,
+      "expanded_url": "https://twitter.com/thorstenball/status/2114386050638336082",
+      "start": 302,
+      "url": "https://t.co/b8v3Q4bFvV"
+     }
+    ]
+   },
+   "id": "2119336368610353421",
+   "lang": "en",
+   "note_tweet": {
+    "text": "Google's engineers stopped letting AI grade its own homework, and they open-sourced how\n\nit's called the Elephant-Goldfish Model, and Google says thousands of its engineers run it every day on production code\n\nthe elephant is one long-running session that remembers everything: the architecture, the intent, every small decision. \n\nit never writes code. it interviews you, argues with you and keeps the record\n\nthe goldfish are fresh sessions with zero memory. they never saw the design talk, so they don't inherit its blind spots\n\nthe workflow:\n1. brainstorm - you and the elephant debate options under a strict no-code rule\n2. draft - a markdown design doc with the problem, the plan, the alternatives and the exact files to change\n3. explain back - one goldfish has to explain the design. if it gets it wrong, the doc is ambiguous and goes back\n4. attack - several goldfish hunt edge cases, hidden dependencies and logic gaps\n5. go/no-go - a last goldfish checks that every file path, data structure and function signature is spelled out\n\nAI made coding faster and made slop faster too. this moves the attack to before the first line of code exists\n\nthe trade-offs: it only runs inside Antigravity for now, and the default reviewer list skips security, so you add your own security goldfish\n\nfree, Apache 2.0. the model writes the code, the harness decides what ships, and how one engineer actually works with agents day to day is below:"
+   },
+   "public_metrics": {
+    "bookmark_count": 380,
+    "impression_count": 15784,
+    "like_count": 197,
+    "quote_count": 0,
+    "reply_count": 15,
+    "repost_count": 22
+   },
+   "referenced_tweets": [
+    {
+     "id": "2114386050638336082",
+     "type": "quoted"
+    }
+   ],
+   "text": "Google's engineers stopped letting AI grade its own homework, and they open-sourced how\n\nit's called the Elephant-Goldfish Model, and Google says thousands of its engineers run it every day on production code\n\nthe elephant is one long-running session that remembers everything: https://t.co/mEOj1nvFp9 https://t.co/b8v3Q4bFvV",
+   "url": "https://x.com/AnnatarXBT/status/2119336368610353421",
+   "bookmarked_seen": "2026-11-10T09:04:26+09:00"
+  },
+  {
    "author_id": "1831256083115200512",
    "conversation_id": "2116695466746552642",
    "created_at": "2026-11-01T00:55:00.000Z",
@@ -18603,12 +19025,12 @@
       "images": [
        {
         "height": 1024,
-        "url": "https://pbs.twimg.com/news_img/2117114183275937793/k65qNL8S?format=png&name=orig",
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=orig",
         "width": 1024
        },
        {
         "height": 150,
-        "url": "https://pbs.twimg.com/news_img/2117114183275937793/k65qNL8S?format=png&name=150x150",
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=150x150",
         "width": 150
        }
       ],
@@ -18623,11 +19045,11 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 16715,
-    "impression_count": 1158710,
-    "like_count": 7307,
+    "bookmark_count": 16729,
+    "impression_count": 1167267,
+    "like_count": 7311,
     "quote_count": 328,
-    "reply_count": 274,
+    "reply_count": 275,
     "repost_count": 746
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
@@ -22057,12 +22479,12 @@
    "id": "2058976178908885210",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 1435,
-    "impression_count": 382662,
-    "like_count": 588,
-    "quote_count": 16,
-    "reply_count": 19,
-    "repost_count": 82
+    "bookmark_count": 1472,
+    "impression_count": 418024,
+    "like_count": 607,
+    "quote_count": 13,
+    "reply_count": 20,
+    "repost_count": 86
    },
    "text": "https://t.co/VW9EyOiy4Z"
   },
@@ -22092,9 +22514,9 @@
    "id": "2115445646169694321",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 311,
-    "impression_count": 88219,
-    "like_count": 102,
+    "bookmark_count": 314,
+    "impression_count": 89863,
+    "like_count": 103,
     "quote_count": 3,
     "reply_count": 10,
     "repost_count": 12
@@ -22122,6 +22544,151 @@
     "repost_count": 1
    },
    "text": "上周聚会，一个朋友用 OPPO N6 折叠手机，屏幕超级平，竟比 iPhone Duo 还好。\n\n大家纷纷赞叹，直到今天，另一朋友发现了秘密：\n\n这个手机展开是 181 度....绷平的 😂\n\n原以为黑科技，没想到朴实无华。\n\n但细想，还挺巧妙的。\n\n最近看 OPPO 产品口碑越来越好，如 AI"
+  },
+  "2119430401701621865": {
+   "article_title": {
+    "title": "Harness, Loop, Graph: The 3 Layers That Decide If Your AI Agent Works"
+   },
+   "author_id": "2015704097698238465",
+   "conversation_id": "2119430401701621865",
+   "created_at": "2026-11-08T14:02:39.000Z",
+   "edit_history_post_ids": [
+    "2119430401701621865"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2119…",
+      "end": 240,
+      "expanded_url": "https://x.com/i/article/2119423551300145152",
+      "start": 217,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2119423551300145152",
+      "url": "https://t.co/W99aPfcSub"
+     }
+    ]
+   },
+   "id": "2119430401701621865",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 580,
+    "impression_count": 127595,
+    "like_count": 288,
+    "quote_count": 14,
+    "reply_count": 43,
+    "repost_count": 34
+   },
+   "text": "Harness, loop and graph could be the missing layers between AI models and agents that actually work.\n\nSame model, same prompt, completely different results.\n\nIn this article, I show you how to build all three layers. https://t.co/W99aPfcSub"
+  },
+  "2116552016218710389": {
+   "author_id": "122246321",
+   "conversation_id": "2116552016218710389",
+   "created_at": "2026-10-31T15:24:58.000Z",
+   "edit_history_post_ids": [
+    "2116552016218710389"
+   ],
+   "id": "2116552016218710389",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 15686,
+    "impression_count": 2057766,
+    "like_count": 8352,
+    "quote_count": 275,
+    "reply_count": 162,
+    "repost_count": 391
+   },
+   "text": "good prompt \"find all of the implicit state machines in my app\""
+  },
+  "2119444845890617507": {
+   "author_id": "1994077573694046208",
+   "conversation_id": "2119444845890617507",
+   "created_at": "2026-11-08T15:00:03.000Z",
+   "edit_history_post_ids": [
+    "2119444845890617507"
+   ],
+   "id": "2119444845890617507",
+   "lang": "en",
+   "note_tweet": {
+    "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.\""
+   },
+   "public_metrics": {
+    "bookmark_count": 21712,
+    "impression_count": 1136910,
+    "like_count": 9021,
+    "quote_count": 56,
+    "reply_count": 221,
+    "repost_count": 418
+   },
+   "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent"
+  },
+  "2119114537442189652": {
+   "author_id": "33836629",
+   "conversation_id": "2119114537442189652",
+   "created_at": "2026-11-07T17:07:31.000Z",
+   "edit_history_post_ids": [
+    "2119114537442189652"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "In 2020 I wrote a tier list of my favorite interesting YouTube channels. Since then I've found a bunch of new awesome channels and updated my opinions on some of them. I still find the best YouTube channels to be some of the most awesome content on the internet for learning interesting things. S 5 A 14 B 12 C 33 D 92 Ben Krasnow’s channel Applied Science has been the flagship channel of engineering and science YouTube for many years. In every video he explains some new and interesting piece of science and",
+      "display_url": "thume.ca/2026/11/01/you…",
+      "end": 85,
+      "expanded_url": "https://thume.ca/2026/11/01/youtube-tier-list-2026/",
+      "images": [
+       {
+        "height": 360,
+        "url": "https://pbs.twimg.com/news_img/2119114538713071616/70cdJzbD?format=jpg&name=orig",
+        "width": 480
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119114538713071616/70cdJzbD?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 62,
+      "status": 200,
+      "title": "My YouTube tier list, six years later - Tristan Hume",
+      "unwound_url": "https://thume.ca/2026/11/01/youtube-tier-list-2026/",
+      "url": "https://t.co/NZ3UCNo6cT"
+     },
+     {
+      "display_url": "karpathy.ai/tristan-tube/",
+      "end": 178,
+      "expanded_url": "https://karpathy.ai/tristan-tube/",
+      "start": 155,
+      "status": 200,
+      "title": "TristanTube",
+      "unwound_url": "https://karpathy.ai/tristan-tube/",
+      "url": "https://t.co/l0KyW1WdNH"
+     },
+     {
+      "display_url": "x.com/karpathy/statu…",
+      "end": 302,
+      "expanded_url": "https://twitter.com/karpathy/status/2116957135661945283",
+      "start": 279,
+      "url": "https://t.co/FZU0ltwVxL"
+     }
+    ]
+   },
+   "id": "2119114537442189652",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 10314,
+    "impression_count": 933524,
+    "like_count": 9150,
+    "quote_count": 228,
+    "reply_count": 633,
+    "repost_count": 771
+   },
+   "referenced_tweets": [
+    {
+     "id": "2116957135661945283",
+     "type": "quoted"
+    }
+   ],
+   "text": "Earlier this week Tristan published his top YouTube channels:\nhttps://t.co/NZ3UCNo6cT\nWhich looked excellent so clearly I had to turn it into TristanTube:\nhttps://t.co/l0KyW1WdNH\n47K super nerdy videos +TV mode for laid back watching. (One-shotted with Claude Code in 3 minutes) https://t.co/FZU0ltwVxL"
   }
  },
  "users": {
@@ -25106,6 +25673,42 @@
    "id": "1533875128274079744",
    "name": "0xCoach",
    "username": "0xCoach"
+  },
+  "826248576": {
+   "description": "💳 集卡爱好者｜海外银行 & U卡｜eSIM折腾党｜TG: https://t.co/TDGPWf25ZM",
+   "id": "826248576",
+   "name": "七悠球",
+   "username": "qiyouqiu114"
+  },
+  "2015704097698238465": {
+   "description": "things worth your scroll\n\ndrawn in ink, signed in gold",
+   "id": "2015704097698238465",
+   "name": "Whitemon",
+   "username": "0xWhitemon"
+  },
+  "1901144333719683072": {
+   "description": "AI实战派，手把手教干货\nCFA + CISA + Google AI训练师\n每天在测模型、烧额度、做视频",
+   "id": "1901144333719683072",
+   "name": "麦麦提",
+   "username": "shengtang135754"
+  },
+  "1421215273902755844": {
+   "description": "公众号和YouTube：南半球聊财经",
+   "id": "1421215273902755844",
+   "name": "南半球聊财经",
+   "username": "jasonbugui"
+  },
+  "1282438260883509250": {
+   "description": "🤖 科技重塑肉体，AI 破解人性\n📈 在经济泡沫里寻找规则，在无常红尘里体验欢愉\n算法算得出欲望，算不透人性。\n💬 交流 / 串门 / 浇个朋友 🤝",
+   "id": "1282438260883509250",
+   "name": "浪格里个浪",
+   "username": "hppzyy"
+  },
+  "49569032": {
+   "description": "• teaching the hidden ways of claude • skills, agents & harness engineering • @cele8ex member •",
+   "id": "49569032",
+   "name": "Annatar.md",
+   "username": "AnnatarXBT"
   }
  }
 }
