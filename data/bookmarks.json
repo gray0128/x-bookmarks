@@ -1,6 +1,295 @@
 {
  "posts": [
   {
+   "author_id": "2030122346603048960",
+   "conversation_id": "2120056353473589374",
+   "created_at": "2026-11-10T07:29:58.000Z",
+   "id": "2120056353473589374",
+   "lang": "ko",
+   "text": "두번째 생존법.\n\n겨울철 대정전이나 국가 비상사태가 터졌을 때, 집 안에서 저체온증으로 사망하는 사람들의 90%는 ‘보일러가 꺼져서’ 죽는 게 아닙니다.\n\n극한의 추위 속에서 난방 없이 72시간을 살아남는 5가지 절대 생존 법칙. 🧵\n\n1. 공간을 극한으로 줄여 초소형 격리 공간을 만든다\n2. 바닥에 골판지·스티로폼·은박 매트로 냉기 차단\n3. 실내 연소 기구는 잠들기 전 끄고 환기 구멍 확보 (일산화탄소)\n4. Sweat Kills: 땀 흘리지 말고 면 대신 폴리에스터·플리스·울 겹쳐 입기\n5. 굵은 혈관 부위에 열원, 미온수와 지방 섭취",
+   "public_metrics": {
+    "bookmark_count": 15747,
+    "impression_count": 1125192,
+    "like_count": 15374,
+    "quote_count": 117,
+    "reply_count": 147,
+    "repost_count": 3015
+   },
+   "url": "https://x.com/kaleumeleu37968/status/2120056353473589374",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "1412131273280212996",
+   "conversation_id": "2119730968437432423",
+   "created_at": "2026-11-09T09:57:00.000Z",
+   "id": "2119730968437432423",
+   "lang": "en",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/UUIX7bCVM9",
+      "expanded_url": "https://x.com/Mr_Buzzoni/status/2119730968437432423/video/1",
+      "url": "https://t.co/UUIX7bCVM9"
+     },
+     {
+      "display_url": "x.com/Mr_Buzzoni/sta…",
+      "expanded_url": "https://twitter.com/Mr_Buzzoni/status/2096128417108287566",
+      "url": "https://t.co/kW6z0f4tda"
+     }
+    ]
+   },
+   "note_tweet": {
+    "text": "I'm sharing with you one of the best papers I've read on Harness Engineering\n\nit takes apart Claude Code (Opus 5.5), Codex, Gemini CLI and more, and boils all of them down to one line:\n\nagent = model + harness\n\nwhat you take away:\n> what a harness is, in plain terms\n> how modern coding agents are built under the hood\n> the patterns they all share\n> the direction the whole field is moving\n> a checklist for building your own\n\nthe model collects the applause\nthe harness decides whether the agent actually works\n\nloop and graph engineering come next, and that part lives in my article below"
+   },
+   "public_metrics": {
+    "bookmark_count": 2216,
+    "impression_count": 96876,
+    "like_count": 1499,
+    "quote_count": 7,
+    "reply_count": 48,
+    "repost_count": 190
+   },
+   "referenced_tweets": [
+    {
+     "id": "2096128417108287566",
+     "type": "quoted"
+    }
+   ],
+   "text": "I'm sharing with you one of the best papers I've read on Harness Engineering",
+   "url": "https://x.com/Mr_Buzzoni/status/2119730968437432423",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "article_title": {
+    "title": "300 AGENTS, ONE GRAPH, AND A LOOP THAT EDITS THE LOOP"
+   },
+   "author_id": "1412131273280212996",
+   "conversation_id": "2096128417108287566",
+   "created_at": "2026-09-05T06:48:53.000Z",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2096…",
+      "expanded_url": "https://x.com/i/article/2096101165515653121",
+      "url": "https://t.co/buH2nYDL29"
+     }
+    ]
+   },
+   "id": "2096128417108287566",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 2626,
+    "impression_count": 1662516,
+    "like_count": 776,
+    "quote_count": 30,
+    "reply_count": 16,
+    "repost_count": 116
+   },
+   "text": "https://t.co/buH2nYDL29",
+   "url": "https://x.com/Mr_Buzzoni/status/2096128417108287566",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "1903004138516209664",
+   "conversation_id": "2120167212787106153",
+   "created_at": "2026-11-10T14:50:28.000Z",
+   "id": "2120167212787106153",
+   "lang": "zh",
+   "note_tweet": {
+    "text": "我来说一下原因。\n\nDeepseek Harness 是国内唯一 MIT 开源的 Agent Harness 框架，且这个框架足够轻量足够有可塑造性，意味着你可以把它拿来加上你自己制作的任何插件为其挂载上，重新打包形成新的应用。\n\n而你可以在你的应用底部注明本 Agent 底座基于 Deepseek Harness 构建。这件事本身是使用深度求索的能力为你的 Agent 稳定性背书，是加分项。\n\n而你如果整出一个 skill 或者所谓专家团的 Agent 集群上架 workbuddy，第一它是明文存储的，随便抄走；第二你没办法定制你的应用页面，通通从一个对话框开始，这意味着——你卖不上价。千问办公或者豆包工作也有相同的问题，他们的 Agent 与他们的办公全家桶深度绑定。\n\n所以，做 FDE 将会有一个巨大的分水岭：要么基于 workbuddy、千问办公、豆包工作去卖席位；要么，你使用 deepseek harness，全方位定制一个专业智能体，用户的操作和交互全部按照适合他们的方式做而非在对话框里说话，你将获得超额的利润。\n\n不要和客户解释你基于 workbuddy 还是千问办公还是豆包工作做出来能有多厉害，就用 deepseek 完全封装一个特别满足他们业务交互的智能体，哪怕接上飞书 CLI 继续用飞书的数据基座，你也能卖出超出 10 倍的价格。\n\n基于这些 Agent 框架交付再干两个月基本上也要回到苦力价格了。\n\n技术不值钱。"
+   },
+   "public_metrics": {
+    "bookmark_count": 123,
+    "impression_count": 6604,
+    "like_count": 104,
+    "quote_count": 4,
+    "reply_count": 11,
+    "repost_count": 16
+   },
+   "referenced_tweets": [
+    {
+     "id": "2120149186218021375",
+     "type": "quoted"
+    }
+   ],
+   "text": "我来说一下原因。\n\nDeepseek Harness 是国内唯一 MIT 开源的 Agent Harness 框架，且这个框架足够轻量足够有可塑造性，意味着你可以把它拿来加上你自己制作的任何插件为其挂载上，重新打包形成新的应用。",
+   "url": "https://x.com/cnzhihao/status/2120167212787106153",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "1552657292847620096",
+   "conversation_id": "2120047621549306158",
+   "created_at": "2026-11-10T06:55:16.000Z",
+   "id": "2120047621549306158",
+   "lang": "ko",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/poteto/status/…",
+      "expanded_url": "https://x.com/poteto/status/2119521036660314339",
+      "url": "https://t.co/hZ7BBrJG80"
+     }
+    ]
+   },
+   "text": "찐 탑티어 그록봇 유저들이 작업 대부분을 커서 프로젝트로 옮기고 있는 이유!\n\nCursor 클라우드 에이전트에서 pstack을 사용하도록 설정하면 비개발자도 주니어급 개발자를 24시간 고용한 느낌으로 개발 자동화를 구축할 수 있다. pstack 스킬 /create-formal-verification-skill 로 앱의 암묵적 상태 기계를 모델링하고 /statechart 로 사용자 흐름을 시각화하는 방법 설명.",
+   "public_metrics": {
+    "bookmark_count": 411,
+    "impression_count": 19799,
+    "like_count": 192,
+    "quote_count": 3,
+    "reply_count": 11,
+    "repost_count": 24
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119521036660314339",
+     "type": "quoted"
+    }
+   ],
+   "url": "https://x.com/minheo93698092/status/2120047621549306158",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "384850586",
+   "conversation_id": "2120090046728683717",
+   "created_at": "2026-11-10T09:43:51.000Z",
+   "id": "2120090046728683717",
+   "lang": "zh",
+   "text": "ai的编程噪音正在吞噬软件业 https://t.co/nCx0hTjEiL",
+   "public_metrics": {
+    "bookmark_count": 82,
+    "impression_count": 39510,
+    "like_count": 126,
+    "quote_count": 3,
+    "reply_count": 16,
+    "repost_count": 9
+   },
+   "url": "https://x.com/ssslumdunk/status/2120090046728683717",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "769460485",
+   "conversation_id": "2120026538922115159",
+   "created_at": "2026-11-10T05:31:29.000Z",
+   "id": "2120026538922115159",
+   "lang": "zh",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "designeer.xyz",
+      "expanded_url": "https://designeer.xyz",
+      "title": "Designeer: Inspiration, resources, tools & portfolios",
+      "description": "Browse design references, reusable resources, practical tools, and portfolios from designers and developers.",
+      "url": "https://t.co/AjL28yVGJV"
+     }
+    ]
+   },
+   "public_metrics": {
+    "bookmark_count": 78,
+    "impression_count": 5922,
+    "like_count": 36,
+    "quote_count": 1,
+    "reply_count": 1,
+    "repost_count": 1
+   },
+   "referenced_tweets": [
+    {
+     "id": "2119979178741371019",
+     "type": "quoted"
+    }
+   ],
+   "text": "要求不是很高的话可以用这个 cheat sheet https://t.co/AjL28yVGJV https://t.co/Ukhl9SeMEo",
+   "url": "https://x.com/mr_easonyang/status/2120026538922115159",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "2043455994508771328",
+   "conversation_id": "2119877798173044979",
+   "created_at": "2026-11-09T19:40:27.000Z",
+   "id": "2119877798173044979",
+   "lang": "ru",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "anthropic.com/research/build…",
+      "expanded_url": "https://www.anthropic.com/research/building-effective-agents",
+      "title": "Building effective AI agents",
+      "description": "Practical guidance from Anthropic on building reliable AI agents, from simple composable patterns to fully autonomous systems.",
+      "url": "https://t.co/KFMyTtUyT3"
+     }
+    ]
+   },
+   "public_metrics": {
+    "bookmark_count": 1400,
+    "impression_count": 58854,
+    "like_count": 678,
+    "quote_count": 0,
+    "reply_count": 11,
+    "repost_count": 52
+   },
+   "text": "Тоже статья Антропиков, про построение эффективных агентов.\n\nИ вот это - лучшее, что я читала за месяц. База на базе базой погоняет.\n\n#озидо\n\nhttps://t.co/KFMyTtUyT3",
+   "url": "https://x.com/nerdniwe/status/2119877798173044979",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "69492059",
+   "conversation_id": "2119613831249100936",
+   "created_at": "2026-11-09T02:11:32.000Z",
+   "id": "2119613831249100936",
+   "lang": "zh",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "uiarc.dev",
+      "expanded_url": "https://uiarc.dev/",
+      "title": "Arc UI: the React UI library your AI agents can build with",
+      "description": "Animated React components and blocks for shadcn and Next.js. Add them with the shadcn CLI, or let your AI agent build with them through the MCP server.",
+      "url": "https://t.co/y3MUxQYDU4"
+     }
+    ]
+   },
+   "public_metrics": {
+    "bookmark_count": 841,
+    "impression_count": 62411,
+    "like_count": 552,
+    "quote_count": 7,
+    "reply_count": 57,
+    "repost_count": 43
+   },
+   "text": "这个宝藏 UI 组件库质量太高了，第一次看到这个 Agent timeline 就惊艳到了：https://t.co/y3MUxQYDU4\n\n感觉 UI 组件库在 AI 时代有点难做了：把组件链接丢给 AI，让它按项目自己的风格从零\"复刻\"一份，往往比装依赖、再靠配置去改样式还省事。更不要说中间还有付款环节 https://t.co/XcahOaxslD",
+   "url": "https://x.com/luinlee/status/2119613831249100936",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
+   "author_id": "1255500442898964481",
+   "conversation_id": "2119780441658212842",
+   "created_at": "2026-11-09T13:13:35.000Z",
+   "id": "2119780441658212842",
+   "lang": "en",
+   "entities": {
+    "urls": [
+     {
+      "display_url": "aiforui.dev/skills",
+      "expanded_url": "https://aiforui.dev/skills",
+      "title": "AI Skills for Building Better Interfaces",
+      "description": "Free, open-source skills that teach AI agents to build better interfaces, from animation and gestures to mobile polish, for designers and engineers.",
+      "url": "https://t.co/wSHp04XjT0"
+     }
+    ]
+   },
+   "public_metrics": {
+    "bookmark_count": 4656,
+    "impression_count": 131357,
+    "like_count": 3553,
+    "quote_count": 29,
+    "reply_count": 63,
+    "repost_count": 178
+   },
+   "text": "Just released documentation for my skills.\n\nEach of the 17 skills now has a before and after of the same UI, example prompts, when to reach for it, and which skills pair well with it.\n\nAn improvement over a plain README on GitHub with more coming soon.\n\nhttps://t.co/wSHp04XjT0",
+   "url": "https://x.com/emilkowalski/status/2119780441658212842",
+   "bookmarked_seen": "2026-11-11T09:19:31+09:00"
+  },
+  {
    "author_id": "826248576",
    "conversation_id": "2119765793894535400",
    "created_at": "2026-11-09T12:15:23.000Z",
@@ -22689,6 +22978,26 @@
     }
    ],
    "text": "Earlier this week Tristan published his top YouTube channels:\nhttps://t.co/NZ3UCNo6cT\nWhich looked excellent so clearly I had to turn it into TristanTube:\nhttps://t.co/l0KyW1WdNH\n47K super nerdy videos +TV mode for laid back watching. (One-shotted with Claude Code in 3 minutes) https://t.co/FZU0ltwVxL"
+  },
+  "2120149186218021375": {
+   "author_id": "1903004138516209664",
+   "conversation_id": "2120149186218021375",
+   "created_at": "2026-11-10T13:38:51.000Z",
+   "id": "2120149186218021375",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 56,
+    "like_count": 78
+   },
+   "text": "如果你是做交付的 FDE，现在起，把所有精力全部投入到 Deepseek Harness。这是你做 FDE 唯一一个可以挣到钱的方向。\n\nworkbuddy、豆包工作、千问办公，都会让你赔得倾家荡产，除非你只是帮他们卖席位而不是做交付。"
+  },
+  "2119979178741371019": {
+   "author_id": "1581259092928040961",
+   "conversation_id": "2119979178741371019",
+   "created_at": "2026-11-10T02:23:18.000Z",
+   "id": "2119979178741371019",
+   "lang": "zh",
+   "text": "有啥好的提升产品UI审美/视觉的好方法不？"
   }
  },
  "users": {
@@ -22987,7 +23296,7 @@
    "username": "qingyue820"
   },
   "69492059": {
-   "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab · Ex-CTO @ShimoDocs · Built ioredis (acq.) & @medisclient · Contributor to @quilljs",
+   "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab",
    "id": "69492059",
    "name": "Zihua",
    "username": "luinlee"
@@ -25709,6 +26018,54 @@
    "id": "49569032",
    "name": "Annatar.md",
    "username": "AnnatarXBT"
+  },
+  "2030122346603048960": {
+   "description": "이더리움으로 \n26년 부자가 될 바울이 📈\n재난/비상사태/생존 프레퍼",
+   "id": "2030122346603048960",
+   "name": "바울이",
+   "username": "kaleumeleu37968"
+  },
+  "1412131273280212996": {
+   "description": "•  building a second brain with Сlaude & Obsidian • \n• @cele8ex member • co-founder @polynternet •",
+   "id": "1412131273280212996",
+   "name": "Mr. Buzzoni",
+   "username": "Mr_Buzzoni"
+  },
+  "1903004138516209664": {
+   "description": "老板定方向，我带团队把 AI 落进业务流程\nCPA 出身｜高管 FDE 训练｜企业主陪跑",
+   "id": "1903004138516209664",
+   "name": "做 FDE 的智昊",
+   "username": "cnzhihao"
+  },
+  "1552657292847620096": {
+   "description": "호주에서 테슬라 모델Y 주니퍼타고 Grok·Grok Bot을 매일 써 보는 사람.",
+   "id": "1552657292847620096",
+   "name": "min heo",
+   "username": "minheo93698092"
+  },
+  "384850586": {
+   "description": "微博百万粉丝，电竞解说，创业纳斯达克IPO已躺期权牛散",
+   "id": "384850586",
+   "name": "龙心盐",
+   "username": "ssslumdunk"
+  },
+  "769460485": {
+   "description": "playing Subway Surf forever. Backend by day. SI by night. Always building. Opinions are rare. Quality optional.",
+   "id": "769460485",
+   "name": "Eason Yang",
+   "username": "mr_easonyang"
+  },
+  "2043455994508771328": {
+   "description": "Математик, датасатанист, average ML enjoyer, поехавшая кошатница.",
+   "id": "2043455994508771328",
+   "name": "Айтишница из Тбилиси",
+   "username": "nerdniwe"
+  },
+  "1255500442898964481": {
+   "description": "Teaching at https://t.co/8oTR8kCPmr. Previously @linear, @vercel",
+   "id": "1255500442898964481",
+   "name": "Emil Kowalski",
+   "username": "emilkowalski"
   }
  }
 }
