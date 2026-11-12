@@ -1,6 +1,778 @@
 {
  "posts": [
   {
+   "author_id": "168139512",
+   "conversation_id": "2120502201168830513",
+   "created_at": "2026-11-11T13:01:36.000Z",
+   "edit_history_post_ids": [
+    "2120502201168830513"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/MYF1IjLvAu",
+      "end": 117,
+      "expanded_url": "https://x.com/geekbb/status/2120502201168830513/photo/1",
+      "media_key": "3_2120500734634663936",
+      "start": 94,
+      "url": "https://t.co/MYF1IjLvAu"
+     },
+     {
+      "display_url": "x.com/geekbb/status/…",
+      "end": 141,
+      "expanded_url": "https://twitter.com/geekbb/status/2119080326555443677",
+      "start": 118,
+      "url": "https://t.co/AYb6wjDkrw"
+     }
+    ]
+   },
+   "id": "2120502201168830513",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 108,
+    "impression_count": 9885,
+    "like_count": 72,
+    "quote_count": 1,
+    "reply_count": 13,
+    "repost_count": 4
+   },
+   "referenced_posts": [
+    {
+     "id": "2119080326555443677",
+     "type": "quoted"
+    }
+   ],
+   "text": "支持中文了，Kiri 运行 Docker 容器比 OrbStack 和 Docker Desktop 都要轻量还秒启，对我这种平时就拉个 Docker 测项目的人来说，直接就是版本答案。 https://t.co/MYF1IjLvAu https://t.co/AYb6wjDkrw",
+   "url": "https://x.com/geekbb/status/2120502201168830513",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "2核2G内存阿里云服务器，50元一年，可续3年💻"
+   },
+   "author_id": "1871130465278808064",
+   "conversation_id": "2120490978729660675",
+   "created_at": "2026-11-11T12:17:00.000Z",
+   "edit_history_post_ids": [
+    "2120490978729660675"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2120417936720748544",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120417936720748544",
+      "url": "https://t.co/cE5erBq05M"
+     }
+    ]
+   },
+   "id": "2120490978729660675",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 99,
+    "impression_count": 10238,
+    "like_count": 40,
+    "quote_count": 0,
+    "reply_count": 7,
+    "repost_count": 3
+   },
+   "text": "https://t.co/cE5erBq05M",
+   "url": "https://x.com/yedabinbinah/status/2120490978729660675",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "426796674",
+   "conversation_id": "2120200100664516781",
+   "created_at": "2026-11-10T17:01:10.000Z",
+   "edit_history_post_ids": [
+    "2120200100664516781"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/rAhZS5Yp2E",
+      "end": 217,
+      "expanded_url": "https://x.com/huxlab/status/2120200100664516781/video/1",
+      "media_key": "13_2120197786151047168",
+      "start": 194,
+      "url": "https://t.co/rAhZS5Yp2E"
+     },
+     {
+      "display_url": "x.com/huxlab/status/…",
+      "end": 241,
+      "expanded_url": "https://twitter.com/huxlab/status/2115240099495788552",
+      "start": 218,
+      "url": "https://t.co/hcN6wpqM9r"
+     }
+    ]
+   },
+   "id": "2120200100664516781",
+   "lang": "zh",
+   "note_post": {
+    "text": "Google 刚刚放出了 1 小时公开课，直接把“Agent 记忆与知识图谱”的工程闭环彻底讲透了：\n\n“你的 Agent 根本不需要更大的模型，它需要一张能记住一切的图谱。”\n\nPrompts → Agents → Knowledge Graphs → Self-Improving Agents\n\n整堂课 1 小时，Google 工程师全程工程手把手带你落地：\n\n＞ 04:01 | 从零构建首个 GraphRAG Agent\n\n抛弃伪概念，直接用 Spanner Graph 建立持久化节点与边，把非结构化业务拓扑化。\n\n＞ 30:00 | 代理式搜索（Agentic Search）\n\n关键词 + 向量相似度 + 图遍历（Graph Traversal）三合一，让 Agent 具备真正的多跳链路推理能力。\n\n＞ 35:48 | 多模态图谱工程现场演示\n\n实操从图片、音频、文本中自动化提取实体与关系，流水线式灌入图谱。\n\n＞ 47:06 | 具备自愈与自迭代能力的闭环 Agent\n\n配合 Vertex AI Memory Bank 沉淀长期记忆；每次任务结束后自动修补并写回图谱，让 Agent 真正越跑越聪明。\n\nPrompt 决定怎么表达，图谱决定能记住什么、怎么连接。\n\n没有图，Agent 每次都是冷启动失忆；\n\n有了图，业务上下文才能真正沉淀出复利。\n\n干货密度比市面上价值 1000 刀的培训课程还要多。\n\n而且完全免费， 1 小时纯实操，建议直接收藏跟做。🔖"
+   },
+   "public_metrics": {
+    "bookmark_count": 763,
+    "impression_count": 42665,
+    "like_count": 606,
+    "quote_count": 6,
+    "reply_count": 20,
+    "repost_count": 146
+   },
+   "referenced_posts": [
+    {
+     "id": "2115240099495788552",
+     "type": "quoted"
+    }
+   ],
+   "text": "Google 刚刚放出了 1 小时公开课，直接把“Agent 记忆与知识图谱”的工程闭环彻底讲透了：\n\n“你的 Agent 根本不需要更大的模型，它需要一张能记住一切的图谱。”\n\nPrompts → Agents → Knowledge Graphs → Self-Improving Agents\n\n整堂课 1 小时，Google 工程师全程工程手把手带你落地：\n\n＞ 04:01 | https://t.co/rAhZS5Yp2E https://t.co/hcN6wpqM9r",
+   "url": "https://x.com/huxlab/status/2120200100664516781",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "工程师如何用好 Grok bot?"
+   },
+   "author_id": "1707214568639086592",
+   "conversation_id": "2096232745538334913",
+   "created_at": "2026-09-05T13:43:27.000Z",
+   "edit_history_post_ids": [
+    "2096232745538334913"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2096…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2096230514545844225",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2096230514545844225",
+      "url": "https://t.co/dFoBkgY0Wx"
+     }
+    ]
+   },
+   "id": "2096232745538334913",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1000,
+    "impression_count": 156571,
+    "like_count": 346,
+    "quote_count": 12,
+    "reply_count": 18,
+    "repost_count": 62
+   },
+   "text": "https://t.co/dFoBkgY0Wx",
+   "url": "https://x.com/KinGao476942/status/2096232745538334913",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Grok Bot 额度不够用快点进来😭"
+   },
+   "author_id": "1760476466037559297",
+   "conversation_id": "2120455125269692774",
+   "created_at": "2026-11-11T09:54:32.000Z",
+   "edit_history_post_ids": [
+    "2120455125269692774"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 86,
+      "id": "2085838061347217408",
+      "start": 82,
+      "username": "bot"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 153,
+      "expanded_url": "https://x.com/i/article/2120429324616515584",
+      "start": 130,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120429324616515584",
+      "url": "https://t.co/wDDAvE5jll"
+     }
+    ]
+   },
+   "id": "2120455125269692774",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 510,
+    "impression_count": 37617,
+    "like_count": 254,
+    "quote_count": 14,
+    "reply_count": 93,
+    "repost_count": 41
+   },
+   "text": "最近 Grok Bot 的额度大砍，昨天重置之后，昨天一天跑完一周额度，终于让我捣鼓出来这一套让 Grok Bot 拥有无限 token 的方案了😈 \n\n建议直接 @bot ，用 magpie 和 Pi 来解决额度焦虑！没空的朋友可以先收藏着，别找不到了☺️ https://t.co/wDDAvE5jll",
+   "url": "https://x.com/chasen_liao/status/2120455125269692774",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "1986087438721449984",
+   "conversation_id": "2120174457629426095",
+   "created_at": "2026-11-10T15:19:16.000Z",
+   "edit_history_post_ids": [
+    "2120174457629426095"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "🧭 pstack 中文新手教程：让 AI 写代码先搞懂、再动手、拿出证据 · A plain-language Chinese guide to pstack (poteto's agent skills) for Claude Code, Cursor and Codex. - nevertoday/xxd-pstack",
+      "display_url": "github.com/nevertoday/xxd…",
+      "end": 23,
+      "expanded_url": "https://github.com/nevertoday/xxd-pstack",
+      "images": [
+       {
+        "height": 640,
+        "url": "https://pbs.twimg.com/news_img/2120174462201217024/cowdLDBz?format=jpg&name=orig",
+        "width": 1280
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2120174462201217024/cowdLDBz?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 0,
+      "status": 200,
+      "title": "GitHub - nevertoday/xxd-pstack: 🧭 pstack 中文新手教程：让 AI 写代码先搞懂、再动手、拿出证据 · A plain-language Chinese guide to pstack (poteto's agent skills) for Claude Code, Cursor and Codex.",
+      "unwound_url": "https://github.com/nevertoday/xxd-pstack",
+      "url": "https://t.co/29N5Sfal3F"
+     }
+    ]
+   },
+   "id": "2120174457629426095",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "github.com/nevertoday/xxd…",
+       "end": 23,
+       "expanded_url": "https://github.com/nevertoday/xxd-pstack",
+       "start": 0,
+       "url": "https://t.co/7iAaJAzFsc"
+      },
+      {
+       "display_url": "pstack.xiaoxiaodong.ai",
+       "end": 274,
+       "expanded_url": "https://pstack.xiaoxiaodong.ai/",
+       "start": 251,
+       "url": "https://t.co/M0f3vCcUB9"
+      },
+      {
+       "display_url": "github.com/nevertoday/xxd…",
+       "end": 305,
+       "expanded_url": "https://github.com/nevertoday/xxd-pstack",
+       "start": 282,
+       "url": "https://t.co/7iAaJAzFsc"
+      }
+     ]
+    },
+    "text": "https://t.co/7iAaJAzFsc\n\n我算力足够，但是天天许愿式的开发：\n能不能、请帮我、这里可不可以的表达... \n\n我说我是一个和Opus5.5沟通的人肉中转站\n我感觉我在大量的项目面前，如同屎壳郎推球\n我觉得我很累，好疲惫，口干舌燥...\n我在寻求工作流的改变， 于是通过芝加哥的关系\n找到了一个方案：pstack\n\n为此\n周六周日外出学习了两天。\n很有收获，觉得可能是后续我开发，更好进行的解药\n\nlearn in public 的原则吧\n我边学边整理，制作了一些适合入门的资料：\nhttps://t.co/M0f3vCcUB9\n\n开源地址：\nhttps://t.co/7iAaJAzFsc\n\n我感觉很多女孩子掌握这一套\n说不定，能更好的捏出很多精彩的功能。\n\nOpus5.5+审美+痛点+pstack这套流程\n\n我看行！\n期待我自己的进化， 也期待这套开源的资料，能帮助到和我一样爱许愿的人。"
+   },
+   "public_metrics": {
+    "bookmark_count": 150,
+    "impression_count": 10748,
+    "like_count": 83,
+    "quote_count": 1,
+    "reply_count": 8,
+    "repost_count": 7
+   },
+   "text": "https://t.co/29N5Sfal3F\n\n我算力足够，但是天天许愿式的开发：\n能不能、请帮我、这里可不可以的表达... \n\n我说我是一个和Opus5.5沟通的人肉中转站\n我感觉我在大量的项目面前，如同屎壳郎推球\n我觉得我很累，好疲惫，口干舌燥...\n我在寻求工作流的改变， 于是通过芝加哥的关系\n找到了一个方案：pstack",
+   "url": "https://x.com/xiaoxiaodong/status/2120174457629426095",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "How to Cut Your Agent Bill by 90% With Jev Engineering and Kimi K3"
+   },
+   "author_id": "1412131273280212996",
+   "conversation_id": "2104783226833186920",
+   "created_at": "2026-09-29T04:00:00.000Z",
+   "edit_history_post_ids": [
+    "2104783226833186920"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2104…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2104561908137283584",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2104561908137283584",
+      "url": "https://t.co/SxHnsCMK6g"
+     }
+    ]
+   },
+   "id": "2104783226833186920",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1816,
+    "impression_count": 1232704,
+    "like_count": 622,
+    "quote_count": 35,
+    "reply_count": 20,
+    "repost_count": 75
+   },
+   "text": "https://t.co/SxHnsCMK6g",
+   "url": "https://x.com/Mr_Buzzoni/status/2104783226833186920",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "How To Wire Jev Into Grok Bot: The Best Agent I've Built"
+   },
+   "author_id": "1386319613391253504",
+   "conversation_id": "2112558839589417355",
+   "created_at": "2026-10-20T14:57:31.000Z",
+   "edit_history_post_ids": [
+    "2112558839589417355"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary.",
+      "display_url": "x.com/i/article/2112…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2112502959699275776",
+      "images": [
+       {
+        "height": 1024,
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=orig",
+        "width": 1024
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 0,
+      "status": 200,
+      "title": "X. It’s what’s happening",
+      "unwound_url": "https://x.com/",
+      "url": "https://t.co/JDUqNIHixU"
+     }
+    ]
+   },
+   "id": "2112558839589417355",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1652,
+    "impression_count": 457438,
+    "like_count": 480,
+    "quote_count": 15,
+    "reply_count": 74,
+    "repost_count": 38
+   },
+   "text": "https://t.co/JDUqNIHixU",
+   "url": "https://x.com/0x_rody/status/2112558839589417355",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "1386319613391253504",
+   "conversation_id": "2120219078778609721",
+   "created_at": "2026-11-10T18:16:34.000Z",
+   "edit_history_post_ids": [
+    "2120219078778609721"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/mWxA148SQj",
+      "end": 302,
+      "expanded_url": "https://x.com/0x_rody/status/2120219078778609721/video/1",
+      "media_key": "13_2120218985866088448",
+      "start": 279,
+      "url": "https://t.co/mWxA148SQj"
+     },
+     {
+      "display_url": "x.com/0x_rody/status…",
+      "end": 326,
+      "expanded_url": "https://twitter.com/0x_rody/status/2112558839589417355",
+      "start": 303,
+      "url": "https://t.co/CFxfxuxuk6"
+     }
+    ]
+   },
+   "id": "2120219078778609721",
+   "lang": "en",
+   "note_post": {
+    "text": "this is insane... \n\nthis pdf just broke the economics of coding agents.\n\ndiogo almeida (founder of jev) published the exact harness that makes agents up to 200x faster and 400x cheaper.\n\nthe model isn’t the bottleneck. the harness is.\n\ndrop the pdf + article into claude code or codex.  \nlet it rebuild its own setup.\n\none evening.  \nand your agent runs on a stack almost nobody else has:"
+   },
+   "public_metrics": {
+    "bookmark_count": 392,
+    "impression_count": 21566,
+    "like_count": 259,
+    "quote_count": 0,
+    "reply_count": 5,
+    "repost_count": 29
+   },
+   "referenced_posts": [
+    {
+     "id": "2112558839589417355",
+     "type": "quoted"
+    }
+   ],
+   "text": "this is insane... \n\nthis pdf just broke the economics of coding agents.\n\ndiogo almeida (founder of jev) published the exact harness that makes agents up to 200x faster and 400x cheaper.\n\nthe model isn’t the bottleneck. the harness is.\n\ndrop the pdf + article into claude code or https://t.co/mWxA148SQj https://t.co/CFxfxuxuk6",
+   "url": "https://x.com/0x_rody/status/2120219078778609721",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "296593919",
+   "conversation_id": "2120488589750579646",
+   "created_at": "2026-11-11T12:07:31.000Z",
+   "edit_history_post_ids": [
+    "2120488589750579646"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/mattpocockuk/s…",
+      "end": 200,
+      "expanded_url": "https://twitter.com/mattpocockuk/status/2120260969750540327",
+      "start": 177,
+      "url": "https://t.co/UcR091avjk"
+     }
+    ]
+   },
+   "id": "2120488589750579646",
+   "lang": "zh",
+   "note_post": {
+    "text": "我最近的做法居然和 Matt 不谋而合，现在启动 agent 已经不是在各个项目 repo 中了，而是有一个叫做 start repo 的统一入口，里面存放了所有的 steering 文件，比如 agents.md  skills design.md  wiki 配置等等，不用重复在各 repo 中配置，然后通过一个简单的 md 文档告诉 agent 其他项目的路径，可以从那里直达。\n\n这样 Agent 就知道其他项目在哪 可以直接操作它们，同时所有的 skills、steering 文件、规则都集中在主仓库统一管理，这样统一入口，可以一次性统一调整一些全局的规则，假如几个项目有联系的话，agent 也可以很轻松的一块进行管理或者修改，很方便，效率更高。"
+   },
+   "public_metrics": {
+    "bookmark_count": 741,
+    "impression_count": 48338,
+    "like_count": 453,
+    "quote_count": 11,
+    "reply_count": 45,
+    "repost_count": 51
+   },
+   "referenced_posts": [
+    {
+     "id": "2120260969750540327",
+     "type": "quoted"
+    }
+   ],
+   "text": "我最近的做法居然和 Matt 不谋而合，现在启动 agent 已经不是在各个项目 repo 中了，而是有一个叫做 start repo 的统一入口，里面存放了所有的 steering 文件，比如 agents.md  skills design.md  wiki 配置等等，不用重复在各 repo 中配置，然后通过一个简单的 md 文档告诉 agent https://t.co/UcR091avjk",
+   "url": "https://x.com/vikingmute/status/2120488589750579646",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "万字长文｜DeepSeek Harness 完全指南，打造你的专属工作台"
+   },
+   "author_id": "967546558920105984",
+   "conversation_id": "2120305885457313794",
+   "created_at": "2026-11-11T00:01:31.000Z",
+   "edit_history_post_ids": [
+    "2120305885457313794"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2120164012520583168",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120164012520583168",
+      "url": "https://t.co/3t4fWVY692"
+     }
+    ]
+   },
+   "id": "2120305885457313794",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1749,
+    "impression_count": 129279,
+    "like_count": 838,
+    "quote_count": 15,
+    "reply_count": 17,
+    "repost_count": 122
+   },
+   "text": "https://t.co/3t4fWVY692",
+   "url": "https://x.com/ai_edisonZ/status/2120305885457313794",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "2030122346603048960",
+   "conversation_id": "2120403494637384156",
+   "created_at": "2026-11-11T06:29:22.000Z",
+   "edit_history_post_ids": [
+    "2120403494637384156"
+   ],
+   "id": "2120403494637384156",
+   "lang": "ko",
+   "note_post": {
+    "text": "다섯번째 생존법.\n\n대재난이나 전시 상황에서 정말 사람을\n죽이는건 총이 아닙니다. 상처입니다.\n\n실제 역사상 모든 분쟁 지역(보스니아 내전, 시리아, 우크라이나)과 대지진 현장에서 가장 많은 사람을 죽인 것은 '녹슨 못이나 종이에 베인 작은 상처'와 '오염된 물로 인한 급성 설사'였습니다.\n\n현대 사회는 병원, 약국, 상하수도라는 거대한 방패 위에 서 있습니다. 이 시스템이 멈추는 순간, 인류는 19세기 페스트와 콜레라의 시대로 순식간에 후퇴합니다.\n\n의사와 구급차가 사라진 세상에서 당신과 가족의 목숨을 지켜줄 5대 의료·위생 생존 철칙입니다.\n\n1. 상처에 알코올이나 빨간약을 마구 붓지 마라\n\n영화처럼 상처에 소독용 에탄올이나 과산화수소를 들이붓는 것은 자살행위입니다. 강한 화학 소독제는 세균뿐 아니라 상처를 치료하려는 정상 세포와 백혈구까지 파괴해 상처를 괴사시키고 회복을 늦춥니다.\n- 가장 중요한 것은 '세척(Irrigation)'입니다.\n- 마실 수 있는 깨끗한 물이나 멸균 생리식염수를 주사기나 구멍 뚫은 생수병에 넣어 강한 압력으로 상처의 흙먼지와 이물질을 완벽히 씻어내야 합니다.\n- 세척 후 항생제 연고(후시딘, 마데카솔, 에스로반 등)를 두껍게 바르고 멸균 거즈로 밀봉하는 것만으로도 패혈증 사망의 90%를 막을 수 있습니다.\n\n2. 타이레놀 수십 통보다 '지사제(로페라마이드)'가 먼저다\n\n재난 가방에 해열진통제만 잔뜩 챙기는 사람들이 많습니다. 하지만 병원이 멈춘 극한 상황에서 진짜 저승사자는 '탈수(Dehydration)'입니다.\n- 상하수도가 끊기면 며칠 안에 대장균과 수인성 전염병이 창궐합니다.\n- 성인도 심한 설사를 48시간 이상 지속하면 전해질 불균형과 쇼크로 사망합니다.\n- 장 운동을 멈춰 수분 유출을 막는 지사제(로페라마이드 성분)와, 물 1L에 소금 반 티스푼 + 설탕 6티스푼을 섞는 경구수액(ORS) 제조법은 총기보다 강력한 생존 무기입니다.\n\n3. 변기 물이 안 내려갈 때 절대 그냥 일 보지 마라\n\n정전으로 수도가 끊기면 변기 물이 내려가지 않습니다. 귀찮다고 변기에 배변을 그대로 방치하거나 쌓아두면, 48시간 안에 파리, 모기, 쥐가 들끓으며 집 전체가 '생화학 오염 지옥'으로 변합니다.\n- 변기 물을 완전히 퍼낸 뒤, 김장용 두꺼운 비닐봉투를 2중으로 씌우세요.\n- 볼일을 볼 때마다 고양이 모래(벤토나이트), 톱밥, 소결제, 또는 베이킹소다를 한 줌 뿌려 수분과 냄새를 즉각 차단해야 합니다.\n- 묶은 배변 봉투는 주거 공간과 완전히 분리된 베란다 끝이나 옥상 밀폐 용기에 격리 보관해야 전염병을 막을 수 있습니다.\n\n4. 비누 한 개는 항생제 10알 이상의 가치가 있다\n\n항생제는 구하기 어렵고 유통기한이 있지만, 비누는 수년간 썩지 않습니다.\n인류 수명을 40세에서 80세로 늘린 1등 공신은 페니실린이 아니라 '손 씻기'였습니다.\n오염된 손으로 눈을 비비거나 음식을 집어먹는 순간 어떤 방탄조끼를 입고 있어도 몸속에서부터 무너집니다. 비누를 아끼지 말고 식사 전, 치료 전, 배변 후 철저히 손을 씻는 위생 규율(Discipline)을 유지하는 집단만이 감염병 창궐 속에서 끝까지 살아남습니다.\n\n5. 치통을 절대로 만만하게 보지 마라\n\n재난 상황에서 가장 사람을 미치게 만들고 무력화시키는 복병이 바로 '극심한 치통'입니다.\n신경 치료나 발치가 불가능한 무정부 상태에서 치아 뿌리의 염증은 턱뼈를 녹이고 안면 패혈증으로 번져 목숨을 앗아가기도 합니다.\n- 비상 배낭에 치실과 칫솔, 불소 치약을 반드시 포함하세요.\n- 비상시 통증 완화를 위한 강력한 소염진통제(이부프로펜, 덱시부프로펜)와 소금물 가글은 필수입니다. 칫솔질은 단순한 미용이 아니라 생존을 위한 필수 방어 작업입니다.\n```"
+   },
+   "public_metrics": {
+    "bookmark_count": 2281,
+    "impression_count": 91610,
+    "like_count": 2478,
+    "quote_count": 15,
+    "reply_count": 21,
+    "repost_count": 463
+   },
+   "text": "다섯번째 생존법.\n\n대재난이나 전시 상황에서 정말 사람을\n죽이는건 총이 아닙니다. 상처입니다.\n\n실제 역사상 모든 분쟁 지역(보스니아 내전, 시리아, 우크라이나)과 대지진 현장에서 가장 많은 사람을 죽인 것은 '녹슨 못이나 종이에 베인 작은 상처'와 '오염된 물로 인한 급성 설사'였습니다.\n\n현대",
+   "url": "https://x.com/kaleumeleu37968/status/2120403494637384156",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "15205852",
+   "conversation_id": "2120450814527656238",
+   "created_at": "2026-11-11T09:37:24.000Z",
+   "edit_history_post_ids": [
+    "2120450814527656238"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Prompting patterns specific to Claude Fable 5.2 and Claude Mythos 5.2: effort, early stopping, approvals, code ownership, progress updates, subagents, caution that builds up, instructions written for earlier models, final reports, and refusals.",
+      "display_url": "platform.claude.com/docs/en/build-…",
+      "end": 30,
+      "expanded_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2119889088169844736/EkEj_Ynp?format=png&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119889088169844736/EkEj_Ynp?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 7,
+      "status": 200,
+      "title": "Prompting Claude Fable 5.2",
+      "unwound_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "url": "https://t.co/MsQyo9xo5r"
+     }
+    ]
+   },
+   "id": "2120450814527656238",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "platform.claude.com/docs/en/build-…",
+       "end": 30,
+       "expanded_url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+       "start": 7,
+       "url": "https://t.co/CR5TpKcMWz"
+      }
+     ]
+    },
+    "text": "仔细读了一遍 https://t.co/CR5TpKcMWz，收获两个 prompt 。\n\n1/ This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.\n\n讲清楚代码归属，模型遇到问题会更主动，不会只报不修，同时改代码时也会更倾向代码复用，而不是只做最小改动。\n\n2/ Before you start, say in a line what you're about to do; brief updates while you work help the user follow along. Close with a short recap that stands on its own (what you found, what you did, and what's next), so a reader who only sees the last message has the full picture.\n\n当你想要在长任务时知道进展，可以加这一段。在此之前，我个人的做法是用 `/btw progress & plan` 看进展。"
+   },
+   "public_metrics": {
+    "bookmark_count": 120,
+    "impression_count": 6971,
+    "like_count": 75,
+    "quote_count": 1,
+    "reply_count": 5,
+    "repost_count": 8
+   },
+   "text": "仔细读了一遍 https://t.co/MsQyo9xo5r，收获两个 prompt 。\n\n1/ This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.\n\n讲清楚代码归属，模型遇到问题会更主动，不会只报不修，同时改代码时也会更倾向代码复用，而不是只做最小改动。\n\n2/",
+   "url": "https://x.com/chenchengpro/status/2120450814527656238",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "1936801393727471617",
+   "conversation_id": "2120463797336854969",
+   "created_at": "2026-11-11T10:29:00.000Z",
+   "edit_history_post_ids": [
+    "2120463797336854969"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/MeyFsWRdtK",
+      "end": 213,
+      "expanded_url": "https://x.com/lxz2677/status/2120463797336854969/photo/1",
+      "media_key": "3_2120432531296473088",
+      "start": 190,
+      "url": "https://t.co/MeyFsWRdtK"
+     },
+     {
+      "display_url": "pic.x.com/MeyFsWRdtK",
+      "end": 213,
+      "expanded_url": "https://x.com/lxz2677/status/2120463797336854969/photo/1",
+      "media_key": "3_2120432820904677376",
+      "start": 190,
+      "url": "https://t.co/MeyFsWRdtK"
+     },
+     {
+      "display_url": "pic.x.com/MeyFsWRdtK",
+      "end": 213,
+      "expanded_url": "https://x.com/lxz2677/status/2120463797336854969/photo/1",
+      "media_key": "3_2120432956619837440",
+      "start": 190,
+      "url": "https://t.co/MeyFsWRdtK"
+     },
+     {
+      "display_url": "pic.x.com/MeyFsWRdtK",
+      "end": 213,
+      "expanded_url": "https://x.com/lxz2677/status/2120463797336854969/photo/1",
+      "media_key": "3_2120433003654696960",
+      "start": 190,
+      "url": "https://t.co/MeyFsWRdtK"
+     },
+     {
+      "display_url": "x.com/Astryxdesign/s…",
+      "end": 237,
+      "expanded_url": "https://twitter.com/Astryxdesign/status/2120230919588241878",
+      "start": 214,
+      "url": "https://t.co/4hy2XfqnC4"
+     }
+    ]
+   },
+   "id": "2120463797336854969",
+   "lang": "zh",
+   "note_post": {
+    "text": "Meta 开源的设计系统 Astryx，今天登顶 GitHub Trending，已经在 Meta 内部撑着 13,000 个应用\n\n我有点好奇，就用 DeepSeek Harness 浅浅体验了一下，让它给 Astryx 做了个产品页\n\n1.安装之后先选风格，图 1，我选的是 Neutral\n2.然后出了预览界面，我看了下合不合适，图 2\n3.接着直接让它开干 Astryx 的产品页，效果如图 3、图 4\n\n它最明显的优势，是按 Agents 来设计：CLI、MCP 以及 配套的 AGENTS.md\n最后的产出不是只能看的 HTML 原型，而是可以直接接入项目的 react 代码"
+   },
+   "public_metrics": {
+    "bookmark_count": 8,
+    "impression_count": 1627,
+    "like_count": 10,
+    "quote_count": 0,
+    "reply_count": 4,
+    "repost_count": 0
+   },
+   "referenced_posts": [
+    {
+     "id": "2120230919588241878",
+     "type": "quoted"
+    }
+   ],
+   "text": "Meta 开源的设计系统 Astryx，今天登顶 GitHub Trending，已经在 Meta 内部撑着 13,000 个应用\n\n我有点好奇，就用 DeepSeek Harness 浅浅体验了一下，让它给 Astryx 做了个产品页\n\n1.安装之后先选风格，图 1，我选的是 Neutral\n2.然后出了预览界面，我看了下合不合适，图 2\n3.接着直接让它开干 Astryx https://t.co/MeyFsWRdtK https://t.co/4hy2XfqnC4",
+   "url": "https://x.com/lxz2677/status/2120463797336854969",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "1327292278000349185",
+   "conversation_id": "2120313054856688114",
+   "created_at": "2026-11-11T00:30:00.000Z",
+   "edit_history_post_ids": [
+    "2120313054856688114"
+   ],
+   "id": "2120313054856688114",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "langchain.com/blog/what-is-e…",
+       "end": 665,
+       "expanded_url": "https://www.langchain.com/blog/what-is-eval-driven-development",
+       "start": 642,
+       "url": "https://t.co/yAxHHtStaT"
+      }
+     ]
+    },
+    "text": "之前推荐过几篇 Agent Eval 相关的文章，今天再推荐一篇 LangChain 最新的《What Is Eval-Driven Development》，这篇讲得挺实用，很适合正在做 Agent 和 Harness 的朋友。\n\n文章主要介绍 Eval-Driven Development（EDD），核心思路是把 Eval 融入 Agent 的日常开发。\n\n先定义什么算成功，写好 Eval、跑 Baseline，再修改 Prompt、Tool 或 Harness，通过相同的任务对比效果。\n\n文中有个挺有意思的例子。\n\n给知识库 Agent 新增 create_ticket 工具后，整体 Eval 分数提高了，结果它连「VPN 怎么连接」这种普通咨询都开始创建故障工单。\n\n通过 Trace 排查才发现，工具描述太宽泛，导致 Agent 错误调用了工具。\n\n这也说明不能只看 Eval 平均分。一次改动可能让新任务表现更好，却破坏原本正常的功能。除了最终结果，还需要检查执行轨迹，并保留独立测试集，避免反复优化导致过拟合。\n\n这套思路很值得借鉴，尤其是现在大家都在不断调整 Skill、Prompt 和 Harness。\n\n新增一个 Skill、修改一段 Workflow，甚至删掉旧 Harness，都应该通过 Eval 判断是否真的有效。\n\n感觉 Eval-Driven Development 很值得成为 Agent 开发中的常规习惯，每次迭代都能有据可依。\n\n原文：https://t.co/yAxHHtStaT"
+   },
+   "public_metrics": {
+    "bookmark_count": 453,
+    "impression_count": 25799,
+    "like_count": 375,
+    "quote_count": 2,
+    "reply_count": 12,
+    "repost_count": 53
+   },
+   "text": "之前推荐过几篇 Agent Eval 相关的文章，今天再推荐一篇 LangChain 最新的《What Is Eval-Driven Development》，这篇讲得挺实用，很适合正在做 Agent 和 Harness 的朋友。\n\n文章主要介绍 Eval-Driven Development（EDD），核心思路是把 Eval 融入 Agent 的日常开发。\n\n先定义什么算成功，写好",
+   "url": "https://x.com/Xudong07452910/status/2120313054856688114",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "author_id": "1861811243813666816",
+   "conversation_id": "2119983662162952278",
+   "created_at": "2026-11-10T02:41:07.000Z",
+   "edit_history_post_ids": [
+    "2119983662162952278"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/iEtHzvljIH",
+      "end": 312,
+      "expanded_url": "https://x.com/browser_use/status/2119983662162952278/photo/1",
+      "media_key": "3_2119981559969431552",
+      "start": 289,
+      "url": "https://t.co/iEtHzvljIH"
+     }
+    ]
+   },
+   "id": "2119983662162952278",
+   "lang": "en",
+   "note_post": {
+    "text": "Introducing: Browser Use 1.0.0: CDP is all you need 👀\n\nWe deleted 90% of the old library. Predefined state and action space make it worse.\n\nNow the agent just writes Python REPL on raw CDP.  Simplicity wins.\n\n> same models, up to 50% better\n> 2-5x cheaper\n> 2-3x faster\n> SOTA web agent\n\nFrom now on we ship fast. Please pin with =="
+   },
+   "public_metrics": {
+    "bookmark_count": 1187,
+    "impression_count": 187454,
+    "like_count": 1162,
+    "quote_count": 18,
+    "reply_count": 48,
+    "repost_count": 85
+   },
+   "text": "Introducing: Browser Use 1.0.0: CDP is all you need 👀\n\nWe deleted 90% of the old library. Predefined state and action space make it worse.\n\nNow the agent just writes Python REPL on raw CDP.  Simplicity wins.\n\n&gt; same models, up to 50% better\n&gt; 2-5x cheaper\n&gt; 2-3x faster\n&gt; SOTA https://t.co/iEtHzvljIH",
+   "url": "https://x.com/browser_use/status/2119983662162952278",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Gemini 4 Carbon 开发者指南（译文）"
+   },
+   "author_id": "885478881741873152",
+   "conversation_id": "2120236562273427688",
+   "created_at": "2026-11-10T19:26:03.000Z",
+   "edit_history_post_ids": [
+    "2120236562273427688"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2120235594513297408",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120235594513297408",
+      "url": "https://t.co/baQNZ69xNI"
+     }
+    ]
+   },
+   "id": "2120236562273427688",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 58,
+    "impression_count": 6839,
+    "like_count": 48,
+    "quote_count": 1,
+    "reply_count": 3,
+    "repost_count": 3
+   },
+   "text": "https://t.co/baQNZ69xNI",
+   "url": "https://x.com/Arcadia_Bao/status/2120236562273427688",
+   "bookmarked_seen": "2026-11-12T09:16:46+09:00"
+  },
+  {
    "author_id": "2030122346603048960",
    "conversation_id": "2120056353473589374",
    "created_at": "2026-11-10T07:29:58.000Z",
@@ -22860,12 +23632,12 @@
    "id": "2119430401701621865",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 580,
-    "impression_count": 127595,
-    "like_count": 288,
-    "quote_count": 14,
-    "reply_count": 43,
-    "repost_count": 34
+    "bookmark_count": 843,
+    "impression_count": 323640,
+    "like_count": 354,
+    "quote_count": 16,
+    "reply_count": 51,
+    "repost_count": 51
    },
    "text": "Harness, loop and graph could be the missing layers between AI models and agents that actually work.\n\nSame model, same prompt, completely different results.\n\nIn this article, I show you how to build all three layers. https://t.co/W99aPfcSub"
   },
@@ -22983,11 +23755,18 @@
    "author_id": "1903004138516209664",
    "conversation_id": "2120149186218021375",
    "created_at": "2026-11-10T13:38:51.000Z",
+   "edit_history_post_ids": [
+    "2120149186218021375"
+   ],
    "id": "2120149186218021375",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 56,
-    "like_count": 78
+    "bookmark_count": 105,
+    "impression_count": 62857,
+    "like_count": 155,
+    "quote_count": 4,
+    "reply_count": 22,
+    "repost_count": 11
    },
    "text": "如果你是做交付的 FDE，现在起，把所有精力全部投入到 Deepseek Harness。这是你做 FDE 唯一一个可以挣到钱的方向。\n\nworkbuddy、豆包工作、千问办公，都会让你赔得倾家荡产，除非你只是帮他们卖席位而不是做交付。"
   },
@@ -22995,9 +23774,338 @@
    "author_id": "1581259092928040961",
    "conversation_id": "2119979178741371019",
    "created_at": "2026-11-10T02:23:18.000Z",
+   "edit_history_post_ids": [
+    "2119979178741371019"
+   ],
    "id": "2119979178741371019",
    "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 5,
+    "impression_count": 9827,
+    "like_count": 10,
+    "quote_count": 2,
+    "reply_count": 11,
+    "repost_count": 0
+   },
    "text": "有啥好的提升产品UI审美/视觉的好方法不？"
+  },
+  "2119080326555443677": {
+   "author_id": "168139512",
+   "conversation_id": "2119080326555443677",
+   "created_at": "2026-11-07T14:51:35.000Z",
+   "edit_history_post_ids": [
+    "2119080326555443677"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "A small, fast container runtime for macOS, Windows and Linux - libracoder/kiri",
+      "display_url": "github.com/libracoder/kiri",
+      "end": 152,
+      "expanded_url": "https://github.com/libracoder/kiri",
+      "images": [
+       {
+        "height": 600,
+        "url": "https://pbs.twimg.com/news_img/2120419044117598208/IJumi4Hv?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2120419044117598208/IJumi4Hv?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 129,
+      "status": 200,
+      "title": "GitHub - libracoder/kiri: A small, fast container runtime for macOS, Windows and Linux",
+      "unwound_url": "https://github.com/libracoder/kiri",
+      "url": "https://t.co/y87o5BDvHu"
+     },
+     {
+      "display_url": "pic.x.com/8kgpaCWqdy",
+      "end": 176,
+      "expanded_url": "https://x.com/geekbb/status/2119080326555443677/photo/1",
+      "media_key": "3_2119079895506771968",
+      "start": 153,
+      "url": "https://t.co/8kgpaCWqdy"
+     }
+    ]
+   },
+   "id": "2119080326555443677",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 427,
+    "impression_count": 52099,
+    "like_count": 346,
+    "quote_count": 4,
+    "reply_count": 30,
+    "repost_count": 39
+   },
+   "text": "在 macOS、Windows 和 Linux 上用 Rust 写的轻量运行时，轻量平替 Docker Desktop / OrbStack，同时兼容现有 docker CLI、Compose 和 buildx，把容器跑在一个小型 Linux VM 里。\n\nhttps://t.co/y87o5BDvHu https://t.co/8kgpaCWqdy"
+  },
+  "2115240099495788552": {
+   "author_id": "426796674",
+   "conversation_id": "2115240099495788552",
+   "created_at": "2026-10-28T00:31:53.000Z",
+   "edit_history_post_ids": [
+    "2115240099495788552"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/fh9Gjo5vPM",
+      "end": 191,
+      "expanded_url": "https://x.com/huxlab/status/2115240099495788552/video/1",
+      "media_key": "13_2114715862720806912",
+      "start": 168,
+      "url": "https://t.co/fh9Gjo5vPM"
+     }
+    ]
+   },
+   "id": "2115240099495788552",
+   "lang": "zh",
+   "note_post": {
+    "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 跑通首个 Agent：拆解模型调用、工具绑定与执行环境的基础闭环。    \n\n2. 状态持久化（Persistent Memory）：告别单次对话即失忆，构建跨会话的记忆索引与上下文回填。    \n\n3. 长时自主循环（Agentic Loops）：摆脱线性问答，让 Agent 具备自我反思、容错重试与多轮状态流转能力。    \n\n4. 吃透 MCP 核心架构：彻底理清 Model Context Protocol 与传统 API 的本质区别，学会构建标准化的上下文协议。    \n\n5. 多智能体协同系统（Multi-Agent）：把分散的专职 Agent 串联成高协作度的自动化系统。    \n\n完全免费。\n\n比市面上价值700刀的课还要干货。  \n\n建议收藏，今晚就观看 。🔖"
+   },
+   "public_metrics": {
+    "bookmark_count": 9491,
+    "impression_count": 484062,
+    "like_count": 7110,
+    "quote_count": 44,
+    "reply_count": 161,
+    "repost_count": 1463
+   },
+   "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 https://t.co/fh9Gjo5vPM"
+  },
+  "2112558839589417355": {
+   "article_title": {
+    "title": "How To Wire Jev Into Grok Bot: The Best Agent I've Built"
+   },
+   "author_id": "1386319613391253504",
+   "conversation_id": "2112558839589417355",
+   "created_at": "2026-10-20T14:57:31.000Z",
+   "edit_history_post_ids": [
+    "2112558839589417355"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary.",
+      "display_url": "x.com/i/article/2112…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2112502959699275776",
+      "images": [
+       {
+        "height": 1024,
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=orig",
+        "width": 1024
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119650915338641408/pj-QRPIU?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 0,
+      "status": 200,
+      "title": "X. It’s what’s happening",
+      "unwound_url": "https://x.com/",
+      "url": "https://t.co/JDUqNIHixU"
+     }
+    ]
+   },
+   "id": "2112558839589417355",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 1652,
+    "impression_count": 457438,
+    "like_count": 480,
+    "quote_count": 15,
+    "reply_count": 74,
+    "repost_count": 38
+   },
+   "text": "https://t.co/JDUqNIHixU"
+  },
+  "2120260969750540327": {
+   "author_id": "346640777",
+   "conversation_id": "2120260969750540327",
+   "created_at": "2026-11-10T21:03:02.000Z",
+   "edit_history_post_ids": [
+    "2120260969750540327"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/umO84wVD7a",
+      "end": 304,
+      "expanded_url": "https://x.com/mattpocockuk/status/2120260969750540327/photo/1",
+      "media_key": "3_2120260866515910656",
+      "start": 281,
+      "url": "https://t.co/umO84wVD7a"
+     }
+    ]
+   },
+   "id": "2120260969750540327",
+   "lang": "en",
+   "note_post": {
+    "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:\n\n```\nFor skills, clone mattpocock/skills to ~/repos/skills.\nFor Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle\n```\n\nThis is extremely simple and incredibly effective. The home repo lets you:\n\n1. Put all your steering files and tooling in one place\n2. Have a single spot to run all your agents in\n3. Make sweeping changes over multiple repos\n\nTalked about this in the course yesterday and folks are loving it (see below).\n\nI'm sure you will too. Enjoy!"
+   },
+   "public_metrics": {
+    "bookmark_count": 4377,
+    "impression_count": 225041,
+    "like_count": 3002,
+    "quote_count": 62,
+    "reply_count": 278,
+    "repost_count": 161
+   },
+   "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have https://t.co/umO84wVD7a"
+  },
+  "2120230919588241878": {
+   "author_id": "2069499867618275328",
+   "conversation_id": "2120230919588241878",
+   "created_at": "2026-11-10T19:03:37.000Z",
+   "edit_history_post_ids": [
+    "2120230919588241878"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "github.com/trending?since…",
+      "end": 32,
+      "expanded_url": "https://github.com/trending?since=daily",
+      "start": 9,
+      "status": 200,
+      "unwound_url": "https://github.com/trending?since=daily",
+      "url": "https://t.co/M7rPb6Go96"
+     },
+     {
+      "display_url": "pic.x.com/wciHbRVNsV",
+      "end": 98,
+      "expanded_url": "https://x.com/Astryxdesign/status/2120230919588241878/photo/1",
+      "media_key": "3_2120230806031568896",
+      "start": 75,
+      "url": "https://t.co/wciHbRVNsV"
+     },
+     {
+      "display_url": "x.com/Astryxdesign/s…",
+      "end": 122,
+      "expanded_url": "https://twitter.com/Astryxdesign/status/2119969034792055084",
+      "start": 99,
+      "url": "https://t.co/eo9wFVpGA3"
+     }
+    ]
+   },
+   "id": "2120230919588241878",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 2,
+    "impression_count": 2911,
+    "like_count": 13,
+    "quote_count": 1,
+    "reply_count": 1,
+    "repost_count": 1
+   },
+   "referenced_posts": [
+    {
+     "id": "2119969034792055084",
+     "type": "quoted"
+    }
+   ],
+   "text": "Update:  https://t.co/M7rPb6Go96 We are trending #1 today with 22k stars 🥳 https://t.co/wciHbRVNsV https://t.co/eo9wFVpGA3"
+  },
+  "2096128417108287566": {
+   "article_title": {
+    "title": "300 AGENTS, ONE GRAPH, AND A LOOP THAT EDITS THE LOOP"
+   },
+   "author_id": "1412131273280212996",
+   "conversation_id": "2096128417108287566",
+   "created_at": "2026-09-05T06:48:53.000Z",
+   "edit_history_post_ids": [
+    "2096128417108287566"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2096…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2096101165515653121",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2096101165515653121",
+      "url": "https://t.co/buH2nYDL29"
+     }
+    ]
+   },
+   "id": "2096128417108287566",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 2652,
+    "impression_count": 1682325,
+    "like_count": 783,
+    "quote_count": 30,
+    "reply_count": 16,
+    "repost_count": 120
+   },
+   "text": "https://t.co/buH2nYDL29"
+  },
+  "2119521036660314339": {
+   "author_id": "2832427459",
+   "conversation_id": "2119521036660314339",
+   "created_at": "2026-11-08T20:02:48.000Z",
+   "edit_history_post_ids": [
+    "2119521036660314339"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Cursor plugin specification and official plugins. Contribute to cursor/plugins development by creating an account on GitHub.",
+      "display_url": "github.com/cursor/plugins…",
+      "end": 223,
+      "expanded_url": "https://github.com/cursor/plugins/tree/main/pstack",
+      "images": [
+       {
+        "height": 400,
+        "url": "https://pbs.twimg.com/news_img/2119521081858117632/JHCl11Ob?format=png&name=orig",
+        "width": 400
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2119521081858117632/JHCl11Ob?format=png&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 200,
+      "status": 200,
+      "title": "plugins/pstack at main · cursor/plugins",
+      "unwound_url": "https://github.com/cursor/plugins/tree/main/pstack",
+      "url": "https://t.co/SxilBe4Diu"
+     },
+     {
+      "display_url": "x.com/steveruizok/st…",
+      "end": 247,
+      "expanded_url": "https://twitter.com/steveruizok/status/2116552016218710389",
+      "start": 224,
+      "url": "https://t.co/4arc9DYbjl"
+     }
+    ]
+   },
+   "id": "2119521036660314339",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 7010,
+    "impression_count": 281331,
+    "like_count": 4899,
+    "quote_count": 33,
+    "reply_count": 170,
+    "repost_count": 217
+   },
+   "referenced_posts": [
+    {
+     "id": "2116552016218710389",
+     "type": "quoted"
+    }
+   ],
+   "text": "try this next “use /create-formal-verification-skill to model these state machines, one skill per subsystem. and use /statechart to visualize my most important user flows”\n\nboth skills are in pstack\n\nhttps://t.co/SxilBe4Diu https://t.co/4arc9DYbjl"
   }
  },
  "users": {
@@ -23296,7 +24404,7 @@
    "username": "qingyue820"
   },
   "69492059": {
-   "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab",
+   "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab · Ex-CTO @ShimoDocs · Built ioredis (acq.) & @medisclient · Contributor to @quilljs",
    "id": "69492059",
    "name": "Zihua",
    "username": "luinlee"
@@ -25173,14 +26281,6 @@
    "description": "engineering @qoder_ai_ide, created umijs, dvajs, mako and neovate code.",
    "id": "15205852",
    "name": "陈成",
-   "public_metrics": {
-    "followers_count": 14262,
-    "following_count": 753,
-    "like_count": 6563,
-    "listed_count": 193,
-    "media_count": 144,
-    "post_count": 1794
-   },
    "username": "chenchengpro"
   },
   "2761293203": {
@@ -26032,19 +27132,19 @@
    "username": "Mr_Buzzoni"
   },
   "1903004138516209664": {
-   "description": "老板定方向，我带团队把 AI 落进业务流程\nCPA 出身｜高管 FDE 训练｜企业主陪跑",
+   "description": "老板定方向，我带团队把 AI 落进业务流程\nCPA 出身｜高管 FDE 训练｜企业主陪跑\n每个案例的前后变化，都在 https://t.co/wFnxNzWx6o ↓",
    "id": "1903004138516209664",
    "name": "做 FDE 的智昊",
    "username": "cnzhihao"
   },
   "1552657292847620096": {
-   "description": "호주에서 테슬라 모델Y 주니퍼타고 Grok·Grok Bot을 매일 써 보는 사람.",
+   "description": "호주에서 테슬라 모델Y 주니퍼타고 Grok·Grok Bot을 매일 써 보는 사람. 차 안에서 일하면서 유튜브 채널 운영하는 평범한 사업가.",
    "id": "1552657292847620096",
    "name": "min heo",
    "username": "minheo93698092"
   },
   "384850586": {
-   "description": "微博百万粉丝，电竞解说，创业纳斯达克IPO已躺期权牛散",
+   "description": "微博百万粉丝，电竞解说，创业纳斯达克IPO已躺期权牛散\n\n币圈期权最强工具Signalplus注册 \nhttps://t.co/DVeF6V2iJW\n\nderibit期权手续费减免 \nhttps://t.co/i2jGr9twgi",
    "id": "384850586",
    "name": "龙心盐",
    "username": "ssslumdunk"
@@ -26066,6 +27166,60 @@
    "id": "1255500442898964481",
    "name": "Emil Kowalski",
    "username": "emilkowalski"
+  },
+  "1871130465278808064": {
+   "description": "💻 未上市公司 AI 攻城狮\n🧠 致力于把复杂的 AI 逻辑翻译成大白话",
+   "id": "1871130465278808064",
+   "name": "DaBin.Binah",
+   "username": "yedabinbinah"
+  },
+  "426796674": {
+   "description": "👨‍💻 前阿里技术专家 x 8年大厂技术管理 | AI Builder \n🎯 注重Taste，分享AI高质量实践和深度认知",
+   "id": "426796674",
+   "name": "Hux",
+   "username": "huxlab"
+  },
+  "1707214568639086592": {
+   "description": "Build Ambassador@SpaceXSI Community；Grok bot 重度患者，专注研究AI 和自媒体；接企业AI培训及咨询 5k/h；199 进答疑群➕v：15917166191",
+   "id": "1707214568639086592",
+   "name": "Kin",
+   "username": "KinGao476942"
+  },
+  "1986087438721449984": {
+   "description": "国际 不知名 提示词专家 / 植物爱好者 / AI作图基建\nopus5.5真爱粉、重度用户\nskills/chrom plugin/prompt/art/logo/ppt\n微信:：newbe2012\n提示词库: https://t.co/peRpdUN0EQ\n欢迎成为会员 解锁超多权益",
+   "id": "1986087438721449984",
+   "name": "小小东",
+   "username": "xiaoxiaodong"
+  },
+  "1386319613391253504": {
+   "description": "AI tools analyst | Code & Consciousness | @zscdao",
+   "id": "1386319613391253504",
+   "name": "rody",
+   "username": "0x_rody"
+  },
+  "967546558920105984": {
+   "description": "AI Builder｜AI Agent 工程实践\n10+ 产品开发 | 连续创业\nLearn in Public · 用 AI 探索无限可能 🚀\nLess AI hype. More things shipped.",
+   "id": "967546558920105984",
+   "name": "edisonZ",
+   "username": "ai_edisonZ"
+  },
+  "1936801393727471617": {
+   "description": "一个还未脱离低级趣味的普通人，记录 AI、出海",
+   "id": "1936801393727471617",
+   "name": "李行之",
+   "username": "lxz2677"
+  },
+  "1327292278000349185": {
+   "description": "PhD ing @ University of Sussex | LLM & AI Agents 🎓\nAI Agent Product Development\nSharing AI tech insights\nDM for collab 📩",
+   "id": "1327292278000349185",
+   "name": "Xudong Han",
+   "username": "Xudong07452910"
+  },
+  "1861811243813666816": {
+   "description": "Agents that use the Browser | 200k⭐️",
+   "id": "1861811243813666816",
+   "name": "Browser Use",
+   "username": "browser_use"
   }
  }
 }
