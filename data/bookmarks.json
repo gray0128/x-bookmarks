@@ -1,6 +1,215 @@
 {
  "posts": [
   {
+   "article_title": {
+    "title": "【土豆姐 | Lauren】所有代码都是垃圾代码（除了我的）"
+   },
+   "author_id": "2045135343108722689",
+   "conversation_id": "2120808164962525310",
+   "created_at": "2026-11-12T09:17:23.000Z",
+   "edit_history_post_ids": [
+    "2120808164962525310"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 23,
+      "expanded_url": "https://x.com/i/article/2120802896304283648",
+      "start": 0,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120802896304283648",
+      "url": "https://t.co/SusgYiS9Vf"
+     }
+    ]
+   },
+   "id": "2120808164962525310",
+   "lang": "zxx",
+   "public_metrics": {
+    "bookmark_count": 131,
+    "impression_count": 18845,
+    "like_count": 68,
+    "quote_count": 3,
+    "reply_count": 7,
+    "repost_count": 10
+   },
+   "text": "https://t.co/SusgYiS9Vf",
+   "url": "https://x.com/leo_xiaolei/status/2120808164962525310",
+   "bookmarked_seen": "2026-11-13T09:18:13+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Agent 如何在“挂起、限流、等待 CI”后优雅复活？Lody Automation 与状态感知"
+   },
+   "author_id": "1193168520042946560",
+   "conversation_id": "2120716116733706749",
+   "created_at": "2026-11-12T03:11:37.000Z",
+   "edit_history_post_ids": [
+    "2120716116733706749"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 117,
+      "expanded_url": "https://x.com/i/article/2120433632309596160",
+      "start": 94,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120433632309596160",
+      "url": "https://t.co/xeXND4UT3W"
+     }
+    ]
+   },
+   "id": "2120716116733706749",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 206,
+    "impression_count": 11612,
+    "like_count": 190,
+    "quote_count": 5,
+    "reply_count": 18,
+    "repost_count": 27
+   },
+   "text": "Agent 框架的竞争，终将从 Prompt 和工作流编排，回到状态机与持久化系统设计\n\n我把 Lody Automation 的设计思路简单写成了一篇文章，也聊一聊它接下来还能做些什么 https://t.co/xeXND4UT3W",
+   "url": "https://x.com/wibus_wee/status/2120716116733706749",
+   "bookmarked_seen": "2026-11-13T09:18:13+09:00"
+  },
+  {
+   "author_id": "715629123100680193",
+   "conversation_id": "2120655175555698874",
+   "created_at": "2026-11-11T23:09:28.000Z",
+   "edit_history_post_ids": [
+    "2120655175555698874"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer a...",
+      "display_url": "github.com/agentes-chat/a…",
+      "end": 89,
+      "expanded_url": "https://github.com/agentes-chat/agentes-chat",
+      "images": [
+       {
+        "height": 600,
+        "url": "https://pbs.twimg.com/news_img/2120655034736062464/hS5MafDv?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2120655034736062464/hS5MafDv?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 66,
+      "status": 200,
+      "title": "GitHub - agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone ",
+      "unwound_url": "https://github.com/agentes-chat/agentes-chat",
+      "url": "https://t.co/7bTovUpvrD"
+     },
+     {
+      "display_url": "pic.x.com/oPwC0TLk03",
+      "end": 113,
+      "expanded_url": "https://x.com/heliocosta/status/2120655175555698874/photo/1",
+      "media_key": "3_2120655124917895168",
+      "start": 90,
+      "url": "https://t.co/oPwC0TLk03"
+     },
+     {
+      "display_url": "x.com/agentes_chat/s…",
+      "end": 137,
+      "expanded_url": "https://twitter.com/agentes_chat/status/2120655002335064125",
+      "start": 114,
+      "url": "https://t.co/BCzYwoo4KK"
+     }
+    ]
+   },
+   "id": "2120655175555698874",
+   "lang": "pt",
+   "public_metrics": {
+    "bookmark_count": 2163,
+    "impression_count": 179915,
+    "like_count": 1791,
+    "quote_count": 10,
+    "reply_count": 114,
+    "repost_count": 134
+   },
+   "referenced_posts": [
+    {
+     "id": "2120655002335064125",
+     "type": "quoted"
+    }
+   ],
+   "text": "é doido ver o que as pessoas soltam como open-source hoje em dia\n\nhttps://t.co/7bTovUpvrD https://t.co/oPwC0TLk03 https://t.co/BCzYwoo4KK",
+   "url": "https://x.com/heliocosta/status/2120655175555698874",
+   "bookmarked_seen": "2026-11-13T09:18:13+09:00"
+  },
+  {
+   "author_id": "3178231",
+   "conversation_id": "2120647659388031454",
+   "created_at": "2026-11-11T22:39:36.000Z",
+   "edit_history_post_ids": [
+    "2120647659388031454"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/sundarpichai/s…",
+      "end": 167,
+      "expanded_url": "https://twitter.com/sundarpichai/status/2120581155078729728",
+      "start": 144,
+      "url": "https://t.co/BrCwuE0RTx"
+     }
+    ]
+   },
+   "id": "2120647659388031454",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "blog.google/innovation-and…",
+       "end": 1701,
+       "expanded_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+       "start": 1678,
+       "url": "https://t.co/P5hlLj7fXN"
+      },
+      {
+       "display_url": "aistudio.google.com/docs/decisions…",
+       "end": 1730,
+       "expanded_url": "https://aistudio.google.com/docs/decisions-api",
+       "start": 1707,
+       "url": "https://t.co/WphCUZv5oT"
+      },
+      {
+       "display_url": "developers.openai.com/api/docs/guide…",
+       "end": 1778,
+       "expanded_url": "https://developers.openai.com/api/docs/guides/decisions",
+       "start": 1755,
+       "url": "https://t.co/MGgS32OuNy"
+      }
+     ]
+    },
+    "text": "Google 推出 Gemini Decisions API：不写回答只做判断，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱\n\nGoogle 今天在 Gemini API 里上线了 Decisions API，配套新模型 Gemini Decision 1。它不生成文字，只答题：给它一份输入和一组问题，它直接返回每道题的答案，外加一个“有多大把握”的置信度。\n\n【它解决什么问题】\n\n做 AI 应用时，很多调用其实只要一个判断：这条客服消息转给哪个组？这个问题交给便宜模型还是推理模型？这张图违不违规？以前只能让大模型写一段话，再从里面解析答案，慢，容易解析失败，还要为输出 Token 付钱。\n\nDecisions API 只有三种题型：是非题，返回“是”的概率；单选题，2 到 255 个选项，返回选中项和每个选项的概率；打分题，按你写的档位打分。每个答案带 0 到 1 的置信度，代码可以设门槛，比如高于 0.7 自动执行，低于就转人工。官方说这些概率是校准过的，意思是模型说 90% 的时候，大约十次里真对九次，所以置信度能直接拿来当门槛。\n\nGoogle 博客的例子：上传一张茶水间台面的照片，同时问三个问题。“有没有洒了的液体”答 0.95；“怎么处理”选“用抹布擦”，置信度 0.98；“脏乱程度按 0 到 2 打分”给 1.19，置信度 0.77。\n\n【多快、多便宜】\n\n一次请求的输入最多 256K Token，文字、JSON、图片、音频、视频、PDF 可以混着放，比如一段客服通话录音加账户信息。同一份输入上最多挂 1000 个问题，彼此互不影响。输入只计一次费，每多一个问题只多算这道题本身的字数。\n\nGoogle 称输入在 1.6 万 Token 以内时，端到端延迟 150 到 250 毫秒，问 1 个和问 100 个问题耗时差不多；同一批评测下，比用 Gemini 3.5 Flash-Lite 生成答案便宜近 5 倍。Gemini Notebook 已经用它给每个提问挑模型，日常问题延迟最多降了 40%。\n\n【谁能用】\n\n在 Google AI Studio 拿个 API Key 就能调，模型名 gemini-decision-1，走 v1beta 接口。有免费层，每分钟 200 次、每天 1 万次，免费层的数据会被 Google 用来改进产品，付费层不会。OpenRouter、LangChain、Vercel 等正在接入，Google Cloud 上的 Gemini 要稍后才支持。\n\n不支持上下文缓存和 Batch API，同一份大文档反复问，每次都按全价算输入；不能直接传 YouTube 链接；问题本身只能写文字。\n\n【跟 OpenAI 的同名产品比】\n\nOpenAI 早一个月做了同样的东西，名字也叫 Decisions API：10 月 6 日出测试版，10 月 22 日正式开放，用 GPT-6 Luna，同样每百万输入 Token 0.1 美元、输出不收费。区别是 OpenAI 一次最多 400 个问题，只收文字、图片和 JSON，不收音视频和 PDF；但它支持缓存，重复输入能打折，还能直接塞进对话历史和工具调用记录。\n\n创业公司 TypeSafe 的 Jev 1.14 也专做这类判断，在 OpenRouter 上每百万输入 Token 0.042 美元，只收文字和图片。\n\nGoogle 博客附的对比表里，Gemini Decision 1 在 9 项测试中 7 项第一（其中音频、视频两项只有它和 Flash-Lite 参测），校准误差 0.025，GPT-6 Luna 是 0.072；网页操作和“该不该调用工具”两项输给了 Jev 1.14。7 项共同评测的总花费，Jev 最低，0.68 美元，Gemini Decision 1 是 0.88 美元，GPT-6 Luna 0.93 美元。以上跑分都是 Google 自己测的。\n\nGoogle 博客：https://t.co/P5hlLj7fXN\n官方文档：https://t.co/WphCUZv5oT\nOpenAI Decisions API 文档：https://t.co/MGgS32OuNy"
+   },
+   "public_metrics": {
+    "bookmark_count": 185,
+    "impression_count": 38493,
+    "like_count": 207,
+    "quote_count": 19,
+    "reply_count": 165,
+    "repost_count": 22
+   },
+   "referenced_posts": [
+    {
+     "id": "2120581155078729728",
+     "type": "quoted"
+    }
+   ],
+   "text": "Google 推出 Gemini Decisions API：不写回答只做判断，一次最多问 1000 个问题，输入每百万 Token 0.1 美元、输出不收钱\n\nGoogle 今天在 Gemini API 里上线了 Decisions API，配套新模型 Gemini Decision https://t.co/BrCwuE0RTx",
+   "url": "https://x.com/dotey/status/2120647659388031454",
+   "bookmarked_seen": "2026-11-13T09:18:13+09:00"
+  },
+  {
    "author_id": "168139512",
    "conversation_id": "2120502201168830513",
    "created_at": "2026-11-11T13:01:36.000Z",
@@ -20106,12 +20315,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 16729,
-    "impression_count": 1167267,
-    "like_count": 7311,
+    "bookmark_count": 16745,
+    "impression_count": 1174540,
+    "like_count": 7324,
     "quote_count": 328,
-    "reply_count": 275,
-    "repost_count": 746
+    "reply_count": 274,
+    "repost_count": 749
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -23030,7 +23239,7 @@
    ],
    "id": "2116463876594434496",
    "lang": "zh",
-   "note_tweet": {
+   "note_post": {
     "entities": {
      "urls": [
       {
@@ -23052,10 +23261,10 @@
     "text": "我们可能从一开始，就把 Agent Memory 想得太复杂了\n\n最近一篇论文《Is Complex Agentic Memory Always Needed?》做了一个很有意思的实验：\n\n不做 Memory Extraction，不做复杂的知识图谱，也不让 LLM 在写入时反复总结、更新记忆\n\n只保留原始对话历史，在需要的时候检索出来，交给 LLM 自己推理\n\n结果呢？\n\n在 LoCoMo、LongMemEval 等四个 benchmark 的 7 组测试设置中，这套简单的 RAW-RAG 方案拿下了 6 组第一，最多领先对比的最强 Agentic Memory 系统 5.53 分\n\n这恰好也是我们开发 Obelisk 时一直坚持的思路\n\n我们认为，Agent 不应该只能看到别人替它总结好的「记忆」\n\n因为一次代码修改背后的原因、一次失败的尝试、几个决策之间的依赖关系，都可能在总结和信息提取的过程中丢失\n\n与其猜测未来什么信息值得记住，不如保留完整历史，让 Agent 在真正需要的时候自己去找\n\n所以我们做了 Obelisk：\n\n一个开源的 Coding Agent Session 检索系统\n\n它可以直接查询 Claude Code、Codex、Hermes、Pi、Opencode 等 Agent 的历史 Session，包括对话、工具调用、Subagent 和工作流。\n\n不依赖 Embedding，也不需要预先从历史中提取 Memory\n基于 SQLite FTS5 和 Agent 主动查询，让 Agent 能够重新找到过去的原始证据\n\n比如：\n\n- 为什么当初要这样设计这段代码？\n- 上一个 Agent 的任务进行到哪里了？\n- 我们之前尝试过哪些方案，为什么失败？\n- 这个项目的架构是如何一步步演变的？\n\nMemory 不应该是一份不断被改写的摘要，而应该是一段随时可以追溯的历史\n\n也许下一代 Agent Memory 的关键，不是让 Agent 更努力地记住，而是让它拥有找回过去的能力\n\nObelisk 完全开源：\nhttps://t.co/TJlm8kVuh9\n\n论文：https://t.co/gsISeR2X3l"
    },
    "public_metrics": {
-    "bookmark_count": 946,
-    "impression_count": 80197,
+    "bookmark_count": 944,
+    "impression_count": 81009,
     "like_count": 731,
-    "quote_count": 16,
+    "quote_count": 14,
     "reply_count": 72,
     "repost_count": 70
    },
@@ -23089,18 +23298,18 @@
    },
    "id": "2117613537929703708",
    "lang": "en",
-   "note_tweet": {
+   "note_post": {
     "text": "32× growth in one quarter: From 10K to 320K customers across 100+ countries, with over 100 million messages processed.\n\nWe are not building just another personal AI product. Our long-term vision for Teamily AI is to build the central platform of the next-generation Agentic Internet, where AI agents deliver services and perform real work directly, no longer confined to traditional web, desktop, or mobile apps distributed through app stores and search engines. Our recent growth has only strengthened my conviction in this vision.\n\nAgent-as-a-Service (AaaS) will be as accessible as connecting with friends on a social network. Just as Google democratized access to information and services in the web era, Teamily AI aims to democratize access to intelligence and services in the Agentic Internet era, making the right intelligence, people, and services equally accessible to everyone.\n\nIn this letter to Teamily AI customers, ecosystem partners, and investors, we share our growth, reflect on our early foresight and what we've built, discuss how we see the evolving AI agent landscape, and outline where we're heading next."
    },
    "public_metrics": {
-    "bookmark_count": 296,
-    "impression_count": 916574,
-    "like_count": 1065,
+    "bookmark_count": 292,
+    "impression_count": 1538667,
+    "like_count": 1069,
     "quote_count": 104,
-    "reply_count": 140,
+    "reply_count": 143,
     "repost_count": 123
    },
-   "referenced_tweets": [
+   "referenced_posts": [
     {
      "id": "2117609375569457533",
      "type": "quoted"
@@ -23130,9 +23339,9 @@
    "id": "2117641078342062175",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 201,
-    "impression_count": 54708,
-    "like_count": 159,
+    "bookmark_count": 200,
+    "impression_count": 55955,
+    "like_count": 160,
     "quote_count": 2,
     "reply_count": 12,
     "repost_count": 13
@@ -23162,7 +23371,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 523,
-    "impression_count": 229902,
+    "impression_count": 231484,
     "like_count": 300,
     "quote_count": 16,
     "reply_count": 67,
@@ -23192,9 +23401,9 @@
    "id": "2117963744651415992",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 138,
-    "impression_count": 21150,
-    "like_count": 97,
+    "bookmark_count": 137,
+    "impression_count": 21379,
+    "like_count": 98,
     "quote_count": 2,
     "reply_count": 4,
     "repost_count": 2
@@ -23227,9 +23436,9 @@
    "id": "2112532951946965162",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 111,
-    "impression_count": 14119,
-    "like_count": 166,
+    "bookmark_count": 110,
+    "impression_count": 14992,
+    "like_count": 169,
     "quote_count": 5,
     "reply_count": 49,
     "repost_count": 8
@@ -23289,7 +23498,7 @@
    },
    "id": "2117672596502401439",
    "lang": "en",
-   "note_tweet": {
+   "note_post": {
     "entities": {
      "mentions": [
       {
@@ -23310,7 +23519,7 @@
    },
    "public_metrics": {
     "bookmark_count": 143,
-    "impression_count": 43369,
+    "impression_count": 43768,
     "like_count": 206,
     "quote_count": 7,
     "reply_count": 25,
@@ -23355,12 +23564,12 @@
    "id": "2118137114466652191",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 1180,
-    "impression_count": 86152,
-    "like_count": 720,
-    "quote_count": 9,
+    "bookmark_count": 1172,
+    "impression_count": 87245,
+    "like_count": 719,
+    "quote_count": 10,
     "reply_count": 23,
-    "repost_count": 41
+    "repost_count": 40
    },
    "text": "Your agents should sleep on it.\n\nAgents get should get smarter over night as they learn from all their previous runs!\n\nBuild your own dreaming service with dynamic workflows in Claude Managed Agents. \n\nhttps://t.co/67f055ZVWa\n\nlove to hear what you think!"
   },
@@ -23407,14 +23616,14 @@
    "id": "2117457048015458727",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 68,
-    "impression_count": 40707,
-    "like_count": 83,
+    "bookmark_count": 69,
+    "impression_count": 41646,
+    "like_count": 85,
     "quote_count": 2,
     "reply_count": 5,
     "repost_count": 5
    },
-   "referenced_tweets": [
+   "referenced_posts": [
     {
      "id": "2117399118888988916",
      "type": "quoted"
@@ -23442,7 +23651,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 2082,
+    "impression_count": 2108,
     "like_count": 28,
     "quote_count": 0,
     "reply_count": 5,
@@ -23485,7 +23694,7 @@
    },
    "id": "2118495232266584335",
    "lang": "zh",
-   "note_tweet": {
+   "note_post": {
     "entities": {
      "mentions": [
       {
@@ -23505,11 +23714,11 @@
     "text": "这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。\n\n真正重要的是把标准写清楚，把可重复的操作做成工具，把确定的要求变成检查，让每次反馈都能留下来。\n\n内容导航\n00:00 想让Agent自己迭代\n00:40 为什么先做验证\n01:31 三组实践给我的启发\n02:14 验证技能怎么搭建\n02:49 产品地图与操作工具\n03:59 改造录音转写工作流\n04:58 纠错改进的五个层次\n06:46 把自己的标准说清楚\n08:19 循环之前先写验证\n08:46 改造自己的Skill"
    },
    "public_metrics": {
-    "bookmark_count": 133,
-    "impression_count": 43814,
-    "like_count": 149,
+    "bookmark_count": 135,
+    "impression_count": 46283,
+    "like_count": 154,
     "quote_count": 6,
-    "reply_count": 42,
+    "reply_count": 43,
     "repost_count": 17
    },
    "text": "这两天，我一直在研究：怎么让AI Agent持续改进自己？越往下研究，越发现要先回答一个问题——我怎么知道Agent它真的做对了？所以这一期视频，聊聊@poteto的Verification Skill、@addyosamani分享的Claude Code团队代码审查实践和@yetone的Agent Loop，也分享我改造录音转写工作流的尝试。 https://t.co/6TnLESG0bS"
@@ -23540,10 +23749,10 @@
    "id": "2058976178908885210",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 1472,
-    "impression_count": 418024,
-    "like_count": 607,
-    "quote_count": 13,
+    "bookmark_count": 1475,
+    "impression_count": 422747,
+    "like_count": 609,
+    "quote_count": 16,
     "reply_count": 20,
     "repost_count": 86
    },
@@ -23575,12 +23784,12 @@
    "id": "2115445646169694321",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 314,
-    "impression_count": 89863,
-    "like_count": 103,
+    "bookmark_count": 368,
+    "impression_count": 107813,
+    "like_count": 126,
     "quote_count": 3,
-    "reply_count": 10,
-    "repost_count": 12
+    "reply_count": 11,
+    "repost_count": 15
    },
    "text": "Grok Bot + Opus 5.5 can create an agent team for your GitHub repo\n\nOne lead bot splits the work, delegates scoped tasks and collects PRs with verification results attached\n\nIn this article, I show you how to build this setup using Lauren Tan’s method: https://t.co/fcbEyJYOQW"
   },
@@ -23593,16 +23802,16 @@
    ],
    "id": "2119015563670532515",
    "lang": "zh",
-   "note_tweet": {
+   "note_post": {
     "text": "上周聚会，一个朋友用 OPPO N6 折叠手机，屏幕超级平，竟比 iPhone Duo 还好。\n\n大家纷纷赞叹，直到今天，另一朋友发现了秘密：\n\n这个手机展开是 181 度....绷平的 😂\n\n原以为黑科技，没想到朴实无华。\n\n但细想，还挺巧妙的。\n\n最近看 OPPO 产品口碑越来越好，如 AI 心力球，24小时录音记录，有点种草。"
    },
    "public_metrics": {
-    "bookmark_count": 75,
-    "impression_count": 118122,
-    "like_count": 205,
+    "bookmark_count": 76,
+    "impression_count": 123516,
+    "like_count": 207,
     "quote_count": 13,
     "reply_count": 79,
-    "repost_count": 1
+    "repost_count": 2
    },
    "text": "上周聚会，一个朋友用 OPPO N6 折叠手机，屏幕超级平，竟比 iPhone Duo 还好。\n\n大家纷纷赞叹，直到今天，另一朋友发现了秘密：\n\n这个手机展开是 181 度....绷平的 😂\n\n原以为黑科技，没想到朴实无华。\n\n但细想，还挺巧妙的。\n\n最近看 OPPO 产品口碑越来越好，如 AI"
   },
@@ -23632,10 +23841,10 @@
    "id": "2119430401701621865",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 843,
-    "impression_count": 323640,
-    "like_count": 354,
-    "quote_count": 16,
+    "bookmark_count": 885,
+    "impression_count": 354831,
+    "like_count": 366,
+    "quote_count": 22,
     "reply_count": 51,
     "repost_count": 51
    },
@@ -23651,12 +23860,12 @@
    "id": "2116552016218710389",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15686,
-    "impression_count": 2057766,
-    "like_count": 8352,
-    "quote_count": 275,
-    "reply_count": 162,
-    "repost_count": 391
+    "bookmark_count": 15859,
+    "impression_count": 2194078,
+    "like_count": 8542,
+    "quote_count": 293,
+    "reply_count": 167,
+    "repost_count": 401
    },
    "text": "good prompt \"find all of the implicit state machines in my app\""
   },
@@ -23669,16 +23878,16 @@
    ],
    "id": "2119444845890617507",
    "lang": "en",
-   "note_tweet": {
+   "note_post": {
     "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.\""
    },
    "public_metrics": {
-    "bookmark_count": 21712,
-    "impression_count": 1136910,
-    "like_count": 9021,
-    "quote_count": 56,
-    "reply_count": 221,
-    "repost_count": 418
+    "bookmark_count": 22911,
+    "impression_count": 1237040,
+    "like_count": 9530,
+    "quote_count": 64,
+    "reply_count": 237,
+    "repost_count": 444
    },
    "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent"
   },
@@ -23736,14 +23945,14 @@
    "id": "2119114537442189652",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 10314,
-    "impression_count": 933524,
-    "like_count": 9150,
-    "quote_count": 228,
-    "reply_count": 633,
-    "repost_count": 771
+    "bookmark_count": 10357,
+    "impression_count": 986646,
+    "like_count": 9264,
+    "quote_count": 237,
+    "reply_count": 672,
+    "repost_count": 781
    },
-   "referenced_tweets": [
+   "referenced_posts": [
     {
      "id": "2116957135661945283",
      "type": "quoted"
@@ -23761,11 +23970,11 @@
    "id": "2120149186218021375",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 105,
-    "impression_count": 62857,
-    "like_count": 155,
+    "bookmark_count": 113,
+    "impression_count": 70638,
+    "like_count": 162,
     "quote_count": 4,
-    "reply_count": 22,
+    "reply_count": 24,
     "repost_count": 11
    },
    "text": "如果你是做交付的 FDE，现在起，把所有精力全部投入到 Deepseek Harness。这是你做 FDE 唯一一个可以挣到钱的方向。\n\nworkbuddy、豆包工作、千问办公，都会让你赔得倾家荡产，除非你只是帮他们卖席位而不是做交付。"
@@ -23781,7 +23990,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 5,
-    "impression_count": 9827,
+    "impression_count": 9887,
     "like_count": 10,
     "quote_count": 2,
     "reply_count": 11,
@@ -23834,12 +24043,12 @@
    "id": "2119080326555443677",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 427,
-    "impression_count": 52099,
-    "like_count": 346,
+    "bookmark_count": 438,
+    "impression_count": 58153,
+    "like_count": 351,
     "quote_count": 4,
     "reply_count": 30,
-    "repost_count": 39
+    "repost_count": 40
    },
    "text": "在 macOS、Windows 和 Linux 上用 Rust 写的轻量运行时，轻量平替 Docker Desktop / OrbStack，同时兼容现有 docker CLI、Compose 和 buildx，把容器跑在一个小型 Linux VM 里。\n\nhttps://t.co/y87o5BDvHu https://t.co/8kgpaCWqdy"
   },
@@ -23868,12 +24077,12 @@
     "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 跑通首个 Agent：拆解模型调用、工具绑定与执行环境的基础闭环。    \n\n2. 状态持久化（Persistent Memory）：告别单次对话即失忆，构建跨会话的记忆索引与上下文回填。    \n\n3. 长时自主循环（Agentic Loops）：摆脱线性问答，让 Agent 具备自我反思、容错重试与多轮状态流转能力。    \n\n4. 吃透 MCP 核心架构：彻底理清 Model Context Protocol 与传统 API 的本质区别，学会构建标准化的上下文协议。    \n\n5. 多智能体协同系统（Multi-Agent）：把分散的专职 Agent 串联成高协作度的自动化系统。    \n\n完全免费。\n\n比市面上价值700刀的课还要干货。  \n\n建议收藏，今晚就观看 。🔖"
    },
    "public_metrics": {
-    "bookmark_count": 9491,
-    "impression_count": 484062,
-    "like_count": 7110,
-    "quote_count": 44,
-    "reply_count": 161,
-    "repost_count": 1463
+    "bookmark_count": 9514,
+    "impression_count": 488825,
+    "like_count": 7124,
+    "quote_count": 46,
+    "reply_count": 162,
+    "repost_count": 1469
    },
    "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 https://t.co/fh9Gjo5vPM"
   },
@@ -23917,9 +24126,9 @@
    "id": "2112558839589417355",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 1652,
-    "impression_count": 457438,
-    "like_count": 480,
+    "bookmark_count": 1655,
+    "impression_count": 459060,
+    "like_count": 482,
     "quote_count": 15,
     "reply_count": 74,
     "repost_count": 38
@@ -23951,12 +24160,12 @@
     "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:\n\n```\nFor skills, clone mattpocock/skills to ~/repos/skills.\nFor Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle\n```\n\nThis is extremely simple and incredibly effective. The home repo lets you:\n\n1. Put all your steering files and tooling in one place\n2. Have a single spot to run all your agents in\n3. Make sweeping changes over multiple repos\n\nTalked about this in the course yesterday and folks are loving it (see below).\n\nI'm sure you will too. Enjoy!"
    },
    "public_metrics": {
-    "bookmark_count": 4377,
-    "impression_count": 225041,
-    "like_count": 3002,
-    "quote_count": 62,
-    "reply_count": 278,
-    "repost_count": 161
+    "bookmark_count": 4945,
+    "impression_count": 277391,
+    "like_count": 3423,
+    "quote_count": 75,
+    "reply_count": 311,
+    "repost_count": 201
    },
    "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have https://t.co/umO84wVD7a"
   },
@@ -23998,12 +24207,12 @@
    "id": "2120230919588241878",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 2,
-    "impression_count": 2911,
-    "like_count": 13,
-    "quote_count": 1,
+    "bookmark_count": 51,
+    "impression_count": 36803,
+    "like_count": 51,
+    "quote_count": 2,
     "reply_count": 1,
-    "repost_count": 1
+    "repost_count": 2
    },
    "referenced_posts": [
     {
@@ -24039,12 +24248,12 @@
    "id": "2096128417108287566",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 2652,
-    "impression_count": 1682325,
-    "like_count": 783,
+    "bookmark_count": 2666,
+    "impression_count": 1691827,
+    "like_count": 791,
     "quote_count": 30,
     "reply_count": 16,
-    "repost_count": 120
+    "repost_count": 122
    },
    "text": "https://t.co/buH2nYDL29"
   },
@@ -24092,11 +24301,11 @@
    "id": "2119521036660314339",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 7010,
-    "impression_count": 281331,
-    "like_count": 4899,
+    "bookmark_count": 7030,
+    "impression_count": 286749,
+    "like_count": 4911,
     "quote_count": 33,
-    "reply_count": 170,
+    "reply_count": 171,
     "repost_count": 217
    },
    "referenced_posts": [
@@ -24106,6 +24315,135 @@
     }
    ],
    "text": "try this next “use /create-formal-verification-skill to model these state machines, one skill per subsystem. and use /statechart to visualize my most important user flows”\n\nboth skills are in pstack\n\nhttps://t.co/SxilBe4Diu https://t.co/4arc9DYbjl"
+  },
+  "2120655002335064125": {
+   "author_id": "2113624235172044800",
+   "conversation_id": "2120655002335064125",
+   "created_at": "2026-11-11T23:08:47.000Z",
+   "edit_history_post_ids": [
+    "2120655002335064125"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "AI agents join the chat as teammates, work in the open in the channel and ask for your approval before anything sensitive.",
+      "display_url": "agentes.chat",
+      "end": 23,
+      "expanded_url": "https://agentes.chat",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2120269026362314752/Aerc_wJY?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2120269026362314752/Aerc_wJY?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 0,
+      "status": 200,
+      "title": "Your team and your agents, in the same conversation.",
+      "unwound_url": "https://agentes.chat",
+      "url": "https://t.co/8zLU1aPDTe"
+     },
+     {
+      "description": "AI agents join the chat as teammates, work in the open in the channel and ask for your approval before anything sensitive.",
+      "display_url": "agentes.chat",
+      "end": 262,
+      "expanded_url": "https://agentes.chat",
+      "images": [
+       {
+        "height": 630,
+        "url": "https://pbs.twimg.com/news_img/2120269026362314752/Aerc_wJY?format=jpg&name=orig",
+        "width": 1200
+       },
+       {
+        "height": 150,
+        "url": "https://pbs.twimg.com/news_img/2120269026362314752/Aerc_wJY?format=jpg&name=150x150",
+        "width": 150
+       }
+      ],
+      "start": 239,
+      "status": 200,
+      "title": "Your team and your agents, in the same conversation.",
+      "unwound_url": "https://agentes.chat",
+      "url": "https://t.co/8zLU1aPDTe"
+     },
+     {
+      "display_url": "pic.x.com/V3VT68PLBu",
+      "end": 286,
+      "expanded_url": "https://x.com/agentes_chat/status/2120655002335064125/video/1",
+      "media_key": "13_2120654271788060672",
+      "start": 263,
+      "url": "https://t.co/V3VT68PLBu"
+     }
+    ]
+   },
+   "id": "2120655002335064125",
+   "lang": "en",
+   "public_metrics": {
+    "bookmark_count": 669,
+    "impression_count": 193374,
+    "like_count": 619,
+    "quote_count": 25,
+    "reply_count": 52,
+    "repost_count": 52
+   },
+   "text": "https://t.co/8zLU1aPDTe is live, in open beta.\n\nA workspace where your team and AI agents work side by side. Mention an agent, it does the work, and you approve what matters.\n\nBring the Claude, ChatGPT or Gemini plan you already pay for.\n\nhttps://t.co/8zLU1aPDTe https://t.co/V3VT68PLBu"
+  },
+  "2120581155078729728": {
+   "author_id": "14130366",
+   "conversation_id": "2120581155078729728",
+   "created_at": "2026-11-11T18:15:20.000Z",
+   "edit_history_post_ids": [
+    "2120581155078729728"
+   ],
+   "entities": {
+    "mentions": [
+     {
+      "end": 109,
+      "id": "1742923424056713217",
+      "start": 94,
+      "username": "GoogleAIStudio"
+     }
+    ],
+    "urls": [
+     {
+      "display_url": "pic.x.com/7itBuv7Eu2",
+      "end": 303,
+      "expanded_url": "https://x.com/sundarpichai/status/2120581155078729728/video/1",
+      "media_key": "13_2120574108635455488",
+      "start": 280,
+      "url": "https://t.co/7itBuv7Eu2"
+     }
+    ]
+   },
+   "id": "2120581155078729728",
+   "lang": "en",
+   "note_post": {
+    "entities": {
+     "mentions": [
+      {
+       "end": 109,
+       "id": "1742923424056713217",
+       "start": 94,
+       "username": "GoogleAIStudio"
+      }
+     ]
+    },
+    "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A few details:\n\n- 3 decision types: yes/no, multiple choice (up to 255 options) + rubric scoring\n- $0.10 / 1M input tokens with $0 billed for output tokens (~5x cheaper than Flash-Lite)\n- leads on several benchmark evals with lowest calibration error\n\nGoogle teams are already building with it, below is a look at Stitch Rapid designing a full product flow in seconds (1x speed)"
+   },
+   "public_metrics": {
+    "bookmark_count": 2489,
+    "impression_count": 733216,
+    "like_count": 7655,
+    "quote_count": 379,
+    "reply_count": 488,
+    "repost_count": 625
+   },
+   "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A https://t.co/7itBuv7Eu2"
   }
  },
  "users": {
@@ -24242,7 +24580,7 @@
    "username": "mitchellh"
   },
   "2045135343108722689": {
-   "description": "头部安全公司 AI 研发 | 讲师\n北京xx大学计算机硕士 ｜ 多篇专利& SI 论文\n探索 AI | 创造价值 | 开源分享\nAI充值小店：https://t.co/OZuhoLAcdD\nPPT 制作系统：https://t.co/p1v3zQPClk",
+   "description": "头部安全公司 AI 研发 | 讲师\n北京xx大学计算机硕士 ｜ 多篇专利& SI 论文\n探索 AI | 创造价值 | 开源分享\nAI充值小店：https://t.co/YSK9H31ZD3\nPPT 制作系统：https://t.co/p1v3zQPClk",
    "id": "2045135343108722689",
    "name": "刘老板",
    "username": "leo_xiaolei"
@@ -26850,7 +27188,7 @@
    "username": "cccch1mneyyyy"
   },
   "1992461": {
-   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source、独立开发、分享想法。",
+   "description": "AI时代，重新出发。\nVibe Coding、Home-lab、Open-source。\n开源项目：https://t.co/K6MyV5SkWk",
    "id": "1992461",
    "name": "Gabe",
    "username": "fishjar"
@@ -26862,7 +27200,7 @@
    "username": "QuantumTransf"
   },
   "1717726640040783872": {
-   "description": "AI Coding / Agent 实战派\n帮编程新手和老板用 AI 把想法做成工具、产品和内容\n分享教程、工具和 AI 资讯\n我的AI教程 https://t.co/MOueMLh1I8\n\n合作 V:bozhou_ai",
+   "description": "裸辞All in AI\nAI 编程 / Agent 实战 / 出海Web\n长文首发公众号：泊舟的AI思考\nAI课程：https://t.co/53LAkyKrvL\n微信：bozhou_ai",
    "id": "1717726640040783872",
    "name": "泊舟",
    "username": "bozhou_ai"
@@ -26934,7 +27272,7 @@
    "username": "JinJieBeWater"
   },
   "1932647771817074688": {
-   "description": "Don't Just Prompt. Design. 🛠️\n🎓 UPM｜用 AI 优雅偷懒，把奇思妙想变成生产力 \n自研 AI Skill｜UCI 全能下载系统｜GitHub 1000+⭐\n持续输出：创意视频｜自动化工作流｜可落地的 AI 提效指南",
+   "description": "Don't Just Prompt. Design. 🛠️\n🎓 UPM｜用 AI 优雅偷懒，把奇思妙想变成生产力 \n自研 AI Skill｜UCI 全能下载系统｜创意视频\n持续输出：自动化工作流｜可落地的 AI 提效指南",
    "id": "1932647771817074688",
    "name": "Eian",
    "username": "EianLu"
@@ -26970,7 +27308,7 @@
    "username": "tvytlx"
   },
   "1060320635983880192": {
-   "description": "👋 Agent 算法工程师 | AI 前沿探索者 & Builder\n🔥 创造有趣的 Skills 和 Tools\n🛠 Answer-me-with-html 作者 ( 30days 5k star ⭐）",
+   "description": "👋 Agent 算法工程师 | AI 前沿探索者 & Builder\n🔥 创造有趣的 Skills 和 Tools\n🛠 Answer-me-with-html 作者 ( 30天 6k star ⭐）",
    "id": "1060320635983880192",
    "name": "云辰 Cyan",
    "username": "CyanCloud77"
@@ -27006,7 +27344,7 @@
    "username": "lingergnn41824"
   },
   "1323768907": {
-   "description": "探索AI时代，人和组织的新可能。\n新可能实验室发起人｜腾讯研究院高级顾问｜百万粉丝科技博主\n\nFounder, The Possibility Lab\nSenior Advisor, Tencent Research Institute\n1M+ followers across platforms",
+   "description": "新可能实验室发起人｜腾讯研究院高级顾问｜百万粉丝科技博主  ｜ 知识星球：新可能实验室\n\nFounder, The Possibility Lab\nSenior Advisor, Tencent Research Institute\n1M+ followers across platforms",
    "id": "1323768907",
    "name": "晓辉博士",
    "username": "xiaohuiyuan"
@@ -27066,7 +27404,7 @@
    "username": "TuyetloanP81840"
   },
   "3134520267": {
-   "description": "building autonomous AI workers\n\ncontact me if you need help with your AI project",
+   "description": "building autonomous AI workers\npreviously 10 years in DS / ML\ncontact me if you need help with your AI project",
    "id": "3134520267",
    "name": "Sergii Makarevych",
    "username": "sermakarevich"
@@ -27210,7 +27548,7 @@
    "username": "lxz2677"
   },
   "1327292278000349185": {
-   "description": "PhD ing @ University of Sussex | LLM & AI Agents 🎓\nAI Agent Product Development\nSharing AI tech insights\nDM for collab 📩",
+   "description": "PhD ing @ University of Sussex | LLM & AI Agents 🎓\nAI Agent Product Development\nSharing AI tech insights\nDM for collab 📩\nvx: hxdflying",
    "id": "1327292278000349185",
    "name": "Xudong Han",
    "username": "Xudong07452910"
@@ -27220,6 +27558,24 @@
    "id": "1861811243813666816",
    "name": "Browser Use",
    "username": "browser_use"
+  },
+  "1193168520042946560": {
+   "description": "Agentic Supervisor.\n\n✐ Building @lody_ai \n✐ https://t.co/GvAmIpu5EE Creator\n\nBuilding for agents. Designing for humans. \n\nAll views are my own.",
+   "id": "1193168520042946560",
+   "name": "wibus.松",
+   "username": "wibus_wee"
+  },
+  "715629123100680193": {
+   "description": "Founder @MillionSend & @ListaMRR & @dinzoapp\nCo-founder @agentes_chat",
+   "id": "715629123100680193",
+   "name": "Hélio Costa",
+   "username": "heliocosta"
+  },
+  "3178231": {
+   "description": "AI Engineer, dedicated to learning and disseminating knowledge about AI, software engineering, and engineering management.",
+   "id": "3178231",
+   "name": "宝玉",
+   "username": "dotey"
   }
  }
 }
