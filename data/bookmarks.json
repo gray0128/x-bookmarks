@@ -1,6 +1,398 @@
 {
  "posts": [
   {
+   "author_id": "2334685760",
+   "conversation_id": "2121117011556343965",
+   "created_at": "2026-11-13T05:44:38.000Z",
+   "edit_history_post_ids": [
+    "2121117011556343965"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "description": "从 GUI 仿真到用代码操控浏览器，回顾 Tabbit 团队如何在一年半的 Browser Use 实践中，重新理解模型能力与工具设计的关系。",
+      "display_url": "liaocaoxuezhe.com/article/the-bi…",
+      "end": 127,
+      "expanded_url": "https://www.liaocaoxuezhe.com/article/the-bitter-lesson-of-browser-use/",
+      "start": 104,
+      "status": 200,
+      "title": "浏览器操控的苦涩教训",
+      "unwound_url": "https://www.liaocaoxuezhe.com/article/the-bitter-lesson-of-browser-use/",
+      "url": "https://t.co/X7gjVSdQFW"
+     }
+    ]
+   },
+   "id": "2121117011556343965",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 610,
+    "impression_count": 48691,
+    "like_count": 294,
+    "quote_count": 7,
+    "reply_count": 24,
+    "repost_count": 34
+   },
+   "text": "过去一年半，我们死磕 Browser Use：\n把 DOM 压到极致、测了几百种架构，试图教 AI 像人一样使用浏览器。\n\n直到某天深夜，模型的进步用一种完全反直觉的方式，击碎了我们引以为傲的设计和架构。\n\nhttps://t.co/X7gjVSdQFW",
+   "url": "https://x.com/liaocaoxuezhe/status/2121117011556343965",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "author_id": "820285264819933184",
+   "conversation_id": "2121044031153258889",
+   "created_at": "2026-11-13T00:54:38.000Z",
+   "edit_history_post_ids": [
+    "2121044031153258889"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/ChromiumDev/st…",
+      "end": 190,
+      "expanded_url": "https://twitter.com/ChromiumDev/status/2121014221563396156",
+      "start": 167,
+      "url": "https://t.co/AwNeFymPrW"
+     }
+    ]
+   },
+   "id": "2121044031153258889",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "developer.chrome.com/docs/modern-we…",
+       "end": 962,
+       "expanded_url": "https://developer.chrome.com/docs/modern-web-guidance",
+       "start": 939,
+       "url": "https://t.co/UBWHzf9d0c"
+      },
+      {
+       "display_url": "github.com/GoogleChrome/m…",
+       "end": 994,
+       "expanded_url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+       "start": 971,
+       "url": "https://t.co/cDSdlOVl0n"
+      }
+     ]
+    },
+    "text": "浏览器这几年多了不少原生能力，AI 写前端时，仍容易沿用训练数据和项目里的旧写法：一些已有原生方案的功能，又用 JS 和第三方库实现了一遍。Modern Web Guidance 想补的就是该缺口，让 AI 写代码时能查到现代 Web 的用法、常见问题，以及浏览器的支持情况。\n\n它由 Chrome、Edge、Firefox、MDN 团队和社区共同维护，以 Agent Skills 的形式接入编程助手。遇到相关任务时，Agent 通过 CLI 搜索、读取指南，按需把知识带进上下文。团队也会根据评测结果精简指南，减少模型已经掌握的重复内容。\n\n举几个直观的例子：做弹窗和浮层，先考虑 <dialog>、Popover；多行输入框自动增高，可以评估 field-sizing: content；表单校验样式可以用 :user-invalid，避免用户尚未操作就显示错误状态。容器查询、View Transitions、INP 优化、键盘焦点管理，也都有对应的指导。\n\n这些写法能不能用，还要看项目支持哪些浏览器。可以在 AGENTS.md 里写明 Baseline 目标，未设置时默认以 Widely available 为目标。对于目标浏览器尚未支持的能力，指南会给出渐进增强和降级方案；确实需要 polyfill 时，再按条件加载。\n\n旧项目也用得上。legacy-scan 会先在本地解析代码，找出可能值得替换的旧写法，这一步不调用大模型。之后 Agent 再检查周围代码、核实结果，按指南修改并运行测试。目前扫描只覆盖部分能够通过规则识别的旧模式，命中后仍需要判断，尤其要分清过时写法和项目有意保留的兼容处理。\n\n项目还会让 Agent 在有指南和没有指南的情况下完成同一任务，再用 Playwright 检查代码、浏览器中的实际行为和无障碍状态。哪些建议能改善结果，哪些内容已经多余，都可以根据对照评测继续调整。\n\n经常用 AI 写前端的话，可以先拿一个现有组件试试：看看哪些交互逻辑可以改用原生能力，哪些兼容处理仍需要保留。安装命令是 npx modern-web-guidance@latest install，具体用法见官方文档。\n\n相关链接：\n- Blog: https://t.co/UBWHzf9d0c\n- Repo: https://t.co/cDSdlOVl0n"
+   },
+   "public_metrics": {
+    "bookmark_count": 26,
+    "impression_count": 3703,
+    "like_count": 23,
+    "quote_count": 0,
+    "reply_count": 4,
+    "repost_count": 0
+   },
+   "referenced_posts": [
+    {
+     "id": "2121014221563396156",
+     "type": "quoted"
+    }
+   ],
+   "text": "浏览器这几年多了不少原生能力，AI 写前端时，仍容易沿用训练数据和项目里的旧写法：一些已有原生方案的功能，又用 JS 和第三方库实现了一遍。Modern Web Guidance 想补的就是该缺口，让 AI 写代码时能查到现代 Web 的用法、常见问题，以及浏览器的支持情况。\n\n它由 Chrome、Edge、Firefox、MDN https://t.co/AwNeFymPrW",
+   "url": "https://x.com/lencx_/status/2121044031153258889",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Antigravity 系列 - 2: swarm & boost & teamwork"
+   },
+   "author_id": "1594959396764672000",
+   "conversation_id": "2120910081458131379",
+   "created_at": "2026-11-12T16:02:22.000Z",
+   "edit_history_post_ids": [
+    "2120910081458131379"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2120…",
+      "end": 54,
+      "expanded_url": "https://x.com/i/article/2120905593305370624",
+      "start": 31,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2120905593305370624",
+      "url": "https://t.co/PSzKKpsN50"
+     }
+    ]
+   },
+   "id": "2120910081458131379",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 211,
+    "impression_count": 26554,
+    "like_count": 142,
+    "quote_count": 3,
+    "reply_count": 9,
+    "repost_count": 10
+   },
+   "text": "antigravity 系列第二篇～拖了好多天，感谢大家支持 https://t.co/PSzKKpsN50",
+   "url": "https://x.com/fanxing321/status/2120910081458131379",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "article_title": {
+    "title": "Antigravity 系列 - 3: Orchestrator & Gemini 模型盘点"
+   },
+   "author_id": "1594959396764672000",
+   "conversation_id": "2121181898063990853",
+   "created_at": "2026-11-13T10:02:28.000Z",
+   "edit_history_post_ids": [
+    "2121181898063990853"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "x.com/i/article/2121…",
+      "end": 89,
+      "expanded_url": "https://x.com/i/article/2121177634906447872",
+      "start": 66,
+      "status": 404,
+      "unwound_url": "https://x.com/i/article/2121177634906447872",
+      "url": "https://t.co/ycGTj2E9ks"
+     }
+    ]
+   },
+   "id": "2121181898063990853",
+   "lang": "zh",
+   "public_metrics": {
+    "bookmark_count": 122,
+    "impression_count": 20263,
+    "like_count": 112,
+    "quote_count": 3,
+    "reply_count": 25,
+    "repost_count": 5
+   },
+   "text": "我在这篇文章中基于个人理解说明了 Argon &amp;  Carbon 的区别。同时，说明了该如何使用 antigravity。 https://t.co/ycGTj2E9ks",
+   "url": "https://x.com/fanxing321/status/2121181898063990853",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "author_id": "1949304542325342208",
+   "conversation_id": "2121095592474759614",
+   "created_at": "2026-11-13T04:19:31.000Z",
+   "edit_history_post_ids": [
+    "2121095592474759614"
+   ],
+   "id": "2121095592474759614",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "github.com/oil-oil/agy-fa…",
+       "end": 1098,
+       "expanded_url": "https://github.com/oil-oil/agy-fast-io",
+       "start": 1075,
+       "url": "https://t.co/qSaMQ5yXWo"
+      },
+      {
+       "display_url": "github.com/oil-oil/oil-de…",
+       "end": 1427,
+       "expanded_url": "https://github.com/oil-oil/oil-dev-skills",
+       "start": 1404,
+       "url": "https://t.co/PpWpMIgIcp"
+      }
+     ]
+    },
+    "text": "最近非常高强度地使用了 Antigravity 和 Gemini 模型，说说自己的感受和一些实用技巧：\n\n1. 在 Gemini 4 Carbon 出来之前，我一直用的是 Gemini 4 Argon。200 刀套餐的额度很多，在我重度开发、适当搭配 Codex 进行 review 的情况下，周额度到最后一两天还得单独搞点重活才能用得完，所以大多数情况下可以爽用。现在 Gemini 4 Carbon 出来之后，任务效果比 Argon 更好，并且消耗并没有高多少，几乎和之前使用 Argon 是一样的。\n\n但是即便是 Gemini 4 Carbon，我自己的感受也是不如 使用 Claude Opus 5.5 的。Claude 给人的感觉是心思更加缜密，更加让人安心。比如在一个复杂仓库里面，一些分支管理、版本管理这些都是 Claude 会更稳定，而且它会主动告诉你当前存在什么问题，审美和开发能力也还是 Claude 更强。\n\nGemini 的优势在于订阅门槛很低，而且比起 Codex 来说，交流感好太多了，文案能力也强。如果平时需要让 AI 辅助写写课程、做做视频脚本，那么 Gemini 是目前唯一的选择。\n\n2. Gemini 4 不同的型号都是比较自信的模型，所以它给的方案以及它写的代码，经常缺胳膊少腿，它自己就觉得很不错，结果给其他模型看完了发现一大堆问题。\n\n而且虽然说话有人味儿，但是会过度浮夸，喜欢加很多拟人、形容、比喻，给你很多情绪价值。如果用来开发复杂项目，一定要搭配其他的模型来帮助它 review，比如说另一个极端的 GPT。我自己一直都是用 GPT 来帮助 Gemini 评审方案和代码的，搭配起来使用效果非常好。\n\n3. Antigravity 的 harness 很垃圾，读文件速度巨慢。而且如果我们开的是 Turbo 模式，虽然很多工具调用不会征求我们人的同意，但它一定会走一下云端审核，甚至很多读文件的命令都需要审核。\n\n这个云端审核每一次大概 1 到 3 秒，你在执行一个复杂任务的时候，有可能审核好几十次，就会浪费好几分钟的时间用于这个云端审核。而且 Antigravity 读文件也不够高效，每一次读完文件都得思考，然后再去读下一个文件；单个文件读了几行，它还得思考完再读后面的几行；还有就是每一次任务完成的回答都是非常长的。\n\n为了解决这个问题，我自己写了一个 Antigravity 的插件，整理了不需要走审核的白名单命令，并且提供了一些提示词，告诉 Antigravity 怎么样去高效地读代码：https://t.co/qSaMQ5yXWo\n\n4. Gemini 4 Hydrogen 发布之后，也能够一定程度解决 Antigravity 读文件速度慢的问题。Antigravity 原生的子 Agent 仅支持 inherit / flash_lite / flash / pro 四个档位，这里竟然没有 Gemini 4 系列的模型。\n\n但是 Antigravity 内部有一个叫做 swarm 的 Skill，相当于一个多 Agent 协作系统，这个 Skill 支持派发任何模型的子 Agent，甚至可以派发 Antigravity 里面的 Claude 模型。我的做法是通过我自己开发的另一个 Skill 套件 oil-dev-skills（https://t.co/PpWpMIgIcp），里面有一个 oil-explore，我们把 Antigravity 需要使用 swarm + Gemini 4 Hydrogen (Low) 探索代码作为规则配进去，后续在新的项目里面新开话题的时候，探索代码的速度就会非常快。\n\n5. Antigravity 里面还有一个 Orchestrator 模式（比如 Orchestrator Carbon），它的机制其实就是计划模式，先用能力强的模型去探索代码、写方案，然后再让比较便宜的模型，比如说 Gemini 4 Hydrogen 去基于方案执行，但是现阶段对我来说，我觉得 Carbon 写代码尚有提升空间，更何况 Hydrogen 了，所以我会先在一些简单的项目里面测一下，现在测试得还不够多，所以不给大家结论\n\n这个模式对单纯读文件、问问题其实没有加速帮助，因为读代码全在第一阶段，跑的还是最慢的规划模型，平时只看代码直接选 swarm + Hydrogen 反而更快。"
+   },
+   "public_metrics": {
+    "bookmark_count": 917,
+    "impression_count": 82406,
+    "like_count": 715,
+    "quote_count": 5,
+    "reply_count": 74,
+    "repost_count": 56
+   },
+   "text": "最近非常高强度地使用了 Antigravity 和 Gemini 模型，说说自己的感受和一些实用技巧：\n\n1. 在 Gemini 4 Carbon 出来之前，我一直用的是 Gemini 4 Argon。200 刀套餐的额度很多，在我重度开发、适当搭配 Codex 进行 review",
+   "url": "https://x.com/I_am_oil_oil/status/2121095592474759614",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "author_id": "1491478290091024389",
+   "conversation_id": "2120904821373096408",
+   "created_at": "2026-11-12T15:44:59.000Z",
+   "edit_history_post_ids": [
+    "2120905707277123600"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/nLjR6SRYZy",
+      "end": 264,
+      "expanded_url": "https://x.com/SimularAI/status/2120905707277123600/video/1",
+      "media_key": "13_2120905321334079488",
+      "start": 241,
+      "url": "https://t.co/nLjR6SRYZy"
+     }
+    ]
+   },
+   "id": "2120905707277123600",
+   "lang": "en",
+   "note_post": {
+    "text": "The computer use you have is slow and burns through tokens.\n\nbox gives any agent state-of-the-art computer use, even those built without it.\n\nIt’s also way cheaper and faster than what’s out there.\n\nWatch box supercharge DeepSeek and Fable."
+   },
+   "public_metrics": {
+    "bookmark_count": 19,
+    "impression_count": 7406,
+    "like_count": 246,
+    "quote_count": 2,
+    "reply_count": 2,
+    "repost_count": 1
+   },
+   "referenced_posts": [
+    {
+     "id": "2120905319245373686",
+     "type": "replied_to"
+    }
+   ],
+   "text": "The computer use you have is slow and burns through tokens.\n\nbox gives any agent state-of-the-art computer use, even those built without it.\n\nIt’s also way cheaper and faster than what’s out there.\n\nWatch box supercharge DeepSeek and Fable. https://t.co/nLjR6SRYZy",
+   "url": "https://x.com/SimularAI/status/2120905707277123600",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
+   "author_id": "2070536633104134144",
+   "conversation_id": "2120837982114431447",
+   "created_at": "2026-11-12T11:15:52.000Z",
+   "edit_history_post_ids": [
+    "2120837982114431447"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/Xj4SRQE5Mg",
+      "end": 199,
+      "expanded_url": "https://x.com/irrrational/status/2120837982114431447/photo/1",
+      "media_key": "16_2120837818679250944",
+      "start": 176,
+      "url": "https://t.co/Xj4SRQE5Mg"
+     },
+     {
+      "display_url": "pic.x.com/Xj4SRQE5Mg",
+      "end": 199,
+      "expanded_url": "https://x.com/irrrational/status/2120837982114431447/photo/2",
+      "media_key": "3_2120837818641526784",
+      "start": 176,
+      "url": "https://t.co/Xj4SRQE5Mg"
+     },
+     {
+      "display_url": "pic.x.com/Xj4SRQE5Mg",
+      "end": 199,
+      "expanded_url": "https://x.com/irrrational/status/2120837982114431447/photo/3",
+      "media_key": "3_2120837818645712896",
+      "start": 176,
+      "url": "https://t.co/Xj4SRQE5Mg"
+     }
+    ]
+   },
+   "id": "2120837982114431447",
+   "lang": "zh",
+   "note_post": {
+    "entities": {
+     "mentions": [
+      {
+       "end": 689,
+       "id": "2813249270",
+       "start": 674,
+       "username": "localhost_5173"
+      },
+      {
+       "end": 742,
+       "id": "2813249270",
+       "start": 727,
+       "username": "localhost_5173"
+      },
+      {
+       "end": 1257,
+       "id": "703796597335822336",
+       "start": 1248,
+       "username": "kubai087"
+      },
+      {
+       "end": 1297,
+       "id": "1068172934630395904",
+       "start": 1289,
+       "username": "jakevin"
+      },
+      {
+       "end": 1966,
+       "id": "2813249270",
+       "start": 1951,
+       "username": "localhost_5173"
+      },
+      {
+       "end": 2022,
+       "id": "703796597335822336",
+       "start": 2013,
+       "username": "kubai087"
+      },
+      {
+       "end": 2040,
+       "id": "1068172934630395904",
+       "start": 2032,
+       "username": "jakevin"
+      },
+      {
+       "end": 2079,
+       "id": "1001864623",
+       "start": 2071,
+       "username": "akokoi1"
+      },
+      {
+       "end": 2100,
+       "id": "1177607183162171393",
+       "start": 2093,
+       "username": "gaoyy9"
+      },
+      {
+       "end": 2123,
+       "id": "1801304529675370496",
+       "start": 2113,
+       "username": "Delroy715"
+      }
+     ],
+     "urls": [
+      {
+       "display_url": "github.com/incredible404-…",
+       "end": 1892,
+       "expanded_url": "https://github.com/incredible404-rgb/Colab-yoga",
+       "start": 1869,
+       "url": "https://t.co/jvNIHpziGD"
+      },
+      {
+       "display_url": "github.com/incredible404-…",
+       "end": 1930,
+       "expanded_url": "https://github.com/incredible404-rgb/colab-gpu-llm-service",
+       "start": 1907,
+       "url": "https://t.co/nwnGdtNsQt"
+      },
+      {
+       "display_url": "github.com/egoist/mygo",
+       "end": 1998,
+       "expanded_url": "https://github.com/egoist/mygo",
+       "start": 1975,
+       "url": "https://t.co/2xcWnBcTYR"
+      }
+     ]
+    },
+    "text": "这可能是全网最美观、最流畅的 Colab 云端部署私有模型工具：Colab-yoga\n\n在 Google Colab 付费 GPU（G4 · RTX PRO 6000 96GB）上跑百 GB 级开源 GGUF 大模型，算力性价比极高。我把这套服务做成了前后端分离的两个开源仓库：底层服务负责极速拉起模型，Windows 桌面端的 Colab-yoga 则是一个常驻系统托盘的原生管理台。\n\n分享一下它在功能取舍、MyGo 原生实现与设计准则上的做法：\n\n一、功能的精简与取舍：只管算力，主流程收进顶栏一行\n\n日常对话在网页 WebUI、Magpie 网关或本机 MCP 里进行，管理台不重复包聊天窗口和提示词工作台，只专注管好 GPU：花了多少 CU、跑的是哪个模型、各个入口通不通，以及有人用时保活、没人用时自动释放。\n\n一次完整会话的操作在顶栏从左到右排成一条单行流水线：\n「唤醒 G4 ▾」→「加载模型」→「打开网页对话」→「续时」→「释放」\n\n• 唯一视觉焦点：任何时刻全窗口只有一个象牙白实心主按钮，指向当前唯一该做的下一步；\n• 状态留痕与原因透明：已完成的步骤留在原位变暗打勾；当前不可用的按钮退为灰字，悬停 Tooltip 直接说明原因；\n• 两下点击复用：点第一下「加载模型」展开清单并默认选中上次跑的模型，原位再点一下立即加载；\n• 剃刀法则：首次绑定 Google 账号独立成页，绑完收进左栏底角；未开机时不显示无意义的“—”占位和空图表；入口连通时收起解释文字，只在异常或端口冲突时展开原因与手动兜底启动按钮。\n\n二、基于 @localhost_5173 MyGo 的原生构建：温润质感与静止 0% 开销\n\n桌面端采用 Go + @localhost_5173 的 MyGo 原生 GUI 框架构建，单文件 exe 仅十几 MB；关窗缩进系统托盘时自动销毁窗口渲染层，后台常驻内存仅 ~2MB。\n\n界面充分利用了 MyGo 的声明式布局、动画原语与底层 Painter：\n• 物理弹簧与共享元素：所有位移均走物理弹簧，中途改向保留当前速度动量顺滑转向；左栏导航切换使用 Match 共享高亮块飞跃（类似 layoutId）；模型标题切换采用 ContentTransition(Morph) 逐字变形；\n• Oklab 感知均匀混色：深浅色主题以 Anthropic 暖石板灰与象牙白为基底，切换时在 Oklab 色彩空间对整套调色板做平滑插值，过渡中途干净不发灰；\n• 120Hz 纯净入场与静止零重绘：卡片采用纯弹簧升起入场（120Hz 录屏验证 0 闪烁帧）；呼吸灯、流光进度条与实时滑入的单调三次样条硬件曲线仅在任务运行或新采样到达的几百毫秒内通过 Draw 局部重绘。窗口静止时 0 帧重绘、CPU 占用 0%（由单测守卫）。\n\n三、设计标准的工程落地：把“高级感”转化为量化参数\n\n除了遵循 Apple HIG 与 Material 3，界面细节还系统借鉴了 @kubai087 的《999 个小技巧，让你 Vibe 的产品更有质感》（感谢 @jakevin 的汇总整理），把审美直觉落成代码里的量化约束：\n• 确认方式三级分化：只有「释放全部实例」这种切断所有入口的操作才弹 AlertDialog；切换/卸载单个模型、退出账号全部锚定在原按钮正下方做就地确认（Popover）；「清空日志」等可逆操作直接执行，底部出 Toast 附带一键「撤销」；\n• 数字与排版防抖：动态余额、每秒跳动的闲置倒计时、运行时长与显存读数全部开启 OpenType 等宽数字（tnum）配合滚轮数字过渡（Numeric），消除数字变化时的版面抖动；标题启用 Balance() 均衡折行，说明文案启用 Pretty() 避免孤字，单行截断处必配 Tooltip。\n\n四、底层内核（colab-gpu-llm-service）\n\n后端与管理台解耦：权重 32 路并发直写 /dev/shm 内存盘极速冷启动、llama.cpp MTP 投机解码、Tailscale 私网固定域名、独立 keeper 进程 30 秒轻量内核心跳防回收、跨入口（WebUI / Magpie / 原生 Pi MCP 四工具桥）闲置看门狗，以及按 Colab 官方账本实际扣减核算的算力账单。\n\n📦 开源仓库（Releases 提供 Windows 免安装 zip 包，自带嵌入式运行时，解压即用）：\n• 托盘管理台 Colab-yoga：https://t.co/jvNIHpziGD\n• 统一模型内核与无头服务：https://t.co/nwnGdtNsQt\n\n🙏 致谢与参考：\n• GUI 框架： @localhost_5173 的 MyGo (https://t.co/2xcWnBcTYR)\n• 质感与交互设计准则： @kubai087 的产品质感系列与 @jakevin 的汇总整理\n• Colab 桌面管理、保活与算力实践启发： @akokoi1 (EasyColab)、 @gaoyy9 (Wakeloom)、 @Delroy715"
+   },
+   "public_metrics": {
+    "bookmark_count": 560,
+    "impression_count": 22706,
+    "like_count": 331,
+    "quote_count": 3,
+    "reply_count": 18,
+    "repost_count": 40
+   },
+   "text": "这可能是全网最美观、最流畅的 Colab 云端部署私有模型工具：Colab-yoga\n\n在 Google Colab 付费 GPU（G4 · RTX PRO 6000 96GB）上跑百 GB 级开源 GGUF 大模型，算力性价比极高。我把这套服务做成了前后端分离的两个开源仓库：底层服务负责极速拉起模型，Windows 桌面端的 Colab-yoga https://t.co/Xj4SRQE5Mg",
+   "url": "https://x.com/irrrational/status/2120837982114431447",
+   "bookmarked_seen": "2026-11-14T09:13:10+09:00"
+  },
+  {
    "article_title": {
     "title": "【土豆姐 | Lauren】所有代码都是垃圾代码（除了我的）"
    },
@@ -20315,12 +20707,12 @@
    "id": "2114386050638336082",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 16745,
-    "impression_count": 1174540,
-    "like_count": 7324,
-    "quote_count": 328,
-    "reply_count": 274,
-    "repost_count": 749
+    "bookmark_count": 16750,
+    "impression_count": 1176231,
+    "like_count": 7328,
+    "quote_count": 329,
+    "reply_count": 275,
+    "repost_count": 750
    },
    "text": "Finally summarized what I've been sending to friends in DMs https://t.co/rnf3M16NzI"
   },
@@ -23261,8 +23653,8 @@
     "text": "我们可能从一开始，就把 Agent Memory 想得太复杂了\n\n最近一篇论文《Is Complex Agentic Memory Always Needed?》做了一个很有意思的实验：\n\n不做 Memory Extraction，不做复杂的知识图谱，也不让 LLM 在写入时反复总结、更新记忆\n\n只保留原始对话历史，在需要的时候检索出来，交给 LLM 自己推理\n\n结果呢？\n\n在 LoCoMo、LongMemEval 等四个 benchmark 的 7 组测试设置中，这套简单的 RAW-RAG 方案拿下了 6 组第一，最多领先对比的最强 Agentic Memory 系统 5.53 分\n\n这恰好也是我们开发 Obelisk 时一直坚持的思路\n\n我们认为，Agent 不应该只能看到别人替它总结好的「记忆」\n\n因为一次代码修改背后的原因、一次失败的尝试、几个决策之间的依赖关系，都可能在总结和信息提取的过程中丢失\n\n与其猜测未来什么信息值得记住，不如保留完整历史，让 Agent 在真正需要的时候自己去找\n\n所以我们做了 Obelisk：\n\n一个开源的 Coding Agent Session 检索系统\n\n它可以直接查询 Claude Code、Codex、Hermes、Pi、Opencode 等 Agent 的历史 Session，包括对话、工具调用、Subagent 和工作流。\n\n不依赖 Embedding，也不需要预先从历史中提取 Memory\n基于 SQLite FTS5 和 Agent 主动查询，让 Agent 能够重新找到过去的原始证据\n\n比如：\n\n- 为什么当初要这样设计这段代码？\n- 上一个 Agent 的任务进行到哪里了？\n- 我们之前尝试过哪些方案，为什么失败？\n- 这个项目的架构是如何一步步演变的？\n\nMemory 不应该是一份不断被改写的摘要，而应该是一段随时可以追溯的历史\n\n也许下一代 Agent Memory 的关键，不是让 Agent 更努力地记住，而是让它拥有找回过去的能力\n\nObelisk 完全开源：\nhttps://t.co/TJlm8kVuh9\n\n论文：https://t.co/gsISeR2X3l"
    },
    "public_metrics": {
-    "bookmark_count": 944,
-    "impression_count": 81009,
+    "bookmark_count": 945,
+    "impression_count": 81152,
     "like_count": 731,
     "quote_count": 14,
     "reply_count": 72,
@@ -23302,9 +23694,9 @@
     "text": "32× growth in one quarter: From 10K to 320K customers across 100+ countries, with over 100 million messages processed.\n\nWe are not building just another personal AI product. Our long-term vision for Teamily AI is to build the central platform of the next-generation Agentic Internet, where AI agents deliver services and perform real work directly, no longer confined to traditional web, desktop, or mobile apps distributed through app stores and search engines. Our recent growth has only strengthened my conviction in this vision.\n\nAgent-as-a-Service (AaaS) will be as accessible as connecting with friends on a social network. Just as Google democratized access to information and services in the web era, Teamily AI aims to democratize access to intelligence and services in the Agentic Internet era, making the right intelligence, people, and services equally accessible to everyone.\n\nIn this letter to Teamily AI customers, ecosystem partners, and investors, we share our growth, reflect on our early foresight and what we've built, discuss how we see the evolving AI agent landscape, and outline where we're heading next."
    },
    "public_metrics": {
-    "bookmark_count": 292,
-    "impression_count": 1538667,
-    "like_count": 1069,
+    "bookmark_count": 272,
+    "impression_count": 1538900,
+    "like_count": 1070,
     "quote_count": 104,
     "reply_count": 143,
     "repost_count": 123
@@ -23402,7 +23794,7 @@
    "lang": "en",
    "public_metrics": {
     "bookmark_count": 137,
-    "impression_count": 21379,
+    "impression_count": 21410,
     "like_count": 98,
     "quote_count": 2,
     "reply_count": 4,
@@ -23436,9 +23828,9 @@
    "id": "2112532951946965162",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 110,
-    "impression_count": 14992,
-    "like_count": 169,
+    "bookmark_count": 112,
+    "impression_count": 15342,
+    "like_count": 171,
     "quote_count": 5,
     "reply_count": 49,
     "repost_count": 8
@@ -23473,7 +23865,7 @@
      {
       "display_url": "pic.x.com/4p5MQtev3y",
       "end": 298,
-      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/1",
+      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/2",
       "media_key": "3_2117672263554420736",
       "start": 275,
       "url": "https://t.co/4p5MQtev3y"
@@ -23481,7 +23873,7 @@
      {
       "display_url": "pic.x.com/4p5MQtev3y",
       "end": 298,
-      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/1",
+      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/3",
       "media_key": "3_2117672395012239360",
       "start": 275,
       "url": "https://t.co/4p5MQtev3y"
@@ -23489,7 +23881,7 @@
      {
       "display_url": "pic.x.com/4p5MQtev3y",
       "end": 298,
-      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/1",
+      "expanded_url": "https://x.com/JinJieBeWater/status/2117672596502401439/photo/4",
       "media_key": "3_2117672577657372672",
       "start": 275,
       "url": "https://t.co/4p5MQtev3y"
@@ -23519,7 +23911,7 @@
    },
    "public_metrics": {
     "bookmark_count": 143,
-    "impression_count": 43768,
+    "impression_count": 43801,
     "like_count": 206,
     "quote_count": 7,
     "reply_count": 25,
@@ -23564,8 +23956,8 @@
    "id": "2118137114466652191",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 1172,
-    "impression_count": 87245,
+    "bookmark_count": 1169,
+    "impression_count": 87350,
     "like_count": 719,
     "quote_count": 10,
     "reply_count": 23,
@@ -23617,7 +24009,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 69,
-    "impression_count": 41646,
+    "impression_count": 41693,
     "like_count": 85,
     "quote_count": 2,
     "reply_count": 5,
@@ -23651,7 +24043,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 0,
-    "impression_count": 2108,
+    "impression_count": 2109,
     "like_count": 28,
     "quote_count": 0,
     "reply_count": 5,
@@ -23715,7 +24107,7 @@
    },
    "public_metrics": {
     "bookmark_count": 135,
-    "impression_count": 46283,
+    "impression_count": 46612,
     "like_count": 154,
     "quote_count": 6,
     "reply_count": 43,
@@ -23750,7 +24142,7 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 1475,
-    "impression_count": 422747,
+    "impression_count": 423249,
     "like_count": 609,
     "quote_count": 16,
     "reply_count": 20,
@@ -23784,12 +24176,12 @@
    "id": "2115445646169694321",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 368,
-    "impression_count": 107813,
-    "like_count": 126,
+    "bookmark_count": 409,
+    "impression_count": 118526,
+    "like_count": 142,
     "quote_count": 3,
-    "reply_count": 11,
-    "repost_count": 15
+    "reply_count": 12,
+    "repost_count": 16
    },
    "text": "Grok Bot + Opus 5.5 can create an agent team for your GitHub repo\n\nOne lead bot splits the work, delegates scoped tasks and collects PRs with verification results attached\n\nIn this article, I show you how to build this setup using Lauren Tan’s method: https://t.co/fcbEyJYOQW"
   },
@@ -23807,7 +24199,7 @@
    },
    "public_metrics": {
     "bookmark_count": 76,
-    "impression_count": 123516,
+    "impression_count": 123811,
     "like_count": 207,
     "quote_count": 13,
     "reply_count": 79,
@@ -23841,12 +24233,12 @@
    "id": "2119430401701621865",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 885,
-    "impression_count": 354831,
-    "like_count": 366,
-    "quote_count": 22,
+    "bookmark_count": 973,
+    "impression_count": 490376,
+    "like_count": 404,
+    "quote_count": 23,
     "reply_count": 51,
-    "repost_count": 51
+    "repost_count": 52
    },
    "text": "Harness, loop and graph could be the missing layers between AI models and agents that actually work.\n\nSame model, same prompt, completely different results.\n\nIn this article, I show you how to build all three layers. https://t.co/W99aPfcSub"
   },
@@ -23860,11 +24252,11 @@
    "id": "2116552016218710389",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 15859,
-    "impression_count": 2194078,
-    "like_count": 8542,
-    "quote_count": 293,
-    "reply_count": 167,
+    "bookmark_count": 15858,
+    "impression_count": 2207180,
+    "like_count": 8547,
+    "quote_count": 294,
+    "reply_count": 168,
     "repost_count": 401
    },
    "text": "good prompt \"find all of the implicit state machines in my app\""
@@ -23882,11 +24274,11 @@
     "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent experience (AX) always, without breaking anything.\""
    },
    "public_metrics": {
-    "bookmark_count": 22911,
-    "impression_count": 1237040,
+    "bookmark_count": 22902,
+    "impression_count": 1242290,
     "like_count": 9530,
     "quote_count": 64,
-    "reply_count": 237,
+    "reply_count": 238,
     "repost_count": 444
    },
    "text": "Vibecoders, 𝗜'𝗺 𝗯𝗲𝗴𝗴𝗶𝗻𝗴 𝘆𝗼𝘂, open your messiest project and paste this into Claude Code or Codex:\n\n\"Find all of the implicit state machines in my app. Make the best decision that will elevate all three: the user experience (UX), developer experience (DX), and agent"
@@ -23945,11 +24337,11 @@
    "id": "2119114537442189652",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 10357,
-    "impression_count": 986646,
-    "like_count": 9264,
+    "bookmark_count": 10361,
+    "impression_count": 999782,
+    "like_count": 9292,
     "quote_count": 237,
-    "reply_count": 672,
+    "reply_count": 682,
     "repost_count": 781
    },
    "referenced_posts": [
@@ -23970,9 +24362,9 @@
    "id": "2120149186218021375",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 113,
-    "impression_count": 70638,
-    "like_count": 162,
+    "bookmark_count": 112,
+    "impression_count": 71327,
+    "like_count": 163,
     "quote_count": 4,
     "reply_count": 24,
     "repost_count": 11
@@ -23990,7 +24382,7 @@
    "lang": "zh",
    "public_metrics": {
     "bookmark_count": 5,
-    "impression_count": 9887,
+    "impression_count": 9920,
     "like_count": 10,
     "quote_count": 2,
     "reply_count": 11,
@@ -24043,9 +24435,9 @@
    "id": "2119080326555443677",
    "lang": "zh",
    "public_metrics": {
-    "bookmark_count": 438,
-    "impression_count": 58153,
-    "like_count": 351,
+    "bookmark_count": 437,
+    "impression_count": 58763,
+    "like_count": 352,
     "quote_count": 4,
     "reply_count": 30,
     "repost_count": 40
@@ -24077,12 +24469,12 @@
     "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 跑通首个 Agent：拆解模型调用、工具绑定与执行环境的基础闭环。    \n\n2. 状态持久化（Persistent Memory）：告别单次对话即失忆，构建跨会话的记忆索引与上下文回填。    \n\n3. 长时自主循环（Agentic Loops）：摆脱线性问答，让 Agent 具备自我反思、容错重试与多轮状态流转能力。    \n\n4. 吃透 MCP 核心架构：彻底理清 Model Context Protocol 与传统 API 的本质区别，学会构建标准化的上下文协议。    \n\n5. 多智能体协同系统（Multi-Agent）：把分散的专职 Agent 串联成高协作度的自动化系统。    \n\n完全免费。\n\n比市面上价值700刀的课还要干货。  \n\n建议收藏，今晚就观看 。🔖"
    },
    "public_metrics": {
-    "bookmark_count": 9514,
-    "impression_count": 488825,
-    "like_count": 7124,
+    "bookmark_count": 9521,
+    "impression_count": 490140,
+    "like_count": 7119,
     "quote_count": 46,
     "reply_count": 162,
-    "repost_count": 1469
+    "repost_count": 1468
    },
    "text": "谷歌刚刚放出一门 70 分钟的官方课，手把手教你打造一个7 * 24小时完全自动化的生产级 Agent 。   \n\n很多人学 Agent 看了几十个小时零散教程依然搭不出可用的东西，核心是没有搞清玩具 Demo 与工业级架构的边界。    \n\n谷歌这门 1 小时课程没有任何水分，只聚焦 5 个真正的工程核心：    \n\n1. 从 0 https://t.co/fh9Gjo5vPM"
   },
@@ -24127,8 +24519,8 @@
    "lang": "zxx",
    "public_metrics": {
     "bookmark_count": 1655,
-    "impression_count": 459060,
-    "like_count": 482,
+    "impression_count": 459795,
+    "like_count": 483,
     "quote_count": 15,
     "reply_count": 74,
     "repost_count": 38
@@ -24160,12 +24552,12 @@
     "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:\n\n```\nFor skills, clone mattpocock/skills to ~/repos/skills.\nFor Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle\n```\n\nThis is extremely simple and incredibly effective. The home repo lets you:\n\n1. Put all your steering files and tooling in one place\n2. Have a single spot to run all your agents in\n3. Make sweeping changes over multiple repos\n\nTalked about this in the course yesterday and folks are loving it (see below).\n\nI'm sure you will too. Enjoy!"
    },
    "public_metrics": {
-    "bookmark_count": 4945,
-    "impression_count": 277391,
-    "like_count": 3423,
-    "quote_count": 75,
+    "bookmark_count": 4988,
+    "impression_count": 284866,
+    "like_count": 3441,
+    "quote_count": 79,
     "reply_count": 311,
-    "repost_count": 201
+    "repost_count": 202
    },
    "text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have https://t.co/umO84wVD7a"
   },
@@ -24207,12 +24599,12 @@
    "id": "2120230919588241878",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 51,
-    "impression_count": 36803,
-    "like_count": 51,
+    "bookmark_count": 52,
+    "impression_count": 38727,
+    "like_count": 56,
     "quote_count": 2,
-    "reply_count": 1,
-    "repost_count": 2
+    "reply_count": 3,
+    "repost_count": 3
    },
    "referenced_posts": [
     {
@@ -24248,8 +24640,8 @@
    "id": "2096128417108287566",
    "lang": "zxx",
    "public_metrics": {
-    "bookmark_count": 2666,
-    "impression_count": 1691827,
+    "bookmark_count": 2670,
+    "impression_count": 1694080,
     "like_count": 791,
     "quote_count": 30,
     "reply_count": 16,
@@ -24301,9 +24693,9 @@
    "id": "2119521036660314339",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 7030,
-    "impression_count": 286749,
-    "like_count": 4911,
+    "bookmark_count": 7026,
+    "impression_count": 290414,
+    "like_count": 4915,
     "quote_count": 33,
     "reply_count": 171,
     "repost_count": 217
@@ -24384,11 +24776,11 @@
    "id": "2120655002335064125",
    "lang": "en",
    "public_metrics": {
-    "bookmark_count": 669,
-    "impression_count": 193374,
-    "like_count": 619,
+    "bookmark_count": 693,
+    "impression_count": 204129,
+    "like_count": 639,
     "quote_count": 25,
-    "reply_count": 52,
+    "reply_count": 58,
     "repost_count": 52
    },
    "text": "https://t.co/8zLU1aPDTe is live, in open beta.\n\nA workspace where your team and AI agents work side by side. Mention an agent, it does the work, and you approve what matters.\n\nBring the Claude, ChatGPT or Gemini plan you already pay for.\n\nhttps://t.co/8zLU1aPDTe https://t.co/V3VT68PLBu"
@@ -24436,14 +24828,99 @@
     "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A few details:\n\n- 3 decision types: yes/no, multiple choice (up to 255 options) + rubric scoring\n- $0.10 / 1M input tokens with $0 billed for output tokens (~5x cheaper than Flash-Lite)\n- leads on several benchmark evals with lowest calibration error\n\nGoogle teams are already building with it, below is a look at Stitch Rapid designing a full product flow in seconds (1x speed)"
    },
    "public_metrics": {
-    "bookmark_count": 2489,
-    "impression_count": 733216,
-    "like_count": 7655,
-    "quote_count": 379,
-    "reply_count": 488,
-    "repost_count": 625
+    "bookmark_count": 2568,
+    "impression_count": 784782,
+    "like_count": 8095,
+    "quote_count": 397,
+    "reply_count": 504,
+    "repost_count": 656
    },
    "text": "Today we’re launching the Gemini Decisions API, powered by our new Gemini Decision 1 model in @GoogleAIStudio.\n\nInstead of generating text token by token, it’s built for closed-set choices scoring up to 1,000 questions across text, images, audio, video + PDFs in a single pass. A https://t.co/7itBuv7Eu2"
+  },
+  "2121014221563396156": {
+   "author_id": "113713261",
+   "conversation_id": "2121014221563396156",
+   "created_at": "2026-11-12T22:56:11.000Z",
+   "edit_history_post_ids": [
+    "2121014221563396156"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/RXcSdCrjFN",
+      "end": 291,
+      "expanded_url": "https://x.com/ChromiumDev/status/2121014221563396156/photo/1",
+      "media_key": "3_2121014217763377152",
+      "start": 268,
+      "url": "https://t.co/RXcSdCrjFN"
+     }
+    ]
+   },
+   "id": "2121014221563396156",
+   "lang": "en",
+   "note_post": {
+    "entities": {
+     "urls": [
+      {
+       "display_url": "goo.gle/4zoi7Dv",
+       "end": 550,
+       "expanded_url": "https://goo.gle/4zoi7Dv",
+       "start": 527,
+       "url": "https://t.co/TKZYQy5v0Q"
+      }
+     ]
+    },
+    "text": "48 hours after launching 1.0, Modern Web Guidance is the #1 trending repo on GitHub 📈\n\nThank you to the thousands of web developers, and our partners across Firefox, MDN, Edge, and community contributors, who are helping move AI coding agents onto modern, accessible, Baseline-supported web primitives.\n\nIf you haven't tried 1.0 on your codebase yet:\n\nInstall the agent skills: 'npx modern-web-guidance@latest install'\n\nAudit an existing codebase: 'npx modern-web-guidance@latest legacy-scan .'\n\nCheck out the repo on Github → https://t.co/TKZYQy5v0Q"
+   },
+   "public_metrics": {
+    "bookmark_count": 2070,
+    "impression_count": 133916,
+    "like_count": 2609,
+    "quote_count": 24,
+    "reply_count": 71,
+    "repost_count": 188
+   },
+   "text": "48 hours after launching 1.0, Modern Web Guidance is the #1 trending repo on GitHub 📈\n\nThank you to the thousands of web developers, and our partners across Firefox, MDN, Edge, and community contributors, who are helping move AI coding agents onto modern, accessible, https://t.co/RXcSdCrjFN"
+  },
+  "2120905319245373686": {
+   "author_id": "1491478290091024389",
+   "conversation_id": "2120904821373096408",
+   "created_at": "2026-11-12T15:43:27.000Z",
+   "edit_history_post_ids": [
+    "2120905319245373686"
+   ],
+   "entities": {
+    "urls": [
+     {
+      "display_url": "pic.x.com/hFc6vM1pDz",
+      "end": 264,
+      "expanded_url": "https://x.com/SimularAI/status/2120905319245373686/video/1",
+      "media_key": "13_2120904823990304769",
+      "start": 241,
+      "url": "https://t.co/hFc6vM1pDz"
+     }
+    ]
+   },
+   "id": "2120905319245373686",
+   "lang": "en",
+   "note_post": {
+    "text": "Turn that chatbot you already use into a personal agent. \n\nAdd box to ChatGPT, Claude or Gemini and it gets a computer of its own.\n\nWatch it work from the web, your Mac or your iPhone, and take over any time to sign in or approve a payment."
+   },
+   "public_metrics": {
+    "bookmark_count": 7,
+    "impression_count": 815477,
+    "like_count": 245,
+    "quote_count": 2,
+    "reply_count": 1,
+    "repost_count": 0
+   },
+   "referenced_posts": [
+    {
+     "id": "2120904821373096408",
+     "type": "replied_to"
+    }
+   ],
+   "text": "Turn that chatbot you already use into a personal agent. \n\nAdd box to ChatGPT, Claude or Gemini and it gets a computer of its own.\n\nWatch it work from the web, your Mac or your iPhone, and take over any time to sign in or approve a payment. https://t.co/hFc6vM1pDz"
   }
  },
  "users": {
@@ -24742,7 +25219,7 @@
    "username": "qingyue820"
   },
   "69492059": {
-   "description": "Building @heydeer_ai · Ex-Engineering Lead @Slab · Ex-CTO @ShimoDocs · Built ioredis (acq.) & @medisclient · Contributor to @quilljs",
+   "description": "Building @heydeer_ai. Created ioredis (acquired by @Redisinc). Prev: @quilljs maintainer, Eng Lead @Slab, CTO @ShimoDocs.",
    "id": "69492059",
    "name": "Zihua",
    "username": "luinlee"
@@ -25089,14 +25566,6 @@
    "description": "Building AI products.\nProduct × Frontend.\nPractical AI · Product Design · Engineering\nGitHub: https://t.co/1SpZrtBSjD\nWebsite: https://t.co/SbJYMMqQt6",
    "id": "1949304542325342208",
    "name": "oil-oil",
-   "public_metrics": {
-    "followers_count": 9866,
-    "following_count": 43,
-    "like_count": 67,
-    "listed_count": 63,
-    "media_count": 164,
-    "post_count": 263
-   },
    "username": "I_am_oil_oil"
   },
   "1921127274256232450": {
@@ -26451,14 +26920,6 @@
    "description": "✍🏻 公众号「浮之静」 👨🏻‍💻 Web • Rust • Tauri  • Electron\n🚫 不看 • 不听 • 不说 🤔 学会思考 • 自说自话",
    "id": "820285264819933184",
    "name": "lencx",
-   "public_metrics": {
-    "followers_count": 23310,
-    "following_count": 1100,
-    "like_count": 1843,
-    "listed_count": 318,
-    "media_count": 1384,
-    "post_count": 4331
-   },
    "username": "lencx_"
   },
   "1619510017052508161": {
@@ -27464,7 +27925,7 @@
    "username": "kaleumeleu37968"
   },
   "1412131273280212996": {
-   "description": "•  building a second brain with Сlaude & Obsidian • \n• @cele8ex member • co-founder @polynternet •",
+   "description": "•  building a second brain with Сlaude & Obsidian • co-founder @polynternet •",
    "id": "1412131273280212996",
    "name": "Mr. Buzzoni",
    "username": "Mr_Buzzoni"
@@ -27576,6 +28037,24 @@
    "id": "3178231",
    "name": "宝玉",
    "username": "dotey"
+  },
+  "2334685760": {
+   "description": "AI 产品经理, 创作者, 独立开发者\n持续构建 AI Native 产品\n分享 AI 产品实测、Agent Harness 认知，产品方法论和出海记录\nPM of @TabbitBrowser\nProject: @AnalogyPKM, https://t.co/595d3AkCdC",
+   "id": "2334685760",
+   "name": "潦草学者 Scholar.L",
+   "username": "liaocaoxuezhe"
+  },
+  "1491478290091024389": {
+   "description": "The Autonomous Computer Company, building @sai_borg, backed by @felicis and @nvidia.",
+   "id": "1491478290091024389",
+   "name": "Simular",
+   "username": "SimularAI"
+  },
+  "2070536633104134144": {
+   "description": "All Fires Burn into One",
+   "id": "2070536633104134144",
+   "name": "Jerry.Z",
+   "username": "irrrational"
   }
  }
 }
