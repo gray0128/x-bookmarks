@@ -1,3 +1,4 @@
 data/bookmarks.json
 __pycache__/
 *.pyc
+tmp/
